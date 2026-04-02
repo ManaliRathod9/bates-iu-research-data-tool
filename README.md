@@ -1,2 +1,3 @@
 App Link - 
-https://batesui.vercel.app/
+https://bates-ui.vercel.app/
+
