@@ -1,5 +1,12 @@
 import React, { useState, useMemo, useEffect } from "react";
 import { structure } from "./config/structure";
+import { variableDescriptions } from "./config/variableDescriptions";
+import VariableDescription, {
+  shouldShowVariableInTask,
+  getFinalVariables,
+  groupVariablesBySubcategory,
+  countDisplayedVariables,
+} from "./VariableList";
 
 // Mapping of Tasks to their respective variable prefixes/keywords
 const taskToVarMap = {
@@ -68,7 +75,7 @@ const taskDescriptions = {
 
   "Parental Control": `Parental Control is a parent-child interaction measure that examines the nature of the parent's interaction with the child throughout the parent-interaction tasks of Free play, Phone call, and Toy cleanup, as well as the degree to which the parent tries to direct or control the child's behavior, and teach or restrict child behaviors.\n\nThe presence of parent behaviors are coded in 15-second intervals. "No involvement," "Visual contact," and "Uncodeable" are mutually exclusive and cannot be coded with any other behavior in one interval. "Social exchange," "Guidance/Gentle control," and "Power assertion/Negative control" are not mutually exclusive. Physical behaviors are subcategories of those three, indicating the overarching behavior is present along with physical interaction.\n\nCoded behaviors are as follows:\n\n• No involvement: the parent does not make any attempt to interact with the toddler.\n• Visual contact only: the parent only looks at the toddler and does not attempt to interact with the toddler.\n• Social exchange: the parent initiates or participates in conversation with the toddler, plays with the toys, or communicates through facial expressions. The parent does not attempt to control or direct the toddler's behavior.\n• (Physical) Social exchange: offering comfort, affection, or reassurance (e.g. wiping away tears, stroking hair, hugging, holding, etc.)\n• Guidance/Gentle control: the parent attempts to control the child's behavior without asserting their power. This includes suggestions, distractions, reasoning, polite requests, positive comments, direct commands, or prohibitions.\n• (Physical) Guidance/Gentle control: guiding the child's body or hands away from a potentially dangerous situation, or helping the child physically manipulate a toy. Also includes caregiving behaviors (e.g. wiping the child's face, nose).\n• Power assertion/Negative control: the parent attempts to control the child by asserting their power, or using threats, negative comments, or direct commands and prohibitions. The parent's tone may differ from their baseline speech: louder volume, annoyance, frustration, anger, or a clearly prohibitory or warning tone.\n• (Physical) Power assertion/Negative control: physically asserting power over the child by using their body to block the child from moving freely or accessing a prohibited limit, picking the child up and moving them, or any harsh physical interventions.\n• Uncodeable: the parent is out of view for more than 10 seconds (2/3) of the interval.`,
 
-  "Parental Sensitivity and Intrusiveness": `The Parental Sensitivity and Intrusiveness codes are each based on general coder observations of the parent-child interaction tasks: Free play, Phone call, and Toy Cleanup.\n\n━━━ PARENTAL SENSITIVITY SCALE ━━━\n\n"The Parental Sensitivity scale focuses on how the parent observes and responds to the child's cues (gestures, expressions, and signals) during times of distress as well as non-distress. The defining characteristic of sensitivity is that it is child-centered. Sensitive parenting involves 'tuning in' to the child and manifesting awareness of child's needs, moods, interests, and capabilities."\n\n• Very Low Sensitivity: interactions are characteristically adult-centered and/or the parent is unavailable and non-responsive to the child's signals, moods, interests and needs.\n• Low Sensitivity: there is little evidence of parental sensitivity. Most of the interaction is adult-centered and/or the parent is mostly not contingently responsive.\n• Moderately Low Sensitivity: parent displays infrequent and/or weak indicators of sensitivity. While the parent is sometimes sensitive, the balance is in the direction of insensitivity.\n• Moderate Sensitivity: the frequency and quality of the parent's sensitivity and insensitivity are about equal. It is this inconsistency which prevents the parent from receiving a higher rating.\n• Moderately High Sensitivity: parent displays more sensitivity than not. The parent demonstrates sensitivity in many interactions, but may show some insensitivity.\n• High Sensitivity: parental behavior is characterized by sensitivity but the parent may show minimal insensitivity by hesitating to respond to distress, "missing" a signal from the child or missing an opportunity to praise the child.\n• Very High Sensitivity: parent is very sensitive and responsive throughout the interaction. Insensitivity is never striking. Interactions are child-centered. Parent praises the child.\n\n━━━ PARENTAL INTRUSIVENESS SCALE ━━━\n\n"The Parental Intrusiveness scale reflects the degree to which the parent controls the child rather than recognizing and respecting the validity of the child's perspective. Intrusive interactions are clearly adult-centered rather than child-centered. Extreme intrusiveness can be seen as over-control to the point where the child's autonomy is at stake. When unsure whether a behavior is intrusive or not, evaluate from the perspective of the child. It should be noted, however, that a parent may be judged as intrusive even if the child does not engage in defensive behavior (e.g., the child is passively resigned to the intrusions of the parent)."\n\n• Very Low Intrusiveness: no signs of intrusive behavior are observed. Child does not respond defensively in any way to parental behavior.\n• Low Intrusiveness: parent displays almost no signs of intrusive behavior. Only a few instances are observed, but they are brief and do not unreasonably shift the child's perspective.\n• Moderately Low Intrusiveness: parent displays minimal intrusiveness. Parent may initiate some interactions with child or offer suggestions which are not welcome, or may continue an activity after child responds defensively without escalating.\n• Moderate Intrusiveness: intrusiveness is somewhat characteristic of the interaction. Parent may intrude abruptly on the child a few times or show mild intrusiveness at several points in the interaction.\n• Moderately High Intrusiveness: parent is more intrusive than not. Intrusiveness occurs regularly throughout the interaction and the child has little opportunity to do anything on his/her own.\n• High Intrusiveness: parental intrusiveness is pervasive to the point that it characterizes the style of the parental interaction. Parent strongly denies the child an opportunity to do things on his/her own. Mostly, this parent practices an intrusive style.\n• Very High Intrusiveness: parental style is so intrusive that it is worrisome. Parent is very intrusive, physical and/or forceful in controlling the child. Most of the session is marked by the parent completely controlling the interaction and allowing the child almost no self-direction.`,
+  "Parent Sensitivity / Intrusiveness": `The Parental Sensitivity and Intrusiveness codes are each based on general coder observations of the parent-child interaction tasks: Free play, Phone call, and Toy Cleanup.\n\n━━━ PARENTAL SENSITIVITY SCALE ━━━\n\n"The Parental Sensitivity scale focuses on how the parent observes and responds to the child's cues (gestures, expressions, and signals) during times of distress as well as non-distress. The defining characteristic of sensitivity is that it is child-centered. Sensitive parenting involves 'tuning in' to the child and manifesting awareness of child's needs, moods, interests, and capabilities."\n\n• Very Low Sensitivity: interactions are characteristically adult-centered and/or the parent is unavailable and non-responsive to the child's signals, moods, interests and needs.\n• Low Sensitivity: there is little evidence of parental sensitivity. Most of the interaction is adult-centered and/or the parent is mostly not contingently responsive.\n• Moderately Low Sensitivity: parent displays infrequent and/or weak indicators of sensitivity. While the parent is sometimes sensitive, the balance is in the direction of insensitivity.\n• Moderate Sensitivity: the frequency and quality of the parent's sensitivity and insensitivity are about equal. It is this inconsistency which prevents the parent from receiving a higher rating.\n• Moderately High Sensitivity: parent displays more sensitivity than not. The parent demonstrates sensitivity in many interactions, but may show some insensitivity.\n• High Sensitivity: parental behavior is characterized by sensitivity but the parent may show minimal insensitivity by hesitating to respond to distress, "missing" a signal from the child or missing an opportunity to praise the child.\n• Very High Sensitivity: parent is very sensitive and responsive throughout the interaction. Insensitivity is never striking. Interactions are child-centered. Parent praises the child.\n\n━━━ PARENTAL INTRUSIVENESS SCALE ━━━\n\n"The Parental Intrusiveness scale reflects the degree to which the parent controls the child rather than recognizing and respecting the validity of the child's perspective. Intrusive interactions are clearly adult-centered rather than child-centered. Extreme intrusiveness can be seen as over-control to the point where the child's autonomy is at stake. When unsure whether a behavior is intrusive or not, evaluate from the perspective of the child. It should be noted, however, that a parent may be judged as intrusive even if the child does not engage in defensive behavior (e.g., the child is passively resigned to the intrusions of the parent)."\n\n• Very Low Intrusiveness: no signs of intrusive behavior are observed. Child does not respond defensively in any way to parental behavior.\n• Low Intrusiveness: parent displays almost no signs of intrusive behavior. Only a few instances are observed, but they are brief and do not unreasonably shift the child's perspective.\n• Moderately Low Intrusiveness: parent displays minimal intrusiveness. Parent may initiate some interactions with child or offer suggestions which are not welcome, or may continue an activity after child responds defensively without escalating.\n• Moderate Intrusiveness: intrusiveness is somewhat characteristic of the interaction. Parent may intrude abruptly on the child a few times or show mild intrusiveness at several points in the interaction.\n• Moderately High Intrusiveness: parent is more intrusive than not. Intrusiveness occurs regularly throughout the interaction and the child has little opportunity to do anything on his/her own.\n• High Intrusiveness: parental intrusiveness is pervasive to the point that it characterizes the style of the parental interaction. Parent strongly denies the child an opportunity to do things on his/her own. Mostly, this parent practices an intrusive style.\n• Very High Intrusiveness: parental style is so intrusive that it is worrisome. Parent is very intrusive, physical and/or forceful in controlling the child. Most of the session is marked by the parent completely controlling the interaction and allowing the child almost no self-direction.`,
 
   "Snack Delay": `Snack delay is a regulation to reward measure in which the child is asked to wait to eat a piece of candy until the experimenter rings a bell, which is demonstrated by the experimenter. The child is told to keep their hands on a mat while waiting. There are four trials of 10s, 20s, 30s, and 15s wait times, in that order. The experimenter lifts the bell half-way through each trial, and rings the bell at the end of each trial.\n\nThere are two parts per trial:\n• Part 1 – time from start of trial until experimenter lifts the bell.\n• Part 2 – time from experimenter lifting the bell until experimenter rings the bell.\n\nThe child's behaviors are coded during each of the two parts of each trial. Coded behaviors include: child eats snack, child touches snack, child touches cup and/or bell, child waits until bell is lifted, child waits until bell is rung, and child keeps hands on mat. The child receives bonus points if they kept their hands on the mat throughout entire parts of trials or entire trials.`,
 
@@ -108,29 +115,38 @@ function csvCell(value) {
   return str;
 }
 
+
 const Dashboard = ({ data = [] }) => {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [selectedTask, setSelectedTask] = useState(null);
-  // Track which parent categories are expanded in the tree
   const [expandedCategories, setExpandedCategories] = useState({});
 
-  // tcid required by default
   const [selectedVariables, setSelectedVariables] = useState(["tcid"]);
 
   const [checkedVariables, setCheckedVariables] = useState([]);
   const [checkedSelected, setCheckedSelected] = useState([]);
   const [filterText, setFilterText] = useState("");
 
-  // Task info modal state
   const [taskInfoModal, setTaskInfoModal] = useState(null);
 
-  // Extract variables from data headers
+  const [varInfoModal, setVarInfoModal] = useState(null);
+
+  const [expandedVarL1, setExpandedVarL1] = useState({});
+  const [expandedVarL2, setExpandedVarL2] = useState({});
+
+  const toggleVarL1 = (key) => {
+    setExpandedVarL1((prev) => ({ ...prev, [key]: prev[key] === false ? true : false }));
+  };
+
+  const toggleVarL2 = (key) => {
+    setExpandedVarL2((prev) => ({ ...prev, [key]: prev[key] === false ? true : false }));
+  };
+
   const rawVariables = useMemo(() => {
     if (data && data.length > 0) return Object.keys(data[0]);
     return [];
   }, [data]);
 
-  // Ensure tcid always present
   useEffect(() => {
     setSelectedVariables((prev) => {
       if (prev.includes("tcid")) return prev;
@@ -138,22 +154,18 @@ const Dashboard = ({ data = [] }) => {
     });
   }, [data]);
 
-  // Build tasks based on selected subcategory
   const tasks = useMemo(() => {
     if (selectedCategory) {
       return structure.tasksByCategory[selectedCategory] || [];
     }
-    // show all tasks if no category selected
     const allTasks = Object.values(structure.tasksByCategory).flat();
     return [...new Set(allTasks)].sort();
   }, [selectedCategory]);
 
-  // Toggle expansion of a parent category
   const toggleExpanded = (name) => {
     setExpandedCategories((prev) => ({ ...prev, [name]: !prev[name] }));
   };
 
-  // Filter variables based on selected task and search text
   const filteredVariables = useMemo(() => {
     let vars = rawVariables;
 
@@ -173,6 +185,19 @@ const Dashboard = ({ data = [] }) => {
 
     return vars;
   }, [rawVariables, selectedTask, filterText]);
+
+  const finalVars = useMemo(() => {
+    return getFinalVariables(filteredVariables, selectedCategory, selectedTask);
+  }, [filteredVariables, selectedCategory, selectedTask]);
+
+  const groupedVars = useMemo(() => {
+    return groupVariablesBySubcategory(finalVars, selectedCategory, selectedTask);
+  }, [finalVars, selectedCategory, selectedTask]);
+
+  const displayedVariableCount = useMemo(() => {
+    if (!selectedTask) return rawVariables.length;
+    return countDisplayedVariables(groupedVars);
+  }, [groupedVars, selectedTask, rawVariables.length]);
 
   const toggleRowSelection = (v, setList) => {
     setList((prev) =>
@@ -202,7 +227,7 @@ const Dashboard = ({ data = [] }) => {
 
   const handleAddAll = () => {
     setSelectedVariables((prev) => {
-      const toAdd = filteredVariables.filter((v) => !prev.includes(v));
+      const toAdd = finalVars.filter((v) => !prev.includes(v));
       return [...prev, ...toAdd];
     });
   };
@@ -220,11 +245,11 @@ const Dashboard = ({ data = [] }) => {
   };
 
   const handleSelectAllFiltered = () => {
-    if (filteredVariables.length === 0) return;
-    if (checkedVariables.length === filteredVariables.length) {
+    if (finalVars.length === 0) return;
+    if (checkedVariables.length === finalVars.length) {
       setCheckedVariables([]);
     } else {
-      setCheckedVariables([...filteredVariables]);
+      setCheckedVariables([...finalVars]);
     }
   };
 
@@ -240,10 +265,8 @@ const Dashboard = ({ data = [] }) => {
     }
 
     try {
-      // Header row
       const headerRow = selectedVariables.join(",");
 
-      // Data rows
       const bodyRows = data
         .map((row) =>
           selectedVariables.map((col) => csvCell(row[col])).join(",")
@@ -278,7 +301,6 @@ const Dashboard = ({ data = [] }) => {
     }
   };
 
-  // UI Styles
   const panelHeaderStyle = {
     marginTop: 0,
     marginBottom: "1rem",
@@ -301,7 +323,6 @@ const Dashboard = ({ data = [] }) => {
         minHeight: 0,
       }}
     >
-      {/* Top Section: 4 Panels Grid */}
       <div
         style={{
           display: "grid",
@@ -312,10 +333,9 @@ const Dashboard = ({ data = [] }) => {
           minHeight: 0,
         }}
       >
-        {/* Panel 1: Categories */}
         <div className="glass-panel panel">
           <div style={{ padding: "1.5rem 1.5rem 0 1.5rem" }}>
-            <h3 style={panelHeaderStyle}>Categories</h3>
+            <h3 style={panelHeaderStyle}>Categories ({structure.categories.filter(cat=>cat.children && cat.children.length>0).length})</h3>
           </div>
 
           <div
@@ -326,19 +346,16 @@ const Dashboard = ({ data = [] }) => {
               {structure.categories.map((cat, idx) => {
                 const hasChildren = cat.children && cat.children.length > 0;
                 const isExpanded = !!expandedCategories[cat.name];
-                // Leaf category (no children) — e.g. Actigraphy, Sleep Measures
                 const isLeaf = !hasChildren;
                 const isSelectedLeaf = selectedCategory === cat.name;
 
                 return (
                   <React.Fragment key={idx}>
-                    {/* Parent row */}
                     <li
                       onClick={() => {
                         if (hasChildren) {
                           toggleExpanded(cat.name);
                         } else {
-                          // Leaf: toggle selection + load tasks
                           setSelectedCategory((prev) =>
                             prev === cat.name ? null : cat.name
                           );
@@ -389,7 +406,6 @@ const Dashboard = ({ data = [] }) => {
                       {cat.name}
                     </li>
 
-                    {/* Child rows — only shown when parent is expanded */}
                     {hasChildren &&
                       isExpanded &&
                       cat.children.map((child, cIdx) => {
@@ -431,7 +447,6 @@ const Dashboard = ({ data = [] }) => {
           </div>
         </div>
 
-        {/* Panel 2: Tasks */}
         <div className="glass-panel panel">
           <div style={{ padding: "1.5rem 1.5rem 0 1.5rem" }}>
             <h3 style={panelHeaderStyle}>Tasks ({tasks.length})</h3>
@@ -467,7 +482,6 @@ const Dashboard = ({ data = [] }) => {
                     borderRadius: "4px",
                   }}
                 >
-                  {/* Info button — stops propagation so it doesn't select the task */}
                   <button
                     onClick={(e) => {
                       e.stopPropagation();
@@ -517,11 +531,10 @@ const Dashboard = ({ data = [] }) => {
           </div>
         </div>
 
-        {/* Panel 3: Variables */}
         <div className="glass-panel panel">
           <div style={{ padding: "1.5rem 1.5rem 0 1.5rem" }}>
             <h3 style={panelHeaderStyle}>
-              Variables ({filteredVariables.length})
+              Variables ({selectedTask ? displayedVariableCount : rawVariables.length})
             </h3>
           </div>
 
@@ -530,73 +543,27 @@ const Dashboard = ({ data = [] }) => {
             style={{ padding: "0 1.5rem 1.5rem 1.5rem" }}
           >
             <ul style={listStyle}>
-              {filteredVariables.length === 0 ? (
-                <p
-                  style={{
-                    color: "var(--text-secondary)",
-                    padding: "1rem",
-                    fontStyle: "italic",
-                  }}
-                >
-                  {selectedTask
-                    ? "No variables found for this task."
-                    : "Select a task to view variables."}
-                </p>
-              ) : (
-                filteredVariables.map((v, i) => {
-                  const isAdded = selectedVariables.includes(v);
-                  const isChecked = checkedVariables.includes(v);
-
-                  return (
-                    <li
-                      key={i}
-                      onClick={() =>
-                        !isAdded && toggleRowSelection(v, setCheckedVariables)
-                      }
-                      style={{
-                        padding: "0.75rem 0.5rem",
-                        borderBottom: "1px solid var(--glass-border)",
-                        display: "flex",
-                        justifyContent: "space-between",
-                        alignItems: "center",
-                        gap: "10px",
-                        cursor: isAdded ? "default" : "pointer",
-                        backgroundColor: isChecked
-                          ? "rgba(59, 130, 246, 0.1)"
-                          : "transparent",
-                        opacity: isAdded ? 0.5 : 1,
-                      }}
-                    >
-                      <span
-                        style={{ fontSize: "0.9rem", wordBreak: "break-all" }}
-                      >
-                        {v}
-                      </span>
-
-                      <button
-                        className={isAdded ? "btn-disabled" : "btn-small"}
-                        disabled={isAdded}
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          handleAddVariable(v);
-                        }}
-                        style={{
-                          padding: "0.25rem 0.5rem",
-                          fontSize: "0.7rem",
-                          flexShrink: 0,
-                        }}
-                      >
-                        {isAdded ? "Added" : "Add"}
-                      </button>
-                    </li>
-                  );
-                })
-              )}
+              <VariableDescription
+                rawVariables={rawVariables}
+                finalVars={finalVars}
+                groupedVars={groupedVars}
+                selectedCategory={selectedCategory}
+                selectedTask={selectedTask}
+                selectedVariables={selectedVariables}
+                checkedVariables={checkedVariables}
+                setCheckedVariables={setCheckedVariables}
+                handleAddVariable={handleAddVariable}
+                setVarInfoModal={setVarInfoModal}
+                expandedVarL1={expandedVarL1}
+                expandedVarL2={expandedVarL2}
+                toggleVarL1={toggleVarL1}
+                toggleVarL2={toggleVarL2}
+                toggleRowSelection={toggleRowSelection}
+              />
             </ul>
           </div>
         </div>
 
-        {/* Panel 4: Selected Variables */}
         <div className="glass-panel panel">
           <div style={{ padding: "1.5rem 1.5rem 0 1.5rem" }}>
             <h3 style={panelHeaderStyle}>
@@ -675,7 +642,6 @@ const Dashboard = ({ data = [] }) => {
         </div>
       </div>
 
-      {/* Footer Action Bar */}
       <div
         className="glass-panel"
         style={{
@@ -771,7 +737,6 @@ const Dashboard = ({ data = [] }) => {
           Save as CSV
         </button>
       </div>
-      {/* Task Info Modal */}
       {taskInfoModal && (
         <div
           onClick={() => setTaskInfoModal(null)}
@@ -802,7 +767,6 @@ const Dashboard = ({ data = [] }) => {
               boxShadow: "0 8px 40px rgba(0,0,0,0.6)",
             }}
           >
-            {/* Modal header */}
             <div
               style={{
                 display: "flex",
@@ -838,7 +802,6 @@ const Dashboard = ({ data = [] }) => {
               </button>
             </div>
 
-            {/* Modal body */}
             <div
               style={{
                 padding: "1.5rem",
@@ -850,6 +813,87 @@ const Dashboard = ({ data = [] }) => {
               }}
             >
               {taskDescriptions[taskInfoModal] || "Description not added yet."}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {varInfoModal && (
+        <div
+          onClick={() => setVarInfoModal(null)}
+          style={{
+            position: "fixed",
+            inset: 0,
+            background: "rgba(0,0,0,0.55)",
+            backdropFilter: "blur(4px)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            zIndex: 1000,
+            padding: "1.5rem",
+          }}
+        >
+          <div
+            onClick={(e) => e.stopPropagation()}
+            style={{
+              background: "rgba(18,18,30,0.92)",
+              border: "1px solid var(--glass-border)",
+              borderRadius: "12px",
+              backdropFilter: "blur(20px)",
+              maxWidth: "600px",
+              width: "100%",
+              maxHeight: "80vh",
+              display: "flex",
+              flexDirection: "column",
+              boxShadow: "0 8px 40px rgba(0,0,0,0.6)",
+            }}
+          >
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+                padding: "1.25rem 1.5rem",
+                borderBottom: "1px solid var(--glass-border)",
+                flexShrink: 0,
+              }}
+            >
+              <h3 style={{ margin: 0, fontSize: "1.1rem", fontWeight: "600", wordBreak: "break-all" }}>
+                {varInfoModal}
+              </h3>
+              <button
+                onClick={() => setVarInfoModal(null)}
+                style={{
+                  background: "transparent",
+                  border: "none",
+                  color: "rgba(255,255,255,0.6)",
+                  fontSize: "1.3rem",
+                  cursor: "pointer",
+                  lineHeight: 1,
+                  padding: "0.2rem 0.4rem",
+                  borderRadius: "4px",
+                  transition: "color 0.2s",
+                }}
+                onMouseEnter={(e) => (e.currentTarget.style.color = "white")}
+                onMouseLeave={(e) =>
+                  (e.currentTarget.style.color = "rgba(255,255,255,0.6)")
+                }
+              >
+                ×
+              </button>
+            </div>
+
+            <div
+              style={{
+                padding: "1.5rem",
+                overflowY: "auto",
+                lineHeight: "1.7",
+                fontSize: "0.92rem",
+                color: "rgba(255,255,255,0.85)",
+                whiteSpace: "pre-line",
+              }}
+            >
+              {variableDescriptions[varInfoModal] || "Description not added yet."}
             </div>
           </div>
         </div>

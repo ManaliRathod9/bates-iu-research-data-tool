@@ -2,7 +2,7 @@ export const structure = {
   categories: [
     {
       name: "Lab Tasks",
-      children: ["Mother Tasks", "Child Tasks"],
+      children: ["Mother Tasks", "Child Tasks", "Mother / Child Tasks"],
     },
     {
       name: "Questionnaires",
@@ -21,7 +21,12 @@ export const structure = {
   ],
 
   tasksByCategory: {
-    "Mother Tasks": ["Mother Executive Function Tests"],
+    "Mother Tasks": [
+      "Mother Executive Function Tests",
+      "Parental Control",
+      "Parent Sensitivity / Intrusiveness",
+      "Shipley Parent Cognition"
+    ],
     "Child Tasks": [
       "Bird Alligator",
       "Compliments",
@@ -29,7 +34,6 @@ export const structure = {
       "Fruit Stroop",
       "Grass Snow",
       "Gift Delay",
-      "Parental Control",
       "Snack Delay",
       "Stop-Go",
       "Sustained Attention",
@@ -38,13 +42,17 @@ export const structure = {
       "Walk a Line",
       "Whisper",
     ],
+    "Mother / Child Tasks": [
+      "Child Behavior FP",
+      "Maternal Leave Taking",
+      "Parent Positive Affect",
+    ],
 
     "Mother Questionnaires": [
       "Adult Temperament Questionnaire",
       "BRIEF-A (Behavior Rating Inventory of Executive Function – Adult Version)",
       "Changes + Adjustments Questionnaire",
       "Child Behavior Checklist",
-      "Child Behavior FP",
       "Child Behavior Questionnaire",
       "Child-Rearing Practices Report",
       "Children's Sleep Habits Questionnaire",
@@ -52,9 +60,7 @@ export const structure = {
       "Depression Scale",
       "DIFFER Cognitive Ability",
       "Eyberg Child Behavior Inventory",
-      "Parent Positive Affect",
       "Physical Health Status Inventory",
-      "Shipley Parent Cognition",
     ],
     "Secondary Caregiver Questionnaires": [
       "Teacher Questionnaires",
