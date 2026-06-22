@@ -32,12 +32,19 @@ const taskToVarMap = {
   "Main Sleep Variables": "sleep",
   "Home Scale Items": "home",
   "Observer Ratings": "obs",
-  "Parent Positive Affect": "ppa",
+  "Parent Positive Affect": "parentpositive",
   "Sleep Diary – Child": "sdc",
   "Gift Delay": "gift",
   "Stop-Go": "stop",
-  "Toy Frustration": "toy",
+  "Toy Frustration": "toyfrustration",
   "Child Behavior FP": "cbfp",
+  "Child Positive Affect": "childpositivetoy",
+  "Child Negative Affect": "childnegativetoy",
+  "Broken Toy Related": "brokentoy",
+  "Child Compliance / Toy Clean Up": "childcompliancetoycleanup",
+  "Toy Prohibition": "childbehaviortoyprohibition",
+  "Child Demand / Toy Prohibition": "childdemandtoyprohibition",
+  "Other Related Toy Variables": "toy",
 };
 
 export const getCorrectTasksForVariable = (v) => {
@@ -69,11 +76,11 @@ export const getCorrectTasksForVariable = (v) => {
   }
 
   if (vLower.startsWith("parentalcontroltoycleanup")) {
-    return ["Toy Frustration", "Parental Control"];
+    return ["Parental Control"];
   }
 
   if (vLower.startsWith("parentpositivetoycleanup")) {
-    return ["Toy Frustration", "Parent Positive Affect"];
+    return ["Parent Positive Affect"];
   }
 
   // Sleep observation counts (Observer Ratings vs Main Sleep Variables)
@@ -228,18 +235,36 @@ export const getCorrectTasksForVariable = (v) => {
     return ["Maternal Leave Taking"];
   }
 
-  if (
-    vLower.startsWith("toyfrustration") ||
-    vLower.startsWith("brokentoy") ||
-    vLower.startsWith("childcompliancetoycleanup") ||
-    vLower.startsWith("childbehaviortoyprohibition") ||
-    vLower.startsWith("childpositivetoy") ||
-    vLower.startsWith("childnegativetoy") ||
-    vLower.startsWith("childdemandtoyprohibition") ||
-    vLower.startsWith("toy") ||
-    vLower.includes("toy")
-  ) {
+  if (vLower.startsWith("childpositivetoy")) {
+    return ["Child Positive Affect"];
+  }
+
+  if (vLower.startsWith("childnegativetoy")) {
+    return ["Child Negative Affect"];
+  }
+
+  if (vLower.startsWith("brokentoy")) {
+    return ["Broken Toy Related"];
+  }
+
+  if (vLower.startsWith("childcompliancetoycleanup")) {
+    return ["Child Compliance / Toy Clean Up"];
+  }
+
+  if (vLower.startsWith("childbehaviortoyprohibition")) {
+    return ["Toy Prohibition"];
+  }
+
+  if (vLower.startsWith("childdemandtoyprohibition")) {
+    return ["Child Demand / Toy Prohibition"];
+  }
+
+  if (vLower.startsWith("toyfrustration")) {
     return ["Toy Frustration"];
+  }
+
+  if (vLower.startsWith("toy") || vLower.includes("toy")) {
+    return ["Other Related Toy Variables"];
   }
 
   if (vLower.startsWith("parentalcontrol")) {
@@ -380,33 +405,6 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
     const l1 = "Toy Frustration Task";
     if (vLower.startsWith("toyfrustration")) {
       return { l1Category: l1, l2Timepoint: "Toy Frustration Variables" };
-    }
-    if (vLower.startsWith("brokentoy")) {
-      return { l1Category: l1, l2Timepoint: "Broken Toy Related" };
-    }
-    if (vLower.startsWith("childcompliancetoycleanup")) {
-      return { l1Category: l1, l2Timepoint: "Child Compliance / Toy Clean Up" };
-    }
-    if (vLower.startsWith("childbehaviortoyprohibition")) {
-      return { l1Category: l1, l2Timepoint: "Toy Prohibition" };
-    }
-    if (vLower.startsWith("childpositivetoy")) {
-      return { l1Category: l1, l2Timepoint: "Child Positive Affect" };
-    }
-    if (vLower.startsWith("childnegativetoy")) {
-      return { l1Category: l1, l2Timepoint: "Child Negative Affect" };
-    }
-    if (vLower.startsWith("parentpositivetoycleanup")) {
-      return { l1Category: l1, l2Timepoint: "Parent Positive Affect" };
-    }
-    if (vLower.startsWith("parentalcontroltoycleanup")) {
-      return { l1Category: l1, l2Timepoint: "Parental Control" };
-    }
-    if (vLower.startsWith("childdemandtoyprohibition")) {
-      return { l1Category: l1, l2Timepoint: "Child Demand / Toy Prohibition" };
-    }
-    if (vLower.startsWith("toy") || vLower.includes("toy")) {
-      return { l1Category: l1, l2Timepoint: "Other Related Toy Variables" };
     }
     return { l1Category: "Needs Review / Other Related Variables", l2Timepoint: "Other" };
   }
@@ -954,7 +952,7 @@ const VariableDescription = ({
                           </span>
                           <span>
                             {selectedTask === "Bird Alligator" ? "📅 " : "📁 "}
-                            {l2Timepoint}
+                            {l2Timepoint === "Mean" ? "Composites" : l2Timepoint}
                           </span>
                         </div>
                         <span
