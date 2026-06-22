@@ -39,12 +39,19 @@ const taskToVarMap = {
   "Main Sleep Variables": "sleep",
   "Home Scale Items": "home",
   "Observer Ratings": "obs",
-  "Parent Positive Affect": "ppa",
+  "Parent Positive Affect": "parentpositive",
   "Sleep Diary – Child": "sdc",
   "Gift Delay": "gift",
   "Stop-Go": "stop",
-  "Toy Frustration": "toy",
+  "Toy Frustration": "toyfrustration",
   "Child Behavior FP": "cbfp",
+  "Child Positive Affect": "childpositivetoy",
+  "Child Negative Affect": "childnegativetoy",
+  "Broken Toy Related": "brokentoy",
+  "Child Compliance / Toy Clean Up": "childcompliancetoycleanup",
+  "Toy Prohibition": "childbehaviortoyprohibition",
+  "Child Demand / Toy Prohibition": "childdemandtoyprohibition",
+  "Other Related Toy Variables": "toy",
 };
 
 // Task descriptions — add entries here as needed

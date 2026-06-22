@@ -23,22 +23,29 @@ export const structure = {
   tasksByCategory: {
     "Mother Tasks": [
       "Mother Executive Function Tests",
-      "Parental Control",
-      "Parent Sensitivity / Intrusiveness",
       "Shipley Parent Cognition"
     ],
     "Child Tasks": [
       "Bird Alligator",
+      "Broken Toy Related",
+      "Child Compliance / Toy Clean Up",
+      "Child Demand / Toy Prohibition",
+      "Child Negative Affect",
+      "Child Positive Affect",
       "Compliments",
       "Door Opening",
       "Fruit Stroop",
       "Grass Snow",
       "Gift Delay",
+      "Other Related Toy Variables",
+      "Parent Positive Affect",
+      "Parental Control",
       "Snack Delay",
       "Stop-Go",
       "Sustained Attention",
       "Token Sort",
       "Toy Frustration",
+      "Toy Prohibition",
       "Walk a Line",
       "Whisper",
     ],
@@ -46,6 +53,8 @@ export const structure = {
       "Child Behavior FP",
       "Maternal Leave Taking",
       "Parent Positive Affect",
+      "Parental Control",
+      "Parent Sensitivity / Intrusiveness",
     ],
 
     "Mother Questionnaires": [

@@ -322,4 +322,84 @@ export const variableDescriptions = {
   "fruitStroopAvg42": "Average of small & large fruit trials; mean of fruitStroopSmall & fruitStroopLarge (42 months)",
   "fruitStroopAvg54": "Average of small & large fruit trials; mean of fruitStroopSmall & fruitStroopLarge (54 months)",
 
+  "complimentsChildPresent30": "Compliments - Other Child Present? (30 months)",
+  "complimentsChildPresent36": "Compliments - Other Child Present? (36 months)",
+  "complimentsChildPresent42": "Compliments - Other Child Present? (42 months)",
+  "complimentsChildPresent54": "Compliments - Other Child Present? (54 months)",
+
+  "complimentsParentPresent30": "Compliments - Parent Present? (30 months)",
+  "complimentsParentPresent36": "Compliments - Parent Present? (36 months)",
+  "complimentsParentPresent42": "Compliments - Parent Present? (42 months)",
+  "complimentsParentPresent54": "Compliments - Parent Present? (54 months)",
+
+  "complimentsEmbarrassment30": "Did the child show any signs of embarrassment? (all 3 behaviors present) (30 months)",
+  "complimentsEmbarrassment36": "Did the child show any signs of embarrassment? (all 3 behaviors present) (36 months)",
+  "complimentsEmbarrassment42": "Did the child show any signs of embarrassment? (all 3 behaviors present) (42 months)",
+  "complimentsEmbarrassment54": "Did the child show any signs of embarrassment? (all 3 behaviors present) (54 months)",
+
+  "complimentsShame30": "Did the child show any signs of shame? (3 of 5 behaviors present) (30 months)",
+  "complimentsShame36": "Did the child show any signs of shame? (3 of 5 behaviors present) (36 months)",
+  "complimentsShame42": "Did the child show any signs of shame? (3 of 5 behaviors present) (42 months)",
+  "complimentsShame54": "Did the child show any signs of shame? (3 of 5 behaviors present) (54 months)",
+
+  "complimentsPride30": "Did the child show any signs of pride? (3 of 5 behaviors present) (30 months)",
+  "complimentsPride36": "Did the child show any signs of pride? (3 of 5 behaviors present) (36 months)",
+  "complimentsPride42": "Did the child show any signs of pride? (3 of 5 behaviors present) (42 months)",
+  "complimentsPride54": "Did the child show any signs of pride? (3 of 5 behaviors present) (54 months)",
+
+  "complimentsSelfAwareness30": "Description: Mean of Embarrassment, Shame, and Pride.\n\nComputation: Mean(complimentsEmbarrassment30, complimentsShame30, complimentsPride30)",
+  "complimentsSelfAwareness36": "Description: Mean of Embarrassment, Shame, and Pride.\n\nComputation: Mean(complimentsEmbarrassment36, complimentsShame36, complimentsPride36)",
+  "complimentsSelfAwareness42": "Description: Mean of Embarrassment, Shame, and Pride.\n\nComputation: Mean(complimentsEmbarrassment42, complimentsShame42, complimentsPride42)",
+  "complimentsSelfAwareness54": "Description: Mean of Embarrassment, Shame, and Pride.\n\nComputation: Mean(complimentsEmbarrassment54, complimentsShame54, complimentsPride54)",
+
+  "grassSnowChildPresent30": "Grass Snow - Other Child Present? (30 months)",
+  "grassSnowChildPresent36": "Grass Snow - Other Child Present? (36 months)",
+  "grassSnowChildPresent42": "Grass Snow - Other Child Present? (42 months)",
+  "grassSnowChildPresent54": "Grass Snow - Other Child Present? (54 months)",
+
+  "grassSnowParentPresent30": "Grass Snow - Parent Present? (30 months)",
+  "grassSnowParentPresent36": "Grass Snow - Parent Present? (36 months)",
+  "grassSnowParentPresent42": "Grass Snow - Parent Present? (42 months)",
+  "grassSnowParentPresent54": "Grass Snow - Parent Present? (54 months)",
+
+  "grassSnowTotal30": "Sum of all Grass Snow trial scores across 14 trials (30 months)",
+  "grassSnowTotal36": "Sum of all Grass Snow trial scores across 14 trials (36 months)",
+  "grassSnowTotal42": "Sum of all Grass Snow trial scores across 14 trials (42 months)",
+  "grassSnowTotal54": "Sum of all Grass Snow trial scores across 14 trials (54 months)",
+
+  "grassSnowAvg30": "Average score across Grass Snow trials; grassSnowTotal / grassSnowTotalTrialsPlayed (30 months)",
+  "grassSnowAvg36": "Average score across Grass Snow trials; grassSnowTotal / grassSnowTotalTrialsPlayed (36 months)",
+  "grassSnowAvg42": "Average score across Grass Snow trials; grassSnowTotal / grassSnowTotalTrialsPlayed (42 months)",
+  "grassSnowAvg54": "Average score across Grass Snow trials; grassSnowTotal / grassSnowTotalTrialsPlayed (54 months)",
+
+  "giftDelayLatency30": "Latency mean; mean of latency variables (30 months)",
+  "giftDelayLatency36": "Latency mean; mean of latency variables (36 months)",
+  "giftDelayLatency42": "Latency mean; mean of latency variables (42 months)",
+  "giftDelayLatency54": "Latency mean; mean of latency variables (54 months)",
+
+  "giftDelayScore30": "Gift Delay overall composite score (30 months)",
+  "giftDelayScore36": "Gift Delay overall composite score (36 months)",
+  "giftDelayScore42": "Gift Delay overall composite score (42 months)",
+  "giftDelayScore54": "Gift Delay overall composite score (54 months)",
+
+  "giftDelayLatencyToTouchBag30": "Latency before first instance of touching bag (seconds) (30 months)",
+  "giftDelayLatencyToTouchBag36": "Latency before first instance of touching bag (seconds) (36 months)",
+  "giftDelayLatencyToTouchBag42": "Latency before first instance of touching bag (seconds) (42 months)",
+  "giftDelayLatencyToTouchBag54": "Latency before first instance of touching bag (seconds) (54 months)",
+
+  "giftDelayLatencyToOpenBag30": "Latency before first instance of opening/peeking in bag (seconds) (30 months)",
+  "giftDelayLatencyToOpenBag36": "Latency before first instance of opening/peeking in bag (seconds) (36 months)",
+  "giftDelayLatencyToOpenBag42": "Latency before first instance of opening/peeking in bag (seconds) (42 months)",
+  "giftDelayLatencyToOpenBag54": "Latency before first instance of opening/peeking in bag (seconds) (54 months)",
+
+  "giftDelayLatencyToHandInBag30": "Latency before first instance of putting hand in bag (seconds) (30 months)",
+  "giftDelayLatencyToHandInBag36": "Latency before first instance of putting hand in bag (seconds) (36 months)",
+  "giftDelayLatencyToHandInBag42": "Latency before first instance of putting hand in bag (seconds) (42 months)",
+  "giftDelayLatencyToHandInBag54": "Latency before first instance of putting hand in bag (seconds) (54 months)",
+
+  "giftDelayLatencyToPullGiftFromBag30": "Latency before first instance of pulling gift from bag (seconds) (30 months)",
+  "giftDelayLatencyToPullGiftFromBag36": "Latency before first instance of pulling gift from bag (seconds) (36 months)",
+  "giftDelayLatencyToPullGiftFromBag42": "Latency before first instance of pulling gift from bag (seconds) (42 months)",
+  "giftDelayLatencyToPullGiftFromBag54": "Latency before first instance of pulling gift from bag (seconds) (54 months)",
+
 };
