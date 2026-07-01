@@ -18,6 +18,7 @@ export const structure = {
     },
     { name: "Actigraphy" },
     { name: "Sleep Measures" },
+    { name: "EEG Variables" },
   ],
 
   tasksByCategory: {
@@ -83,5 +84,7 @@ export const structure = {
     Actigraphy: ["Main Sleep Variables"],
 
     "Sleep Measures": ["Sleep Diary – Child"],
+
+    "EEG Variables": ["EEG Bird Alligator"],
   },
 };
