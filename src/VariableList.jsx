@@ -45,6 +45,7 @@ const taskToVarMap = {
   "Toy Prohibition": "childbehaviortoyprohibition",
   "Child Demand / Toy Prohibition": "childdemandtoyprohibition",
   "Other Related Toy Variables": "toy",
+  "EEG Bird Alligator": "eegbirdalligator",
 };
 
 export const getCorrectTasksForVariable = (v) => {
@@ -273,6 +274,10 @@ export const getCorrectTasksForVariable = (v) => {
 
   if (vLower.startsWith("fruitstroop")) {
     return ["Fruit Stroop"];
+  }
+
+  if (vLower.includes("eegbirdalligator")) {
+    return ["EEG Bird Alligator"];
   }
 
   if (vLower.startsWith("birdalligator")) {
@@ -542,10 +547,7 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
 
   // 10. Bird Alligator (Original grouping)
   if (selectedTask === "Bird Alligator") {
-    let l1 = "Bird Alligator Task Variables";
-    if (vLower.includes("eegbirdalligator")) {
-      l1 = "EEG Bird Alligator Variables";
-    }
+    const l1 = "Bird Alligator Task Variables";
 
     let l2 = "Other";
     if (vLower.endsWith("30")) l2 = "Age 30";
@@ -555,6 +557,18 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
     else if (vLower.endsWith("mean")) l2 = "Mean";
 
     return { l1Category: l1, l2Timepoint: l2 };
+  }
+
+  // EEG Bird Alligator (new EEG Variables category task)
+  if (selectedTask === "EEG Bird Alligator") {
+    let l2 = "Other";
+    if (vLower.endsWith("30")) l2 = "Age 30";
+    else if (vLower.endsWith("36")) l2 = "Age 36";
+    else if (vLower.endsWith("42")) l2 = "Age 42";
+    else if (vLower.endsWith("54")) l2 = "Age 54";
+    else if (vLower.endsWith("mean")) l2 = "Mean";
+
+    return { l1Category: "EEG Bird Alligator Variables", l2Timepoint: l2 };
   }
 
   if (selectedTask === "Adult Temperament Questionnaire") {

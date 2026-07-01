@@ -52,6 +52,7 @@ const taskToVarMap = {
   "Toy Prohibition": "childbehaviortoyprohibition",
   "Child Demand / Toy Prohibition": "childdemandtoyprohibition",
   "Other Related Toy Variables": "toy",
+  "EEG Bird Alligator": "eegbirdalligator",
 };
 
 // Task descriptions — add entries here as needed
