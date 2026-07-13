@@ -8,7 +8,6 @@ import VariableDescription, {
   countDisplayedVariables,
 } from "./VariableList";
 
-// Mapping of Tasks to their respective variable prefixes/keywords
 const taskToVarMap = {
   "Bird Alligator": "birdalligator",
   "Grass Snow": "grasssnow",
@@ -55,10 +54,7 @@ const taskToVarMap = {
   "EEG Bird Alligator": "eegbirdalligator",
 };
 
-// Task descriptions — add entries here as needed
 const taskDescriptions = {
-  // ── Child Tasks ───────────────────────────────────────────────────────────
-
   "Bird Alligator": `Bird-alligator is an inhibitory control measure in which children are asked to follow the directions delivered by a bird puppet (go trials) and not follow the directions delivered by an alligator puppet (no-go trials). For the youngest children, there are twelve test trials. Older children have the same initial twelve test trials followed by another twelve trials with a rule switch (do what the alligator says). All children are given enough practice go and no-go trials to correctly respond to each type of command multiple times, indicating they understand the rules.\n\nCoded behaviors for each trial (go and no-go) are as follows:\n\n• No movement: child does not move in response to puppet's command.\n• Wrong movement: child performs a movement that was not commanded by the puppet.\n• Partial movement: child starts to perform the commanded movement and then stops and does not finish the movement.\n• Full movement: child fully performs the commanded movement.\n\nEach trial is also coded based on whether the child's response was delayed by at least two seconds.\n\nTrials are not codeable if the child is not actively playing, if the experimenter shows the child how to do an action and the child repeats it (imitation), or if the child is physically restrained from performing actions or is physically helped to perform the action.`,
 
   "Broken Toy": `Broken toy is an emotion regulation measure in which the child is given a toy that the experimenter explains is her favorite. When the experimenter gives the child the toy, the toy falls apart and the experimenter says several verbal cues in succession: "Uh oh!" "What happened?" and "That was my favorite toy…" all while feigning "sad" affect. The task ends when the experimenter suggests how to fix the toy and offers help to the child. The task is coded for three constructs on scales from 1 to 5.\n\nThe three constructs are as follows:\n\n1. Child's distress: the level of distress exhibited by the child immediately following the toy breaking.\n2. Comprehension of another's distress: the level of distress exhibited by the child after the experimenter says "uh oh!" and "What happened?"\n\nScale for constructs 1 & 2:\n• 1 – No distress, or shows positive affect\n• 2 – Slight attention or slight concern (e.g. brow furrowing)\n• 3 – Strong facial concern (e.g. frowning, surprised/shocked face)\n• 4 – Distressed vocalization (e.g. "Oh no! I broke it!")\n• 5 – High distress (e.g. crying)\n\n3. Prosocial behavior: the most prosocial solution offered by the child to fix the broken toy, whenever it occurs.\n\nScale for construct 3:\n• 1 – No solution offered\n• 2 – "You can fix it" (someone other than the child, like the experimenter)\n• 3 – The child attempts to fix the toy\n• 4 – "We can fix it" (verbal solution including child and experimenter)\n• 5 – "I can fix it" (verbal solution including the child)`,
@@ -99,23 +95,16 @@ const taskDescriptions = {
 
   Whisper: `Whisper is a motor inhibition measure in which the child is shown 12 images of cartoon characters and asked to whisper their name. If they don't know the name of the character, they are instructed to whisper, "I don't know" instead. The child is asked to whisper prior to the task to make sure they understand the rules and is given a rule reminder half-way through the task.\n\nCoded behaviors are as follows:\n\n• 3: the child whispers\n• 2: the child doesn't speak or respond\n• 1: the child speaks in a normal voice/volume\n• 0: the child shouts or responds loudly/aggressively`,
 
-  // ── Mother Tasks ──────────────────────────────────────────────────────────
-
   "Mother Executive Function Tests": `Mothers completed three standard executive function tasks on a computer: Tower of Hanoi (Davis & Klebe, 2001), Wisconsin Card Sort (Heaton & PAR Staff, 2003), and Stroop Color-Word (Stroop, 1935). The mothers additionally completed a backward digit span task while face to face with a research assistant who recorded their responses on a score sheet.\n\nTower of Hanoi involved using a mouse to move three disks of different sizes to a target peg, keeping the original order and following two rules: only one disk could be moved each turn, and larger disks could not be placed on smaller disks. Time to completion was used as the score for the task.\n\nFor the Wisconsin Card Sort task, mothers were presented with computer images of four stimulus cards with different colors, quantities, and shapes and were asked to match a stack of cards according to a matching rule (i.e., either by color, quantity or shape). The matching rule changed without warning, and the participant had to infer the new rule based on feedback from the computer.\n\nFor the Stroop task, mothers selected a keyboard key representing various colors. The task involved four blocks of 20 trials each: (1) select color key corresponding to the name of the color written in black ink; (2) select color key corresponding to the ink color of the matching color word (congruent condition); (3) select color key corresponding to ink color of a nonmatching color word (incongruent condition); and (4) select color key based on the ink color of a matching or nonmatching color word (mixed condition).\n\nFor backward digit span, an experimenter directly faced the participant and read a random sequence of single-digit numbers (0–9) at a rate of one digit per second, and the participant attempted to reproduce the sequence in reverse. Each participant was given two chances to correctly reproduce the sequence in reverse, and the task ended when the participant got two consecutive sequences wrong.`,
-
-  // ── Questionnaires ────────────────────────────────────────────────────────
 
   "Parent Positive Affect": `Parent positive affect is coded for all parent-child interaction tasks: Free Play, Phone Call, and Toy Cleanup. Each task lasts a maximum of five minutes and is coded in 15-second intervals.\n\nCoded behaviors are as follows:\n\n• No positive: there are no clear signs of positive affect, though mood may be pleasant. Parent is generally neutral in facial expression.\n• Low positive: small smiles, light laughter — an obvious increase from the neutral baseline, but no clear "full blown joy" is present.\n• High positive: smiling broadly with cheeks raised high, eyes are crinkled, hearty laughter, or otherwise extreme positivity or excitement.\n• Uncodeable: the parent's face or expression is not visible for at least half the interval, or the parent's emotional state cannot be heard (e.g. laughter).`,
 };
 
-// CSV cell escaping
 function csvCell(value) {
-  // convert NA/null/undefined -> empty cell
   if (value === "NA" || value === null || value === undefined) return "";
 
   const str = String(value);
 
-  // If contains special chars, wrap in quotes + escape quotes
   if (/[",\r\n]/.test(str)) {
     return `"${str.replace(/"/g, '""')}"`;
   }

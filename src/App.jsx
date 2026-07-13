@@ -35,7 +35,25 @@ function App() {
   const [updateTimestamp, setUpdateTimestamp] = useState("");
   const [view, setView] = useState("landing");
   const [csvData, setCsvData] = useState([]);
+  const [pathCopied, setPathCopied] = useState(false);
+  const [copiedField, setCopiedField] = useState(null);
+  const [hoveredField, setHoveredField] = useState(null);
   const fileInputRef = useRef(null);
+
+  const serverPath =
+    "Lab > bateslab > Lab Member User Folders > Manali_R > Final_Code_File > bates-ui";
+
+  const handleCopyServerPath = () => {
+    navigator.clipboard.writeText(serverPath);
+    setPathCopied(true);
+    setTimeout(() => setPathCopied(false), 2000);
+  };
+
+  const handleCopyField = (field, value) => {
+    navigator.clipboard.writeText(value);
+    setCopiedField(field);
+    setTimeout(() => setCopiedField(null), 2000);
+  };
 
   useEffect(() => {
     document.documentElement.setAttribute(
@@ -77,7 +95,6 @@ function App() {
 
   return (
     <div className="appShell">
-      {/* Hidden File Input */}
       <input
         type="file"
         ref={fileInputRef}
@@ -86,7 +103,6 @@ function App() {
         onChange={handleFileUpload}
       />
 
-      {/* Header */}
       <header
         style={{
           display: "flex",
@@ -126,7 +142,6 @@ function App() {
         </div>
       </header>
 
-      {/* Main Content Area */}
       <main
         className="mainArea"
         style={{
@@ -172,7 +187,6 @@ function App() {
                 width: "100%",
               }}
             >
-              {/* Card 1: Server Access */}
               <div
                 className="glass-panel"
                 style={{
@@ -196,9 +210,14 @@ function App() {
                 >
                   Mac & Windows Login Instructions
                 </button>
+                <button
+                  className="btn"
+                  onClick={() => setActiveModal("serverPath")}
+                >
+                  Server Path
+                </button>
               </div>
 
-              {/* Card 2: Locate your Data File */}
               <div
                 className="glass-panel"
                 style={{
@@ -244,7 +263,6 @@ function App() {
                 </p>
               </div>
 
-              {/* Card 3: Upload Your Data */}
               <div
                 className="glass-panel"
                 style={{
@@ -303,7 +321,6 @@ function App() {
         )}
       </main>
 
-      {/* Modals */}
       <Modal
         isOpen={activeModal === "updates"}
         onClose={() => setActiveModal(null)}
@@ -345,8 +362,30 @@ function App() {
           <h3 style={{ color: "var(--text-primary)", marginTop: 0 }}>Mac OS</h3>
           <ol>
             <li>Finder &gt; Go &gt; Connect to Server (Cmd+K)</li>
-            <li>
-              Enter: <code>smb://bates-lab-server.local</code>
+            <li
+              onMouseEnter={() => setHoveredField("mac")}
+              onMouseLeave={() => setHoveredField(null)}
+              style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}
+            >
+              <span>
+                Enter: <code>smb://bl-psy-srv.ads.iu.edu</code>
+              </span>
+              <button
+                className="btn"
+                style={{
+                  padding: "0.15rem 0.6rem",
+                  fontSize: "0.75rem",
+                  visibility:
+                    hoveredField === "mac" || copiedField === "mac"
+                      ? "visible"
+                      : "hidden",
+                }}
+                onClick={() =>
+                  handleCopyField("mac", "smb://bl-psy-srv.ads.iu.edu")
+                }
+              >
+                {copiedField === "mac" ? "Copied" : "Copy"}
+              </button>
             </li>
             <li>Enter your credentials when prompted.</li>
           </ol>
@@ -355,11 +394,50 @@ function App() {
           <ol>
             <li>Open File Explorer.</li>
             <li>Right-click "This PC" &gt; Map network drive.</li>
-            <li>
-              Folder: <code>\\bates-lab-server.local\share</code>
+            <li
+              onMouseEnter={() => setHoveredField("windows")}
+              onMouseLeave={() => setHoveredField(null)}
+              style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}
+            >
+              <span>
+                Folder: <code>\\bl-psy-srv.ads.iu.edu</code>
+              </span>
+              <button
+                className="btn"
+                style={{
+                  padding: "0.15rem 0.6rem",
+                  fontSize: "0.75rem",
+                  visibility:
+                    hoveredField === "windows" || copiedField === "windows"
+                      ? "visible"
+                      : "hidden",
+                }}
+                onClick={() =>
+                  handleCopyField("windows", "\\\\bl-psy-srv.ads.iu.edu")
+                }
+              >
+                {copiedField === "windows" ? "Copied" : "Copy"}
+              </button>
             </li>
             <li>Check "Connect using different credentials" and Finish.</li>
           </ol>
+        </div>
+      </Modal>
+
+      <Modal
+        isOpen={activeModal === "serverPath"}
+        onClose={() => setActiveModal(null)}
+        title="Server Path"
+      >
+        <div style={{ lineHeight: "1.6", color: "var(--text-secondary)" }}>
+          <code style={{ display: "block" }}>{serverPath}</code>
+          <button
+            className="btn"
+            style={{ marginTop: "1rem" }}
+            onClick={handleCopyServerPath}
+          >
+            {pathCopied ? "Copied" : "Copy"}
+          </button>
         </div>
       </Modal>
     </div>
