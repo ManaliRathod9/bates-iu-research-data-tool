@@ -84,7 +84,6 @@ export const getCorrectTasksForVariable = (v) => {
     return ["Parent Positive Affect"];
   }
 
-  // Sleep observation counts (Observer Ratings vs Main Sleep Variables)
   if (
     vLower === "downnumobs" || vLower === "upnumobs" || vLower === "truesleepnumobs" || vLower === "napnumobs" ||
     vLower === "downshorttime" || vLower === "upshorttime" || vLower === "truesleepshorttime" || vLower === "napshorttime" ||
@@ -94,7 +93,6 @@ export const getCorrectTasksForVariable = (v) => {
     return ["Main Sleep Variables", "Observer Ratings"];
   }
 
-  // Sleep Diary – Child (primary for sleep diary variables)
   if (vLower.includes("sdchild")) {
     return ["Sleep Diary – Child"];
   }
@@ -164,7 +162,6 @@ export const getCorrectTasksForVariable = (v) => {
     return ["Child Behavior Questionnaire"];
   }
 
-  // Depression Scale (ONLY cesdDepressiveSymptoms and cesdDepressionDiagnosis)
   if (vLower.startsWith("cesddepressivesymptoms") || vLower.startsWith("cesddepressiondiagnosis")) {
     return ["Depression Scale"];
   }
@@ -195,7 +192,7 @@ export const getCorrectTasksForVariable = (v) => {
   if (
     vLower.startsWith("homescaleitems") ||
     vLower.startsWith("homebehaviorscale") ||
-    vLower.startsWith("blh") || // blh, blhc, blhcOutdoorSum
+    vLower.startsWith("blh") ||
     vLower.startsWith("hv2securityhomeenvironment") ||
     vLower.startsWith("preschooldemographicssibling") ||
     vLower.startsWith("firsthomevisitdate") ||
@@ -383,7 +380,6 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
   const v = variableName.trim();
   const vLower = v.toLowerCase();
 
-  // 1. Compliments
   if (selectedTask === "Compliments") {
     const isComplimentVar =
       vLower.startsWith("complimentschildpresent") ||
@@ -398,31 +394,11 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
       else if (vLower.endsWith("36")) l2 = "Age 36";
       else if (vLower.endsWith("42")) l2 = "Age 42";
       else if (vLower.endsWith("54")) l2 = "Age 54";
-      // No mean suffix for compliments variables per spec
       return { l1Category: "Compliments Task Variables", l2Timepoint: l2 };
     }
-    // Anything else goes to review group
     return { l1Category: "Needs Review / Other Related Variables", l2Timepoint: "Other" };
   }
 
-  // 2. Toy Frustration
-  if (selectedTask === "Toy Frustration") {
-    const l1 = "Toy Frustration Task";
-    if (vLower.startsWith("toyfrustration")) {
-      return { l1Category: l1, l2Timepoint: "Toy Frustration Variables" };
-    }
-    return { l1Category: "Needs Review / Other Related Variables", l2Timepoint: "Other" };
-  }
-
-  // 3. Parental Control
-  if (selectedTask === "Parental Control") {
-    if (vLower.startsWith("parentalcontrol") || vLower.startsWith("parentalcontroltoycleanup")) {
-      return { l1Category: "Parental Control Task", l2Timepoint: "Parental Control Variables" };
-    }
-    return { l1Category: "Needs Review / Other Related Variables", l2Timepoint: "Other" };
-  }
-
-  // 4. Mother Executive Function Tests
   if (selectedTask === "Mother Executive Function Tests") {
     const l1 = "Mother Executive Function Tests";
     if (vLower.startsWith("brief")) {
@@ -440,7 +416,6 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
     return { l1Category: "Needs Review / Other Related Variables", l2Timepoint: "Other" };
   }
 
-  // 5. DIFFER Cognitive Ability
   if (selectedTask === "DIFFER Cognitive Ability") {
     const l1 = "DIFFER Cognitive Ability";
     if (vLower.startsWith("oddball")) {
@@ -461,7 +436,6 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
     return { l1Category: "Needs Review / Other Related Variables", l2Timepoint: "Other" };
   }
 
-  // 6. Home Scale Items
   if (selectedTask === "Home Scale Items") {
     const l1 = "Home Scale Items";
     if (vLower.startsWith("homescaleitems")) {
@@ -485,7 +459,6 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
     return { l1Category: "Needs Review / Other Related Variables", l2Timepoint: "Other" };
   }
 
-  // 7. Observer Ratings
   if (selectedTask === "Observer Ratings") {
     const l1 = "Observer Ratings";
     if (
@@ -502,7 +475,6 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
     return { l1Category: "Needs Review / Other Related Variables", l2Timepoint: "Other" };
   }
 
-  // 8. Shipley Parent Cognition
   if (selectedTask === "Shipley Parent Cognition") {
     const l1 = "Shipley Parent Cognition";
     if (vLower.startsWith("shipley")) {
@@ -514,7 +486,6 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
     return { l1Category: "Needs Review / Other Related Variables", l2Timepoint: "Other" };
   }
 
-  // 9. Main Sleep Variables (Actigraphy)
   if (selectedTask === "Main Sleep Variables") {
     const l1 = "Main Sleep Variables";
     const isColeKripke = vLower.includes("cole") || vLower.includes("kripke");
@@ -545,7 +516,6 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
     return { l1Category: l1, l2Timepoint: "Summary Sleep Domains" };
   }
 
-  // 10. Bird Alligator (Original grouping)
   if (selectedTask === "Bird Alligator") {
     const l1 = "Bird Alligator Task Variables";
 
@@ -559,7 +529,6 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
     return { l1Category: l1, l2Timepoint: l2 };
   }
 
-  // EEG Bird Alligator (new EEG Variables category task)
   if (selectedTask === "EEG Bird Alligator") {
     let l2 = "Other";
     if (vLower.endsWith("30")) l2 = "Age 30";
@@ -581,7 +550,6 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
     return { l1Category: l1, l2Timepoint: l2 };
   }
 
-  // Parent Sensitivity / Intrusiveness: group by age, then by Sensitivity / Intrusiveness
   if (selectedTask === "Parent Sensitivity / Intrusiveness") {
     const l1 = `${selectedTask} Task Variables`;
     let l2 = "Other";
@@ -594,7 +562,22 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
     return { l1Category: l1, l2Timepoint: l2, l3Group: l3 };
   }
 
-  // 11. Other tasks with age-based suffix grouping
+  if (
+    selectedTask === "Teacher Questionnaires" ||
+    selectedTask === "Parent Positive Affect"
+  ) {
+    const l1 =
+      selectedTask === "Parent Positive Affect"
+        ? "Parent Positive Affect Task Variables"
+        : "Teacher Questionnaires Task";
+    let l2 = "All";
+    if (vLower.endsWith("30")) l2 = "Age 30";
+    else if (vLower.endsWith("36")) l2 = "Age 36";
+    else if (vLower.endsWith("42")) l2 = "Age 42";
+    else if (vLower.endsWith("54")) l2 = "Age 54";
+    return { l1Category: l1, l2Timepoint: l2 };
+  }
+
   const ageTasks = [
     "Grass Snow",
     "Fruit Stroop",
@@ -607,6 +590,14 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
     "Walk a Line",
     "Whisper",
     "Maternal Leave Taking",
+    "Broken Toy Related",
+    "Child Compliance / Toy Clean Up",
+    "Child Demand / Toy Prohibition",
+    "Child Negative Affect",
+    "Child Positive Affect",
+    "Parental Control",
+    "Toy Frustration",
+    "Toy Prohibition",
   ];
   if (ageTasks.includes(selectedTask)) {
     const l1 = `${selectedTask} Task Variables`;
@@ -619,7 +610,6 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
     return { l1Category: l1, l2Timepoint: l2 };
   }
 
-  // 11. Door Opening (Original grouping)
   if (selectedTask === "Door Opening") {
     if (vLower.startsWith("dooropening")) {
       return { l1Category: "Door Opening Task Variables", l2Timepoint: "All" };
@@ -629,7 +619,6 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
     return { l1Category: "Other", l2Timepoint: "All" };
   }
 
-  // Default: Return a generic single L1 category
   const defaultL1 = `${selectedTask} Task`;
   return { l1Category: defaultL1, l2Timepoint: "All" };
 };
