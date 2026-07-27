@@ -460,4 +460,56 @@ export const variableDescriptions = {
   "parentalControlToyCleanupNegativeControlP30": "Proportion of coded intervals with negative control during Toy Cleanup task (30 months)",
   "parentalControlToyCleanupNegativeControlPhysicalP30": "Proportion of coded intervals with negative control & physical contact during Toy Cleanup task (30 months)",
 
+  "tokenSortChildPres30": "Token Sort - Other Child Present? (30 months)",
+  "tokenSortParentPres30": "Token Sort - Parent Present? (30 months)",
+  "tokenSortTimeSorting30": "Token Sort - Amount of time child sorts tokens (30 months)",
+
+  "tokenSortChildPres36": "Token Sort - Other Child Present? (36 months)",
+  "tokenSortParentPres36": "Token Sort - Parent Present? (36 months)",
+  "tokenSortTimeSorting36": "Token Sort - Amount of time child sorts tokens (36 months)",
+
+  "tokenSortChildPres42": "Token Sort - Other Child Present? (42 months)",
+  "tokenSortParentPres42": "Token Sort - Parent Present? (42 months)",
+  "tokenSortTimeSorting42": "Token Sort - Amount of time child sorts tokens (42 months)",
+
+  "tokenSortChildPres54": "Token Sort - Other Child Present? (54 months)",
+  "tokenSortParentPres54": "Token Sort - Parent Present? (54 months)",
+  "tokenSortTimeSorting54": "Token Sort - Amount of time child sorts tokens (54 months)",
+
+  "toyFrustrationChildPres30": "Toy Frustration - Other Child Present? (30 months)",
+  "toyFrustrationParentPres30": "Toy Frustration - Parent Present? (30 months)",
+
+  "toyFrustrationChildPres36": "Toy Frustration - Other Child Present? (36 months)",
+  "toyFrustrationParentPres36": "Toy Frustration - Parent Present? (36 months)",
+
+  "toyFrustrationChildPres42": "Toy Frustration - Other Child Present? (42 months)",
+  "toyFrustrationParentPres42": "Toy Frustration - Parent Present? (42 months)",
+
+  "toyFrustrationChildPres54": "Toy Frustration - Other Child Present? (54 months)",
+  "toyFrustrationParentPres54": "Toy Frustration - Parent Present? (54 months)",
+
+  "walkALineChildPres30": "Walk A Line - Other Child Present? (30 months)",
+  "walkALineParentPres30": "Walk A Line - Parent Present? (30 months)",
+
+  "walkALineChildPres36": "Walk A Line - Other Child Present? (36 months)",
+  "walkALineParentPres36": "Walk A Line - Parent Present? (36 months)",
+
+  "walkALineChildPres42": "Walk A Line - Other Child Present? (42 months)",
+  "walkALineParentPres42": "Walk A Line - Parent Present? (42 months)",
+
+  "walkALineChildPres54": "Walk A Line - Other Child Present? (54 months)",
+  "walkALineParentPres54": "Walk A Line - Parent Present? (54 months)",
+
+  "whisperGameChildPres30": "Whisper Game - Other Child Present? (30 months)",
+  "whisperGameParentPres30": "Whisper Game - Parent Present? (30 months)",
+
+  "whisperGameChildPres36": "Whisper Game - Other Child Present? (36 months)",
+  "whisperGameParentPres36": "Whisper Game - Parent Present? (36 months)",
+
+  "whisperGameChildPres42": "Whisper Game - Other Child Present? (42 months)",
+  "whisperGameParentPres42": "Whisper Game - Parent Present? (42 months)",
+
+  "whisperGameChildPres54": "Whisper Game - Other Child Present? (54 months)",
+  "whisperGameParentPres54": "Whisper Game - Parent Present? (54 months)",
+
 };
