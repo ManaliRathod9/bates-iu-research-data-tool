@@ -579,16 +579,10 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
   }
 
   const ageTasks = [
-    "Grass Snow",
-    "Fruit Stroop",
-    "Door Opening",
-    "Gift Delay",
     "Snack Delay",
     "Stop-Go",
     "Sustained Attention",
     "Token Sort",
-    "Walk a Line",
-    "Whisper",
     "Maternal Leave Taking",
     "Broken Toy Related",
     "Child Compliance / Toy Clean Up",
@@ -611,12 +605,91 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
   }
 
   if (selectedTask === "Door Opening") {
-    if (vLower.startsWith("dooropening")) {
-      return { l1Category: "Door Opening Task Variables", l2Timepoint: "All" };
-    } else if (vLower.startsWith("blhcoutdoorsum")) {
-      return { l1Category: "Associated / External Variables", l2Timepoint: "All" };
-    }
-    return { l1Category: "Other", l2Timepoint: "All" };
+    const isComposite =
+      vLower.startsWith("dooropeningcomposite") ||
+      vLower.startsWith("dooropeningrewardsensitivity") ||
+      vLower.startsWith("dooropeningpunishmentsensitivity");
+    const l1 = isComposite ? "Composites" : "Door Opening Task Variables";
+    let l2 = "Other";
+    if (vLower.endsWith("30")) l2 = "Age 30";
+    else if (vLower.endsWith("36")) l2 = "Age 36";
+    else if (vLower.endsWith("42")) l2 = "Age 42";
+    else if (vLower.endsWith("54")) l2 = "Age 54";
+    else if (vLower.endsWith("mean")) l2 = "Mean";
+    return { l1Category: l1, l2Timepoint: l2 };
+  }
+
+  if (selectedTask === "Fruit Stroop") {
+    const isComposite =
+      vLower.startsWith("fruitstroopsmall") ||
+      vLower.startsWith("fruitstrooplarge") ||
+      vLower.startsWith("fruitstroopavg");
+    const l1 = isComposite ? "Composites" : "Fruit Stroop Task Variables";
+    let l2 = "Other";
+    if (vLower.endsWith("30")) l2 = "Age 30";
+    else if (vLower.endsWith("36")) l2 = "Age 36";
+    else if (vLower.endsWith("42")) l2 = "Age 42";
+    else if (vLower.endsWith("54")) l2 = "Age 54";
+    else if (vLower.endsWith("mean")) l2 = "Mean";
+    return { l1Category: l1, l2Timepoint: l2 };
+  }
+
+  if (selectedTask === "Grass Snow") {
+    const isComposite =
+      vLower.startsWith("grasssnowavg") ||
+      (vLower.startsWith("grasssnowtotal") &&
+        !vLower.startsWith("grasssnowtotaltrials"));
+    const l1 = isComposite ? "Composites" : "Grass Snow Task Variables";
+    let l2 = "Other";
+    if (vLower.endsWith("30")) l2 = "Age 30";
+    else if (vLower.endsWith("36")) l2 = "Age 36";
+    else if (vLower.endsWith("42")) l2 = "Age 42";
+    else if (vLower.endsWith("54")) l2 = "Age 54";
+    else if (vLower.endsWith("mean")) l2 = "Mean";
+    return { l1Category: l1, l2Timepoint: l2 };
+  }
+
+  if (selectedTask === "Gift Delay") {
+    const isComposite =
+      vLower.startsWith("giftdelayscore") ||
+      (vLower.startsWith("giftdelaylatency") &&
+        !vLower.startsWith("giftdelaylatencyto"));
+    const l1 = isComposite ? "Composites" : "Gift Delay Task Variables";
+    let l2 = "Other";
+    if (vLower.endsWith("30")) l2 = "Age 30";
+    else if (vLower.endsWith("36")) l2 = "Age 36";
+    else if (vLower.endsWith("42")) l2 = "Age 42";
+    else if (vLower.endsWith("54")) l2 = "Age 54";
+    else if (vLower.endsWith("mean")) l2 = "Mean";
+    return { l1Category: l1, l2Timepoint: l2 };
+  }
+
+  if (selectedTask === "Walk a Line") {
+    const isComposite =
+      vLower.startsWith("walkalineslow") ||
+      vLower.startsWith("walkalineratiobaselineoverslow");
+    const l1 = isComposite ? "Composites" : "Walk a Line Task Variables";
+    let l2 = "Other";
+    if (vLower.endsWith("30")) l2 = "Age 30";
+    else if (vLower.endsWith("36")) l2 = "Age 36";
+    else if (vLower.endsWith("42")) l2 = "Age 42";
+    else if (vLower.endsWith("54")) l2 = "Age 54";
+    else if (vLower.endsWith("mean")) l2 = "Mean";
+    return { l1Category: l1, l2Timepoint: l2 };
+  }
+
+  if (selectedTask === "Whisper") {
+    const isComposite =
+      vLower.startsWith("whispergametotal") ||
+      vLower.startsWith("whispergameavg");
+    const l1 = isComposite ? "Composites" : "Whisper Task Variables";
+    let l2 = "Other";
+    if (vLower.endsWith("30")) l2 = "Age 30";
+    else if (vLower.endsWith("36")) l2 = "Age 36";
+    else if (vLower.endsWith("42")) l2 = "Age 42";
+    else if (vLower.endsWith("54")) l2 = "Age 54";
+    else if (vLower.endsWith("mean")) l2 = "Mean";
+    return { l1Category: l1, l2Timepoint: l2 };
   }
 
   const defaultL1 = `${selectedTask} Task`;
@@ -782,7 +855,7 @@ const VariableDescription = ({
 
   return (
     <ul style={listStyle}>
-      {Object.entries(groupedVars).sort((a,b)=>{if(a[0]==='Compliments Task Variables') return -1; if(b[0]==='Compliments Task Variables') return 1; return a[0].localeCompare(b[0]);}).map(([l1Category,l2Groups])=>{
+      {Object.entries(groupedVars).sort((a,b)=>{if(a[0]==='Compliments Task Variables') return -1; if(b[0]==='Compliments Task Variables') return 1; if(a[0]==='Composites') return 1; if(b[0]==='Composites') return -1; return a[0].localeCompare(b[0]);}).map(([l1Category,l2Groups])=>{
         const totalInL1 = countDisplayedVariables(l2Groups);
         if (totalInL1 === 0) return null;
 

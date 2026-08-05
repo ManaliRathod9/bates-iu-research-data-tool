@@ -54,6 +54,25 @@ const taskToVarMap = {
   "EEG Bird Alligator": "eegbirdalligator",
 };
 
+const whisperMasterVariables = ["30", "36", "42", "54"].flatMap((age) => [
+  `whisperGameChildPres${age}`,
+  `whisperGameParentPres${age}`,
+  `whisperGame_WinniePooh${age}`,
+  `whisperGame_MickeyMouse${age}`,
+  `whisperGame_Ernie${age}`,
+  `whisperGame_BigBird${age}`,
+  `whisperGame_Piglet${age}`,
+  `whisperGame_CookieMonster${age}`,
+  `whisperGame_Eeyore${age}`,
+  `whisperGame_Bert${age}`,
+  `whisperGame_Tigger${age}`,
+  `whisperGame_Barney${age}`,
+  `whisperGame_Elmo${age}`,
+  `whisperGame_MinnieMouse${age}`,
+  `whisperGameTotal${age}`,
+  `whisperGameAvg${age}`,
+]);
+
 const taskDescriptions = {
   "Bird Alligator": `Bird-alligator is an inhibitory control measure in which children are asked to follow the directions delivered by a bird puppet (go trials) and not follow the directions delivered by an alligator puppet (no-go trials). For the youngest children, there are twelve test trials. Older children have the same initial twelve test trials followed by another twelve trials with a rule switch (do what the alligator says). All children are given enough practice go and no-go trials to correctly respond to each type of command multiple times, indicating they understand the rules.\n\nCoded behaviors for each trial (go and no-go) are as follows:\n\n• No movement: child does not move in response to puppet's command.\n• Wrong movement: child performs a movement that was not commanded by the puppet.\n• Partial movement: child starts to perform the commanded movement and then stops and does not finish the movement.\n• Full movement: child fully performs the commanded movement.\n\nEach trial is also coded based on whether the child's response was delayed by at least two seconds.\n\nTrials are not codeable if the child is not actively playing, if the experimenter shows the child how to do an action and the child repeats it (imitation), or if the child is physically restrained from performing actions or is physically helped to perform the action.`,
 
@@ -174,6 +193,17 @@ const Dashboard = ({ data = [] }) => {
       );
     }
 
+    if (selectedTask === "Whisper") {
+      const seen = new Set(vars);
+      vars = [...vars];
+      whisperMasterVariables.forEach((v) => {
+        if (!seen.has(v)) {
+          seen.add(v);
+          vars.push(v);
+        }
+      });
+    }
+
     if (filterText) {
       vars = vars.filter((v) =>
         v.toLowerCase().includes(filterText.toLowerCase())
@@ -285,7 +315,6 @@ const Dashboard = ({ data = [] }) => {
 
       document.body.appendChild(a);
 
-      console.log("Downloading CSV:", a.download);
       a.click();
 
       setTimeout(() => {

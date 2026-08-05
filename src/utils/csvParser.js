@@ -25,7 +25,6 @@ export const parseCSV = (file, onComplete, onError) => {
       return cleanCell(value);
     },
     complete: (results) => {
-      console.log("Parsed Rule: Replaced invalid values with empty strings.");
       onComplete(results.data);
     },
     error: (error) => {
