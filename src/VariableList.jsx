@@ -381,20 +381,21 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
   const vLower = v.toLowerCase();
 
   if (selectedTask === "Compliments") {
-    const isComplimentVar =
+    const isComposite = vLower.startsWith("complimentsselfawareness");
+    const isRegular =
       vLower.startsWith("complimentschildpresent") ||
       vLower.startsWith("complimentsparentpresent") ||
       vLower.startsWith("complimentsembarrassment") ||
       vLower.startsWith("complimentsshame") ||
-      vLower.startsWith("complimentspride") ||
-      vLower.startsWith("complimentsselfawareness");
-    if (isComplimentVar) {
+      vLower.startsWith("complimentspride");
+    if (isRegular || isComposite) {
       let l2 = "Other";
       if (vLower.endsWith("30")) l2 = "Age 30";
       else if (vLower.endsWith("36")) l2 = "Age 36";
       else if (vLower.endsWith("42")) l2 = "Age 42";
       else if (vLower.endsWith("54")) l2 = "Age 54";
-      return { l1Category: "Compliments Task Variables", l2Timepoint: l2 };
+      const l1 = isComposite ? "Composites" : "Compliments Task Variables";
+      return { l1Category: l1, l2Timepoint: l2 };
     }
     return { l1Category: "Needs Review / Other Related Variables", l2Timepoint: "Other" };
   }
@@ -517,14 +518,27 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
   }
 
   if (selectedTask === "Bird Alligator") {
-    const l1 = "Bird Alligator Task Variables";
+    if (vLower.endsWith("mean")) {
+      return { l1Category: "Composites", l2Timepoint: "All" };
+    }
+
+    let l1;
+    if (vLower.includes("imputed")) {
+      l1 = "Imputed Composites";
+    } else if (
+      vLower.startsWith("birdalligatorgoxnogo") ||
+      vLower.startsWith("birdalligatorinhibition")
+    ) {
+      l1 = "Behavioral Composites";
+    } else {
+      l1 = "Bird Alligator Task Variables";
+    }
 
     let l2 = "Other";
     if (vLower.endsWith("30")) l2 = "Age 30";
     else if (vLower.endsWith("36")) l2 = "Age 36";
     else if (vLower.endsWith("42")) l2 = "Age 42";
     else if (vLower.endsWith("54")) l2 = "Age 54";
-    else if (vLower.endsWith("mean")) l2 = "Mean";
 
     return { l1Category: l1, l2Timepoint: l2 };
   }
@@ -579,13 +593,8 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
   }
 
   const ageTasks = [
-    "Snack Delay",
-    "Stop-Go",
-    "Sustained Attention",
     "Token Sort",
     "Maternal Leave Taking",
-    "Broken Toy Related",
-    "Child Compliance / Toy Clean Up",
     "Child Demand / Toy Prohibition",
     "Child Negative Affect",
     "Child Positive Affect",
@@ -690,6 +699,76 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
     else if (vLower.endsWith("54")) l2 = "Age 54";
     else if (vLower.endsWith("mean")) l2 = "Mean";
     return { l1Category: l1, l2Timepoint: l2 };
+  }
+
+  if (selectedTask === "Snack Delay") {
+    const isComposite =
+      vLower.startsWith("snackdelayavg") ||
+      vLower.startsWith("snackdelaypt1avg") ||
+      vLower.startsWith("snackdelaypt2avg");
+    const l1 = isComposite ? "Composites" : "Snack Delay Task Variables";
+    let l2 = "Other";
+    if (vLower.endsWith("30")) l2 = "Age 30";
+    else if (vLower.endsWith("36")) l2 = "Age 36";
+    else if (vLower.endsWith("42")) l2 = "Age 42";
+    else if (vLower.endsWith("54")) l2 = "Age 54";
+    else if (vLower.endsWith("mean")) l2 = "Mean";
+    return { l1Category: l1, l2Timepoint: l2 };
+  }
+
+  if (selectedTask === "Stop-Go") {
+    const isComposite =
+      vLower.startsWith("stopgostopp") ||
+      vLower.startsWith("stopgorunp") ||
+      vLower.startsWith("stopgoslowp") ||
+      vLower.startsWith("stopgodelayp") ||
+      vLower.startsWith("stopgoanticipationp") ||
+      vLower.startsWith("stopgofalsestopp") ||
+      vLower.startsWith("stopgofalsestartp") ||
+      vLower.startsWith("stopgostoprunavg");
+    const l1 = isComposite ? "Composites" : "Stop-Go Task Variables";
+    let l2 = "Other";
+    if (vLower.endsWith("30")) l2 = "Age 30";
+    else if (vLower.endsWith("36")) l2 = "Age 36";
+    else if (vLower.endsWith("42")) l2 = "Age 42";
+    else if (vLower.endsWith("54")) l2 = "Age 54";
+    else if (vLower.endsWith("mean")) l2 = "Mean";
+    return { l1Category: l1, l2Timepoint: l2 };
+  }
+
+  if (selectedTask === "Child Compliance / Toy Clean Up") {
+    const l1 = "Child Compliance / Toy Clean Up Task Variables";
+    let l2 = "Other";
+    if (vLower.endsWith("30")) l2 = "Age 30";
+    else if (vLower.endsWith("36")) l2 = "Age 36";
+    else if (vLower.endsWith("42")) l2 = "Age 42";
+    else if (vLower.endsWith("54")) l2 = "Age 54";
+    const l3 = vLower.startsWith("childcompliancetoycleanupchildpres")
+      ? "Regular Variables"
+      : "Composites";
+    return { l1Category: l1, l2Timepoint: l2, l3Group: l3 };
+  }
+
+  if (selectedTask === "Broken Toy Related") {
+    const l1 = "Broken Toy Related Task Variables";
+    const l2 = vLower.startsWith("brokentoyavedistress")
+      ? "Composites"
+      : "Regular Variables";
+    let l3 = "Other";
+    if (vLower.endsWith("30")) l3 = "Age 30";
+    else if (vLower.endsWith("36")) l3 = "Age 36";
+    else if (vLower.endsWith("42")) l3 = "Age 42";
+    else if (vLower.endsWith("54")) l3 = "Age 54";
+    return { l1Category: l1, l2Timepoint: l2, l3Group: l3 };
+  }
+
+  if (selectedTask === "Sustained Attention") {
+    let l2 = "Other";
+    if (vLower.endsWith("30")) l2 = "Age 30";
+    else if (vLower.endsWith("36")) l2 = "Age 36";
+    else if (vLower.endsWith("42")) l2 = "Age 42";
+    else if (vLower.endsWith("54")) l2 = "Age 54";
+    return { l1Category: "Composites", l2Timepoint: l2 };
   }
 
   const defaultL1 = `${selectedTask} Task`;
@@ -855,7 +934,7 @@ const VariableDescription = ({
 
   return (
     <ul style={listStyle}>
-      {Object.entries(groupedVars).sort((a,b)=>{if(a[0]==='Compliments Task Variables') return -1; if(b[0]==='Compliments Task Variables') return 1; if(a[0]==='Composites') return 1; if(b[0]==='Composites') return -1; return a[0].localeCompare(b[0]);}).map(([l1Category,l2Groups])=>{
+      {Object.entries(groupedVars).sort((a,b)=>{if(a[0]==='Compliments Task Variables') return -1; if(b[0]==='Compliments Task Variables') return 1; if(a[0]==='Bird Alligator Task Variables') return -1; if(b[0]==='Bird Alligator Task Variables') return 1; if(a[0]==='Composites') return 1; if(b[0]==='Composites') return -1; return a[0].localeCompare(b[0]);}).map(([l1Category,l2Groups])=>{
         const totalInL1 = countDisplayedVariables(l2Groups);
         if (totalInL1 === 0) return null;
 
