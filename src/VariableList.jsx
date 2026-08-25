@@ -608,8 +608,6 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
     "Token Sort",
     "Maternal Leave Taking",
     "Child Demand / Toy Prohibition",
-    "Child Negative Affect",
-    "Child Positive Affect",
     "Toy Prohibition",
   ];
   if (ageTasks.includes(selectedTask)) {
@@ -684,49 +682,50 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
   }
 
   if (selectedTask === "Walk a Line") {
+    const l1 = "Walk a Line Task Variables";
     const isComposite =
       vLower.startsWith("walkalineslow") ||
       vLower.startsWith("walkalineratiobaselineoverslow");
-    const l1 = isComposite ? "Composites" : "Walk a Line Task Variables";
-    let l2 = "Other";
-    if (vLower.endsWith("30")) l2 = "Age 30";
-    else if (vLower.endsWith("36")) l2 = "Age 36";
-    else if (vLower.endsWith("42")) l2 = "Age 42";
-    else if (vLower.endsWith("54")) l2 = "Age 54";
-    else if (vLower.endsWith("mean")) l2 = "Mean";
-    return { l1Category: l1, l2Timepoint: l2 };
+    const l2 = isComposite ? "Composites" : "Regular Variables";
+    let l3 = "Other";
+    if (vLower.endsWith("30")) l3 = "Age 30";
+    else if (vLower.endsWith("36")) l3 = "Age 36";
+    else if (vLower.endsWith("42")) l3 = "Age 42";
+    else if (vLower.endsWith("54")) l3 = "Age 54";
+    return { l1Category: l1, l2Timepoint: l2, l3Group: l3 };
   }
 
   if (selectedTask === "Whisper") {
+    const l1 = "Whisper Task Variables";
     const isComposite =
       vLower.startsWith("whispergametotal") ||
       vLower.startsWith("whispergameavg");
-    const l1 = isComposite ? "Composites" : "Whisper Task Variables";
-    let l2 = "Other";
-    if (vLower.endsWith("30")) l2 = "Age 30";
-    else if (vLower.endsWith("36")) l2 = "Age 36";
-    else if (vLower.endsWith("42")) l2 = "Age 42";
-    else if (vLower.endsWith("54")) l2 = "Age 54";
-    else if (vLower.endsWith("mean")) l2 = "Mean";
-    return { l1Category: l1, l2Timepoint: l2 };
+    const l2 = isComposite ? "Composites" : "Regular Variables";
+    let l3 = "Other";
+    if (vLower.endsWith("30")) l3 = "Age 30";
+    else if (vLower.endsWith("36")) l3 = "Age 36";
+    else if (vLower.endsWith("42")) l3 = "Age 42";
+    else if (vLower.endsWith("54")) l3 = "Age 54";
+    return { l1Category: l1, l2Timepoint: l2, l3Group: l3 };
   }
 
   if (selectedTask === "Snack Delay") {
+    const l1 = "Snack Delay Task Variables";
     const isComposite =
       vLower.startsWith("snackdelayavg") ||
       vLower.startsWith("snackdelaypt1avg") ||
       vLower.startsWith("snackdelaypt2avg");
-    const l1 = isComposite ? "Composites" : "Snack Delay Task Variables";
-    let l2 = "Other";
-    if (vLower.endsWith("30")) l2 = "Age 30";
-    else if (vLower.endsWith("36")) l2 = "Age 36";
-    else if (vLower.endsWith("42")) l2 = "Age 42";
-    else if (vLower.endsWith("54")) l2 = "Age 54";
-    else if (vLower.endsWith("mean")) l2 = "Mean";
-    return { l1Category: l1, l2Timepoint: l2 };
+    const l2 = isComposite ? "Composites" : "Regular Variables";
+    let l3 = "Other";
+    if (vLower.endsWith("30")) l3 = "Age 30";
+    else if (vLower.endsWith("36")) l3 = "Age 36";
+    else if (vLower.endsWith("42")) l3 = "Age 42";
+    else if (vLower.endsWith("54")) l3 = "Age 54";
+    return { l1Category: l1, l2Timepoint: l2, l3Group: l3 };
   }
 
   if (selectedTask === "Stop-Go") {
+    const l1 = "Stop-Go Task Variables";
     const isComposite =
       vLower.startsWith("stopgostopp") ||
       vLower.startsWith("stopgorunp") ||
@@ -736,26 +735,25 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
       vLower.startsWith("stopgofalsestopp") ||
       vLower.startsWith("stopgofalsestartp") ||
       vLower.startsWith("stopgostoprunavg");
-    const l1 = isComposite ? "Composites" : "Stop-Go Task Variables";
-    let l2 = "Other";
-    if (vLower.endsWith("30")) l2 = "Age 30";
-    else if (vLower.endsWith("36")) l2 = "Age 36";
-    else if (vLower.endsWith("42")) l2 = "Age 42";
-    else if (vLower.endsWith("54")) l2 = "Age 54";
-    else if (vLower.endsWith("mean")) l2 = "Mean";
-    return { l1Category: l1, l2Timepoint: l2 };
+    const l2 = isComposite ? "Composites" : "Regular Variables";
+    let l3 = "Other";
+    if (vLower.endsWith("30")) l3 = "Age 30";
+    else if (vLower.endsWith("36")) l3 = "Age 36";
+    else if (vLower.endsWith("42")) l3 = "Age 42";
+    else if (vLower.endsWith("54")) l3 = "Age 54";
+    return { l1Category: l1, l2Timepoint: l2, l3Group: l3 };
   }
 
   if (selectedTask === "Child Compliance / Toy Clean Up") {
     const l1 = "Child Compliance / Toy Clean Up Task Variables";
-    let l2 = "Other";
-    if (vLower.endsWith("30")) l2 = "Age 30";
-    else if (vLower.endsWith("36")) l2 = "Age 36";
-    else if (vLower.endsWith("42")) l2 = "Age 42";
-    else if (vLower.endsWith("54")) l2 = "Age 54";
-    const l3 = vLower.startsWith("childcompliancetoycleanupchildpres")
+    const l2 = vLower.startsWith("childcompliancetoycleanupchildpres")
       ? "Regular Variables"
       : "Composites";
+    let l3 = "Other";
+    if (vLower.endsWith("30")) l3 = "Age 30";
+    else if (vLower.endsWith("36")) l3 = "Age 36";
+    else if (vLower.endsWith("42")) l3 = "Age 42";
+    else if (vLower.endsWith("54")) l3 = "Age 54";
     return { l1Category: l1, l2Timepoint: l2, l3Group: l3 };
   }
 
@@ -798,6 +796,28 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
       vLower.includes("childpres") || vLower.includes("parentpres")
         ? "Regular Variables"
         : "Composites";
+    let l3 = "Other";
+    if (vLower.endsWith("30")) l3 = "Age 30";
+    else if (vLower.endsWith("36")) l3 = "Age 36";
+    else if (vLower.endsWith("42")) l3 = "Age 42";
+    else if (vLower.endsWith("54")) l3 = "Age 54";
+    return { l1Category: l1, l2Timepoint: l2, l3Group: l3 };
+  }
+
+  if (selectedTask === "Child Positive Affect") {
+    const l1 = "Child Positive Affect Task Variables";
+    const l2 = vLower.includes("childpres") ? "Regular Variables" : "Composites";
+    let l3 = "Other";
+    if (vLower.endsWith("30")) l3 = "Age 30";
+    else if (vLower.endsWith("36")) l3 = "Age 36";
+    else if (vLower.endsWith("42")) l3 = "Age 42";
+    else if (vLower.endsWith("54")) l3 = "Age 54";
+    return { l1Category: l1, l2Timepoint: l2, l3Group: l3 };
+  }
+
+  if (selectedTask === "Child Negative Affect") {
+    const l1 = "Child Negative Affect Task Variables";
+    const l2 = vLower.includes("childpres") ? "Regular Variables" : "Composites";
     let l3 = "Other";
     if (vLower.endsWith("30")) l3 = "Age 30";
     else if (vLower.endsWith("36")) l3 = "Age 36";

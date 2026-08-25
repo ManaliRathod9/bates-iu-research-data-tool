@@ -782,7 +782,7 @@ export const variableDescriptions = {
   "childComplianceToyCleanUpPassiveNonComplianceP30": "Proportion of intervals coded as passive noncompliance",
   "childComplianceToyCleanUpSituationalComplianceP30": "Proportion of intervals coded as situational compliance",
   "childComplianceToyCleanUpCommittedComplianceP30": "Proportion of intervals coded as committed compliance",
-  "childComplianceToyCleanUpOtherP30": "Proportion of intervals coded as \"other\"",
+  "childComplianceToyCleanUpOtherP30": "Proportion of intervals coded as other",
 
   "childComplianceToyCleanUpChildPres36": "Child Compliance - Other Child Present? (36 months)",
   "childComplianceToyCleanUpDeviation36": "Deviation composite",
@@ -792,7 +792,7 @@ export const variableDescriptions = {
   "childComplianceToyCleanUpPassiveNonComplianceP36": "Proportion of intervals coded as passive noncompliance",
   "childComplianceToyCleanUpSituationalComplianceP36": "Proportion of intervals coded as situational compliance",
   "childComplianceToyCleanUpCommittedComplianceP36": "Proportion of intervals coded as committed compliance",
-  "childComplianceToyCleanUpOtherP36": "Proportion of intervals coded as \"other\"",
+  "childComplianceToyCleanUpOtherP36": "Proportion of intervals coded as other",
 
   "childComplianceToyCleanUpChildPres42": "Child Compliance - Other Child Present? (42 months)",
   "childComplianceToyCleanUpDeviation42": "Deviation composite",
@@ -802,7 +802,7 @@ export const variableDescriptions = {
   "childComplianceToyCleanUpPassiveNonComplianceP42": "Proportion of intervals coded as passive noncompliance",
   "childComplianceToyCleanUpSituationalComplianceP42": "Proportion of intervals coded as situational compliance",
   "childComplianceToyCleanUpCommittedComplianceP42": "Proportion of intervals coded as committed compliance",
-  "childComplianceToyCleanUpOtherP42": "Proportion of intervals coded as \"other\"",
+  "childComplianceToyCleanUpOtherP42": "Proportion of intervals coded as other",
 
   "childComplianceToyCleanUpChildPres54": "Child Compliance - Other Child Present? (54 months)",
   "childComplianceToyCleanUpDeviation54": "Deviation composite",
@@ -812,7 +812,7 @@ export const variableDescriptions = {
   "childComplianceToyCleanUpPassiveNonComplianceP54": "Proportion of intervals coded as passive noncompliance",
   "childComplianceToyCleanUpSituationalComplianceP54": "Proportion of intervals coded as situational compliance",
   "childComplianceToyCleanUpCommittedComplianceP54": "Proportion of intervals coded as committed compliance",
-  "childComplianceToyCleanUpOtherP54": "Proportion of intervals coded as \"other\"",
+  "childComplianceToyCleanUpOtherP54": "Proportion of intervals coded as other",
 
 
   "sustainedAttentionProportionTime30": "Mean of proportion time eyes on score, settled score, focused score (30 months)",
