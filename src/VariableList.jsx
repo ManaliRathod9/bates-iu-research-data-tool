@@ -576,14 +576,8 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
     return { l1Category: l1, l2Timepoint: l2, l3Group: l3 };
   }
 
-  if (
-    selectedTask === "Teacher Questionnaires" ||
-    selectedTask === "Parent Positive Affect"
-  ) {
-    const l1 =
-      selectedTask === "Parent Positive Affect"
-        ? "Parent Positive Affect Task Variables"
-        : "Teacher Questionnaires Task";
+  if (selectedTask === "Teacher Questionnaires") {
+    const l1 = "Teacher Questionnaires Task";
     let l2 = "All";
     if (vLower.endsWith("30")) l2 = "Age 30";
     else if (vLower.endsWith("36")) l2 = "Age 36";
@@ -592,14 +586,30 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
     return { l1Category: l1, l2Timepoint: l2 };
   }
 
+  if (selectedTask === "Parent Positive Affect") {
+    const l1 = "Parent Positive Affect Task Variables";
+    let l2;
+    if (vLower.startsWith("hv2interparent")) {
+      l2 = "Other / Definition Not Available";
+    } else if (vLower.includes("childpres") || vLower.includes("intervals")) {
+      l2 = "Regular Variables";
+    } else {
+      l2 = "Composites";
+    }
+    let l3 = "Other";
+    if (vLower.endsWith("30")) l3 = "Age 30";
+    else if (vLower.endsWith("36")) l3 = "Age 36";
+    else if (vLower.endsWith("42")) l3 = "Age 42";
+    else if (vLower.endsWith("54")) l3 = "Age 54";
+    return { l1Category: l1, l2Timepoint: l2, l3Group: l3 };
+  }
+
   const ageTasks = [
     "Token Sort",
     "Maternal Leave Taking",
     "Child Demand / Toy Prohibition",
     "Child Negative Affect",
     "Child Positive Affect",
-    "Parental Control",
-    "Toy Frustration",
     "Toy Prohibition",
   ];
   if (ageTasks.includes(selectedTask)) {
@@ -769,6 +779,31 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
     else if (vLower.endsWith("42")) l2 = "Age 42";
     else if (vLower.endsWith("54")) l2 = "Age 54";
     return { l1Category: "Composites", l2Timepoint: l2 };
+  }
+
+  if (selectedTask === "Parental Control") {
+    const l1 = "Parental Control Task Variables";
+    const l2 = vLower.includes("childpres") ? "Regular Variables" : "Composites";
+    let l3 = "Other";
+    if (vLower.endsWith("30")) l3 = "Age 30";
+    else if (vLower.endsWith("36")) l3 = "Age 36";
+    else if (vLower.endsWith("42")) l3 = "Age 42";
+    else if (vLower.endsWith("54")) l3 = "Age 54";
+    return { l1Category: l1, l2Timepoint: l2, l3Group: l3 };
+  }
+
+  if (selectedTask === "Toy Frustration") {
+    const l1 = "Toy Frustration Task Variables";
+    const l2 =
+      vLower.includes("childpres") || vLower.includes("parentpres")
+        ? "Regular Variables"
+        : "Composites";
+    let l3 = "Other";
+    if (vLower.endsWith("30")) l3 = "Age 30";
+    else if (vLower.endsWith("36")) l3 = "Age 36";
+    else if (vLower.endsWith("42")) l3 = "Age 42";
+    else if (vLower.endsWith("54")) l3 = "Age 54";
+    return { l1Category: l1, l2Timepoint: l2, l3Group: l3 };
   }
 
   const defaultL1 = `${selectedTask} Task`;
