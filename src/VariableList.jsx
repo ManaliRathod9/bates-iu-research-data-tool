@@ -389,13 +389,19 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
       vLower.startsWith("complimentsshame") ||
       vLower.startsWith("complimentspride");
     if (isRegular || isComposite) {
-      let l2 = "Other";
-      if (vLower.endsWith("30")) l2 = "Age 30";
-      else if (vLower.endsWith("36")) l2 = "Age 36";
-      else if (vLower.endsWith("42")) l2 = "Age 42";
-      else if (vLower.endsWith("54")) l2 = "Age 54";
-      const l1 = isComposite ? "Composites" : "Compliments Task Variables";
-      return { l1Category: l1, l2Timepoint: l2 };
+      let age = "Other";
+      if (vLower.endsWith("30")) age = "Age 30";
+      else if (vLower.endsWith("36")) age = "Age 36";
+      else if (vLower.endsWith("42")) age = "Age 42";
+      else if (vLower.endsWith("54")) age = "Age 54";
+      if (isComposite) {
+        return { l1Category: "Composites", l2Timepoint: age };
+      }
+      return {
+        l1Category: "Compliments Task Variables",
+        l2Timepoint: "Regular Variables",
+        l3Group: age,
+      };
     }
     return { l1Category: "Needs Review / Other Related Variables", l2Timepoint: "Other" };
   }
@@ -518,29 +524,31 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
   }
 
   if (selectedTask === "Bird Alligator") {
+    const l1 = "Bird Alligator Task Variables";
+
     if (vLower.endsWith("mean")) {
-      return { l1Category: "Composites", l2Timepoint: "All" };
+      return { l1Category: l1, l2Timepoint: "Composites" };
     }
 
-    let l1;
+    let l2;
     if (vLower.includes("imputed")) {
-      l1 = "Imputed Composites";
+      l2 = "Imputed Composites";
     } else if (
       vLower.startsWith("birdalligatorgoxnogo") ||
       vLower.startsWith("birdalligatorinhibition")
     ) {
-      l1 = "Behavioral Composites";
+      l2 = "Behavioral Composites";
     } else {
-      l1 = "Bird Alligator Task Variables";
+      l2 = "Regular Variables";
     }
 
-    let l2 = "Other";
-    if (vLower.endsWith("30")) l2 = "Age 30";
-    else if (vLower.endsWith("36")) l2 = "Age 36";
-    else if (vLower.endsWith("42")) l2 = "Age 42";
-    else if (vLower.endsWith("54")) l2 = "Age 54";
+    let l3 = "Other";
+    if (vLower.endsWith("30")) l3 = "Age 30";
+    else if (vLower.endsWith("36")) l3 = "Age 36";
+    else if (vLower.endsWith("42")) l3 = "Age 42";
+    else if (vLower.endsWith("54")) l3 = "Age 54";
 
-    return { l1Category: l1, l2Timepoint: l2 };
+    return { l1Category: l1, l2Timepoint: l2, l3Group: l3 };
   }
 
   if (selectedTask === "EEG Bird Alligator") {
@@ -605,7 +613,6 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
   }
 
   const ageTasks = [
-    "Token Sort",
     "Maternal Leave Taking",
     "Child Demand / Toy Prohibition",
     "Toy Prohibition",
@@ -622,63 +629,63 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
   }
 
   if (selectedTask === "Door Opening") {
+    const l1 = "Door Opening Task Variables";
     const isComposite =
       vLower.startsWith("dooropeningcomposite") ||
       vLower.startsWith("dooropeningrewardsensitivity") ||
       vLower.startsWith("dooropeningpunishmentsensitivity");
-    const l1 = isComposite ? "Composites" : "Door Opening Task Variables";
-    let l2 = "Other";
-    if (vLower.endsWith("30")) l2 = "Age 30";
-    else if (vLower.endsWith("36")) l2 = "Age 36";
-    else if (vLower.endsWith("42")) l2 = "Age 42";
-    else if (vLower.endsWith("54")) l2 = "Age 54";
-    else if (vLower.endsWith("mean")) l2 = "Mean";
-    return { l1Category: l1, l2Timepoint: l2 };
+    const l2 = isComposite ? "Composites" : "Regular Variables";
+    let l3 = "Other";
+    if (vLower.endsWith("30")) l3 = "Age 30";
+    else if (vLower.endsWith("36")) l3 = "Age 36";
+    else if (vLower.endsWith("42")) l3 = "Age 42";
+    else if (vLower.endsWith("54")) l3 = "Age 54";
+    return { l1Category: l1, l2Timepoint: l2, l3Group: l3 };
   }
 
   if (selectedTask === "Fruit Stroop") {
+    const l1 = "Fruit Stroop Task Variables";
     const isComposite =
       vLower.startsWith("fruitstroopsmall") ||
       vLower.startsWith("fruitstrooplarge") ||
       vLower.startsWith("fruitstroopavg");
-    const l1 = isComposite ? "Composites" : "Fruit Stroop Task Variables";
-    let l2 = "Other";
-    if (vLower.endsWith("30")) l2 = "Age 30";
-    else if (vLower.endsWith("36")) l2 = "Age 36";
-    else if (vLower.endsWith("42")) l2 = "Age 42";
-    else if (vLower.endsWith("54")) l2 = "Age 54";
-    else if (vLower.endsWith("mean")) l2 = "Mean";
-    return { l1Category: l1, l2Timepoint: l2 };
+    const l2 = isComposite ? "Composites" : "Regular Variables";
+    let l3 = "Other";
+    if (vLower.endsWith("30")) l3 = "Age 30";
+    else if (vLower.endsWith("36")) l3 = "Age 36";
+    else if (vLower.endsWith("42")) l3 = "Age 42";
+    else if (vLower.endsWith("54")) l3 = "Age 54";
+    return { l1Category: l1, l2Timepoint: l2, l3Group: l3 };
   }
 
   if (selectedTask === "Grass Snow") {
+    const l1 = "Grass Snow Task Variables";
     const isComposite =
       vLower.startsWith("grasssnowavg") ||
       (vLower.startsWith("grasssnowtotal") &&
         !vLower.startsWith("grasssnowtotaltrials"));
-    const l1 = isComposite ? "Composites" : "Grass Snow Task Variables";
-    let l2 = "Other";
-    if (vLower.endsWith("30")) l2 = "Age 30";
-    else if (vLower.endsWith("36")) l2 = "Age 36";
-    else if (vLower.endsWith("42")) l2 = "Age 42";
-    else if (vLower.endsWith("54")) l2 = "Age 54";
-    else if (vLower.endsWith("mean")) l2 = "Mean";
-    return { l1Category: l1, l2Timepoint: l2 };
+    const l2 = isComposite ? "Composites" : "Regular Variables";
+    let l3 = "Other";
+    if (vLower.endsWith("30")) l3 = "Age 30";
+    else if (vLower.endsWith("36")) l3 = "Age 36";
+    else if (vLower.endsWith("42")) l3 = "Age 42";
+    else if (vLower.endsWith("54")) l3 = "Age 54";
+    return { l1Category: l1, l2Timepoint: l2, l3Group: l3 };
   }
 
   if (selectedTask === "Gift Delay") {
+    const l1 = "Gift Delay Task Variables";
     const isComposite =
       vLower.startsWith("giftdelayscore") ||
       (vLower.startsWith("giftdelaylatency") &&
         !vLower.startsWith("giftdelaylatencyto"));
-    const l1 = isComposite ? "Composites" : "Gift Delay Task Variables";
-    let l2 = "Other";
-    if (vLower.endsWith("30")) l2 = "Age 30";
-    else if (vLower.endsWith("36")) l2 = "Age 36";
-    else if (vLower.endsWith("42")) l2 = "Age 42";
-    else if (vLower.endsWith("54")) l2 = "Age 54";
-    else if (vLower.endsWith("mean")) l2 = "Mean";
-    return { l1Category: l1, l2Timepoint: l2 };
+    const l2 = isComposite ? "Composites" : "Regular Variables";
+    let l3 = "Other";
+    if (vLower.endsWith("30")) l3 = "Age 30";
+    else if (vLower.endsWith("36")) l3 = "Age 36";
+    else if (vLower.endsWith("42")) l3 = "Age 42";
+    else if (vLower.endsWith("54")) l3 = "Age 54";
+    return { l1Category: l1, l2Timepoint: l2, l3Group: l3 };
   }
 
   if (selectedTask === "Walk a Line") {
@@ -771,12 +778,29 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
   }
 
   if (selectedTask === "Sustained Attention") {
-    let l2 = "Other";
-    if (vLower.endsWith("30")) l2 = "Age 30";
-    else if (vLower.endsWith("36")) l2 = "Age 36";
-    else if (vLower.endsWith("42")) l2 = "Age 42";
-    else if (vLower.endsWith("54")) l2 = "Age 54";
-    return { l1Category: "Composites", l2Timepoint: l2 };
+    let l3 = "Other";
+    if (vLower.endsWith("30")) l3 = "Age 30";
+    else if (vLower.endsWith("36")) l3 = "Age 36";
+    else if (vLower.endsWith("42")) l3 = "Age 42";
+    else if (vLower.endsWith("54")) l3 = "Age 54";
+    return {
+      l1Category: "Sustained Attention Task Variables",
+      l2Timepoint: "Composites",
+      l3Group: l3,
+    };
+  }
+
+  if (selectedTask === "Token Sort") {
+    let l3 = "Other";
+    if (vLower.endsWith("30")) l3 = "Age 30";
+    else if (vLower.endsWith("36")) l3 = "Age 36";
+    else if (vLower.endsWith("42")) l3 = "Age 42";
+    else if (vLower.endsWith("54")) l3 = "Age 54";
+    return {
+      l1Category: "Token Sort Task Variables",
+      l2Timepoint: "Regular Variables",
+      l3Group: l3,
+    };
   }
 
   if (selectedTask === "Parental Control") {
@@ -860,7 +884,43 @@ export const groupVariablesBySubcategory = (variables, selectedCategory, selecte
     }
   });
 
+  const l2Order = {
+    "Regular Variables": 0,
+    "Behavioral Composites": 1,
+    "Imputed Composites": 2,
+    "Composites": 3,
+    "Other / Definition Not Available": 4,
+  };
+  Object.keys(groups).forEach((l1) => {
+    const entries = Object.keys(groups[l1]).map((k, i) => [k, i]);
+    entries.sort((a, b) => {
+      const ra = a[0] in l2Order ? l2Order[a[0]] : 5;
+      const rb = b[0] in l2Order ? l2Order[b[0]] : 5;
+      return ra !== rb ? ra - rb : a[1] - b[1];
+    });
+    const reordered = {};
+    entries.forEach(([k]) => {
+      reordered[k] = groups[l1][k];
+    });
+    groups[l1] = reordered;
+  });
+
   return groups;
+};
+
+const subgroupFolderNames = [
+  "Regular Variables",
+  "Composites",
+  "Behavioral Composites",
+  "Imputed Composites",
+  "Needs Review / Other Related Variables",
+  "Other / Definition Not Available",
+];
+
+const groupIcon = (name, isMain) => {
+  if (typeof name === "string" && name.startsWith("Age ")) return "📅";
+  if (subgroupFolderNames.includes(name)) return "📂";
+  return isMain ? "📁" : "📂";
 };
 
 const VariableDescription = ({
@@ -989,7 +1049,7 @@ const VariableDescription = ({
 
   return (
     <ul style={listStyle}>
-      {Object.entries(groupedVars).sort((a,b)=>{if(a[0]==='Compliments Task Variables') return -1; if(b[0]==='Compliments Task Variables') return 1; if(a[0]==='Bird Alligator Task Variables') return -1; if(b[0]==='Bird Alligator Task Variables') return 1; if(a[0]==='Composites') return 1; if(b[0]==='Composites') return -1; return a[0].localeCompare(b[0]);}).map(([l1Category,l2Groups])=>{
+      {Object.entries(groupedVars).sort((a,b)=>{if(a[0]==='Compliments Task Variables') return -1; if(b[0]==='Compliments Task Variables') return 1; if(a[0]==='Bird Alligator Task Variables') return -1; if(b[0]==='Bird Alligator Task Variables') return 1; if(a[0]==='Needs Review / Other Related Variables') return 1; if(b[0]==='Needs Review / Other Related Variables') return -1; if(a[0]==='Composites') return 1; if(b[0]==='Composites') return -1; return a[0].localeCompare(b[0]);}).map(([l1Category,l2Groups])=>{
         const totalInL1 = countDisplayedVariables(l2Groups);
         if (totalInL1 === 0) return null;
 
@@ -1025,7 +1085,7 @@ const VariableDescription = ({
                 >
                   ▶
                 </span>
-                <span>📁 {l1Category}</span>
+                <span>{groupIcon(l1Category, true)} {l1Category}</span>
               </div>
               <span
                 style={{
@@ -1096,7 +1156,7 @@ const VariableDescription = ({
                                 >
                                   ▶
                                 </span>
-                                <span>📁 {l3Group}</span>
+                                <span>{groupIcon(l3Group, false)} {l3Group}</span>
                               </div>
                               <span
                                 style={{
@@ -1161,7 +1221,7 @@ const VariableDescription = ({
                             ▶
                           </span>
                           <span>
-                            {selectedTask === "Bird Alligator" ? "📅 " : "📁 "}
+                            {groupIcon(l2Timepoint, false)}{" "}
                             {l2Timepoint === "Mean" ? "Composites" : l2Timepoint}
                           </span>
                         </div>
