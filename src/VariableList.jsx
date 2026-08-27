@@ -484,11 +484,24 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
 
   if (selectedTask === "Shipley Parent Cognition") {
     const l1 = "Shipley Parent Cognition";
-    if (vLower.startsWith("shipley")) {
-      return { l1Category: l1, l2Timepoint: "Shipley Parent Cognition" };
-    }
     if (vLower.startsWith("socialsupport")) {
-      return { l1Category: l1, l2Timepoint: "Social Support Related" };
+      return { l1Category: l1, l2Timepoint: "Social Support Related", l3Group: "Composites" };
+    }
+    if (vLower.startsWith("shipley")) {
+      const isRegular =
+        vLower.startsWith("shipleyp.gender") ||
+        vLower.startsWith("shipleyp.age") ||
+        vLower.startsWith("shipleyp.edu") ||
+        vLower.startsWith("shipleyp.occupation");
+      const l3 = isRegular ? "Regular Variables" : "Composites";
+
+      let l4 = "Other";
+      if (vLower.endsWith("30")) l4 = "Age 30";
+      else if (vLower.endsWith("36")) l4 = "Age 36";
+      else if (vLower.endsWith("42")) l4 = "Age 42";
+      else if (vLower.endsWith("54")) l4 = "Age 54";
+
+      return { l1Category: l1, l2Timepoint: "Shipley Parent Cognition", l3Group: l3, l4Group: l4 };
     }
     return { l1Category: "Needs Review / Other Related Variables", l2Timepoint: "Other" };
   }
@@ -862,13 +875,24 @@ export const groupVariablesBySubcategory = (variables, selectedCategory, selecte
   const groups = {};
 
   cleanedVars.forEach((v) => {
-    const { l1Category, l2Timepoint, l3Group } = getVariableGroup(v, selectedCategory, selectedTask);
+    const { l1Category, l2Timepoint, l3Group, l4Group } = getVariableGroup(v, selectedCategory, selectedTask);
 
     if (!groups[l1Category]) {
       groups[l1Category] = {};
     }
 
-    if (l3Group) {
+    if (l3Group && l4Group) {
+      if (!groups[l1Category][l2Timepoint]) {
+        groups[l1Category][l2Timepoint] = {};
+      }
+      if (!groups[l1Category][l2Timepoint][l3Group]) {
+        groups[l1Category][l2Timepoint][l3Group] = {};
+      }
+      if (!groups[l1Category][l2Timepoint][l3Group][l4Group]) {
+        groups[l1Category][l2Timepoint][l3Group][l4Group] = [];
+      }
+      groups[l1Category][l2Timepoint][l3Group][l4Group].push(v);
+    } else if (l3Group) {
       if (!groups[l1Category][l2Timepoint]) {
         groups[l1Category][l2Timepoint] = {};
       }
@@ -1121,7 +1145,8 @@ const VariableDescription = ({
                   ) : (
                     <div style={{ paddingLeft: "0.75rem", marginTop: "0.2rem" }}>
                       {Object.entries(vars).map(([l3Group, l3Vars]) => {
-                        if (l3Vars.length === 0) return null;
+                        const totalInL3 = countDisplayedVariables(l3Vars);
+                        if (totalInL3 === 0) return null;
 
                         const l3Key = `${l2Key}-${l3Group}`;
                         const isL3Expanded = expandedVarL2[l3Key] !== false;
@@ -1167,13 +1192,73 @@ const VariableDescription = ({
                                   color: "var(--text-secondary)",
                                 }}
                               >
-                                {l3Vars.length}
+                                {totalInL3}
                               </span>
                             </div>
 
                             {isL3Expanded && (
                               <div style={{ paddingLeft: "0.75rem", marginTop: "0.2rem" }}>
-                                {l3Vars.map(renderVariableRow)}
+                                {Array.isArray(l3Vars)
+                                  ? l3Vars.map(renderVariableRow)
+                                  : Object.entries(l3Vars).map(([l4Group, l4Vars]) => {
+                                      if (l4Vars.length === 0) return null;
+
+                                      const l4Key = `${l3Key}-${l4Group}`;
+                                      const isL4Expanded = expandedVarL2[l4Key] !== false;
+
+                                      return (
+                                        <div key={l4Group} style={{ marginBottom: "0.5rem" }}>
+                                          <div
+                                            onClick={() => toggleVarL2(l4Key)}
+                                            style={{
+                                              padding: "0.5rem 0.5rem",
+                                              display: "flex",
+                                              alignItems: "center",
+                                              justifyContent: "space-between",
+                                              cursor: "pointer",
+                                              background: "rgba(255, 255, 255, 0.01)",
+                                              borderBottom: "1px solid rgba(255, 255, 255, 0.05)",
+                                              borderRadius: "4px",
+                                              fontWeight: "500",
+                                              fontSize: "0.85rem",
+                                              color: "var(--text-primary)",
+                                            }}
+                                          >
+                                            <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                                              <span
+                                                style={{
+                                                  fontSize: "0.6rem",
+                                                  opacity: 0.6,
+                                                  transition: "transform 0.2s",
+                                                  display: "inline-block",
+                                                  transform: isL4Expanded ? "rotate(90deg)" : "rotate(0deg)",
+                                                }}
+                                              >
+                                                ▶
+                                              </span>
+                                              <span>{groupIcon(l4Group, false)} {l4Group}</span>
+                                            </div>
+                                            <span
+                                              style={{
+                                                fontSize: "0.7rem",
+                                                background: "rgba(255,255,255,0.05)",
+                                                padding: "1px 6px",
+                                                borderRadius: "8px",
+                                                color: "var(--text-secondary)",
+                                              }}
+                                            >
+                                              {l4Vars.length}
+                                            </span>
+                                          </div>
+
+                                          {isL4Expanded && (
+                                            <div style={{ paddingLeft: "0.75rem", marginTop: "0.2rem" }}>
+                                              {l4Vars.map(renderVariableRow)}
+                                            </div>
+                                          )}
+                                        </div>
+                                      );
+                                    })}
                               </div>
                             )}
                           </div>

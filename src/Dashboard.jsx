@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useEffect } from "react";
 import { structure } from "./config/structure";
-import { variableDescriptions } from "./config/variableDescriptions";
+import { variableDescriptions, variableComputations } from "./config/variableDescriptions";
 import VariableDescription, {
   shouldShowVariableInTask,
   getFinalVariables,
@@ -919,7 +919,14 @@ const Dashboard = ({ data = [] }) => {
                 whiteSpace: "pre-line",
               }}
             >
+              <strong>Description:</strong>{" "}
               {variableDescriptions[varInfoModal] || "Description not added yet."}
+              {variableComputations[varInfoModal] ? (
+                <>
+                  {"\n\n"}
+                  <strong>Computation:</strong> {variableComputations[varInfoModal]}
+                </>
+              ) : null}
             </div>
           </div>
         </div>
