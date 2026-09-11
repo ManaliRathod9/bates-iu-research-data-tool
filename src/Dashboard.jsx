@@ -25,7 +25,8 @@ const taskToVarMap = {
   "DIFFER Cognitive Ability": "diff",
   "Eyberg Child Behavior Inventory": "eyb",
   "Physical Health Status Inventory": "phsi",
-  "Shipley Parent Cognition": "ship",
+  "Shipley Parent Cognition": "shipley",
+  "Social Support Related": "socialsupport",
   "Teacher Questionnaires": "teach",
   "Temperament Questionnaires": "temp",
   Compliments: "comp",
@@ -35,7 +36,9 @@ const taskToVarMap = {
   "Snack Delay": "snack",
   "Sustained Attention": "sustain",
   "Token Sort": "token",
-  "Main Sleep Variables": "sleep",
+  Child: "sleep",
+  Parent: "sleep",
+  Summary: "sleep",
   "Home Scale Items": "home",
   "Observer Ratings": "obs",
   "Parent Positive Affect": "parentpositive",
@@ -483,6 +486,18 @@ const Dashboard = ({ data = [] }) => {
             style={{ padding: "0 1.5rem 1.5rem 1.5rem" }}
           >
             <ul style={listStyle}>
+              {selectedCategory === "Actigraphy" && (
+                <li
+                  style={{
+                    padding: "0.75rem 0.5rem",
+                    fontWeight: "600",
+                    color: "var(--text-primary)",
+                    cursor: "default",
+                  }}
+                >
+                  Main Sleep Variables
+                </li>
+              )}
               {tasks.map((task, idx) => (
                 <li
                   key={idx}
@@ -492,6 +507,9 @@ const Dashboard = ({ data = [] }) => {
                   }}
                   style={{
                     padding: "0.75rem 0.5rem",
+                    ...(selectedCategory === "Actigraphy"
+                      ? { paddingLeft: "1.75rem" }
+                      : {}),
                     borderBottom: "1px solid var(--glass-border)",
                     cursor: "pointer",
                     display: "flex",

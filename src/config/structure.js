@@ -16,15 +16,16 @@ export const structure = {
       name: "Observations",
       children: ["Observer Questionnaires", "Narratives"],
     },
+    { name: "EEG Variables" },
     { name: "Actigraphy" },
     { name: "Sleep Measures" },
-    { name: "EEG Variables" },
   ],
 
   tasksByCategory: {
     "Mother Tasks": [
       "Mother Executive Function Tests",
-      "Shipley Parent Cognition"
+      "Shipley Parent Cognition",
+      "Social Support Related"
     ],
     "Child Tasks": [
       "Bird Alligator",
@@ -81,7 +82,7 @@ export const structure = {
     "Observer Questionnaires": ["Home Scale Items", "Observer Ratings"],
     Narratives: [],
 
-    Actigraphy: ["Main Sleep Variables"],
+    Actigraphy: ["Child", "Parent", "Summary"],
 
     "Sleep Measures": ["Sleep Diary – Child"],
 

@@ -1112,6 +1112,251 @@ export const variableDescriptions = {
   "socialSupportCompanionship42": "Social Support - Companionship",
   "socialSupportCompanionship54": "Social Support - Companionship",
 
+  "atqFearPrimary30": "Fear Scale",
+  "atqFearPrimary36": "Fear Scale",
+  "atqFearPrimary42": "Fear Scale",
+  "atqFearPrimary54": "Fear Scale",
+
+  "atqFrustrationPrimary30": "Frustration Scale",
+  "atqFrustrationPrimary36": "Frustration Scale",
+  "atqFrustrationPrimary42": "Frustration Scale",
+  "atqFrustrationPrimary54": "Frustration Scale",
+
+  "atqSadnessPrimary30": "Sadness Scale",
+  "atqSadnessPrimary36": "Sadness Scale",
+  "atqSadnessPrimary42": "Sadness Scale",
+  "atqSadnessPrimary54": "Sadness Scale",
+
+  "atqDiscomfortPrimary30": "Discomfort Scale",
+  "atqDiscomfortPrimary36": "Discomfort Scale",
+  "atqDiscomfortPrimary42": "Discomfort Scale",
+  "atqDiscomfortPrimary54": "Discomfort Scale",
+
+  "atqNegativeAffectPrimary30": "Negative Affect Scale",
+  "atqNegativeAffectPrimary36": "Negative Affect Scale",
+  "atqNegativeAffectPrimary42": "Negative Affect Scale",
+  "atqNegativeAffectPrimary54": "Negative Affect Scale",
+
+  "atqActivationControlPrimary30": "Activation Control",
+  "atqActivationControlPrimary36": "Activation Control",
+  "atqActivationControlPrimary42": "Activation Control",
+  "atqActivationControlPrimary54": "Activation Control",
+
+  "atqAttentionalControlPrimary30": "Attentional Control",
+  "atqAttentionalControlPrimary36": "Attentional Control",
+  "atqAttentionalControlPrimary42": "Attentional Control",
+  "atqAttentionalControlPrimary54": "Attentional Control",
+
+  "atqInhibitoryControlPrimary30": "Inhibitory Control",
+  "atqInhibitoryControlPrimary36": "Inhibitory Control",
+  "atqInhibitoryControlPrimary42": "Inhibitory Control",
+  "atqInhibitoryControlPrimary54": "Inhibitory Control",
+
+  "atqEffortfulControlPrimary30": "Effortful Control",
+  "atqEffortfulControlPrimary36": "Effortful Control",
+  "atqEffortfulControlPrimary42": "Effortful Control",
+  "atqEffortfulControlPrimary54": "Effortful Control",
+
+  "atqSociabilityPrimary30": "Sociability",
+  "atqSociabilityPrimary36": "Sociability",
+  "atqSociabilityPrimary42": "Sociability",
+  "atqSociabilityPrimary54": "Sociability",
+
+  "atqHighIntensityPleasurePrimary30": "High Intensity Pleasure",
+  "atqHighIntensityPleasurePrimary36": "High Intensity Pleasure",
+  "atqHighIntensityPleasurePrimary42": "High Intensity Pleasure",
+  "atqHighIntensityPleasurePrimary54": "High Intensity Pleasure",
+
+  "atqPositiveAffectPrimary30": "Positive Affect",
+  "atqPositiveAffectPrimary36": "Positive Affect",
+  "atqPositiveAffectPrimary42": "Positive Affect",
+  "atqPositiveAffectPrimary54": "Positive Affect",
+
+  "atqExtraversionPrimary30": "Extraversion",
+  "atqExtraversionPrimary36": "Extraversion",
+  "atqExtraversionPrimary42": "Extraversion",
+  "atqExtraversionPrimary54": "Extraversion",
+
+  "atqNeutralPerceptualSensitivityPrimary30": "Neutral Perceptual Sensitivity",
+  "atqNeutralPerceptualSensitivityPrimary36": "Neutral Perceptual Sensitivity",
+  "atqNeutralPerceptualSensitivityPrimary42": "Neutral Perceptual Sensitivity",
+  "atqNeutralPerceptualSensitivityPrimary54": "Neutral Perceptual Sensitivity",
+
+  "atqAffectivePerceptualSensitivityPrimary30": "Affective Perceptual Sensitivity",
+  "atqAffectivePerceptualSensitivityPrimary36": "Affective Perceptual Sensitivity",
+  "atqAffectivePerceptualSensitivityPrimary42": "Affective Perceptual Sensitivity",
+  "atqAffectivePerceptualSensitivityPrimary54": "Affective Perceptual Sensitivity",
+
+  "atqOrientingSensitivityPrimary30": "Orienting Sensitivity",
+  "atqOrientingSensitivityPrimary36": "Orienting Sensitivity",
+  "atqOrientingSensitivityPrimary42": "Orienting Sensitivity",
+  "atqOrientingSensitivityPrimary54": "Orienting Sensitivity",
+
+  "atqFearParentingPartner30": "Fear Scale",
+  "atqFearParentingPartner36": "Fear Scale",
+  "atqFearParentingPartner42": "Fear Scale",
+  "atqFearParentingPartner54": "Fear Scale",
+
+  "atqFrustrationParentingPartner30": "Frustration Scale",
+  "atqFrustrationParentingPartner36": "Frustration Scale",
+  "atqFrustrationParentingPartner42": "Frustration Scale",
+  "atqFrustrationParentingPartner54": "Frustration Scale",
+
+  "atqSadnessParentingPartner30": "Sadness Scale",
+  "atqSadnessParentingPartner36": "Sadness Scale",
+  "atqSadnessParentingPartner42": "Sadness Scale",
+  "atqSadnessParentingPartner54": "Sadness Scale",
+
+  "atqDiscomfortParentingPartner30": "Discomfort Scale",
+  "atqDiscomfortParentingPartner36": "Discomfort Scale",
+  "atqDiscomfortParentingPartner42": "Discomfort Scale",
+  "atqDiscomfortParentingPartner54": "Discomfort Scale",
+
+  "atqNegativeAffectParentingPartner30": "Negative Affect Scale",
+  "atqNegativeAffectParentingPartner36": "Negative Affect Scale",
+  "atqNegativeAffectParentingPartner42": "Negative Affect Scale",
+  "atqNegativeAffectParentingPartner54": "Negative Affect Scale",
+
+  "atqActivationControlParentingPartner30": "Activation Control",
+  "atqActivationControlParentingPartner36": "Activation Control",
+  "atqActivationControlParentingPartner42": "Activation Control",
+  "atqActivationControlParentingPartner54": "Activation Control",
+
+  "atqAttentionalControlParentingPartner30": "Attentional Control",
+  "atqAttentionalControlParentingPartner36": "Attentional Control",
+  "atqAttentionalControlParentingPartner42": "Attentional Control",
+  "atqAttentionalControlParentingPartner54": "Attentional Control",
+
+  "atqInhibitoryControlParentingPartner30": "Inhibitory Control",
+  "atqInhibitoryControlParentingPartner36": "Inhibitory Control",
+  "atqInhibitoryControlParentingPartner42": "Inhibitory Control",
+  "atqInhibitoryControlParentingPartner54": "Inhibitory Control",
+
+  "atqEffortfulControlParentingPartner30": "Effortful Control",
+  "atqEffortfulControlParentingPartner36": "Effortful Control",
+  "atqEffortfulControlParentingPartner42": "Effortful Control",
+  "atqEffortfulControlParentingPartner54": "Effortful Control",
+
+  "atqSociabilityParentingPartner30": "Sociability",
+  "atqSociabilityParentingPartner36": "Sociability",
+  "atqSociabilityParentingPartner42": "Sociability",
+  "atqSociabilityParentingPartner54": "Sociability",
+
+  "atqHighIntensityPleasureParentingPartner30": "High Intensity Pleasure",
+  "atqHighIntensityPleasureParentingPartner36": "High Intensity Pleasure",
+  "atqHighIntensityPleasureParentingPartner42": "High Intensity Pleasure",
+  "atqHighIntensityPleasureParentingPartner54": "High Intensity Pleasure",
+
+  "atqPositiveAffectParentingPartner30": "Positive Affect",
+  "atqPositiveAffectParentingPartner36": "Positive Affect",
+  "atqPositiveAffectParentingPartner42": "Positive Affect",
+  "atqPositiveAffectParentingPartner54": "Positive Affect",
+
+  "atqExtraversionParentingPartner30": "Extraversion",
+  "atqExtraversionParentingPartner36": "Extraversion",
+  "atqExtraversionParentingPartner42": "Extraversion",
+  "atqExtraversionParentingPartner54": "Extraversion",
+
+  "atqNeutralPerceptualSensitivityParentingPartner30": "Neutral Perceptual Sensitivity",
+  "atqNeutralPerceptualSensitivityParentingPartner36": "Neutral Perceptual Sensitivity",
+  "atqNeutralPerceptualSensitivityParentingPartner42": "Neutral Perceptual Sensitivity",
+  "atqNeutralPerceptualSensitivityParentingPartner54": "Neutral Perceptual Sensitivity",
+
+  "atqAffectivePerceptualSensitivityParentingPartner30": "Affective Perceptual Sensitivity",
+  "atqAffectivePerceptualSensitivityParentingPartner36": "Affective Perceptual Sensitivity",
+  "atqAffectivePerceptualSensitivityParentingPartner42": "Affective Perceptual Sensitivity",
+  "atqAffectivePerceptualSensitivityParentingPartner54": "Affective Perceptual Sensitivity",
+
+  "atqAssociativeSensitivityParentingPartner30": "Associative Sensitivity",
+  "atqAssociativeSensitivityParentingPartner36": "Associative Sensitivity",
+  "atqAssociativeSensitivityParentingPartner42": "Associative Sensitivity",
+  "atqAssociativeSensitivityParentingPartner54": "Associative Sensitivity",
+
+  "atqOrientingSensitivityParentingPartner30": "Orienting Sensitivity",
+  "atqOrientingSensitivityParentingPartner36": "Orienting Sensitivity",
+  "atqOrientingSensitivityParentingPartner42": "Orienting Sensitivity",
+  "atqOrientingSensitivityParentingPartner54": "Orienting Sensitivity",
+
+
+  "briefInhibit30": "inhibit",
+  "briefInhibit36": "inhibit",
+  "briefInhibit42": "inhibit",
+  "briefInhibit54": "inhibit",
+
+  "briefShift30": "shift",
+  "briefShift36": "shift",
+  "briefShift42": "shift",
+  "briefShift54": "shift",
+
+  "briefEmotionalControl30": "emotional control",
+  "briefEmotionalControl36": "emotional control",
+  "briefEmotionalControl42": "emotional control",
+  "briefEmotionalControl54": "emotional control",
+
+  "briefSelfMonitor30": "self monitor",
+  "briefSelfMonitor36": "self monitor",
+  "briefSelfMonitor42": "self monitor",
+  "briefSelfMonitor54": "self monitor",
+
+  "briefInitiate30": "initiate",
+  "briefInitiate36": "initiate",
+  "briefInitiate42": "initiate",
+  "briefInitiate54": "initiate",
+
+  "briefWorkingMemory30": "working memory",
+  "briefWorkingMemory36": "working memory",
+  "briefWorkingMemory42": "working memory",
+  "briefWorkingMemory54": "working memory",
+
+  "briefPlanOrganize30": "plan organize",
+  "briefPlanOrganize36": "plan organize",
+  "briefPlanOrganize42": "plan organize",
+  "briefPlanOrganize54": "plan organize",
+
+  "briefTaskMonitor30": "task monitor",
+  "briefTaskMonitor36": "task monitor",
+  "briefTaskMonitor42": "task monitor",
+  "briefTaskMonitor54": "task monitor",
+
+  "briefOrganizationOfMaterials30": "organization of materials",
+  "briefOrganizationOfMaterials36": "organization of materials",
+  "briefOrganizationOfMaterials42": "organization of materials",
+  "briefOrganizationOfMaterials54": "organization of materials",
+
+  "briefBehavioralRegulationIndex30": "behavioral regulation index",
+  "briefBehavioralRegulationIndex36": "behavioral regulation index",
+  "briefBehavioralRegulationIndex42": "behavioral regulation index",
+  "briefBehavioralRegulationIndex54": "behavioral regulation index",
+
+  "briefMetacognitionIndex30": "metacognition index",
+  "briefMetacognitionIndex36": "metacognition index",
+  "briefMetacognitionIndex42": "metacognition index",
+  "briefMetacognitionIndex54": "metacognition index",
+
+  "briefGlobalExecutiveComposite30": "global executive composite",
+  "briefGlobalExecutiveComposite36": "global executive composite",
+  "briefGlobalExecutiveComposite42": "global executive composite",
+  "briefGlobalExecutiveComposite54": "global executive composite",
+
+  "briefInconsistencyValidity30": "inconsistency validity",
+  "briefInconsistencyValidity36": "inconsistency validity",
+  "briefInconsistencyValidity42": "inconsistency validity",
+  "briefInconsistencyValidity54": "inconsistency validity",
+
+  "briefInfrequencyValidity30": "frequency validity",
+  "briefInfrequencyValidity36": "frequency validity",
+  "briefInfrequencyValidity42": "frequency validity",
+  "briefInfrequencyValidity54": "frequency validity",
+
+  "briefNegativityValidity30": "negativity validity",
+  "briefNegativityValidity36": "negativity validity",
+  "briefNegativityValidity42": "negativity validity",
+  "briefNegativityValidity54": "negativity validity",
+
+  "briefIsHighlyNegative30": "highly negative",
+  "briefIsHighlyNegative36": "highly negative",
+  "briefIsHighlyNegative42": "highly negative",
+  "briefIsHighlyNegative54": "highly negative",
 };
 
 
@@ -1747,4 +1992,146 @@ export const variableComputations = {
   "socialSupportCompanionship42": "Mean(panse10, panse11, panse12)",
   "socialSupportCompanionship54": "Mean(panse10, panse11, panse12)",
 
+  "atqFearPrimary30": "Mean of items: 1, 12, 22, 51, 61, 68R, 75R",
+  "atqFearPrimary36": "Mean of items: 1, 12, 22, 51, 61, 68R, 75R",
+  "atqFearPrimary42": "Mean of items: 1, 12, 22, 51, 61, 68R, 75R",
+  "atqFearPrimary54": "Mean of items: 1, 12, 22, 51, 61, 68R, 75R",
+
+  "atqFrustrationPrimary30": "Mean of items: 6R, 17, 31, 38R, 48, 58R",
+  "atqFrustrationPrimary36": "Mean of items: 6R, 17, 31, 38R, 48, 58R",
+  "atqFrustrationPrimary42": "Mean of items: 6R, 17, 31, 38R, 48, 58R",
+  "atqFrustrationPrimary54": "Mean of items: 6R, 17, 31, 38R, 48, 58R",
+
+  "atqSadnessPrimary30": "Mean of items: 9R, 20R, 25, 34R, 45, 56, 65",
+  "atqSadnessPrimary36": "Mean of items: 9R, 20R, 25, 34R, 45, 56, 65",
+  "atqSadnessPrimary42": "Mean of items: 9R, 20R, 25, 34R, 45, 56, 65",
+  "atqSadnessPrimary54": "Mean of items: 9R, 20R, 25, 34R, 45, 56, 65",
+
+  "atqDiscomfortPrimary30": "Mean of items: 4, 32, 36, 42, 54, 59",
+  "atqDiscomfortPrimary36": "Mean of items: 4, 32, 36, 42, 54, 59",
+  "atqDiscomfortPrimary42": "Mean of items: 4, 32, 36, 42, 54, 59",
+  "atqDiscomfortPrimary54": "Mean of items: 4, 32, 36, 42, 54, 59",
+
+  "atqNegativeAffectPrimary30": "Mean of items: atqFear, atqFrustration, atqSadness, atqDiscomfort",
+  "atqNegativeAffectPrimary36": "Mean of items: atqFear, atqFrustration, atqSadness, atqDiscomfort",
+  "atqNegativeAffectPrimary42": "Mean of items: atqFear, atqFrustration, atqSadness, atqDiscomfort",
+  "atqNegativeAffectPrimary54": "Mean of items: atqFear, atqFrustration, atqSadness, atqDiscomfort",
+
+  "atqActivationControlPrimary30": "Mean of items: 2R, 8R, 15, 27, 47, 55, 72R",
+  "atqActivationControlPrimary36": "Mean of items: 2R, 8R, 15, 27, 47, 55, 72R",
+  "atqActivationControlPrimary42": "Mean of items: 2R, 8R, 15, 27, 47, 55, 72R",
+  "atqActivationControlPrimary54": "Mean of items: 2R, 8R, 15, 27, 47, 55, 72R",
+
+  "atqAttentionalControlPrimary30": "Mean of items: 5R, 29R, 35, 40R, 50R",
+  "atqAttentionalControlPrimary36": "Mean of items: 5R, 29R, 35, 40R, 50R",
+  "atqAttentionalControlPrimary42": "Mean of items: 5R, 29R, 35, 40R, 50R",
+  "atqAttentionalControlPrimary54": "Mean of items: 5R, 29R, 35, 40R, 50R",
+
+  "atqInhibitoryControlPrimary30": "Mean of items: 11R, 26R, 43, 53R, 60R, 63R, 76",
+  "atqInhibitoryControlPrimary36": "Mean of items: 11R, 26R, 43, 53R, 60R, 63R, 76",
+  "atqInhibitoryControlPrimary42": "Mean of items: 11R, 26R, 43, 53R, 60R, 63R, 76",
+  "atqInhibitoryControlPrimary54": "Mean of items: 11R, 26R, 43, 53R, 60R, 63R, 76",
+
+  "atqEffortfulControlPrimary30": "Mean of items: atqActivationControl, atqAttentionalControl, atqInhibitoryControl",
+  "atqEffortfulControlPrimary36": "Mean of items: atqActivationControl, atqAttentionalControl, atqInhibitoryControl",
+  "atqEffortfulControlPrimary42": "Mean of items: atqActivationControl, atqAttentionalControl, atqInhibitoryControl",
+  "atqEffortfulControlPrimary54": "Mean of items: atqActivationControl, atqAttentionalControl, atqInhibitoryControl",
+
+  "atqSociabilityPrimary30": "Mean of items: 14R, 19, 37, 46R, 67",
+  "atqSociabilityPrimary36": "Mean of items: 14R, 19, 37, 46R, 67",
+  "atqSociabilityPrimary42": "Mean of items: 14R, 19, 37, 46R, 67",
+  "atqSociabilityPrimary54": "Mean of items: 14R, 19, 37, 46R, 67",
+
+  "atqHighIntensityPleasurePrimary30": "Mean of items: 7R, 23, 30, 44R, 64, 73, 77R",
+  "atqHighIntensityPleasurePrimary36": "Mean of items: 7R, 23, 30, 44R, 64, 73, 77R",
+  "atqHighIntensityPleasurePrimary42": "Mean of items: 7R, 23, 30, 44R, 64, 73, 77R",
+  "atqHighIntensityPleasurePrimary54": "Mean of items: 7R, 23, 30, 44R, 64, 73, 77R",
+
+  "atqPositiveAffectPrimary30": "Mean of items: 3, 16R, 28, 49, 70R",
+  "atqPositiveAffectPrimary36": "Mean of items: 3, 16R, 28, 49, 70R",
+  "atqPositiveAffectPrimary42": "Mean of items: 3, 16R, 28, 49, 70R",
+  "atqPositiveAffectPrimary54": "Mean of items: 3, 16R, 28, 49, 70R",
+
+  "atqExtraversionPrimary30": "Mean of items: atqSociability, atqHighIntensityPleasure, atqPositiveAffect",
+  "atqExtraversionPrimary36": "Mean of items: atqSociability, atqHighIntensityPleasure, atqPositiveAffect",
+  "atqExtraversionPrimary42": "Mean of items: atqSociability, atqHighIntensityPleasure, atqPositiveAffect",
+  "atqExtraversionPrimary54": "Mean of items: atqSociability, atqHighIntensityPleasure, atqPositiveAffect",
+
+  "atqNeutralPerceptualSensitivityPrimary30": "Mean of items: 10R, 21, 33R, 52, 71R",
+  "atqNeutralPerceptualSensitivityPrimary36": "Mean of items: 10R, 21, 33R, 52, 71R",
+  "atqNeutralPerceptualSensitivityPrimary42": "Mean of items: 10R, 21, 33R, 52, 71R",
+  "atqNeutralPerceptualSensitivityPrimary54": "Mean of items: 10R, 21, 33R, 52, 71R",
+
+  "atqAffectivePerceptualSensitivityPrimary30": "Mean of items: 13, 18, 57, 66R, 69",
+  "atqAffectivePerceptualSensitivityPrimary36": "Mean of items: 13, 18, 57, 66R, 69",
+  "atqAffectivePerceptualSensitivityPrimary42": "Mean of items: 13, 18, 57, 66R, 69",
+  "atqAffectivePerceptualSensitivityPrimary54": "Mean of items: 13, 18, 57, 66R, 69",
+
+  "atqOrientingSensitivityPrimary30": "Mean of items: atqNeutralPerceptualSensitivity, atqAffectivePerceptualSensitivity, atqAssociativeSensitivity",
+  "atqOrientingSensitivityPrimary36": "Mean of items: atqNeutralPerceptualSensitivity, atqAffectivePerceptualSensitivity, atqAssociativeSensitivity",
+  "atqOrientingSensitivityPrimary42": "Mean of items: atqNeutralPerceptualSensitivity, atqAffectivePerceptualSensitivity, atqAssociativeSensitivity",
+  "atqOrientingSensitivityPrimary54": "Mean of items: atqNeutralPerceptualSensitivity, atqAffectivePerceptualSensitivity, atqAssociativeSensitivity",
+
+
+
+
+  "briefInhibit30": "Mean of Items: 5, 16, 29, 36, 43, 55, 58, 73",
+  "briefInhibit36": "Mean of Items: 5, 16, 29, 36, 43, 55, 58, 73",
+  "briefInhibit42": "Mean of Items: 5, 16, 29, 36, 43, 55, 58, 73",
+  "briefInhibit54": "Mean of Items: 5, 16, 29, 36, 43, 55, 58, 73",
+
+  "briefShift30": "Mean of Items: 8, 22, 32, 44, 61, 67",
+  "briefShift36": "Mean of Items: 8, 22, 32, 44, 61, 67",
+  "briefShift42": "Mean of Items: 8, 22, 32, 44, 61, 67",
+  "briefShift54": "Mean of Items: 8, 22, 32, 44, 61, 67",
+
+  "briefEmotionalControl30": "Mean of Items: 1, 12, 19, 28, 33, 42, 51, 57, 69, 72",
+  "briefEmotionalControl36": "Mean of Items: 1, 12, 19, 28, 33, 42, 51, 57, 69, 72",
+  "briefEmotionalControl42": "Mean of Items: 1, 12, 19, 28, 33, 42, 51, 57, 69, 72",
+  "briefEmotionalControl54": "Mean of Items: 1, 12, 19, 28, 33, 42, 51, 57, 69, 72",
+
+  "briefSelfMonitor30": "Mean of Items: 13, 23, 37, 50, 64, 70",
+  "briefSelfMonitor36": "Mean of Items: 13, 23, 37, 50, 64, 70",
+  "briefSelfMonitor42": "Mean of Items: 13, 23, 37, 50, 64, 70",
+  "briefSelfMonitor54": "Mean of Items: 13, 23, 37, 50, 64, 70",
+
+  "briefInitiate30": "Mean of Items: 6, 14, 20, 25, 45, 49, 53, 62",
+  "briefInitiate36": "Mean of Items: 6, 14, 20, 25, 45, 49, 53, 62",
+  "briefInitiate42": "Mean of Items: 6, 14, 20, 25, 45, 49, 53, 62",
+  "briefInitiate54": "Mean of Items: 6, 14, 20, 25, 45, 49, 53, 62",
+
+  "briefWorkingMemory30": "Mean of Items: 4, 11, 17, 26, 35, 46, 56, 68",
+  "briefWorkingMemory36": "Mean of Items: 4, 11, 17, 26, 35, 46, 56, 68",
+  "briefWorkingMemory42": "Mean of Items: 4, 11, 17, 26, 35, 46, 56, 68",
+  "briefWorkingMemory54": "Mean of Items: 4, 11, 17, 26, 35, 46, 56, 68",
+
+  "briefPlanOrganize30": "Mean of Items: 9, 15, 21, 34, 39, 47, 54, 63, 66, 71",
+  "briefPlanOrganize36": "Mean of Items: 9, 15, 21, 34, 39, 47, 54, 63, 66, 71",
+  "briefPlanOrganize42": "Mean of Items: 9, 15, 21, 34, 39, 47, 54, 63, 66, 71",
+  "briefPlanOrganize54": "Mean of Items: 9, 15, 21, 34, 39, 47, 54, 63, 66, 71",
+
+  "briefTaskMonitor30": "Mean of Items: 2, 18, 24, 41, 52, 75",
+  "briefTaskMonitor36": "Mean of Items: 2, 18, 24, 41, 52, 75",
+  "briefTaskMonitor42": "Mean of Items: 2, 18, 24, 41, 52, 75",
+  "briefTaskMonitor54": "Mean of Items: 2, 18, 24, 41, 52, 75",
+
+  "briefOrganizationOfMaterials30": "Mean of Items: 3, 7, 30, 31, 40, 60, 65, 74",
+  "briefOrganizationOfMaterials36": "Mean of Items: 3, 7, 30, 31, 40, 60, 65, 74",
+  "briefOrganizationOfMaterials42": "Mean of Items: 3, 7, 30, 31, 40, 60, 65, 74",
+  "briefOrganizationOfMaterials54": "Mean of Items: 3, 7, 30, 31, 40, 60, 65, 74",
+
+  "briefBehavioralRegulationIndex30": "Mean of Items: inhibitItems, shiftItems, emotionalControlItems, selfMonitorItems",
+  "briefBehavioralRegulationIndex36": "Mean of Items: inhibitItems, shiftItems, emotionalControlItems, selfMonitorItems",
+  "briefBehavioralRegulationIndex42": "Mean of Items: inhibitItems, shiftItems, emotionalControlItems, selfMonitorItems",
+  "briefBehavioralRegulationIndex54": "Mean of Items: inhibitItems, shiftItems, emotionalControlItems, selfMonitorItems",
+
+  "briefMetacognitionIndex30": "Mean of Items: initiateItems, workingMemoryItems, planOrganizeItems, taskMonitorItems, organizationOfMaterialsItems",
+  "briefMetacognitionIndex36": "Mean of Items: initiateItems, workingMemoryItems, planOrganizeItems, taskMonitorItems, organizationOfMaterialsItems",
+  "briefMetacognitionIndex42": "Mean of Items: initiateItems, workingMemoryItems, planOrganizeItems, taskMonitorItems, organizationOfMaterialsItems",
+  "briefMetacognitionIndex54": "Mean of Items: initiateItems, workingMemoryItems, planOrganizeItems, taskMonitorItems, organizationOfMaterialsItems",
+
+  "briefGlobalExecutiveComposite30": "Mean of Items: behavioralRegulationIndexItems, metacognitionIndexItems",
+  "briefGlobalExecutiveComposite36": "Mean of Items: behavioralRegulationIndexItems, metacognitionIndexItems",
+  "briefGlobalExecutiveComposite42": "Mean of Items: behavioralRegulationIndexItems, metacognitionIndexItems",
+  "briefGlobalExecutiveComposite54": "Mean of Items: behavioralRegulationIndexItems, metacognitionIndexItems",
 };

@@ -19,7 +19,8 @@ const taskToVarMap = {
   "DIFFER Cognitive Ability": "diff",
   "Eyberg Child Behavior Inventory": "eyb",
   "Physical Health Status Inventory": "phsi",
-  "Shipley Parent Cognition": "ship",
+  "Shipley Parent Cognition": "shipley",
+  "Social Support Related": "socialsupport",
   "Teacher Questionnaires": "teach",
   "Temperament Questionnaires": "temp",
   Compliments: "comp",
@@ -29,7 +30,9 @@ const taskToVarMap = {
   "Snack Delay": "snack",
   "Sustained Attention": "sustain",
   "Token Sort": "token",
-  "Main Sleep Variables": "sleep",
+  Child: "sleep",
+  Parent: "sleep",
+  Summary: "sleep",
   "Home Scale Items": "home",
   "Observer Ratings": "obs",
   "Parent Positive Affect": "parentpositive",
@@ -47,6 +50,37 @@ const taskToVarMap = {
   "Other Related Toy Variables": "toy",
   "EEG Bird Alligator": "eegbirdalligator",
 };
+
+const classifySleepVariable = (vLower) => {
+  const isColeKripke = vLower.includes("cole") || vLower.includes("kripke");
+  const isSadeh = vLower.includes("sadeh");
+  const isWk1 = vLower.includes("wk1") || vLower.includes("week1") || vLower.includes("w1");
+  const isWk2 = vLower.includes("wk2") || vLower.includes("week2") || vLower.includes("w2");
+  const isComb = vLower.includes("comb") || vLower.includes("combined");
+  const isParent = vLower.includes("par") || vLower.includes("parent");
+
+  if (isSadeh) {
+    if (isWk1 && !isParent) return { task: "Child", l2: "Child Week 1 Sadeh" };
+    if (isWk2 && !isParent) return { task: "Child", l2: "Child Week 2 Sadeh" };
+    if (isComb && !isParent) return { task: "Child", l2: "Child Combined Sadeh" };
+    if (isParent) return { task: "Parent", l2: "Parent Combined Sadeh" };
+  } else if (isColeKripke) {
+    if (isWk1 && !isParent) return { task: "Child", l2: "Child Week 1 ColeKripke" };
+    if (isWk2 && !isParent) return { task: "Child", l2: "Child Week 2 ColeKripke" };
+    if (isComb && !isParent) return { task: "Child", l2: "Child Combined ColeKripke" };
+    if (isWk1 && isParent) return { task: "Parent", l2: "Parent Week 1 ColeKripke" };
+    if (isWk2 && isParent) return { task: "Parent", l2: "Parent Week 2 ColeKripke" };
+    if (isComb && isParent) return { task: "Parent", l2: "Parent Combined ColeKripke" };
+  }
+
+  return { task: "Summary", l2: "Summary Sleep Domains" };
+};
+
+const isSleepObservationCountVariable = (vLower) =>
+  vLower === "downnumobs" || vLower === "upnumobs" || vLower === "truesleepnumobs" || vLower === "napnumobs" ||
+  vLower === "downshorttime" || vLower === "upshorttime" || vLower === "truesleepshorttime" || vLower === "napshorttime" ||
+  vLower.startsWith("downnumobs") || vLower.startsWith("upnumobs") || vLower.startsWith("truesleepnumobs") || vLower.startsWith("napnumobs") ||
+  vLower.startsWith("downshorttime") || vLower.startsWith("upshorttime") || vLower.startsWith("truesleepshorttime") || vLower.startsWith("napshorttime");
 
 export const getCorrectTasksForVariable = (v) => {
   const vLower = v.toLowerCase();
@@ -84,13 +118,8 @@ export const getCorrectTasksForVariable = (v) => {
     return ["Parent Positive Affect"];
   }
 
-  if (
-    vLower === "downnumobs" || vLower === "upnumobs" || vLower === "truesleepnumobs" || vLower === "napnumobs" ||
-    vLower === "downshorttime" || vLower === "upshorttime" || vLower === "truesleepshorttime" || vLower === "napshorttime" ||
-    vLower.startsWith("downnumobs") || vLower.startsWith("upnumobs") || vLower.startsWith("truesleepnumobs") || vLower.startsWith("napnumobs") ||
-    vLower.startsWith("downshorttime") || vLower.startsWith("upshorttime") || vLower.startsWith("truesleepshorttime") || vLower.startsWith("napshorttime")
-  ) {
-    return ["Main Sleep Variables", "Observer Ratings"];
+  if (isSleepObservationCountVariable(vLower)) {
+    return [classifySleepVariable(vLower).task, "Observer Ratings"];
   }
 
   if (vLower.includes("sdchild")) {
@@ -147,7 +176,7 @@ export const getCorrectTasksForVariable = (v) => {
     vLower.includes("shorttimeinbed") ||
     vLower.includes("shorttimeasleep")
   ) {
-    return ["Main Sleep Variables"];
+    return [classifySleepVariable(vLower).task];
   }
 
   if (vLower.startsWith("atq")) {
@@ -209,8 +238,12 @@ export const getCorrectTasksForVariable = (v) => {
     return ["Parent Positive Affect"];
   }
 
-  if (vLower.startsWith("shipley") || vLower.startsWith("socialsupport")) {
+  if (vLower.startsWith("shipley")) {
     return ["Shipley Parent Cognition"];
+  }
+
+  if (vLower.startsWith("socialsupport")) {
+    return ["Social Support Related"];
   }
 
   if (vLower.startsWith("chaos")) {
@@ -337,9 +370,6 @@ export const shouldShowVariableInTask = (variableName, selectedCategory, selecte
       return true;
     }
     const allTasksInSystem = new Set(Object.values(structure.tasksByCategory).flat());
-    if (correctTasks.includes("Sleep Diary – Child") && selectedTask === "Main Sleep Variables") {
-      return false;
-    }
     const anyCorrectTaskExists = correctTasks.some((t) => allTasksInSystem.has(t));
     if (anyCorrectTaskExists) {
       return false;
@@ -349,6 +379,12 @@ export const shouldShowVariableInTask = (variableName, selectedCategory, selecte
   if (selectedTask === "Parent Sensitivity / Intrusiveness") {
     const lower = normalized.toLowerCase();
     return lower.includes("parentalsensitivity") || lower.includes("parentalintrusiveness");
+  }
+
+  if (selectedTask === "Child" || selectedTask === "Parent" || selectedTask === "Summary") {
+    const lower = normalized.toLowerCase();
+    if (!lower.includes("sleep")) return false;
+    return classifySleepVariable(lower).task === selectedTask;
   }
 
   const keyword = taskToVarMap[selectedTask] || selectedTask.toLowerCase().split(" ")[0];
@@ -423,6 +459,25 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
     return { l1Category: "Needs Review / Other Related Variables", l2Timepoint: "Other" };
   }
 
+  if (selectedTask === "BRIEF-A (Behavior Rating Inventory of Executive Function – Adult Version)") {
+    const l1 = `${selectedTask} Task`;
+    const regularFamilies = [
+      "briefinconsistencyvalidity",
+      "briefinfrequencyvalidity",
+      "briefnegativityvalidity",
+      "briefishighlynegative",
+    ];
+    const l2 = regularFamilies.some((f) => vLower.startsWith(f)) ? "Regular Variables" : "Composites";
+
+    let l3 = "Other";
+    if (vLower.endsWith("30")) l3 = "Age 30";
+    else if (vLower.endsWith("36")) l3 = "Age 36";
+    else if (vLower.endsWith("42")) l3 = "Age 42";
+    else if (vLower.endsWith("54")) l3 = "Age 54";
+
+    return { l1Category: l1, l2Timepoint: l2, l3Group: l3 };
+  }
+
   if (selectedTask === "DIFFER Cognitive Ability") {
     const l1 = "DIFFER Cognitive Ability";
     if (vLower.startsWith("oddball")) {
@@ -484,56 +539,51 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
 
   if (selectedTask === "Shipley Parent Cognition") {
     const l1 = "Shipley Parent Cognition";
-    if (vLower.startsWith("socialsupport")) {
-      return { l1Category: l1, l2Timepoint: "Social Support Related", l3Group: "Composites" };
-    }
     if (vLower.startsWith("shipley")) {
       const isRegular =
         vLower.startsWith("shipleyp.gender") ||
         vLower.startsWith("shipleyp.age") ||
         vLower.startsWith("shipleyp.edu") ||
         vLower.startsWith("shipleyp.occupation");
-      const l3 = isRegular ? "Regular Variables" : "Composites";
+      const l2 = isRegular ? "Regular Variables" : "Composites";
 
-      let l4 = "Other";
-      if (vLower.endsWith("30")) l4 = "Age 30";
-      else if (vLower.endsWith("36")) l4 = "Age 36";
-      else if (vLower.endsWith("42")) l4 = "Age 42";
-      else if (vLower.endsWith("54")) l4 = "Age 54";
+      let l3 = "Other";
+      if (vLower.endsWith("30")) l3 = "Age 30";
+      else if (vLower.endsWith("36")) l3 = "Age 36";
+      else if (vLower.endsWith("42")) l3 = "Age 42";
+      else if (vLower.endsWith("54")) l3 = "Age 54";
 
-      return { l1Category: l1, l2Timepoint: "Shipley Parent Cognition", l3Group: l3, l4Group: l4 };
+      return { l1Category: l1, l2Timepoint: l2, l3Group: l3 };
     }
     return { l1Category: "Needs Review / Other Related Variables", l2Timepoint: "Other" };
   }
 
-  if (selectedTask === "Main Sleep Variables") {
-    const l1 = "Main Sleep Variables";
-    const isColeKripke = vLower.includes("cole") || vLower.includes("kripke");
-    const isSadeh = vLower.includes("sadeh");
-    const isWk1 = vLower.includes("wk1") || vLower.includes("week1") || vLower.includes("w1");
-    const isWk2 = vLower.includes("wk2") || vLower.includes("week2") || vLower.includes("w2");
-    const isComb = vLower.includes("comb") || vLower.includes("combined");
-    const isParent = vLower.includes("par") || vLower.includes("parent");
+  if (selectedTask === "Social Support Related") {
+    const l1 = "Social Support Related Task Variables";
+    if (vLower.startsWith("socialsupport")) {
+      return { l1Category: l1, l2Timepoint: "Composites" };
+    }
+    return { l1Category: "Needs Review / Other Related Variables", l2Timepoint: "Other" };
+  }
 
-    if (isSadeh) {
-      if (isWk1 && !isParent) return { l1Category: l1, l2Timepoint: "Child Week 1 Sadeh" };
-      if (isWk2 && !isParent) return { l1Category: l1, l2Timepoint: "Child Week 2 Sadeh" };
-      if (isComb && !isParent) return { l1Category: l1, l2Timepoint: "Child Combined Sadeh" };
-      if (isParent) return { l1Category: l1, l2Timepoint: "Parent Combined Sadeh" };
-    } else if (isColeKripke) {
-      if (isWk1 && !isParent) return { l1Category: l1, l2Timepoint: "Child Week 1 ColeKripke" };
-      if (isWk2 && !isParent) return { l1Category: l1, l2Timepoint: "Child Week 2 ColeKripke" };
-      if (isComb && !isParent) return { l1Category: l1, l2Timepoint: "Child Combined ColeKripke" };
-      if (isWk1 && isParent) return { l1Category: l1, l2Timepoint: "Parent Week 1 ColeKripke" };
-      if (isWk2 && isParent) return { l1Category: l1, l2Timepoint: "Parent Week 2 ColeKripke" };
-      if (isComb && isParent) return { l1Category: l1, l2Timepoint: "Parent Combined ColeKripke" };
+  if (selectedTask === "Child" || selectedTask === "Parent" || selectedTask === "Summary") {
+    const result = classifySleepVariable(vLower);
+    if (result.task !== selectedTask) {
+      return { l1Category: "Needs Review / Other Related Variables", l2Timepoint: "Other" };
     }
 
-    if (vLower.includes("domain") || vLower.includes("summary") || vLower.includes("consolidation") || vLower.includes("efficiency")) {
-      return { l1Category: l1, l2Timepoint: "Summary Sleep Domains" };
+    let l3 = "Other";
+    if (vLower.endsWith("30")) l3 = "Age 30";
+    else if (vLower.endsWith("36")) l3 = "Age 36";
+    else if (vLower.endsWith("42")) l3 = "Age 42";
+    else if (vLower.endsWith("54")) l3 = "Age 54";
+
+    if (selectedTask === "Summary") {
+      return { l1Category: selectedTask, l2Timepoint: result.l2, l3Group: l3 };
     }
 
-    return { l1Category: l1, l2Timepoint: "Summary Sleep Domains" };
+    const l4 = isSleepObservationCountVariable(vLower) ? "Observation Count Variables" : "Sleep Variables";
+    return { l1Category: selectedTask, l2Timepoint: result.l2, l3Group: l3, l4Group: l4 };
   }
 
   if (selectedTask === "Bird Alligator") {
@@ -576,13 +626,14 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
   }
 
   if (selectedTask === "Adult Temperament Questionnaire") {
-    let l1 = "Adult Temperament Questionnaire Task";
-    let l2 = "Other";
-    if (vLower.endsWith("30")) l2 = "Age 30";
-    else if (vLower.endsWith("36")) l2 = "Age 36";
-    else if (vLower.endsWith("42")) l2 = "Age 42";
-    else if (vLower.endsWith("54")) l2 = "Age 54";
-    return { l1Category: l1, l2Timepoint: l2 };
+    const l1 = "Adult Temperament Questionnaire Task";
+    const l2 = vLower.includes("parentingpartner") ? "Regular Variables" : "Composites";
+    let l3 = "Other";
+    if (vLower.endsWith("30")) l3 = "Age 30";
+    else if (vLower.endsWith("36")) l3 = "Age 36";
+    else if (vLower.endsWith("42")) l3 = "Age 42";
+    else if (vLower.endsWith("54")) l3 = "Age 54";
+    return { l1Category: l1, l2Timepoint: l2, l3Group: l3 };
   }
 
   if (selectedTask === "Parent Sensitivity / Intrusiveness") {
@@ -863,6 +914,36 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
     return { l1Category: l1, l2Timepoint: l2, l3Group: l3 };
   }
 
+  if (selectedTask === "Sleep Diary – Child") {
+    const l1 = selectedTask;
+
+    let l2 = null;
+    if (vLower.includes("sdchildweek1sadeh")) l2 = "Child Week 1 Sadeh";
+    else if (vLower.includes("sdchildcombinedsadeh")) l2 = "Child Combined Sadeh";
+    else if (vLower.includes("sdchildweek2sadeh")) l2 = "Child Week 2 Sadeh";
+    else if (vLower.includes("sdchildweek1colekripke")) l2 = "Child Week 1 ColeKripke";
+    else if (vLower.includes("sdchildcombinedcolekripke")) l2 = "Child Combined ColeKripke";
+    else if (vLower.includes("sdchildweek2colekripke")) l2 = "Child Week 2 ColeKripke";
+
+    if (!l2) {
+      return { l1Category: "Needs Review / Other Related Variables", l2Timepoint: "Other" };
+    }
+
+    let l3 = "Other";
+    if (vLower.endsWith("30")) l3 = "Age 30";
+    else if (vLower.endsWith("36")) l3 = "Age 36";
+    else if (vLower.endsWith("42")) l3 = "Age 42";
+    else if (vLower.endsWith("54")) l3 = "Age 54";
+
+    let l4 = "Other";
+    if (vLower.startsWith("up")) l4 = "Up Variables";
+    else if (vLower.startsWith("down")) l4 = "Down Variables";
+    else if (vLower.startsWith("truesleep")) l4 = "True Sleep Variables";
+    else if (vLower.startsWith("nap")) l4 = "Nap Variables";
+
+    return { l1Category: l1, l2Timepoint: l2, l3Group: l3, l4Group: l4 };
+  }
+
   const defaultL1 = `${selectedTask} Task`;
   return { l1Category: defaultL1, l2Timepoint: "All" };
 };
@@ -929,22 +1010,82 @@ export const groupVariablesBySubcategory = (variables, selectedCategory, selecte
     groups[l1] = reordered;
   });
 
+  if (groups["Sleep Diary – Child"]) {
+    const sdChildGroupOrder = {
+      "Child Week 1 Sadeh": 0,
+      "Child Combined Sadeh": 1,
+      "Child Week 2 Sadeh": 2,
+      "Child Week 1 ColeKripke": 3,
+      "Child Combined ColeKripke": 4,
+      "Child Week 2 ColeKripke": 5,
+    };
+    const entries = Object.keys(groups["Sleep Diary – Child"]).map((k, i) => [k, i]);
+    entries.sort((a, b) => {
+      const ra = a[0] in sdChildGroupOrder ? sdChildGroupOrder[a[0]] : 99;
+      const rb = b[0] in sdChildGroupOrder ? sdChildGroupOrder[b[0]] : 99;
+      return ra !== rb ? ra - rb : a[1] - b[1];
+    });
+    const reordered = {};
+    entries.forEach(([k]) => {
+      reordered[k] = groups["Sleep Diary – Child"][k];
+    });
+    groups["Sleep Diary – Child"] = reordered;
+  }
+
+  const sleepGroupOrderPriority = (key) => {
+    if (key.startsWith("Age ")) {
+      const num = parseInt(key.slice(4), 10);
+      return isNaN(num) ? 9999 : num;
+    }
+    if (key === "Sleep Variables") return -2;
+    if (key === "Observation Count Variables") return -1;
+    if (key === "Up Variables") return -6;
+    if (key === "Down Variables") return -5;
+    if (key === "True Sleep Variables") return -4;
+    if (key === "Nap Variables") return -3;
+    return null;
+  };
+
+  const sortSleepNestedKeys = (node) => {
+    if (Array.isArray(node)) return node;
+    const entries = Object.keys(node).map((k, i) => [k, i]);
+    entries.sort((a, b) => {
+      const pa = sleepGroupOrderPriority(a[0]);
+      const pb = sleepGroupOrderPriority(b[0]);
+      if (pa !== null && pb !== null) return pa - pb;
+      if (pa !== null) return -1;
+      if (pb !== null) return 1;
+      return a[1] - b[1];
+    });
+    const reordered = {};
+    entries.forEach(([k]) => {
+      reordered[k] = sortSleepNestedKeys(node[k]);
+    });
+    return reordered;
+  };
+
+  ["Child", "Parent", "Summary", "Sleep Diary – Child"].forEach((l1) => {
+    if (!groups[l1]) return;
+    Object.keys(groups[l1]).forEach((l2) => {
+      groups[l1][l2] = sortSleepNestedKeys(groups[l1][l2]);
+    });
+  });
+
   return groups;
 };
 
-const subgroupFolderNames = [
-  "Regular Variables",
-  "Composites",
-  "Behavioral Composites",
-  "Imputed Composites",
-  "Needs Review / Other Related Variables",
-  "Other / Definition Not Available",
-];
+const levelIcons = { 1: "📁", 2: "🗂️", 3: "📂" };
 
-const groupIcon = (name, isMain) => {
+const groupIcon = (name, level) => {
   if (typeof name === "string" && name.startsWith("Age ")) return "📅";
-  if (subgroupFolderNames.includes(name)) return "📂";
-  return isMain ? "📁" : "📂";
+  return levelIcons[level] || "📂";
+};
+
+const levelAccents = {
+  1: { border: "rgba(96, 165, 250, 0.55)", background: "rgba(96, 165, 250, 0.07)" },
+  2: { border: "rgba(251, 191, 36, 0.5)", background: "rgba(251, 191, 36, 0.06)" },
+  3: { border: "rgba(52, 211, 153, 0.5)", background: "rgba(52, 211, 153, 0.05)" },
+  4: { border: "rgba(167, 139, 250, 0.5)", background: "rgba(167, 139, 250, 0.06)" },
 };
 
 const VariableDescription = ({
@@ -1079,54 +1220,12 @@ const VariableDescription = ({
 
         const isL1Expanded = expandedVarL1[l1Category] !== false;
 
-        return (
-          <div key={l1Category} style={{ marginBottom: "0.75rem" }}>
-            <div
-              onClick={() => toggleVarL1(l1Category)}
-              style={{
-                padding: "0.6rem 0.5rem",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
-                cursor: "pointer",
-                background: "rgba(255, 255, 255, 0.03)",
-                borderBottom: "1px solid var(--glass-border)",
-                borderRadius: "6px",
-                fontWeight: "600",
-                fontSize: "0.95rem",
-                color: "var(--text-primary)",
-              }}
-            >
-              <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-                <span
-                  style={{
-                    fontSize: "0.65rem",
-                    opacity: 0.7,
-                    transition: "transform 0.2s",
-                    display: "inline-block",
-                    transform: isL1Expanded ? "rotate(90deg)" : "rotate(0deg)",
-                  }}
-                >
-                  ▶
-                </span>
-                <span>{groupIcon(l1Category, true)} {l1Category}</span>
-              </div>
-              <span
-                style={{
-                  fontSize: "0.75rem",
-                  background: "var(--glass-border)",
-                  padding: "2px 8px",
-                  borderRadius: "10px",
-                  color: "var(--text-secondary)",
-                }}
-              >
-                {totalInL1}
-              </span>
-            </div>
+        const skipL1Header =
+          selectedTask === "Child" || selectedTask === "Parent" || selectedTask === "Summary";
 
-            {isL1Expanded && (
-              <div style={{ paddingLeft: "0.75rem", marginTop: "0.25rem" }}>
-                {Object.entries(l2Groups).map(([l2Timepoint, vars]) => {
+        const l2Content = (
+          <React.Fragment>
+            {Object.entries(l2Groups).map(([l2Timepoint, vars]) => {
                   const totalInL2 = countDisplayedVariables(vars);
                   if (totalInL2 === 0) return null;
 
@@ -1161,7 +1260,8 @@ const VariableDescription = ({
                                 alignItems: "center",
                                 justifyContent: "space-between",
                                 cursor: "pointer",
-                                background: "rgba(255, 255, 255, 0.01)",
+                                background: levelAccents[3].background,
+                                borderLeft: `3px solid ${levelAccents[3].border}`,
                                 borderBottom: "1px solid rgba(255, 255, 255, 0.05)",
                                 borderRadius: "4px",
                                 fontWeight: "500",
@@ -1181,7 +1281,7 @@ const VariableDescription = ({
                                 >
                                   ▶
                                 </span>
-                                <span>{groupIcon(l3Group, false)} {l3Group}</span>
+                                <span>{groupIcon(l3Group, 3)} {l3Group}</span>
                               </div>
                               <span
                                 style={{
@@ -1216,7 +1316,8 @@ const VariableDescription = ({
                                               alignItems: "center",
                                               justifyContent: "space-between",
                                               cursor: "pointer",
-                                              background: "rgba(255, 255, 255, 0.01)",
+                                              background: levelAccents[4].background,
+                                              borderLeft: `3px solid ${levelAccents[4].border}`,
                                               borderBottom: "1px solid rgba(255, 255, 255, 0.05)",
                                               borderRadius: "4px",
                                               fontWeight: "500",
@@ -1236,7 +1337,7 @@ const VariableDescription = ({
                                               >
                                                 ▶
                                               </span>
-                                              <span>{groupIcon(l4Group, false)} {l4Group}</span>
+                                              <span>{groupIcon(l4Group, 3)} {l4Group}</span>
                                             </div>
                                             <span
                                               style={{
@@ -1285,7 +1386,8 @@ const VariableDescription = ({
                           alignItems: "center",
                           justifyContent: "space-between",
                           cursor: "pointer",
-                          background: "rgba(255, 255, 255, 0.01)",
+                          background: levelAccents[2].background,
+                          borderLeft: `3px solid ${levelAccents[2].border}`,
                           borderBottom: "1px solid rgba(255, 255, 255, 0.05)",
                           borderRadius: "4px",
                           fontWeight: "500",
@@ -1306,7 +1408,7 @@ const VariableDescription = ({
                             ▶
                           </span>
                           <span>
-                            {groupIcon(l2Timepoint, false)}{" "}
+                            {groupIcon(l2Timepoint, 2)}{" "}
                             {l2Timepoint === "Mean" ? "Composites" : l2Timepoint}
                           </span>
                         </div>
@@ -1327,6 +1429,62 @@ const VariableDescription = ({
                     </div>
                   );
                 })}
+          </React.Fragment>
+        );
+
+        if (skipL1Header) {
+          return <React.Fragment key={l1Category}>{l2Content}</React.Fragment>;
+        }
+
+        return (
+          <div key={l1Category} style={{ marginBottom: "0.75rem" }}>
+            <div
+              onClick={() => toggleVarL1(l1Category)}
+              style={{
+                padding: "0.6rem 0.5rem",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+                cursor: "pointer",
+                background: levelAccents[1].background,
+                borderLeft: `3px solid ${levelAccents[1].border}`,
+                borderBottom: "1px solid var(--glass-border)",
+                borderRadius: "6px",
+                fontWeight: "600",
+                fontSize: "0.95rem",
+                color: "var(--text-primary)",
+              }}
+            >
+              <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                <span
+                  style={{
+                    fontSize: "0.65rem",
+                    opacity: 0.7,
+                    transition: "transform 0.2s",
+                    display: "inline-block",
+                    transform: isL1Expanded ? "rotate(90deg)" : "rotate(0deg)",
+                  }}
+                >
+                  ▶
+                </span>
+                <span>{groupIcon(l1Category, 1)} {l1Category}</span>
+              </div>
+              <span
+                style={{
+                  fontSize: "0.75rem",
+                  background: "var(--glass-border)",
+                  padding: "2px 8px",
+                  borderRadius: "10px",
+                  color: "var(--text-secondary)",
+                }}
+              >
+                {totalInL1}
+              </span>
+            </div>
+
+            {isL1Expanded && (
+              <div style={{ paddingLeft: "0.75rem", marginTop: "0.25rem" }}>
+                {l2Content}
               </div>
             )}
           </div>
