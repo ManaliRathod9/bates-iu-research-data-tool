@@ -1357,6 +1357,680 @@ export const variableDescriptions = {
   "briefIsHighlyNegative36": "highly negative",
   "briefIsHighlyNegative42": "highly negative",
   "briefIsHighlyNegative54": "highly negative",
+
+  "cbclEmotionallyReactivePrimary30": "Emotionally Reactive - Primary caregiver",
+  "cbclEmotionallyReactivePrimary36": "Emotionally Reactive - Primary caregiver",
+  "cbclEmotionallyReactivePrimary42": "Emotionally Reactive - Primary caregiver",
+  "cbclEmotionallyReactivePrimary54": "Emotionally Reactive - Primary caregiver",
+
+  "cbclAnxiousDepressedPrimary30": "Anxious-Depressed - Primary caregiver",
+  "cbclAnxiousDepressedPrimary36": "Anxious-Depressed - Primary caregiver",
+  "cbclAnxiousDepressedPrimary42": "Anxious-Depressed - Primary caregiver",
+  "cbclAnxiousDepressedPrimary54": "Anxious-Depressed - Primary caregiver",
+
+  "cbclSomaticPrimary30": "Somatic - Primary caregiver",
+  "cbclSomaticPrimary36": "Somatic - Primary caregiver",
+  "cbclSomaticPrimary42": "Somatic - Primary caregiver",
+  "cbclSomaticPrimary54": "Somatic - Primary caregiver",
+
+  "cbclWithdrawnPrimary30": "Withdrawn - Primary caregiver",
+  "cbclWithdrawnPrimary36": "Withdrawn - Primary caregiver",
+  "cbclWithdrawnPrimary42": "Withdrawn - Primary caregiver",
+  "cbclWithdrawnPrimary54": "Withdrawn - Primary caregiver",
+
+  "cbclSleepPrimary30": "Sleep - Primary caregiver",
+  "cbclSleepPrimary36": "Sleep - Primary caregiver",
+  "cbclSleepPrimary42": "Sleep - Primary caregiver",
+  "cbclSleepPrimary54": "Sleep - Primary caregiver",
+
+  "cbclAttentionPrimary30": "Attention - Primary caregiver",
+  "cbclAttentionPrimary36": "Attention - Primary caregiver",
+  "cbclAttentionPrimary42": "Attention - Primary caregiver",
+  "cbclAttentionPrimary54": "Attention - Primary caregiver",
+
+  "cbclAggressivePrimary30": "Aggressive - Primary caregiver",
+  "cbclAggressivePrimary36": "Aggressive - Primary caregiver",
+  "cbclAggressivePrimary42": "Aggressive - Primary caregiver",
+  "cbclAggressivePrimary54": "Aggressive - Primary caregiver",
+
+  "cbclOtherPrimary30": "Other symptoms - Primary caregiver",
+  "cbclOtherPrimary36": "Other symptoms - Primary caregiver",
+  "cbclOtherPrimary42": "Other symptoms - Primary caregiver",
+  "cbclOtherPrimary54": "Other symptoms - Primary caregiver",
+
+  "cbclInternalizingPrimary30": "Internalizing Problems - Primary caregiver",
+  "cbclInternalizingPrimary36": "Internalizing Problems - Primary caregiver",
+  "cbclInternalizingPrimary42": "Internalizing Problems - Primary caregiver",
+  "cbclInternalizingPrimary54": "Internalizing Problems - Primary caregiver",
+
+  "cbclInternalizingTPrimary30": "Internalizing Problems T-score - Primary caregiver",
+  "cbclInternalizingTPrimary36": "Internalizing Problems T-score - Primary caregiver",
+  "cbclInternalizingTPrimary42": "Internalizing Problems T-score - Primary caregiver",
+  "cbclInternalizingTPrimary54": "Internalizing Problems T-score - Primary caregiver",
+
+  "cbclExternalizingPrimary30": "Externalizing Problems - Primary caregiver",
+  "cbclExternalizingPrimary36": "Externalizing Problems - Primary caregiver",
+  "cbclExternalizingPrimary42": "Externalizing Problems - Primary caregiver",
+  "cbclExternalizingPrimary54": "Externalizing Problems - Primary caregiver",
+
+  "cbclExternalizingTPrimary30": "Externalizing Problems T-score - Primary caregiver",
+  "cbclExternalizingTPrimary36": "Externalizing Problems T-score - Primary caregiver",
+  "cbclExternalizingTPrimary42": "Externalizing Problems T-score - Primary caregiver",
+  "cbclExternalizingTPrimary54": "Externalizing Problems T-score - Primary caregiver",
+
+  "cbclTotalPrimary30": "Total Problems - Primary caregiver",
+  "cbclTotalPrimary36": "Total Problems - Primary caregiver",
+  "cbclTotalPrimary42": "Total Problems - Primary caregiver",
+  "cbclTotalPrimary54": "Total Problems - Primary caregiver",
+
+  "cbclTotalTPrimary30": "Total Problems T-score - Primary caregiver",
+  "cbclTotalTPrimary36": "Total Problems T-score - Primary caregiver",
+  "cbclTotalTPrimary42": "Total Problems T-score - Primary caregiver",
+  "cbclTotalTPrimary54": "Total Problems T-score - Primary caregiver",
+
+  "cbclSCTPrimary30": "SCT Items - Primary caregiver",
+  "cbclSCTPrimary36": "SCT Items - Primary caregiver",
+  "cbclSCTPrimary42": "SCT Items - Primary caregiver",
+  "cbclSCTPrimary54": "SCT Items - Primary caregiver",
+
+  "cbclEmotionallyReactiveParentingPartner30": "Emotionally Reactive - Parenting partner",
+  "cbclEmotionallyReactiveParentingPartner36": "Emotionally Reactive - Parenting partner",
+  "cbclEmotionallyReactiveParentingPartner42": "Emotionally Reactive - Parenting partner",
+  "cbclEmotionallyReactiveParentingPartner54": "Emotionally Reactive - Parenting partner",
+
+  "cbclAnxiousDepressedParentingPartner30": "Anxious-Depressed - Parenting partner",
+  "cbclAnxiousDepressedParentingPartner36": "Anxious-Depressed - Parenting partner",
+  "cbclAnxiousDepressedParentingPartner42": "Anxious-Depressed - Parenting partner",
+  "cbclAnxiousDepressedParentingPartner54": "Anxious-Depressed - Parenting partner",
+
+  "cbclSomaticParentingPartner30": "Somatic - Parenting partner",
+  "cbclSomaticParentingPartner36": "Somatic - Parenting partner",
+  "cbclSomaticParentingPartner42": "Somatic - Parenting partner",
+  "cbclSomaticParentingPartner54": "Somatic - Parenting partner",
+
+  "cbclWithdrawnParentingPartner30": "Withdrawn - Parenting partner",
+  "cbclWithdrawnParentingPartner36": "Withdrawn - Parenting partner",
+  "cbclWithdrawnParentingPartner42": "Withdrawn - Parenting partner",
+  "cbclWithdrawnParentingPartner54": "Withdrawn - Parenting partner",
+
+  "cbclSleepParentingPartner30": "Sleep - Parenting partner",
+  "cbclSleepParentingPartner36": "Sleep - Parenting partner",
+  "cbclSleepParentingPartner42": "Sleep - Parenting partner",
+  "cbclSleepParentingPartner54": "Sleep - Parenting partner",
+
+  "cbclAttentionParentingPartner30": "Attention - Parenting partner",
+  "cbclAttentionParentingPartner36": "Attention - Parenting partner",
+  "cbclAttentionParentingPartner42": "Attention - Parenting partner",
+  "cbclAttentionParentingPartner54": "Attention - Parenting partner",
+
+  "cbclAggressiveParentingPartner30": "Aggressive - Parenting partner",
+  "cbclAggressiveParentingPartner36": "Aggressive - Parenting partner",
+  "cbclAggressiveParentingPartner42": "Aggressive - Parenting partner",
+  "cbclAggressiveParentingPartner54": "Aggressive - Parenting partner",
+
+  "cbclOtherParentingPartner30": "Other symptoms - Parenting partner",
+  "cbclOtherParentingPartner36": "Other symptoms - Parenting partner",
+  "cbclOtherParentingPartner42": "Other symptoms - Parenting partner",
+  "cbclOtherParentingPartner54": "Other symptoms - Parenting partner",
+
+  "cbclInternalizingParentingPartner30": "Internalizing Problems - Parenting partner",
+  "cbclInternalizingParentingPartner36": "Internalizing Problems - Parenting partner",
+  "cbclInternalizingParentingPartner42": "Internalizing Problems - Parenting partner",
+  "cbclInternalizingParentingPartner54": "Internalizing Problems - Parenting partner",
+
+  "cbclInternalizingTParentingPartner30": "Internalizing Problems T-score - Parenting partner",
+  "cbclInternalizingTParentingPartner36": "Internalizing Problems T-score - Parenting partner",
+  "cbclInternalizingTParentingPartner42": "Internalizing Problems T-score - Parenting partner",
+  "cbclInternalizingTParentingPartner54": "Internalizing Problems T-score - Parenting partner",
+
+  "cbclExternalizingParentingPartner30": "Externalizing Problems - Parenting partner",
+  "cbclExternalizingParentingPartner36": "Externalizing Problems - Parenting partner",
+  "cbclExternalizingParentingPartner42": "Externalizing Problems - Parenting partner",
+  "cbclExternalizingParentingPartner54": "Externalizing Problems - Parenting partner",
+
+  "cbclExternalizingTParentingPartner30": "Externalizing Problems T-score - Parenting partner",
+  "cbclExternalizingTParentingPartner36": "Externalizing Problems T-score - Parenting partner",
+  "cbclExternalizingTParentingPartner42": "Externalizing Problems T-score - Parenting partner",
+  "cbclExternalizingTParentingPartner54": "Externalizing Problems T-score - Parenting partner",
+
+  "cbclTotalParentingPartner30": "Total Problems - Parenting partner",
+  "cbclTotalParentingPartner36": "Total Problems - Parenting partner",
+  "cbclTotalParentingPartner42": "Total Problems - Parenting partner",
+  "cbclTotalParentingPartner54": "Total Problems - Parenting partner",
+
+  "cbclTotalTParentingPartner30": "Total Problems T-score - Parenting partner",
+  "cbclTotalTParentingPartner36": "Total Problems T-score - Parenting partner",
+  "cbclTotalTParentingPartner42": "Total Problems T-score - Parenting partner",
+  "cbclTotalTParentingPartner54": "Total Problems T-score - Parenting partner",
+
+  "cbclSCTParentingPartner30": "SCT Items - Parenting partner",
+  "cbclSCTParentingPartner36": "SCT Items - Parenting partner",
+  "cbclSCTParentingPartner42": "SCT Items - Parenting partner",
+  "cbclSCTParentingPartner54": "SCT Items - Parenting partner",
+
+  "cbclEmotionallyReactiveSecondary30": "Emotionally Reactive - Secondary caregiver",
+  "cbclEmotionallyReactiveSecondary36": "Emotionally Reactive - Secondary caregiver",
+  "cbclEmotionallyReactiveSecondary42": "Emotionally Reactive - Secondary caregiver",
+  "cbclEmotionallyReactiveSecondary54": "Emotionally Reactive - Secondary caregiver",
+
+  "cbclAnxiousDepressedSecondary30": "Anxious-Depressed - Secondary caregiver",
+  "cbclAnxiousDepressedSecondary36": "Anxious-Depressed - Secondary caregiver",
+  "cbclAnxiousDepressedSecondary42": "Anxious-Depressed - Secondary caregiver",
+  "cbclAnxiousDepressedSecondary54": "Anxious-Depressed - Secondary caregiver",
+
+  "cbclSomaticSecondary30": "Somatic - Secondary caregiver",
+  "cbclSomaticSecondary36": "Somatic - Secondary caregiver",
+  "cbclSomaticSecondary42": "Somatic - Secondary caregiver",
+  "cbclSomaticSecondary54": "Somatic - Secondary caregiver",
+
+  "cbclWithdrawnSecondary30": "Withdrawn - Secondary caregiver",
+  "cbclWithdrawnSecondary36": "Withdrawn - Secondary caregiver",
+  "cbclWithdrawnSecondary42": "Withdrawn - Secondary caregiver",
+  "cbclWithdrawnSecondary54": "Withdrawn - Secondary caregiver",
+
+  "cbclSleepSecondary30": "Sleep - Secondary caregiver",
+  "cbclSleepSecondary36": "Sleep - Secondary caregiver",
+  "cbclSleepSecondary42": "Sleep - Secondary caregiver",
+  "cbclSleepSecondary54": "Sleep - Secondary caregiver",
+
+  "cbclAttentionSecondary30": "Attention - Secondary caregiver",
+  "cbclAttentionSecondary36": "Attention - Secondary caregiver",
+  "cbclAttentionSecondary42": "Attention - Secondary caregiver",
+  "cbclAttentionSecondary54": "Attention - Secondary caregiver",
+
+  "cbclAggressiveSecondary30": "Aggressive - Secondary caregiver",
+  "cbclAggressiveSecondary36": "Aggressive - Secondary caregiver",
+  "cbclAggressiveSecondary42": "Aggressive - Secondary caregiver",
+  "cbclAggressiveSecondary54": "Aggressive - Secondary caregiver",
+
+  "cbclOtherSecondary30": "Other symptoms - Secondary caregiver",
+  "cbclOtherSecondary36": "Other symptoms - Secondary caregiver",
+  "cbclOtherSecondary42": "Other symptoms - Secondary caregiver",
+  "cbclOtherSecondary54": "Other symptoms - Secondary caregiver",
+
+  "cbclInternalizingSecondary30": "Internalizing Problems - Secondary caregiver",
+  "cbclInternalizingSecondary36": "Internalizing Problems - Secondary caregiver",
+  "cbclInternalizingSecondary42": "Internalizing Problems - Secondary caregiver",
+  "cbclInternalizingSecondary54": "Internalizing Problems - Secondary caregiver",
+
+  "cbclInternalizingTSecondary30": "Internalizing Problems T-score - Secondary caregiver",
+  "cbclInternalizingTSecondary36": "Internalizing Problems T-score - Secondary caregiver",
+  "cbclInternalizingTSecondary42": "Internalizing Problems T-score - Secondary caregiver",
+  "cbclInternalizingTSecondary54": "Internalizing Problems T-score - Secondary caregiver",
+
+  "cbclExternalizingSecondary30": "Externalizing Problems - Secondary caregiver",
+  "cbclExternalizingSecondary36": "Externalizing Problems - Secondary caregiver",
+  "cbclExternalizingSecondary42": "Externalizing Problems - Secondary caregiver",
+  "cbclExternalizingSecondary54": "Externalizing Problems - Secondary caregiver",
+
+  "cbclExternalizingTSecondary30": "Externalizing Problems T-score - Secondary caregiver",
+  "cbclExternalizingTSecondary36": "Externalizing Problems T-score - Secondary caregiver",
+  "cbclExternalizingTSecondary42": "Externalizing Problems T-score - Secondary caregiver",
+  "cbclExternalizingTSecondary54": "Externalizing Problems T-score - Secondary caregiver",
+
+  "cbclTotalSecondary30": "Total Problems - Secondary caregiver",
+  "cbclTotalSecondary36": "Total Problems - Secondary caregiver",
+  "cbclTotalSecondary42": "Total Problems - Secondary caregiver",
+  "cbclTotalSecondary54": "Total Problems - Secondary caregiver",
+
+  "cbclTotalTSecondary30": "Total Problems T-score - Secondary caregiver",
+  "cbclTotalTSecondary36": "Total Problems T-score - Secondary caregiver",
+  "cbclTotalTSecondary42": "Total Problems T-score - Secondary caregiver",
+  "cbclTotalTSecondary54": "Total Problems T-score - Secondary caregiver",
+
+  "cbclSCTSecondary30": "SCT Items - Secondary caregiver",
+  "cbclSCTSecondary36": "SCT Items - Secondary caregiver",
+  "cbclSCTSecondary42": "SCT Items - Secondary caregiver",
+  "cbclSCTSecondary54": "SCT Items - Secondary caregiver",
+
+  "cbqActivityLevelPrimary30": "Activity Level - Primary caregiver",
+  "cbqActivityLevelPrimary36": "Activity Level - Primary caregiver",
+  "cbqActivityLevelPrimary42": "Activity Level - Primary caregiver",
+  "cbqActivityLevelPrimary54": "Activity Level - Primary caregiver",
+
+  "cbqAngerPrimary30": "Anger - Primary caregiver",
+  "cbqAngerPrimary36": "Anger - Primary caregiver",
+  "cbqAngerPrimary42": "Anger - Primary caregiver",
+  "cbqAngerPrimary54": "Anger - Primary caregiver",
+
+  "cbqApproachPrimary30": "Approach - Primary caregiver",
+  "cbqApproachPrimary36": "Approach - Primary caregiver",
+  "cbqApproachPrimary42": "Approach - Primary caregiver",
+  "cbqApproachPrimary54": "Approach - Primary caregiver",
+
+  "cbqFocusPrimary30": "Focus - Primary caregiver",
+  "cbqFocusPrimary36": "Focus - Primary caregiver",
+  "cbqFocusPrimary42": "Focus - Primary caregiver",
+  "cbqFocusPrimary54": "Focus - Primary caregiver",
+
+  "cbqDiscomfortPrimary30": "Discomfort - Primary caregiver",
+  "cbqDiscomfortPrimary36": "Discomfort - Primary caregiver",
+  "cbqDiscomfortPrimary42": "Discomfort - Primary caregiver",
+  "cbqDiscomfortPrimary54": "Discomfort - Primary caregiver",
+
+  "cbqFallingReactivityPrimary30": "Falling Reactivity - Primary caregiver",
+  "cbqFallingReactivityPrimary36": "Falling Reactivity - Primary caregiver",
+  "cbqFallingReactivityPrimary42": "Falling Reactivity - Primary caregiver",
+  "cbqFallingReactivityPrimary54": "Falling Reactivity - Primary caregiver",
+
+  "cbqFearPrimary30": "Fear - Primary caregiver",
+  "cbqFearPrimary36": "Fear - Primary caregiver",
+  "cbqFearPrimary42": "Fear - Primary caregiver",
+  "cbqFearPrimary54": "Fear - Primary caregiver",
+
+  "cbqHighIntensityPleasurePrimary30": "High Intensity Pleasure - Primary caregiver",
+  "cbqHighIntensityPleasurePrimary36": "High Intensity Pleasure - Primary caregiver",
+  "cbqHighIntensityPleasurePrimary42": "High Intensity Pleasure - Primary caregiver",
+  "cbqHighIntensityPleasurePrimary54": "High Intensity Pleasure - Primary caregiver",
+
+  "cbqImpulsivityPrimary30": "Impulsivity - Primary caregiver",
+  "cbqImpulsivityPrimary36": "Impulsivity - Primary caregiver",
+  "cbqImpulsivityPrimary42": "Impulsivity - Primary caregiver",
+  "cbqImpulsivityPrimary54": "Impulsivity - Primary caregiver",
+
+  "cbqInhibitoryControlPrimary30": "Inhibitory Control - Primary caregiver",
+  "cbqInhibitoryControlPrimary36": "Inhibitory Control - Primary caregiver",
+  "cbqInhibitoryControlPrimary42": "Inhibitory Control - Primary caregiver",
+  "cbqInhibitoryControlPrimary54": "Inhibitory Control - Primary caregiver",
+
+  "cbqLowIntensityPleasurePrimary30": "Low Intensity Pleasure - Primary caregiver",
+  "cbqLowIntensityPleasurePrimary36": "Low Intensity Pleasure - Primary caregiver",
+  "cbqLowIntensityPleasurePrimary42": "Low Intensity Pleasure - Primary caregiver",
+  "cbqLowIntensityPleasurePrimary54": "Low Intensity Pleasure - Primary caregiver",
+
+  "cbqPerceptualSensitivityPrimary30": "Perceptual Sensitivity - Primary caregiver",
+  "cbqPerceptualSensitivityPrimary36": "Perceptual Sensitivity - Primary caregiver",
+  "cbqPerceptualSensitivityPrimary42": "Perceptual Sensitivity - Primary caregiver",
+  "cbqPerceptualSensitivityPrimary54": "Perceptual Sensitivity - Primary caregiver",
+
+  "cbqSadnessPrimary30": "Sadness - Primary caregiver",
+  "cbqSadnessPrimary36": "Sadness - Primary caregiver",
+  "cbqSadnessPrimary42": "Sadness - Primary caregiver",
+  "cbqSadnessPrimary54": "Sadness - Primary caregiver",
+
+  "cbqShynessPrimary30": "Shyness - Primary caregiver",
+  "cbqShynessPrimary36": "Shyness - Primary caregiver",
+  "cbqShynessPrimary42": "Shyness - Primary caregiver",
+  "cbqShynessPrimary54": "Shyness - Primary caregiver",
+
+  "cbqSmilingLaughterPrimary30": "Smiling Laughter - Primary caregiver",
+  "cbqSmilingLaughterPrimary36": "Smiling Laughter - Primary caregiver",
+  "cbqSmilingLaughterPrimary42": "Smiling Laughter - Primary caregiver",
+  "cbqSmilingLaughterPrimary54": "Smiling Laughter - Primary caregiver",
+
+  "cbqNegativeAffectPrimary30": "Negative Affect - Primary caregiver",
+  "cbqNegativeAffectPrimary36": "Negative Affect - Primary caregiver",
+  "cbqNegativeAffectPrimary42": "Negative Affect - Primary caregiver",
+  "cbqNegativeAffectPrimary54": "Negative Affect - Primary caregiver",
+
+  "cbqExtraversionPrimary30": "Extraversion - Primary caregiver",
+  "cbqExtraversionPrimary36": "Extraversion - Primary caregiver",
+  "cbqExtraversionPrimary42": "Extraversion - Primary caregiver",
+  "cbqExtraversionPrimary54": "Extraversion - Primary caregiver",
+
+  "cbqEffortfulControlPrimary30": "Effortful Control - Primary caregiver",
+  "cbqEffortfulControlPrimary36": "Effortful Control - Primary caregiver",
+  "cbqEffortfulControlPrimary42": "Effortful Control - Primary caregiver",
+  "cbqEffortfulControlPrimary54": "Effortful Control - Primary caregiver",
+
+  "cbqActivityLevelParentingPartner30": "Activity Level - Parenting partner",
+  "cbqActivityLevelParentingPartner36": "Activity Level - Parenting partner",
+  "cbqActivityLevelParentingPartner42": "Activity Level - Parenting partner",
+  "cbqActivityLevelParentingPartner54": "Activity Level - Parenting partner",
+
+  "cbqAngerParentingPartner30": "Anger - Parenting partner",
+  "cbqAngerParentingPartner36": "Anger - Parenting partner",
+  "cbqAngerParentingPartner42": "Anger - Parenting partner",
+  "cbqAngerParentingPartner54": "Anger - Parenting partner",
+
+  "cbqApproachParentingPartner30": "Approach - Parenting partner",
+  "cbqApproachParentingPartner36": "Approach - Parenting partner",
+  "cbqApproachParentingPartner42": "Approach - Parenting partner",
+  "cbqApproachParentingPartner54": "Approach - Parenting partner",
+
+  "cbqFocusParentingPartner30": "Focus - Parenting partner",
+  "cbqFocusParentingPartner36": "Focus - Parenting partner",
+  "cbqFocusParentingPartner42": "Focus - Parenting partner",
+  "cbqFocusParentingPartner54": "Focus - Parenting partner",
+
+  "cbqDiscomfortParentingPartner30": "Discomfort - Parenting partner",
+  "cbqDiscomfortParentingPartner36": "Discomfort - Parenting partner",
+  "cbqDiscomfortParentingPartner42": "Discomfort - Parenting partner",
+  "cbqDiscomfortParentingPartner54": "Discomfort - Parenting partner",
+
+  "cbqFallingReactivityParentingPartner30": "Falling Reactivity - Parenting partner",
+  "cbqFallingReactivityParentingPartner36": "Falling Reactivity - Parenting partner",
+  "cbqFallingReactivityParentingPartner42": "Falling Reactivity - Parenting partner",
+  "cbqFallingReactivityParentingPartner54": "Falling Reactivity - Parenting partner",
+
+  "cbqFearParentingPartner30": "Fear - Parenting partner",
+  "cbqFearParentingPartner36": "Fear - Parenting partner",
+  "cbqFearParentingPartner42": "Fear - Parenting partner",
+  "cbqFearParentingPartner54": "Fear - Parenting partner",
+
+  "cbqHighIntensityPleasureParentingPartner30": "High Intensity Pleasure - Parenting partner",
+  "cbqHighIntensityPleasureParentingPartner36": "High Intensity Pleasure - Parenting partner",
+  "cbqHighIntensityPleasureParentingPartner42": "High Intensity Pleasure - Parenting partner",
+  "cbqHighIntensityPleasureParentingPartner54": "High Intensity Pleasure - Parenting partner",
+
+  "cbqImpulsivityParentingPartner30": "Impulsivity - Parenting partner",
+  "cbqImpulsivityParentingPartner36": "Impulsivity - Parenting partner",
+  "cbqImpulsivityParentingPartner42": "Impulsivity - Parenting partner",
+  "cbqImpulsivityParentingPartner54": "Impulsivity - Parenting partner",
+
+  "cbqInhibitoryControlParentingPartner30": "Inhibitory Control - Parenting partner",
+  "cbqInhibitoryControlParentingPartner36": "Inhibitory Control - Parenting partner",
+  "cbqInhibitoryControlParentingPartner42": "Inhibitory Control - Parenting partner",
+  "cbqInhibitoryControlParentingPartner54": "Inhibitory Control - Parenting partner",
+
+  "cbqLowIntensityPleasureParentingPartner30": "Low Intensity Pleasure - Parenting partner",
+  "cbqLowIntensityPleasureParentingPartner36": "Low Intensity Pleasure - Parenting partner",
+  "cbqLowIntensityPleasureParentingPartner42": "Low Intensity Pleasure - Parenting partner",
+  "cbqLowIntensityPleasureParentingPartner54": "Low Intensity Pleasure - Parenting partner",
+
+  "cbqPerceptualSensitivityParentingPartner30": "Perceptual Sensitivity - Parenting partner",
+  "cbqPerceptualSensitivityParentingPartner36": "Perceptual Sensitivity - Parenting partner",
+  "cbqPerceptualSensitivityParentingPartner42": "Perceptual Sensitivity - Parenting partner",
+  "cbqPerceptualSensitivityParentingPartner54": "Perceptual Sensitivity - Parenting partner",
+
+  "cbqSadnessParentingPartner30": "Sadness - Parenting partner",
+  "cbqSadnessParentingPartner36": "Sadness - Parenting partner",
+  "cbqSadnessParentingPartner42": "Sadness - Parenting partner",
+  "cbqSadnessParentingPartner54": "Sadness - Parenting partner",
+
+  "cbqShynessParentingPartner30": "Shyness - Parenting partner",
+  "cbqShynessParentingPartner36": "Shyness - Parenting partner",
+  "cbqShynessParentingPartner42": "Shyness - Parenting partner",
+  "cbqShynessParentingPartner54": "Shyness - Parenting partner",
+
+  "cbqSmilingLaughterParentingPartner30": "Smiling Laughter - Parenting partner",
+  "cbqSmilingLaughterParentingPartner36": "Smiling Laughter - Parenting partner",
+  "cbqSmilingLaughterParentingPartner42": "Smiling Laughter - Parenting partner",
+  "cbqSmilingLaughterParentingPartner54": "Smiling Laughter - Parenting partner",
+
+  "cbqNegativeAffectParentingPartner30": "Negative Affect - Parenting partner",
+  "cbqNegativeAffectParentingPartner36": "Negative Affect - Parenting partner",
+  "cbqNegativeAffectParentingPartner42": "Negative Affect - Parenting partner",
+  "cbqNegativeAffectParentingPartner54": "Negative Affect - Parenting partner",
+
+  "cbqExtraversionParentingPartner30": "Extraversion - Parenting partner",
+  "cbqExtraversionParentingPartner36": "Extraversion - Parenting partner",
+  "cbqExtraversionParentingPartner42": "Extraversion - Parenting partner",
+  "cbqExtraversionParentingPartner54": "Extraversion - Parenting partner",
+
+  "cbqEffortfulControlParentingPartner30": "Effortful Control - Parenting partner",
+  "cbqEffortfulControlParentingPartner36": "Effortful Control - Parenting partner",
+  "cbqEffortfulControlParentingPartner42": "Effortful Control - Parenting partner",
+  "cbqEffortfulControlParentingPartner54": "Effortful Control - Parenting partner",
+
+  "cbqActivityLevelSecondary30": "Activity Level - Secondary caregiver",
+  "cbqActivityLevelSecondary36": "Activity Level - Secondary caregiver",
+  "cbqActivityLevelSecondary42": "Activity Level - Secondary caregiver",
+  "cbqActivityLevelSecondary54": "Activity Level - Secondary caregiver",
+
+  "cbqAngerSecondary30": "Anger - Secondary caregiver",
+  "cbqAngerSecondary36": "Anger - Secondary caregiver",
+  "cbqAngerSecondary42": "Anger - Secondary caregiver",
+  "cbqAngerSecondary54": "Anger - Secondary caregiver",
+
+  "cbqApproachSecondary30": "Approach - Secondary caregiver",
+  "cbqApproachSecondary36": "Approach - Secondary caregiver",
+  "cbqApproachSecondary42": "Approach - Secondary caregiver",
+  "cbqApproachSecondary54": "Approach - Secondary caregiver",
+
+  "cbqFocusSecondary30": "Focus - Secondary caregiver",
+  "cbqFocusSecondary36": "Focus - Secondary caregiver",
+  "cbqFocusSecondary42": "Focus - Secondary caregiver",
+  "cbqFocusSecondary54": "Focus - Secondary caregiver",
+
+  "cbqDiscomfortSecondary30": "Discomfort - Secondary caregiver",
+  "cbqDiscomfortSecondary36": "Discomfort - Secondary caregiver",
+  "cbqDiscomfortSecondary42": "Discomfort - Secondary caregiver",
+  "cbqDiscomfortSecondary54": "Discomfort - Secondary caregiver",
+
+  "cbqFallingReactivitySecondary30": "Falling Reactivity - Secondary caregiver",
+  "cbqFallingReactivitySecondary36": "Falling Reactivity - Secondary caregiver",
+  "cbqFallingReactivitySecondary42": "Falling Reactivity - Secondary caregiver",
+  "cbqFallingReactivitySecondary54": "Falling Reactivity - Secondary caregiver",
+
+  "cbqFearSecondary30": "Fear - Secondary caregiver",
+  "cbqFearSecondary36": "Fear - Secondary caregiver",
+  "cbqFearSecondary42": "Fear - Secondary caregiver",
+  "cbqFearSecondary54": "Fear - Secondary caregiver",
+
+  "cbqHighIntensityPleasureSecondary30": "High Intensity Pleasure - Secondary caregiver",
+  "cbqHighIntensityPleasureSecondary36": "High Intensity Pleasure - Secondary caregiver",
+  "cbqHighIntensityPleasureSecondary42": "High Intensity Pleasure - Secondary caregiver",
+  "cbqHighIntensityPleasureSecondary54": "High Intensity Pleasure - Secondary caregiver",
+
+  "cbqImpulsivitySecondary30": "Impulsivity - Secondary caregiver",
+  "cbqImpulsivitySecondary36": "Impulsivity - Secondary caregiver",
+  "cbqImpulsivitySecondary42": "Impulsivity - Secondary caregiver",
+  "cbqImpulsivitySecondary54": "Impulsivity - Secondary caregiver",
+
+  "cbqInhibitoryControlSecondary30": "Inhibitory Control - Secondary caregiver",
+  "cbqInhibitoryControlSecondary36": "Inhibitory Control - Secondary caregiver",
+  "cbqInhibitoryControlSecondary42": "Inhibitory Control - Secondary caregiver",
+  "cbqInhibitoryControlSecondary54": "Inhibitory Control - Secondary caregiver",
+
+  "cbqLowIntensityPleasureSecondary30": "Low Intensity Pleasure - Secondary caregiver",
+  "cbqLowIntensityPleasureSecondary36": "Low Intensity Pleasure - Secondary caregiver",
+  "cbqLowIntensityPleasureSecondary42": "Low Intensity Pleasure - Secondary caregiver",
+  "cbqLowIntensityPleasureSecondary54": "Low Intensity Pleasure - Secondary caregiver",
+
+  "cbqPerceptualSensitivitySecondary30": "Perceptual Sensitivity - Secondary caregiver",
+  "cbqPerceptualSensitivitySecondary36": "Perceptual Sensitivity - Secondary caregiver",
+  "cbqPerceptualSensitivitySecondary42": "Perceptual Sensitivity - Secondary caregiver",
+  "cbqPerceptualSensitivitySecondary54": "Perceptual Sensitivity - Secondary caregiver",
+
+  "cbqSadnessSecondary30": "Sadness - Secondary caregiver",
+  "cbqSadnessSecondary36": "Sadness - Secondary caregiver",
+  "cbqSadnessSecondary42": "Sadness - Secondary caregiver",
+  "cbqSadnessSecondary54": "Sadness - Secondary caregiver",
+
+  "cbqShynessSecondary30": "Shyness - Secondary caregiver",
+  "cbqShynessSecondary36": "Shyness - Secondary caregiver",
+  "cbqShynessSecondary42": "Shyness - Secondary caregiver",
+  "cbqShynessSecondary54": "Shyness - Secondary caregiver",
+
+  "cbqSmilingLaughterSecondary30": "Smiling Laughter - Secondary caregiver",
+  "cbqSmilingLaughterSecondary36": "Smiling Laughter - Secondary caregiver",
+  "cbqSmilingLaughterSecondary42": "Smiling Laughter - Secondary caregiver",
+  "cbqSmilingLaughterSecondary54": "Smiling Laughter - Secondary caregiver",
+
+  "cbqNegativeAffectSecondary30": "Negative Affect - Secondary caregiver",
+  "cbqNegativeAffectSecondary36": "Negative Affect - Secondary caregiver",
+  "cbqNegativeAffectSecondary42": "Negative Affect - Secondary caregiver",
+  "cbqNegativeAffectSecondary54": "Negative Affect - Secondary caregiver",
+
+  "cbqExtraversionSecondary30": "Extraversion - Secondary caregiver",
+  "cbqExtraversionSecondary36": "Extraversion - Secondary caregiver",
+  "cbqExtraversionSecondary42": "Extraversion - Secondary caregiver",
+  "cbqExtraversionSecondary54": "Extraversion - Secondary caregiver",
+
+  "cbqEffortfulControlSecondary30": "Effortful Control - Secondary caregiver",
+  "cbqEffortfulControlSecondary36": "Effortful Control - Secondary caregiver",
+  "cbqEffortfulControlSecondary42": "Effortful Control - Secondary caregiver",
+  "cbqEffortfulControlSecondary54": "Effortful Control - Secondary caregiver",
+
+  "crprNurturance30": "Sum of 1-18",
+  "crprWarmth30": "Sum of items 3 and 18",
+  "crprNurturance36": "Sum of 1-18",
+  "crprWarmth36": "Sum of items 3 and 18",
+  "crprNurturance42": "Sum of 1-18",
+  "crprWarmth42": "Sum of items 3 and 18",
+  "crprNurturance54": "Sum of 1-18",
+  "crprWarmth54": "Sum of items 3 and 18",
+
+  "chaosSum30": "Chaos sum",
+  "chaosSum36": "Chaos sum",
+  "chaosSum42": "Chaos sum",
+  "chaosSum54": "Chaos sum",
+
+  "teacherChecklistPeerLiking30": "Peer Liking",
+  "teacherChecklistPeerLiking36": "Peer Liking",
+  "teacherChecklistPeerLiking42": "Peer Liking",
+  "teacherChecklistPeerLiking54": "Peer Liking",
+
+  "teacherChecklistReactiveAggression30": "Reactive Aggression",
+  "teacherChecklistReactiveAggression36": "Reactive Aggression",
+  "teacherChecklistReactiveAggression42": "Reactive Aggression",
+  "teacherChecklistReactiveAggression54": "Reactive Aggression",
+
+  "teacherChecklistProactiveAggression30": "Proactive Aggression",
+  "teacherChecklistProactiveAggression36": "Proactive Aggression",
+  "teacherChecklistProactiveAggression42": "Proactive Aggression",
+  "teacherChecklistProactiveAggression54": "Proactive Aggression",
+
+  "classTeacherSensitivity30": "Teacher Sensitivity",
+  "classTeacherSensitivity36": "Teacher Sensitivity",
+  "classTeacherSensitivity42": "Teacher Sensitivity",
+  "classTeacherSensitivity54": "Teacher Sensitivity",
+
+  "TeacherDemographicsCenterName30": "Teacher Demographics - Daycare or Preschool Name",
+  "TeacherDemographicsCenterName36": "Teacher Demographics - Daycare or Preschool Name",
+  "TeacherDemographicsCenterName42": "Teacher Demographics - Daycare or Preschool Name",
+  "TeacherDemographicsCenterName54": "Teacher Demographics - Daycare or Preschool Name",
+
+  "TeacherDemographicsAge30": "Teacher Demographics - Teacher Age",
+  "TeacherDemographicsAge36": "Teacher Demographics - Teacher Age",
+  "TeacherDemographicsAge42": "Teacher Demographics - Teacher Age",
+  "TeacherDemographicsAge54": "Teacher Demographics - Teacher Age",
+
+  "TeacherDemographicsEthnicity30": "Teacher Demographics - Teacher Race/Ethnicity",
+  "TeacherDemographicsEthnicity36": "Teacher Demographics - Teacher Race/Ethnicity",
+  "TeacherDemographicsEthnicity42": "Teacher Demographics - Teacher Race/Ethnicity",
+  "TeacherDemographicsEthnicity54": "Teacher Demographics - Teacher Race/Ethnicity",
+
+  "TeacherDemographicsEducation30": "Teacher Demographics - Education Level",
+  "TeacherDemographicsEducation36": "Teacher Demographics - Education Level",
+  "TeacherDemographicsEducation42": "Teacher Demographics - Education Level",
+  "TeacherDemographicsEducation54": "Teacher Demographics - Education Level",
+
+  "TeacherDemographicsEducationOther30": "Teacher Demographics - College Degree; specify",
+  "TeacherDemographicsEducationOther36": "Teacher Demographics - College Degree; specify",
+  "TeacherDemographicsEducationOther42": "Teacher Demographics - College Degree; specify",
+  "TeacherDemographicsEducationOther54": "Teacher Demographics - College Degree; specify",
+
+  "teacherDemographicsSpecializedTraining30": "Teacher Demographics - Specialized training in ECE",
+  "teacherDemographicsSpecializedTraining36": "Teacher Demographics - Specialized training in ECE",
+  "teacherDemographicsSpecializedTraining42": "Teacher Demographics - Specialized training in ECE",
+  "teacherDemographicsSpecializedTraining54": "Teacher Demographics - Specialized training in ECE",
+
+  "teacherDemographicsYearsOfExperience30": "Teacher Demographics - Years of teaching in Early Childhood",
+  "teacherDemographicsYearsOfExperience36": "Teacher Demographics - Years of teaching in Early Childhood",
+  "teacherDemographicsYearsOfExperience42": "Teacher Demographics - Years of teaching in Early Childhood",
+  "teacherDemographicsYearsOfExperience54": "Teacher Demographics - Years of teaching in Early Childhood",
+
+  "teacherDemographicsYearsAtSchool30": "Teacher Demographics - Years of teaching at current location",
+  "teacherDemographicsYearsAtSchool36": "Teacher Demographics - Years of teaching at current location",
+  "teacherDemographicsYearsAtSchool42": "Teacher Demographics - Years of teaching at current location",
+  "teacherDemographicsYearsAtSchool54": "Teacher Demographics - Years of teaching at current location",
+
+  "teacherDemographicsNumberOfChildren30": "Teacher Demographics - Number of children enrolled in classroom",
+  "teacherDemographicsNumberOfChildren36": "Teacher Demographics - Number of children enrolled in classroom",
+  "teacherDemographicsNumberOfChildren42": "Teacher Demographics - Number of children enrolled in classroom",
+  "teacherDemographicsNumberOfChildren54": "Teacher Demographics - Number of children enrolled in classroom",
+
+  "teacherDemographicsNumberOfTeachers30": "Teacher Demographics - Number of teachers currently in classroom",
+  "teacherDemographicsNumberOfTeachers36": "Teacher Demographics - Number of teachers currently in classroom",
+  "teacherDemographicsNumberOfTeachers42": "Teacher Demographics - Number of teachers currently in classroom",
+  "teacherDemographicsNumberOfTeachers54": "Teacher Demographics - Number of teachers currently in classroom",
+
+  "teacherDemographicsKnownChild30": "Teacher Demographics - How long have you known target child?",
+  "teacherDemographicsKnownChild36": "Teacher Demographics - How long have you known target child?",
+  "teacherDemographicsKnownChild42": "Teacher Demographics - How long have you known target child?",
+  "teacherDemographicsKnownChild54": "Teacher Demographics - How long have you known target child?",
+
+  "ecbiIntensity30": "ECBI Intensity Score",
+  "ecbiIntensity36": "ECBI Intensity Score",
+  "ecbiIntensity42": "ECBI Intensity Score",
+  "ecbiIntensity54": "ECBI Intensity Score",
+
+  "ecbiProblem30": "ECBI Problem Score",
+  "ecbiProblem36": "ECBI Problem Score",
+  "ecbiProblem42": "ECBI Problem Score",
+  "ecbiProblem54": "ECBI Problem Score",
+
+  "ecbiIntensityT30": "ECBI Intensity T-score",
+  "ecbiIntensityT36": "ECBI Intensity T-score",
+  "ecbiIntensityT42": "ECBI Intensity T-score",
+  "ecbiIntensityT54": "ECBI Intensity T-score",
+
+  "ecbiProblemT30": "ECBI Problem T-score",
+  "ecbiProblemT36": "ECBI Problem T-score",
+  "ecbiProblemT42": "ECBI Problem T-score",
+  "ecbiProblemT54": "ECBI Problem T-score",
+
+  "oddball_P3b_amplitudeDifference30": "Oddball P3b amplitude difference",
+  "oddball_P3b_amplitudeDifference36": "Oddball P3b amplitude difference",
+  "oddball_P3b_amplitudeDifference42": "Oddball P3b amplitude difference",
+  "oddball_P3b_amplitudeDifference54": "Oddball P3b amplitude difference",
+
+  "oddball_P3b_amplitudeDifferenceCentered30": "Centered Oddball P3b amplitude difference",
+  "oddball_P3b_amplitudeDifferenceCentered36": "Centered Oddball P3b amplitude difference",
+  "oddball_P3b_amplitudeDifferenceCentered42": "Centered Oddball P3b amplitude difference",
+  "oddball_P3b_amplitudeDifferenceCentered54": "Centered Oddball P3b amplitude difference",
+
+  "oddball_P3a_amplitudeDifference30": "Oddball P3a amplitude difference",
+  "oddball_P3a_amplitudeDifference36": "Oddball P3a amplitude difference",
+  "oddball_P3a_amplitudeDifference42": "Oddball P3a amplitude difference",
+  "oddball_P3a_amplitudeDifference54": "Oddball P3a amplitude difference",
+
+  "oddball_P3a_amplitudeDifferenceCentered30": "Centered Oddball P3a amplitude difference",
+  "oddball_P3a_amplitudeDifferenceCentered36": "Centered Oddball P3a amplitude difference",
+  "oddball_P3a_amplitudeDifferenceCentered42": "Centered Oddball P3a amplitude difference",
+  "oddball_P3a_amplitudeDifferenceCentered54": "Centered Oddball P3a amplitude difference",
+
+  "fishSharks_N2_amplitudeDifference30": "Fish/Sharks N2 amplitude difference",
+  "fishSharks_N2_amplitudeDifference36": "Fish/Sharks N2 amplitude difference",
+  "fishSharks_N2_amplitudeDifference42": "Fish/Sharks N2 amplitude difference",
+  "fishSharks_N2_amplitudeDifference54": "Fish/Sharks N2 amplitude difference",
+
+  "fishSharks_N2_amplitudeDifferenceCentered30": "Centered Fish/Sharks N2 amplitude difference",
+  "fishSharks_N2_amplitudeDifferenceCentered36": "Centered Fish/Sharks N2 amplitude difference",
+  "fishSharks_N2_amplitudeDifferenceCentered42": "Centered Fish/Sharks N2 amplitude difference",
+  "fishSharks_N2_amplitudeDifferenceCentered54": "Centered Fish/Sharks N2 amplitude difference",
+
+  "icqDifficultPrimary30": "ICQ Difficult - Primary caregiver",
+  "icqDifficultPrimary36": "ICQ Difficult - Primary caregiver",
+  "icqDifficultPrimary42": "ICQ Difficult - Primary caregiver",
+  "icqDifficultPrimary54": "ICQ Difficult - Primary caregiver",
+
+  "icqDifficultParentingPartner30": "ICQ Difficult - Parenting partner",
+  "icqDifficultParentingPartner36": "ICQ Difficult - Parenting partner",
+  "icqDifficultParentingPartner42": "ICQ Difficult - Parenting partner",
+  "icqDifficultParentingPartner54": "ICQ Difficult - Parenting partner",
+
+  "icqDifficultSecondary30": "ICQ Difficult - Secondary caregiver",
+  "icqDifficultSecondary36": "ICQ Difficult - Secondary caregiver",
+  "icqDifficultSecondary42": "ICQ Difficult - Secondary caregiver",
+  "icqDifficultSecondary54": "ICQ Difficult - Secondary caregiver",
+
+  "icqDifficultPrimaryMean30": "Mean ICQ Difficult across time - Primary caregiver",
+  "icqDifficultPrimaryMean36": "Mean ICQ Difficult across time - Primary caregiver",
+  "icqDifficultPrimaryMean42": "Mean ICQ Difficult across time - Primary caregiver",
+  "icqDifficultPrimaryMean54": "Mean ICQ Difficult across time - Primary caregiver",
+
+  "icqDifficultParentingPartnerMean30": "Mean ICQ Difficult across time - Parenting partner",
+  "icqDifficultParentingPartnerMean36": "Mean ICQ Difficult across time - Parenting partner",
+  "icqDifficultParentingPartnerMean42": "Mean ICQ Difficult across time - Parenting partner",
+  "icqDifficultParentingPartnerMean54": "Mean ICQ Difficult across time - Parenting partner",
+
+  "icqDifficultSecondaryMean30": "Mean ICQ Difficult across time - Secondary caregiver",
+  "icqDifficultSecondaryMean36": "Mean ICQ Difficult across time - Secondary caregiver",
+  "icqDifficultSecondaryMean42": "Mean ICQ Difficult across time - Secondary caregiver",
+  "icqDifficultSecondaryMean54": "Mean ICQ Difficult across time - Secondary caregiver",
+
+  "cesdDepressiveSymptoms30": "Depressive Symptoms",
+  "cesdDepressiveSymptoms36": "Depressive Symptoms",
+  "cesdDepressiveSymptoms42": "Depressive Symptoms",
+  "cesdDepressiveSymptoms54": "Depressive Symptoms",
+
+  "cesdDepressionDiagnosis30": "Depression Diagnosis",
+  "cesdDepressionDiagnosis36": "Depression Diagnosis",
+  "cesdDepressionDiagnosis42": "Depression Diagnosis",
+  "cesdDepressionDiagnosis54": "Depression Diagnosis",
 };
 
 
@@ -2134,4 +2808,618 @@ export const variableComputations = {
   "briefGlobalExecutiveComposite36": "Mean of Items: behavioralRegulationIndexItems, metacognitionIndexItems",
   "briefGlobalExecutiveComposite42": "Mean of Items: behavioralRegulationIndexItems, metacognitionIndexItems",
   "briefGlobalExecutiveComposite54": "Mean of Items: behavioralRegulationIndexItems, metacognitionIndexItems",
+
+  "cbclEmotionallyReactivePrimary30": "Sum of items 21, 46, 51, 79, 82, 83, 92, 97, 99",
+  "cbclEmotionallyReactivePrimary36": "Sum of items 21, 46, 51, 79, 82, 83, 92, 97, 99",
+  "cbclEmotionallyReactivePrimary42": "Sum of items 21, 46, 51, 79, 82, 83, 92, 97, 99",
+  "cbclEmotionallyReactivePrimary54": "Sum of items 21, 46, 51, 79, 82, 83, 92, 97, 99",
+
+  "cbclAnxiousDepressedPrimary30": "Sum of items 10, 33, 37, 43, 47, 68, 87, 90",
+  "cbclAnxiousDepressedPrimary36": "Sum of items 10, 33, 37, 43, 47, 68, 87, 90",
+  "cbclAnxiousDepressedPrimary42": "Sum of items 10, 33, 37, 43, 47, 68, 87, 90",
+  "cbclAnxiousDepressedPrimary54": "Sum of items 10, 33, 37, 43, 47, 68, 87, 90",
+
+  "cbclSomaticPrimary30": "Sum of items 01, 07, 12, 19, 24, 39, 45, 52, 78, 86, 93",
+  "cbclSomaticPrimary36": "Sum of items 01, 07, 12, 19, 24, 39, 45, 52, 78, 86, 93",
+  "cbclSomaticPrimary42": "Sum of items 01, 07, 12, 19, 24, 39, 45, 52, 78, 86, 93",
+  "cbclSomaticPrimary54": "Sum of items 01, 07, 12, 19, 24, 39, 45, 52, 78, 86, 93",
+
+  "cbclWithdrawnPrimary30": "Sum of items 02, 04, 23, 62, 67, 70, 71, 98",
+  "cbclWithdrawnPrimary36": "Sum of items 02, 04, 23, 62, 67, 70, 71, 98",
+  "cbclWithdrawnPrimary42": "Sum of items 02, 04, 23, 62, 67, 70, 71, 98",
+  "cbclWithdrawnPrimary54": "Sum of items 02, 04, 23, 62, 67, 70, 71, 98",
+
+  "cbclSleepPrimary30": "Sum of items 22, 38, 48, 64, 74, 84, 94",
+  "cbclSleepPrimary36": "Sum of items 22, 38, 48, 64, 74, 84, 94",
+  "cbclSleepPrimary42": "Sum of items 22, 38, 48, 64, 74, 84, 94",
+  "cbclSleepPrimary54": "Sum of items 22, 38, 48, 64, 74, 84, 94",
+
+  "cbclAttentionPrimary30": "Sum of items 05, 06, 56, 59, 95",
+  "cbclAttentionPrimary36": "Sum of items 05, 06, 56, 59, 95",
+  "cbclAttentionPrimary42": "Sum of items 05, 06, 56, 59, 95",
+  "cbclAttentionPrimary54": "Sum of items 05, 06, 56, 59, 95",
+
+  "cbclAggressivePrimary30": "Sum of items 08, 15, 16, 18, 20, 27, 29, 35, 40, 42, 44, 53, 58, 66, 69, 81, 85, 88, 96",
+  "cbclAggressivePrimary36": "Sum of items 08, 15, 16, 18, 20, 27, 29, 35, 40, 42, 44, 53, 58, 66, 69, 81, 85, 88, 96",
+  "cbclAggressivePrimary42": "Sum of items 08, 15, 16, 18, 20, 27, 29, 35, 40, 42, 44, 53, 58, 66, 69, 81, 85, 88, 96",
+  "cbclAggressivePrimary54": "Sum of items 08, 15, 16, 18, 20, 27, 29, 35, 40, 42, 44, 53, 58, 66, 69, 81, 85, 88, 96",
+
+  "cbclOtherPrimary30": "Sum of Other symptom items",
+  "cbclOtherPrimary36": "Sum of Other symptom items",
+  "cbclOtherPrimary42": "Sum of Other symptom items",
+  "cbclOtherPrimary54": "Sum of Other symptom items",
+
+  "cbclInternalizingPrimary30": "Sum of Emotionally Reactive, Anxious-Depressed, Somatic, and Withdrawn item sets",
+  "cbclInternalizingPrimary36": "Sum of Emotionally Reactive, Anxious-Depressed, Somatic, and Withdrawn item sets",
+  "cbclInternalizingPrimary42": "Sum of Emotionally Reactive, Anxious-Depressed, Somatic, and Withdrawn item sets",
+  "cbclInternalizingPrimary54": "Sum of Emotionally Reactive, Anxious-Depressed, Somatic, and Withdrawn item sets",
+
+  "cbclInternalizingTPrimary30": "Internalizing raw score converted to T-score",
+  "cbclInternalizingTPrimary36": "Internalizing raw score converted to T-score",
+  "cbclInternalizingTPrimary42": "Internalizing raw score converted to T-score",
+  "cbclInternalizingTPrimary54": "Internalizing raw score converted to T-score",
+
+  "cbclExternalizingPrimary30": "Sum of Attention and Aggressive item sets",
+  "cbclExternalizingPrimary36": "Sum of Attention and Aggressive item sets",
+  "cbclExternalizingPrimary42": "Sum of Attention and Aggressive item sets",
+  "cbclExternalizingPrimary54": "Sum of Attention and Aggressive item sets",
+
+  "cbclExternalizingTPrimary30": "Externalizing raw score converted to T-score",
+  "cbclExternalizingTPrimary36": "Externalizing raw score converted to T-score",
+  "cbclExternalizingTPrimary42": "Externalizing raw score converted to T-score",
+  "cbclExternalizingTPrimary54": "Externalizing raw score converted to T-score",
+
+  "cbclTotalPrimary30": "Sum of Internalizing, Externalizing, Other, and Sleep item sets",
+  "cbclTotalPrimary36": "Sum of Internalizing, Externalizing, Other, and Sleep item sets",
+  "cbclTotalPrimary42": "Sum of Internalizing, Externalizing, Other, and Sleep item sets",
+  "cbclTotalPrimary54": "Sum of Internalizing, Externalizing, Other, and Sleep item sets",
+
+  "cbclTotalTPrimary30": "Total raw score converted to T-score",
+  "cbclTotalTPrimary36": "Total raw score converted to T-score",
+  "cbclTotalTPrimary42": "Total raw score converted to T-score",
+  "cbclTotalTPrimary54": "Total raw score converted to T-score",
+
+  "cbclSCTPrimary30": "Sum of items 77, 89, 50",
+  "cbclSCTPrimary36": "Sum of items 77, 89, 50",
+  "cbclSCTPrimary42": "Sum of items 77, 89, 50",
+  "cbclSCTPrimary54": "Sum of items 77, 89, 50",
+
+  "cbclEmotionallyReactiveParentingPartner30": "Sum of items 21, 46, 51, 79, 82, 83, 92, 97, 99",
+  "cbclEmotionallyReactiveParentingPartner36": "Sum of items 21, 46, 51, 79, 82, 83, 92, 97, 99",
+  "cbclEmotionallyReactiveParentingPartner42": "Sum of items 21, 46, 51, 79, 82, 83, 92, 97, 99",
+  "cbclEmotionallyReactiveParentingPartner54": "Sum of items 21, 46, 51, 79, 82, 83, 92, 97, 99",
+
+  "cbclAnxiousDepressedParentingPartner30": "Sum of items 10, 33, 37, 43, 47, 68, 87, 90",
+  "cbclAnxiousDepressedParentingPartner36": "Sum of items 10, 33, 37, 43, 47, 68, 87, 90",
+  "cbclAnxiousDepressedParentingPartner42": "Sum of items 10, 33, 37, 43, 47, 68, 87, 90",
+  "cbclAnxiousDepressedParentingPartner54": "Sum of items 10, 33, 37, 43, 47, 68, 87, 90",
+
+  "cbclSomaticParentingPartner30": "Sum of items 01, 07, 12, 19, 24, 39, 45, 52, 78, 86, 93",
+  "cbclSomaticParentingPartner36": "Sum of items 01, 07, 12, 19, 24, 39, 45, 52, 78, 86, 93",
+  "cbclSomaticParentingPartner42": "Sum of items 01, 07, 12, 19, 24, 39, 45, 52, 78, 86, 93",
+  "cbclSomaticParentingPartner54": "Sum of items 01, 07, 12, 19, 24, 39, 45, 52, 78, 86, 93",
+
+  "cbclWithdrawnParentingPartner30": "Sum of items 02, 04, 23, 62, 67, 70, 71, 98",
+  "cbclWithdrawnParentingPartner36": "Sum of items 02, 04, 23, 62, 67, 70, 71, 98",
+  "cbclWithdrawnParentingPartner42": "Sum of items 02, 04, 23, 62, 67, 70, 71, 98",
+  "cbclWithdrawnParentingPartner54": "Sum of items 02, 04, 23, 62, 67, 70, 71, 98",
+
+  "cbclSleepParentingPartner30": "Sum of items 22, 38, 48, 64, 74, 84, 94",
+  "cbclSleepParentingPartner36": "Sum of items 22, 38, 48, 64, 74, 84, 94",
+  "cbclSleepParentingPartner42": "Sum of items 22, 38, 48, 64, 74, 84, 94",
+  "cbclSleepParentingPartner54": "Sum of items 22, 38, 48, 64, 74, 84, 94",
+
+  "cbclAttentionParentingPartner30": "Sum of items 05, 06, 56, 59, 95",
+  "cbclAttentionParentingPartner36": "Sum of items 05, 06, 56, 59, 95",
+  "cbclAttentionParentingPartner42": "Sum of items 05, 06, 56, 59, 95",
+  "cbclAttentionParentingPartner54": "Sum of items 05, 06, 56, 59, 95",
+
+  "cbclAggressiveParentingPartner30": "Sum of Aggressive items",
+  "cbclAggressiveParentingPartner36": "Sum of Aggressive items",
+  "cbclAggressiveParentingPartner42": "Sum of Aggressive items",
+  "cbclAggressiveParentingPartner54": "Sum of Aggressive items",
+
+  "cbclOtherParentingPartner30": "Sum of Other symptom items",
+  "cbclOtherParentingPartner36": "Sum of Other symptom items",
+  "cbclOtherParentingPartner42": "Sum of Other symptom items",
+  "cbclOtherParentingPartner54": "Sum of Other symptom items",
+
+  "cbclInternalizingParentingPartner30": "Sum of Emotionally Reactive, Anxious-Depressed, Somatic, and Withdrawn item sets",
+  "cbclInternalizingParentingPartner36": "Sum of Emotionally Reactive, Anxious-Depressed, Somatic, and Withdrawn item sets",
+  "cbclInternalizingParentingPartner42": "Sum of Emotionally Reactive, Anxious-Depressed, Somatic, and Withdrawn item sets",
+  "cbclInternalizingParentingPartner54": "Sum of Emotionally Reactive, Anxious-Depressed, Somatic, and Withdrawn item sets",
+
+  "cbclInternalizingTParentingPartner30": "Internalizing raw score converted to T-score",
+  "cbclInternalizingTParentingPartner36": "Internalizing raw score converted to T-score",
+  "cbclInternalizingTParentingPartner42": "Internalizing raw score converted to T-score",
+  "cbclInternalizingTParentingPartner54": "Internalizing raw score converted to T-score",
+
+  "cbclExternalizingParentingPartner30": "Sum of Attention and Aggressive item sets",
+  "cbclExternalizingParentingPartner36": "Sum of Attention and Aggressive item sets",
+  "cbclExternalizingParentingPartner42": "Sum of Attention and Aggressive item sets",
+  "cbclExternalizingParentingPartner54": "Sum of Attention and Aggressive item sets",
+
+  "cbclExternalizingTParentingPartner30": "Externalizing raw score converted to T-score",
+  "cbclExternalizingTParentingPartner36": "Externalizing raw score converted to T-score",
+  "cbclExternalizingTParentingPartner42": "Externalizing raw score converted to T-score",
+  "cbclExternalizingTParentingPartner54": "Externalizing raw score converted to T-score",
+
+  "cbclTotalParentingPartner30": "Sum of Internalizing, Externalizing, Other, and Sleep item sets",
+  "cbclTotalParentingPartner36": "Sum of Internalizing, Externalizing, Other, and Sleep item sets",
+  "cbclTotalParentingPartner42": "Sum of Internalizing, Externalizing, Other, and Sleep item sets",
+  "cbclTotalParentingPartner54": "Sum of Internalizing, Externalizing, Other, and Sleep item sets",
+
+  "cbclTotalTParentingPartner30": "Total raw score converted to T-score",
+  "cbclTotalTParentingPartner36": "Total raw score converted to T-score",
+  "cbclTotalTParentingPartner42": "Total raw score converted to T-score",
+  "cbclTotalTParentingPartner54": "Total raw score converted to T-score",
+
+  "cbclSCTParentingPartner30": "Sum of items 77, 89, 50",
+  "cbclSCTParentingPartner36": "Sum of items 77, 89, 50",
+  "cbclSCTParentingPartner42": "Sum of items 77, 89, 50",
+  "cbclSCTParentingPartner54": "Sum of items 77, 89, 50",
+
+  "cbclEmotionallyReactiveSecondary30": "Sum of items 21, 46, 51, 79, 82, 83, 92, 97, 99",
+  "cbclEmotionallyReactiveSecondary36": "Sum of items 21, 46, 51, 79, 82, 83, 92, 97, 99",
+  "cbclEmotionallyReactiveSecondary42": "Sum of items 21, 46, 51, 79, 82, 83, 92, 97, 99",
+  "cbclEmotionallyReactiveSecondary54": "Sum of items 21, 46, 51, 79, 82, 83, 92, 97, 99",
+
+  "cbclAnxiousDepressedSecondary30": "Sum of items 10, 33, 37, 43, 47, 68, 87, 90",
+  "cbclAnxiousDepressedSecondary36": "Sum of items 10, 33, 37, 43, 47, 68, 87, 90",
+  "cbclAnxiousDepressedSecondary42": "Sum of items 10, 33, 37, 43, 47, 68, 87, 90",
+  "cbclAnxiousDepressedSecondary54": "Sum of items 10, 33, 37, 43, 47, 68, 87, 90",
+
+  "cbclSomaticSecondary30": "Sum of items 01, 07, 12, 19, 24, 39, 45, 52, 78, 86, 93",
+  "cbclSomaticSecondary36": "Sum of items 01, 07, 12, 19, 24, 39, 45, 52, 78, 86, 93",
+  "cbclSomaticSecondary42": "Sum of items 01, 07, 12, 19, 24, 39, 45, 52, 78, 86, 93",
+  "cbclSomaticSecondary54": "Sum of items 01, 07, 12, 19, 24, 39, 45, 52, 78, 86, 93",
+
+  "cbclWithdrawnSecondary30": "Sum of items 02, 04, 23, 62, 67, 70, 71, 98",
+  "cbclWithdrawnSecondary36": "Sum of items 02, 04, 23, 62, 67, 70, 71, 98",
+  "cbclWithdrawnSecondary42": "Sum of items 02, 04, 23, 62, 67, 70, 71, 98",
+  "cbclWithdrawnSecondary54": "Sum of items 02, 04, 23, 62, 67, 70, 71, 98",
+
+  "cbclSleepSecondary30": "Sum of items 22, 38, 48, 64, 74, 84, 94",
+  "cbclSleepSecondary36": "Sum of items 22, 38, 48, 64, 74, 84, 94",
+  "cbclSleepSecondary42": "Sum of items 22, 38, 48, 64, 74, 84, 94",
+  "cbclSleepSecondary54": "Sum of items 22, 38, 48, 64, 74, 84, 94",
+
+  "cbclAttentionSecondary30": "Sum of items 05, 06, 56, 59, 95",
+  "cbclAttentionSecondary36": "Sum of items 05, 06, 56, 59, 95",
+  "cbclAttentionSecondary42": "Sum of items 05, 06, 56, 59, 95",
+  "cbclAttentionSecondary54": "Sum of items 05, 06, 56, 59, 95",
+
+  "cbclAggressiveSecondary30": "Sum of Aggressive items",
+  "cbclAggressiveSecondary36": "Sum of Aggressive items",
+  "cbclAggressiveSecondary42": "Sum of Aggressive items",
+  "cbclAggressiveSecondary54": "Sum of Aggressive items",
+
+  "cbclOtherSecondary30": "Sum of Other symptom items",
+  "cbclOtherSecondary36": "Sum of Other symptom items",
+  "cbclOtherSecondary42": "Sum of Other symptom items",
+  "cbclOtherSecondary54": "Sum of Other symptom items",
+
+  "cbclInternalizingSecondary30": "Sum of Emotionally Reactive, Anxious-Depressed, Somatic, and Withdrawn item sets",
+  "cbclInternalizingSecondary36": "Sum of Emotionally Reactive, Anxious-Depressed, Somatic, and Withdrawn item sets",
+  "cbclInternalizingSecondary42": "Sum of Emotionally Reactive, Anxious-Depressed, Somatic, and Withdrawn item sets",
+  "cbclInternalizingSecondary54": "Sum of Emotionally Reactive, Anxious-Depressed, Somatic, and Withdrawn item sets",
+
+  "cbclInternalizingTSecondary30": "Internalizing raw score converted to T-score",
+  "cbclInternalizingTSecondary36": "Internalizing raw score converted to T-score",
+  "cbclInternalizingTSecondary42": "Internalizing raw score converted to T-score",
+  "cbclInternalizingTSecondary54": "Internalizing raw score converted to T-score",
+
+  "cbclExternalizingSecondary30": "Sum of Attention and Aggressive item sets",
+  "cbclExternalizingSecondary36": "Sum of Attention and Aggressive item sets",
+  "cbclExternalizingSecondary42": "Sum of Attention and Aggressive item sets",
+  "cbclExternalizingSecondary54": "Sum of Attention and Aggressive item sets",
+
+  "cbclExternalizingTSecondary30": "Externalizing raw score converted to T-score",
+  "cbclExternalizingTSecondary36": "Externalizing raw score converted to T-score",
+  "cbclExternalizingTSecondary42": "Externalizing raw score converted to T-score",
+  "cbclExternalizingTSecondary54": "Externalizing raw score converted to T-score",
+
+  "cbclTotalSecondary30": "Sum of Internalizing, Externalizing, Other, and Sleep item sets",
+  "cbclTotalSecondary36": "Sum of Internalizing, Externalizing, Other, and Sleep item sets",
+  "cbclTotalSecondary42": "Sum of Internalizing, Externalizing, Other, and Sleep item sets",
+  "cbclTotalSecondary54": "Sum of Internalizing, Externalizing, Other, and Sleep item sets",
+
+  "cbclTotalTSecondary30": "Total raw score converted to T-score",
+  "cbclTotalTSecondary36": "Total raw score converted to T-score",
+  "cbclTotalTSecondary42": "Total raw score converted to T-score",
+  "cbclTotalTSecondary54": "Total raw score converted to T-score",
+
+  "cbclSCTSecondary30": "Sum of items 77, 89, 50",
+  "cbclSCTSecondary36": "Sum of items 77, 89, 50",
+  "cbclSCTSecondary42": "Sum of items 77, 89, 50",
+  "cbclSCTSecondary54": "Sum of items 77, 89, 50",
+
+  "cbqActivityLevelPrimary30": "Mean of CBQ items 01, 12, 18R, 22, 50R, 85, 93R",
+  "cbqActivityLevelPrimary36": "Mean of CBQ items 01, 12, 18R, 22, 50R, 85, 93R",
+  "cbqActivityLevelPrimary42": "Mean of CBQ items 01, 12, 18R, 22, 50R, 85, 93R",
+  "cbqActivityLevelPrimary54": "Mean of CBQ items 01, 12, 18R, 22, 50R, 85, 93R",
+
+  "cbqAngerPrimary30": "Mean of CBQ items 02, 14, 30, 40, 61R, 87",
+  "cbqAngerPrimary36": "Mean of CBQ items 02, 14, 30, 40, 61R, 87",
+  "cbqAngerPrimary42": "Mean of CBQ items 02, 14, 30, 40, 61R, 87",
+  "cbqAngerPrimary54": "Mean of CBQ items 02, 14, 30, 40, 61R, 87",
+
+  "cbqApproachPrimary30": "Mean of CBQ items 06, 15, 46, 58, 90R, 92R",
+  "cbqApproachPrimary36": "Mean of CBQ items 06, 15, 46, 58, 90R, 92R",
+  "cbqApproachPrimary42": "Mean of CBQ items 06, 15, 46, 58, 90R, 92R",
+  "cbqApproachPrimary54": "Mean of CBQ items 06, 15, 46, 58, 90R, 92R",
+
+  "cbqFocusPrimary30": "Mean of CBQ items 16R, 21R, 62, 71, 84R, 89",
+  "cbqFocusPrimary36": "Mean of CBQ items 16R, 21R, 62, 71, 84R, 89",
+  "cbqFocusPrimary42": "Mean of CBQ items 16R, 21R, 62, 71, 84R, 89",
+  "cbqFocusPrimary54": "Mean of CBQ items 16R, 21R, 62, 71, 84R, 89",
+
+  "cbqDiscomfortPrimary30": "Mean of CBQ items 03R, 09, 29, 49R, 64, 91R",
+  "cbqDiscomfortPrimary36": "Mean of CBQ items 03R, 09, 29, 49R, 64, 91R",
+  "cbqDiscomfortPrimary42": "Mean of CBQ items 03R, 09, 29, 49R, 64, 91R",
+  "cbqDiscomfortPrimary54": "Mean of CBQ items 03R, 09, 29, 49R, 64, 91R",
+
+  "cbqFallingReactivityPrimary30": "Mean of CBQ items 25R, 34R, 44, 59, 66, 75R",
+  "cbqFallingReactivityPrimary36": "Mean of CBQ items 25R, 34R, 44, 59, 66, 75R",
+  "cbqFallingReactivityPrimary42": "Mean of CBQ items 25R, 34R, 44, 59, 66, 75R",
+  "cbqFallingReactivityPrimary54": "Mean of CBQ items 25R, 34R, 44, 59, 66, 75R",
+
+  "cbqFearPrimary30": "Mean of CBQ items 17, 23, 35R, 41, 63, 68R",
+  "cbqFearPrimary36": "Mean of CBQ items 17, 23, 35R, 41, 63, 68R",
+  "cbqFearPrimary42": "Mean of CBQ items 17, 23, 35R, 41, 63, 68R",
+  "cbqFearPrimary54": "Mean of CBQ items 17, 23, 35R, 41, 63, 68R",
+
+  "cbqHighIntensityPleasurePrimary30": "Mean of CBQ items 04, 10, 33, 69, 78R, 88",
+  "cbqHighIntensityPleasurePrimary36": "Mean of CBQ items 04, 10, 33, 69, 78R, 88",
+  "cbqHighIntensityPleasurePrimary42": "Mean of CBQ items 04, 10, 33, 69, 78R, 88",
+  "cbqHighIntensityPleasurePrimary54": "Mean of CBQ items 04, 10, 33, 69, 78R, 88",
+
+  "cbqImpulsivityPrimary30": "Mean of CBQ items 07, 28, 36R, 43R, 51, 82R",
+  "cbqImpulsivityPrimary36": "Mean of CBQ items 07, 28, 36R, 43R, 51, 82R",
+  "cbqImpulsivityPrimary42": "Mean of CBQ items 07, 28, 36R, 43R, 51, 82R",
+  "cbqImpulsivityPrimary54": "Mean of CBQ items 07, 28, 36R, 43R, 51, 82R",
+
+  "cbqInhibitoryControlPrimary30": "Mean of CBQ items 38, 45, 53R, 67, 73, 81",
+  "cbqInhibitoryControlPrimary36": "Mean of CBQ items 38, 45, 53R, 67, 73, 81",
+  "cbqInhibitoryControlPrimary42": "Mean of CBQ items 38, 45, 53R, 67, 73, 81",
+  "cbqInhibitoryControlPrimary54": "Mean of CBQ items 38, 45, 53R, 67, 73, 81",
+
+  "cbqLowIntensityPleasurePrimary30": "Mean of CBQ items 26, 39, 57, 65, 72, 76, 86, 94",
+  "cbqLowIntensityPleasurePrimary36": "Mean of CBQ items 26, 39, 57, 65, 72, 76, 86, 94",
+  "cbqLowIntensityPleasurePrimary42": "Mean of CBQ items 26, 39, 57, 65, 72, 76, 86, 94",
+  "cbqLowIntensityPleasurePrimary54": "Mean of CBQ items 26, 39, 57, 65, 72, 76, 86, 94",
+
+  "cbqPerceptualSensitivityPrimary30": "Mean of CBQ items 05, 13, 24, 32, 47, 83R",
+  "cbqPerceptualSensitivityPrimary36": "Mean of CBQ items 05, 13, 24, 32, 47, 83R",
+  "cbqPerceptualSensitivityPrimary42": "Mean of CBQ items 05, 13, 24, 32, 47, 83R",
+  "cbqPerceptualSensitivityPrimary54": "Mean of CBQ items 05, 13, 24, 32, 47, 83R",
+
+  "cbqSadnessPrimary30": "Mean of CBQ items 08, 20, 27, 31, 54R, 56R, 74R",
+  "cbqSadnessPrimary36": "Mean of CBQ items 08, 20, 27, 31, 54R, 56R, 74R",
+  "cbqSadnessPrimary42": "Mean of CBQ items 08, 20, 27, 31, 54R, 56R, 74R",
+  "cbqSadnessPrimary54": "Mean of CBQ items 08, 20, 27, 31, 54R, 56R, 74R",
+
+  "cbqShynessPrimary30": "Mean of CBQ items 11R, 37, 42, 52, 60R, 70",
+  "cbqShynessPrimary36": "Mean of CBQ items 11R, 37, 42, 52, 60R, 70",
+  "cbqShynessPrimary42": "Mean of CBQ items 11R, 37, 42, 52, 60R, 70",
+  "cbqShynessPrimary54": "Mean of CBQ items 11R, 37, 42, 52, 60R, 70",
+
+  "cbqSmilingLaughterPrimary30": "Mean of CBQ items 19R, 48R, 55, 77, 79, 80R",
+  "cbqSmilingLaughterPrimary36": "Mean of CBQ items 19R, 48R, 55, 77, 79, 80R",
+  "cbqSmilingLaughterPrimary42": "Mean of CBQ items 19R, 48R, 55, 77, 79, 80R",
+  "cbqSmilingLaughterPrimary54": "Mean of CBQ items 19R, 48R, 55, 77, 79, 80R",
+
+  "cbqNegativeAffectPrimary30": "Mean of Discomfort, Sadness, Fear, Anger, and Falling Reactivity reversed composites",
+  "cbqNegativeAffectPrimary36": "Mean of Discomfort, Sadness, Fear, Anger, and Falling Reactivity reversed composites",
+  "cbqNegativeAffectPrimary42": "Mean of Discomfort, Sadness, Fear, Anger, and Falling Reactivity reversed composites",
+  "cbqNegativeAffectPrimary54": "Mean of Discomfort, Sadness, Fear, Anger, and Falling Reactivity reversed composites",
+
+  "cbqExtraversionPrimary30": "Mean of Impulsivity, High Intensity Pleasure, Activity Level, Shyness reversed, Approach, and Smiling Laughter composites",
+  "cbqExtraversionPrimary36": "Mean of Impulsivity, High Intensity Pleasure, Activity Level, Shyness reversed, Approach, and Smiling Laughter composites",
+  "cbqExtraversionPrimary42": "Mean of Impulsivity, High Intensity Pleasure, Activity Level, Shyness reversed, Approach, and Smiling Laughter composites",
+  "cbqExtraversionPrimary54": "Mean of Impulsivity, High Intensity Pleasure, Activity Level, Shyness reversed, Approach, and Smiling Laughter composites",
+
+  "cbqEffortfulControlPrimary30": "Mean of Low Intensity Pleasure, Inhibitory Control, Perceptual Sensitivity, and Focus composites",
+  "cbqEffortfulControlPrimary36": "Mean of Low Intensity Pleasure, Inhibitory Control, Perceptual Sensitivity, and Focus composites",
+  "cbqEffortfulControlPrimary42": "Mean of Low Intensity Pleasure, Inhibitory Control, Perceptual Sensitivity, and Focus composites",
+  "cbqEffortfulControlPrimary54": "Mean of Low Intensity Pleasure, Inhibitory Control, Perceptual Sensitivity, and Focus composites",
+
+  "cbqActivityLevelParentingPartner30": "Mean of CBQ items 01, 12, 18R, 22, 50R, 85, 93R",
+  "cbqActivityLevelParentingPartner36": "Mean of CBQ items 01, 12, 18R, 22, 50R, 85, 93R",
+  "cbqActivityLevelParentingPartner42": "Mean of CBQ items 01, 12, 18R, 22, 50R, 85, 93R",
+  "cbqActivityLevelParentingPartner54": "Mean of CBQ items 01, 12, 18R, 22, 50R, 85, 93R",
+
+  "cbqAngerParentingPartner30": "Mean of CBQ items 02, 14, 30, 40, 61R, 87",
+  "cbqAngerParentingPartner36": "Mean of CBQ items 02, 14, 30, 40, 61R, 87",
+  "cbqAngerParentingPartner42": "Mean of CBQ items 02, 14, 30, 40, 61R, 87",
+  "cbqAngerParentingPartner54": "Mean of CBQ items 02, 14, 30, 40, 61R, 87",
+
+  "cbqApproachParentingPartner30": "Mean of CBQ items 06, 15, 46, 58, 90R, 92R",
+  "cbqApproachParentingPartner36": "Mean of CBQ items 06, 15, 46, 58, 90R, 92R",
+  "cbqApproachParentingPartner42": "Mean of CBQ items 06, 15, 46, 58, 90R, 92R",
+  "cbqApproachParentingPartner54": "Mean of CBQ items 06, 15, 46, 58, 90R, 92R",
+
+  "cbqFocusParentingPartner30": "Mean of CBQ items 16R, 21R, 62, 71, 84R, 89",
+  "cbqFocusParentingPartner36": "Mean of CBQ items 16R, 21R, 62, 71, 84R, 89",
+  "cbqFocusParentingPartner42": "Mean of CBQ items 16R, 21R, 62, 71, 84R, 89",
+  "cbqFocusParentingPartner54": "Mean of CBQ items 16R, 21R, 62, 71, 84R, 89",
+
+  "cbqDiscomfortParentingPartner30": "Mean of CBQ items 03R, 09, 29, 49R, 64, 91R",
+  "cbqDiscomfortParentingPartner36": "Mean of CBQ items 03R, 09, 29, 49R, 64, 91R",
+  "cbqDiscomfortParentingPartner42": "Mean of CBQ items 03R, 09, 29, 49R, 64, 91R",
+  "cbqDiscomfortParentingPartner54": "Mean of CBQ items 03R, 09, 29, 49R, 64, 91R",
+
+  "cbqFallingReactivityParentingPartner30": "Mean of CBQ items 25R, 34R, 44, 59, 66, 75R",
+  "cbqFallingReactivityParentingPartner36": "Mean of CBQ items 25R, 34R, 44, 59, 66, 75R",
+  "cbqFallingReactivityParentingPartner42": "Mean of CBQ items 25R, 34R, 44, 59, 66, 75R",
+  "cbqFallingReactivityParentingPartner54": "Mean of CBQ items 25R, 34R, 44, 59, 66, 75R",
+
+  "cbqFearParentingPartner30": "Mean of CBQ items 17, 23, 35R, 41, 63, 68R",
+  "cbqFearParentingPartner36": "Mean of CBQ items 17, 23, 35R, 41, 63, 68R",
+  "cbqFearParentingPartner42": "Mean of CBQ items 17, 23, 35R, 41, 63, 68R",
+  "cbqFearParentingPartner54": "Mean of CBQ items 17, 23, 35R, 41, 63, 68R",
+
+  "cbqHighIntensityPleasureParentingPartner30": "Mean of CBQ items 04, 10, 33, 69, 78R, 88",
+  "cbqHighIntensityPleasureParentingPartner36": "Mean of CBQ items 04, 10, 33, 69, 78R, 88",
+  "cbqHighIntensityPleasureParentingPartner42": "Mean of CBQ items 04, 10, 33, 69, 78R, 88",
+  "cbqHighIntensityPleasureParentingPartner54": "Mean of CBQ items 04, 10, 33, 69, 78R, 88",
+
+  "cbqImpulsivityParentingPartner30": "Mean of CBQ items 07, 28, 36R, 43R, 51, 82R",
+  "cbqImpulsivityParentingPartner36": "Mean of CBQ items 07, 28, 36R, 43R, 51, 82R",
+  "cbqImpulsivityParentingPartner42": "Mean of CBQ items 07, 28, 36R, 43R, 51, 82R",
+  "cbqImpulsivityParentingPartner54": "Mean of CBQ items 07, 28, 36R, 43R, 51, 82R",
+
+  "cbqInhibitoryControlParentingPartner30": "Mean of CBQ items 38, 45, 53R, 67, 73, 81",
+  "cbqInhibitoryControlParentingPartner36": "Mean of CBQ items 38, 45, 53R, 67, 73, 81",
+  "cbqInhibitoryControlParentingPartner42": "Mean of CBQ items 38, 45, 53R, 67, 73, 81",
+  "cbqInhibitoryControlParentingPartner54": "Mean of CBQ items 38, 45, 53R, 67, 73, 81",
+
+  "cbqLowIntensityPleasureParentingPartner30": "Mean of CBQ items 26, 39, 57, 65, 72, 76, 86, 94",
+  "cbqLowIntensityPleasureParentingPartner36": "Mean of CBQ items 26, 39, 57, 65, 72, 76, 86, 94",
+  "cbqLowIntensityPleasureParentingPartner42": "Mean of CBQ items 26, 39, 57, 65, 72, 76, 86, 94",
+  "cbqLowIntensityPleasureParentingPartner54": "Mean of CBQ items 26, 39, 57, 65, 72, 76, 86, 94",
+
+  "cbqPerceptualSensitivityParentingPartner30": "Mean of CBQ items 05, 13, 24, 32, 47, 83R",
+  "cbqPerceptualSensitivityParentingPartner36": "Mean of CBQ items 05, 13, 24, 32, 47, 83R",
+  "cbqPerceptualSensitivityParentingPartner42": "Mean of CBQ items 05, 13, 24, 32, 47, 83R",
+  "cbqPerceptualSensitivityParentingPartner54": "Mean of CBQ items 05, 13, 24, 32, 47, 83R",
+
+  "cbqSadnessParentingPartner30": "Mean of CBQ items 08, 20, 27, 31, 54R, 56R, 74R",
+  "cbqSadnessParentingPartner36": "Mean of CBQ items 08, 20, 27, 31, 54R, 56R, 74R",
+  "cbqSadnessParentingPartner42": "Mean of CBQ items 08, 20, 27, 31, 54R, 56R, 74R",
+  "cbqSadnessParentingPartner54": "Mean of CBQ items 08, 20, 27, 31, 54R, 56R, 74R",
+
+  "cbqShynessParentingPartner30": "Mean of CBQ items 11R, 37, 42, 52, 60R, 70",
+  "cbqShynessParentingPartner36": "Mean of CBQ items 11R, 37, 42, 52, 60R, 70",
+  "cbqShynessParentingPartner42": "Mean of CBQ items 11R, 37, 42, 52, 60R, 70",
+  "cbqShynessParentingPartner54": "Mean of CBQ items 11R, 37, 42, 52, 60R, 70",
+
+  "cbqSmilingLaughterParentingPartner30": "Mean of CBQ items 19R, 48R, 55, 77, 79, 80R",
+  "cbqSmilingLaughterParentingPartner36": "Mean of CBQ items 19R, 48R, 55, 77, 79, 80R",
+  "cbqSmilingLaughterParentingPartner42": "Mean of CBQ items 19R, 48R, 55, 77, 79, 80R",
+  "cbqSmilingLaughterParentingPartner54": "Mean of CBQ items 19R, 48R, 55, 77, 79, 80R",
+
+  "cbqNegativeAffectParentingPartner30": "Mean of Discomfort, Sadness, Fear, Anger, and Falling Reactivity reversed composites",
+  "cbqNegativeAffectParentingPartner36": "Mean of Discomfort, Sadness, Fear, Anger, and Falling Reactivity reversed composites",
+  "cbqNegativeAffectParentingPartner42": "Mean of Discomfort, Sadness, Fear, Anger, and Falling Reactivity reversed composites",
+  "cbqNegativeAffectParentingPartner54": "Mean of Discomfort, Sadness, Fear, Anger, and Falling Reactivity reversed composites",
+
+  "cbqExtraversionParentingPartner30": "Mean of Impulsivity, High Intensity Pleasure, Activity Level, Shyness reversed, Approach, and Smiling Laughter composites",
+  "cbqExtraversionParentingPartner36": "Mean of Impulsivity, High Intensity Pleasure, Activity Level, Shyness reversed, Approach, and Smiling Laughter composites",
+  "cbqExtraversionParentingPartner42": "Mean of Impulsivity, High Intensity Pleasure, Activity Level, Shyness reversed, Approach, and Smiling Laughter composites",
+  "cbqExtraversionParentingPartner54": "Mean of Impulsivity, High Intensity Pleasure, Activity Level, Shyness reversed, Approach, and Smiling Laughter composites",
+
+  "cbqEffortfulControlParentingPartner30": "Mean of Low Intensity Pleasure, Inhibitory Control, Perceptual Sensitivity, and Focus composites",
+  "cbqEffortfulControlParentingPartner36": "Mean of Low Intensity Pleasure, Inhibitory Control, Perceptual Sensitivity, and Focus composites",
+  "cbqEffortfulControlParentingPartner42": "Mean of Low Intensity Pleasure, Inhibitory Control, Perceptual Sensitivity, and Focus composites",
+  "cbqEffortfulControlParentingPartner54": "Mean of Low Intensity Pleasure, Inhibitory Control, Perceptual Sensitivity, and Focus composites",
+
+  "cbqActivityLevelSecondary30": "Mean of CBQ items 01, 12, 18R, 22, 50R, 85, 93R",
+  "cbqActivityLevelSecondary36": "Mean of CBQ items 01, 12, 18R, 22, 50R, 85, 93R",
+  "cbqActivityLevelSecondary42": "Mean of CBQ items 01, 12, 18R, 22, 50R, 85, 93R",
+  "cbqActivityLevelSecondary54": "Mean of CBQ items 01, 12, 18R, 22, 50R, 85, 93R",
+
+  "cbqAngerSecondary30": "Mean of CBQ items 02, 14, 30, 40, 61R, 87",
+  "cbqAngerSecondary36": "Mean of CBQ items 02, 14, 30, 40, 61R, 87",
+  "cbqAngerSecondary42": "Mean of CBQ items 02, 14, 30, 40, 61R, 87",
+  "cbqAngerSecondary54": "Mean of CBQ items 02, 14, 30, 40, 61R, 87",
+
+  "cbqApproachSecondary30": "Mean of CBQ items 06, 15, 46, 58, 90R, 92R",
+  "cbqApproachSecondary36": "Mean of CBQ items 06, 15, 46, 58, 90R, 92R",
+  "cbqApproachSecondary42": "Mean of CBQ items 06, 15, 46, 58, 90R, 92R",
+  "cbqApproachSecondary54": "Mean of CBQ items 06, 15, 46, 58, 90R, 92R",
+
+  "cbqFocusSecondary30": "Mean of CBQ items 16R, 21R, 62, 71, 84R, 89",
+  "cbqFocusSecondary36": "Mean of CBQ items 16R, 21R, 62, 71, 84R, 89",
+  "cbqFocusSecondary42": "Mean of CBQ items 16R, 21R, 62, 71, 84R, 89",
+  "cbqFocusSecondary54": "Mean of CBQ items 16R, 21R, 62, 71, 84R, 89",
+
+  "cbqDiscomfortSecondary30": "Mean of CBQ items 03R, 09, 29, 49R, 64, 91R",
+  "cbqDiscomfortSecondary36": "Mean of CBQ items 03R, 09, 29, 49R, 64, 91R",
+  "cbqDiscomfortSecondary42": "Mean of CBQ items 03R, 09, 29, 49R, 64, 91R",
+  "cbqDiscomfortSecondary54": "Mean of CBQ items 03R, 09, 29, 49R, 64, 91R",
+
+  "cbqFallingReactivitySecondary30": "Mean of CBQ items 25R, 34R, 44, 59, 66, 75R",
+  "cbqFallingReactivitySecondary36": "Mean of CBQ items 25R, 34R, 44, 59, 66, 75R",
+  "cbqFallingReactivitySecondary42": "Mean of CBQ items 25R, 34R, 44, 59, 66, 75R",
+  "cbqFallingReactivitySecondary54": "Mean of CBQ items 25R, 34R, 44, 59, 66, 75R",
+
+  "cbqFearSecondary30": "Mean of CBQ items 17, 23, 35R, 41, 63, 68R",
+  "cbqFearSecondary36": "Mean of CBQ items 17, 23, 35R, 41, 63, 68R",
+  "cbqFearSecondary42": "Mean of CBQ items 17, 23, 35R, 41, 63, 68R",
+  "cbqFearSecondary54": "Mean of CBQ items 17, 23, 35R, 41, 63, 68R",
+
+  "cbqHighIntensityPleasureSecondary30": "Mean of CBQ items 04, 10, 33, 69, 78R, 88",
+  "cbqHighIntensityPleasureSecondary36": "Mean of CBQ items 04, 10, 33, 69, 78R, 88",
+  "cbqHighIntensityPleasureSecondary42": "Mean of CBQ items 04, 10, 33, 69, 78R, 88",
+  "cbqHighIntensityPleasureSecondary54": "Mean of CBQ items 04, 10, 33, 69, 78R, 88",
+
+  "cbqImpulsivitySecondary30": "Mean of CBQ items 07, 28, 36R, 43R, 51, 82R",
+  "cbqImpulsivitySecondary36": "Mean of CBQ items 07, 28, 36R, 43R, 51, 82R",
+  "cbqImpulsivitySecondary42": "Mean of CBQ items 07, 28, 36R, 43R, 51, 82R",
+  "cbqImpulsivitySecondary54": "Mean of CBQ items 07, 28, 36R, 43R, 51, 82R",
+
+  "cbqInhibitoryControlSecondary30": "Mean of CBQ items 38, 45, 53R, 67, 73, 81",
+  "cbqInhibitoryControlSecondary36": "Mean of CBQ items 38, 45, 53R, 67, 73, 81",
+  "cbqInhibitoryControlSecondary42": "Mean of CBQ items 38, 45, 53R, 67, 73, 81",
+  "cbqInhibitoryControlSecondary54": "Mean of CBQ items 38, 45, 53R, 67, 73, 81",
+
+  "cbqLowIntensityPleasureSecondary30": "Mean of CBQ items 26, 39, 57, 65, 72, 76, 86, 94",
+  "cbqLowIntensityPleasureSecondary36": "Mean of CBQ items 26, 39, 57, 65, 72, 76, 86, 94",
+  "cbqLowIntensityPleasureSecondary42": "Mean of CBQ items 26, 39, 57, 65, 72, 76, 86, 94",
+  "cbqLowIntensityPleasureSecondary54": "Mean of CBQ items 26, 39, 57, 65, 72, 76, 86, 94",
+
+  "cbqPerceptualSensitivitySecondary30": "Mean of CBQ items 05, 13, 24, 32, 47, 83R",
+  "cbqPerceptualSensitivitySecondary36": "Mean of CBQ items 05, 13, 24, 32, 47, 83R",
+  "cbqPerceptualSensitivitySecondary42": "Mean of CBQ items 05, 13, 24, 32, 47, 83R",
+  "cbqPerceptualSensitivitySecondary54": "Mean of CBQ items 05, 13, 24, 32, 47, 83R",
+
+  "cbqSadnessSecondary30": "Mean of CBQ items 08, 20, 27, 31, 54R, 56R, 74R",
+  "cbqSadnessSecondary36": "Mean of CBQ items 08, 20, 27, 31, 54R, 56R, 74R",
+  "cbqSadnessSecondary42": "Mean of CBQ items 08, 20, 27, 31, 54R, 56R, 74R",
+  "cbqSadnessSecondary54": "Mean of CBQ items 08, 20, 27, 31, 54R, 56R, 74R",
+
+  "cbqShynessSecondary30": "Mean of CBQ items 11R, 37, 42, 52, 60R, 70",
+  "cbqShynessSecondary36": "Mean of CBQ items 11R, 37, 42, 52, 60R, 70",
+  "cbqShynessSecondary42": "Mean of CBQ items 11R, 37, 42, 52, 60R, 70",
+  "cbqShynessSecondary54": "Mean of CBQ items 11R, 37, 42, 52, 60R, 70",
+
+  "cbqSmilingLaughterSecondary30": "Mean of CBQ items 19R, 48R, 55, 77, 79, 80R",
+  "cbqSmilingLaughterSecondary36": "Mean of CBQ items 19R, 48R, 55, 77, 79, 80R",
+  "cbqSmilingLaughterSecondary42": "Mean of CBQ items 19R, 48R, 55, 77, 79, 80R",
+  "cbqSmilingLaughterSecondary54": "Mean of CBQ items 19R, 48R, 55, 77, 79, 80R",
+
+  "cbqNegativeAffectSecondary30": "Mean of Discomfort, Sadness, Fear, Anger, and Falling Reactivity reversed composites",
+  "cbqNegativeAffectSecondary36": "Mean of Discomfort, Sadness, Fear, Anger, and Falling Reactivity reversed composites",
+  "cbqNegativeAffectSecondary42": "Mean of Discomfort, Sadness, Fear, Anger, and Falling Reactivity reversed composites",
+  "cbqNegativeAffectSecondary54": "Mean of Discomfort, Sadness, Fear, Anger, and Falling Reactivity reversed composites",
+
+  "cbqExtraversionSecondary30": "Mean of Impulsivity, High Intensity Pleasure, Activity Level, Shyness reversed, Approach, and Smiling Laughter composites",
+  "cbqExtraversionSecondary36": "Mean of Impulsivity, High Intensity Pleasure, Activity Level, Shyness reversed, Approach, and Smiling Laughter composites",
+  "cbqExtraversionSecondary42": "Mean of Impulsivity, High Intensity Pleasure, Activity Level, Shyness reversed, Approach, and Smiling Laughter composites",
+  "cbqExtraversionSecondary54": "Mean of Impulsivity, High Intensity Pleasure, Activity Level, Shyness reversed, Approach, and Smiling Laughter composites",
+
+  "cbqEffortfulControlSecondary30": "Mean of Low Intensity Pleasure, Inhibitory Control, Perceptual Sensitivity, and Focus composites",
+  "cbqEffortfulControlSecondary36": "Mean of Low Intensity Pleasure, Inhibitory Control, Perceptual Sensitivity, and Focus composites",
+  "cbqEffortfulControlSecondary42": "Mean of Low Intensity Pleasure, Inhibitory Control, Perceptual Sensitivity, and Focus composites",
+  "cbqEffortfulControlSecondary54": "Mean of Low Intensity Pleasure, Inhibitory Control, Perceptual Sensitivity, and Focus composites",
+
+  "crprNurturance30": "Sum of all variables",
+  "crprWarmth30": "Sum of items 3 and 18",
+  "crprNurturance36": "Sum of all variables",
+  "crprWarmth36": "Sum of items 3 and 18",
+  "crprNurturance42": "Sum of all variables",
+  "crprWarmth42": "Sum of items 3 and 18",
+  "crprNurturance54": "Sum of all variables",
+  "crprWarmth54": "Sum of items 3 and 18",
+
+  "chaosSum30": "Sum of all variables",
+  "chaosSum36": "Sum of all variables",
+  "chaosSum42": "Sum of all variables",
+  "chaosSum54": "Sum of all variables",
+
+  "teacherChecklistPeerLiking30": "Mean of Items 1, 2, 3R, 4, 5, 6R",
+  "teacherChecklistPeerLiking36": "Mean of Items 1, 2, 3R, 4, 5, 6R",
+  "teacherChecklistPeerLiking42": "Mean of Items 1, 2, 3R, 4, 5, 6R",
+  "teacherChecklistPeerLiking54": "Mean of Items 1, 2, 3R, 4, 5, 6R",
+
+  "teacherChecklistReactiveAggression30": "Mean of Items 7, 8, 9",
+  "teacherChecklistReactiveAggression36": "Mean of Items 7, 8, 9",
+  "teacherChecklistReactiveAggression42": "Mean of Items 7, 8, 9",
+  "teacherChecklistReactiveAggression54": "Mean of Items 7, 8, 9",
+
+  "teacherChecklistProactiveAggression30": "Mean of Items 10, 11, 12",
+  "teacherChecklistProactiveAggression36": "Mean of Items 10, 11, 12",
+  "teacherChecklistProactiveAggression42": "Mean of Items 10, 11, 12",
+  "teacherChecklistProactiveAggression54": "Mean of Items 10, 11, 12",
+
+  "ecbiIntensity30": "Sum of all 36 intensity (a) items: 1a-36a",
+  "ecbiIntensity36": "Sum of all 36 intensity (a) items: 1a-36a",
+  "ecbiIntensity42": "Sum of all 36 intensity (a) items: 1a-36a",
+  "ecbiIntensity54": "Sum of all 36 intensity (a) items: 1a-36a",
+
+  "ecbiProblem30": "Sum of all 36 problem (b) items: 1b-36b",
+  "ecbiProblem36": "Sum of all 36 problem (b) items: 1b-36b",
+  "ecbiProblem42": "Sum of all 36 problem (b) items: 1b-36b",
+  "ecbiProblem54": "Sum of all 36 problem (b) items: 1b-36b",
+
+  "ecbiIntensityT30": "ecbiIntensity raw score converted to T-score using the study's scoring lookup",
+  "ecbiIntensityT36": "ecbiIntensity raw score converted to T-score using the study's scoring lookup",
+  "ecbiIntensityT42": "ecbiIntensity raw score converted to T-score using the study's scoring lookup",
+  "ecbiIntensityT54": "ecbiIntensity raw score converted to T-score using the study's scoring lookup",
+
+  "ecbiProblemT30": "ecbiProblem raw score converted to T-score using the study's scoring lookup",
+  "ecbiProblemT36": "ecbiProblem raw score converted to T-score using the study's scoring lookup",
+  "ecbiProblemT42": "ecbiProblem raw score converted to T-score using the study's scoring lookup",
+  "ecbiProblemT54": "ecbiProblem raw score converted to T-score using the study's scoring lookup",
+
+  "oddball_P3b_amplitudeDifference30": "Not specified in the README",
+  "oddball_P3b_amplitudeDifference36": "Not specified in the README",
+  "oddball_P3b_amplitudeDifference42": "Not specified in the README",
+  "oddball_P3b_amplitudeDifference54": "Not specified in the README",
+
+  "oddball_P3b_amplitudeDifferenceCentered30": "Not specified in the README",
+  "oddball_P3b_amplitudeDifferenceCentered36": "Not specified in the README",
+  "oddball_P3b_amplitudeDifferenceCentered42": "Not specified in the README",
+  "oddball_P3b_amplitudeDifferenceCentered54": "Not specified in the README",
+
+  "oddball_P3a_amplitudeDifference30": "Not specified in the README",
+  "oddball_P3a_amplitudeDifference36": "Not specified in the README",
+  "oddball_P3a_amplitudeDifference42": "Not specified in the README",
+  "oddball_P3a_amplitudeDifference54": "Not specified in the README",
+
+  "oddball_P3a_amplitudeDifferenceCentered30": "Not specified in the README",
+  "oddball_P3a_amplitudeDifferenceCentered36": "Not specified in the README",
+  "oddball_P3a_amplitudeDifferenceCentered42": "Not specified in the README",
+  "oddball_P3a_amplitudeDifferenceCentered54": "Not specified in the README",
+
+  "fishSharks_N2_amplitudeDifference30": "Not specified in the README",
+  "fishSharks_N2_amplitudeDifference36": "Not specified in the README",
+  "fishSharks_N2_amplitudeDifference42": "Not specified in the README",
+  "fishSharks_N2_amplitudeDifference54": "Not specified in the README",
+
+  "fishSharks_N2_amplitudeDifferenceCentered30": "Not specified in the README",
+  "fishSharks_N2_amplitudeDifferenceCentered36": "Not specified in the README",
+  "fishSharks_N2_amplitudeDifferenceCentered42": "Not specified in the README",
+  "fishSharks_N2_amplitudeDifferenceCentered54": "Not specified in the README",
+
+  "icqDifficultPrimary30": "Sum of items 01, 05, 06, 12, 13, 21, 32",
+  "icqDifficultPrimary36": "Sum of items 01, 05, 06, 12, 13, 21, 32",
+  "icqDifficultPrimary42": "Sum of items 01, 05, 06, 12, 13, 21, 32",
+  "icqDifficultPrimary54": "Sum of items 01, 05, 06, 12, 13, 21, 32",
+
+  "icqDifficultParentingPartner30": "Sum of items 01, 05, 06, 12, 13, 21, 32",
+  "icqDifficultParentingPartner36": "Sum of items 01, 05, 06, 12, 13, 21, 32",
+  "icqDifficultParentingPartner42": "Sum of items 01, 05, 06, 12, 13, 21, 32",
+  "icqDifficultParentingPartner54": "Sum of items 01, 05, 06, 12, 13, 21, 32",
+
+  "icqDifficultSecondary30": "Sum of items 01, 05, 06, 12, 13, 21, 32",
+  "icqDifficultSecondary36": "Sum of items 01, 05, 06, 12, 13, 21, 32",
+  "icqDifficultSecondary42": "Sum of items 01, 05, 06, 12, 13, 21, 32",
+  "icqDifficultSecondary54": "Sum of items 01, 05, 06, 12, 13, 21, 32",
+
+  "icqDifficultPrimaryMean30": "Mean of Difficult scores at 30, 36, and 42 months",
+  "icqDifficultPrimaryMean36": "Mean of Difficult scores at 30, 36, and 42 months",
+  "icqDifficultPrimaryMean42": "Mean of Difficult scores at 30, 36, and 42 months",
+  "icqDifficultPrimaryMean54": "Mean of Difficult scores at 30, 36, and 42 months",
+
+  "icqDifficultParentingPartnerMean30": "Mean of Difficult scores at 30, 36, and 42 months",
+  "icqDifficultParentingPartnerMean36": "Mean of Difficult scores at 30, 36, and 42 months",
+  "icqDifficultParentingPartnerMean42": "Mean of Difficult scores at 30, 36, and 42 months",
+  "icqDifficultParentingPartnerMean54": "Mean of Difficult scores at 30, 36, and 42 months",
+
+  "icqDifficultSecondaryMean30": "Mean of Difficult scores at 30, 36, and 42 months",
+  "icqDifficultSecondaryMean36": "Mean of Difficult scores at 30, 36, and 42 months",
+  "icqDifficultSecondaryMean42": "Mean of Difficult scores at 30, 36, and 42 months",
+  "icqDifficultSecondaryMean54": "Mean of Difficult scores at 30, 36, and 42 months",
+
+  "cesdDepressiveSymptoms30": "Sum of all items",
+  "cesdDepressiveSymptoms36": "Sum of all items",
+  "cesdDepressiveSymptoms42": "Sum of all items",
+  "cesdDepressiveSymptoms54": "Sum of all items",
+
+  "cesdDepressionDiagnosis30": "Score greater than 16",
+  "cesdDepressionDiagnosis36": "Score greater than 16",
+  "cesdDepressionDiagnosis42": "Score greater than 16",
+  "cesdDepressionDiagnosis54": "Score greater than 16",
 };

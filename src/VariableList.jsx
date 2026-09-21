@@ -17,7 +17,7 @@ const taskToVarMap = {
   "CHAOS Scale (Confusion, Hubbub, and Order Scale)": "chaos",
   "Depression Scale": "dep",
   "DIFFER Cognitive Ability": "diff",
-  "Eyberg Child Behavior Inventory": "eyb",
+  "Eyberg Child Behavior Inventory": "ecbi",
   "Physical Health Status Inventory": "phsi",
   "Shipley Parent Cognition": "shipley",
   "Social Support Related": "socialsupport",
@@ -478,22 +478,124 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
     return { l1Category: l1, l2Timepoint: l2, l3Group: l3 };
   }
 
+  if (selectedTask === "Child Behavior Checklist") {
+    const l1 = "Child Behavior Checklist Task";
+    let l2 = "Other";
+    if (vLower.includes("parentingpartner")) l2 = "Parenting Partner";
+    else if (vLower.includes("secondary")) l2 = "Secondary Caregiver";
+    else if (vLower.includes("primary")) l2 = "Primary Caregiver";
+
+    let l3 = "Other";
+    if (vLower.endsWith("30")) l3 = "Age 30";
+    else if (vLower.endsWith("36")) l3 = "Age 36";
+    else if (vLower.endsWith("42")) l3 = "Age 42";
+    else if (vLower.endsWith("54")) l3 = "Age 54";
+
+    return { l1Category: l1, l2Timepoint: l2, l3Group: l3 };
+  }
+
+  if (selectedTask === "Child Behavior Questionnaire") {
+    const l1 = "Child Behavior Questionnaire Task";
+    const regularFamilies = ["cbq55", "cbq15"];
+    const l2 = regularFamilies.some((f) => vLower.startsWith(f)) ? "Regular Variables" : "Composites";
+
+    let l3 = "Other";
+    if (vLower.includes("parentingpartner")) l3 = "Parenting Partner";
+    else if (vLower.includes("secondary")) l3 = "Secondary Caregiver";
+    else if (vLower.includes("primary")) l3 = "Primary Caregiver";
+
+    let l4 = "Other";
+    if (vLower.endsWith("30")) l4 = "Age 30";
+    else if (vLower.endsWith("36")) l4 = "Age 36";
+    else if (vLower.endsWith("42")) l4 = "Age 42";
+    else if (vLower.endsWith("54")) l4 = "Age 54";
+
+    return { l1Category: l1, l2Timepoint: l2, l3Group: l3, l4Group: l4 };
+  }
+
+  if (selectedTask === "Child-Rearing Practices Report") {
+    const l1 = "Child-Rearing Practices Report Task";
+
+    let l3 = "Other";
+    if (vLower.endsWith("30")) l3 = "Age 30";
+    else if (vLower.endsWith("36")) l3 = "Age 36";
+    else if (vLower.endsWith("42")) l3 = "Age 42";
+    else if (vLower.endsWith("54")) l3 = "Age 54";
+
+    return { l1Category: l1, l2Timepoint: "Composites", l3Group: l3 };
+  }
+
+  if (selectedTask === "Depression Scale") {
+    const l1 = "Depression Scale Task";
+
+    let l3 = "Other";
+    if (vLower.endsWith("30")) l3 = "Age 30";
+    else if (vLower.endsWith("36")) l3 = "Age 36";
+    else if (vLower.endsWith("42")) l3 = "Age 42";
+    else if (vLower.endsWith("54")) l3 = "Age 54";
+
+    return { l1Category: l1, l2Timepoint: "Composites", l3Group: l3 };
+  }
+
+  if (selectedTask === "Eyberg Child Behavior Inventory") {
+    const l1 = "Eyberg Child Behavior Inventory Task";
+
+    let l3 = "Other";
+    if (vLower.endsWith("30")) l3 = "Age 30";
+    else if (vLower.endsWith("36")) l3 = "Age 36";
+    else if (vLower.endsWith("42")) l3 = "Age 42";
+    else if (vLower.endsWith("54")) l3 = "Age 54";
+
+    return { l1Category: l1, l2Timepoint: "Composites", l3Group: l3 };
+  }
+
+  if (selectedTask === "CHAOS Scale (Confusion, Hubbub, and Order Scale)") {
+    const l1 = `${selectedTask} Task`;
+
+    let l3 = "Other";
+    if (vLower.endsWith("30")) l3 = "Age 30";
+    else if (vLower.endsWith("36")) l3 = "Age 36";
+    else if (vLower.endsWith("42")) l3 = "Age 42";
+    else if (vLower.endsWith("54")) l3 = "Age 54";
+
+    return { l1Category: l1, l2Timepoint: "Composites", l3Group: l3 };
+  }
+
   if (selectedTask === "DIFFER Cognitive Ability") {
     const l1 = "DIFFER Cognitive Ability";
+
+    let age = "Other";
+    if (vLower.endsWith("30")) age = "Age 30";
+    else if (vLower.endsWith("36")) age = "Age 36";
+    else if (vLower.endsWith("42")) age = "Age 42";
+    else if (vLower.endsWith("54")) age = "Age 54";
+
     if (vLower.startsWith("oddball")) {
-      return { l1Category: l1, l2Timepoint: "Oddball Related" };
+      return { l1Category: l1, l2Timepoint: "Oddball Related", l3Group: age };
     }
     if (vLower.startsWith("birdalligator")) {
-      return { l1Category: l1, l2Timepoint: "Bird Alligator Related" };
+      return { l1Category: l1, l2Timepoint: "Bird Alligator Related", l3Group: age };
     }
     if (vLower.startsWith("fishsharks")) {
-      return { l1Category: l1, l2Timepoint: "Fish Sharks Related" };
+      return { l1Category: l1, l2Timepoint: "Fish Sharks Related", l3Group: age };
     }
     if (vLower.startsWith("icqdifficult")) {
-      return { l1Category: l1, l2Timepoint: "ICQ Difficult Related" };
+      if (vLower.includes("mean")) {
+        return {
+          l1Category: l1,
+          l2Timepoint: "ICQ Difficult Related",
+          l3Group: "ICQ Longitudinal Means",
+        };
+      }
+      return {
+        l1Category: l1,
+        l2Timepoint: "ICQ Difficult Related",
+        l3Group: "ICQ Composites",
+        l4Group: age,
+      };
     }
     if (vLower.startsWith("preschooldemographics")) {
-      return { l1Category: l1, l2Timepoint: "Preschool Demographics Related" };
+      return { l1Category: l1, l2Timepoint: "Preschool Demographics Related", l3Group: age };
     }
     return { l1Category: "Needs Review / Other Related Variables", l2Timepoint: "Other" };
   }
@@ -650,12 +752,23 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
 
   if (selectedTask === "Teacher Questionnaires") {
     const l1 = "Teacher Questionnaires Task";
-    let l2 = "All";
-    if (vLower.endsWith("30")) l2 = "Age 30";
-    else if (vLower.endsWith("36")) l2 = "Age 36";
-    else if (vLower.endsWith("42")) l2 = "Age 42";
-    else if (vLower.endsWith("54")) l2 = "Age 54";
-    return { l1Category: l1, l2Timepoint: l2 };
+
+    let l2 = "Regular Variables";
+    let l3 = "Teacher Demographics";
+    if (vLower.startsWith("teacherchecklist")) {
+      l2 = "Composites";
+      l3 = "Teacher Checklist";
+    } else if (vLower.startsWith("class")) {
+      l3 = "Class";
+    }
+
+    let l4 = "Other";
+    if (vLower.endsWith("30")) l4 = "Age 30";
+    else if (vLower.endsWith("36")) l4 = "Age 36";
+    else if (vLower.endsWith("42")) l4 = "Age 42";
+    else if (vLower.endsWith("54")) l4 = "Age 54";
+
+    return { l1Category: l1, l2Timepoint: l2, l3Group: l3, l4Group: l4 };
   }
 
   if (selectedTask === "Parent Positive Affect") {
@@ -1030,6 +1143,110 @@ export const groupVariablesBySubcategory = (variables, selectedCategory, selecte
       reordered[k] = groups["Sleep Diary – Child"][k];
     });
     groups["Sleep Diary – Child"] = reordered;
+  }
+
+  if (groups["Child Behavior Checklist Task"]) {
+    const cbclGroupOrder = {
+      "Primary Caregiver": 0,
+      "Parenting Partner": 1,
+      "Secondary Caregiver": 2,
+    };
+    const entries = Object.keys(groups["Child Behavior Checklist Task"]).map((k, i) => [k, i]);
+    entries.sort((a, b) => {
+      const ra = a[0] in cbclGroupOrder ? cbclGroupOrder[a[0]] : 99;
+      const rb = b[0] in cbclGroupOrder ? cbclGroupOrder[b[0]] : 99;
+      return ra !== rb ? ra - rb : a[1] - b[1];
+    });
+    const reordered = {};
+    entries.forEach(([k]) => {
+      reordered[k] = groups["Child Behavior Checklist Task"][k];
+    });
+    groups["Child Behavior Checklist Task"] = reordered;
+  }
+
+  if (groups["Child Behavior Questionnaire Task"]) {
+    const cbqCaregiverOrder = {
+      "Primary Caregiver": 0,
+      "Parenting Partner": 1,
+      "Secondary Caregiver": 2,
+    };
+    const l1Data = groups["Child Behavior Questionnaire Task"];
+    Object.keys(l1Data).forEach((l2) => {
+      const entries = Object.keys(l1Data[l2]).map((k, i) => [k, i]);
+      entries.sort((a, b) => {
+        const ra = a[0] in cbqCaregiverOrder ? cbqCaregiverOrder[a[0]] : 99;
+        const rb = b[0] in cbqCaregiverOrder ? cbqCaregiverOrder[b[0]] : 99;
+        return ra !== rb ? ra - rb : a[1] - b[1];
+      });
+      const reordered = {};
+      entries.forEach(([k]) => {
+        reordered[k] = l1Data[l2][k];
+      });
+      l1Data[l2] = reordered;
+    });
+  }
+
+  if (groups["Teacher Questionnaires Task"]) {
+    const teacherGroupOrder = {
+      Class: 0,
+      "Teacher Demographics": 1,
+      "Teacher Checklist": 2,
+    };
+    const l1Data = groups["Teacher Questionnaires Task"];
+    Object.keys(l1Data).forEach((l2) => {
+      const entries = Object.keys(l1Data[l2]).map((k, i) => [k, i]);
+      entries.sort((a, b) => {
+        const ra = a[0] in teacherGroupOrder ? teacherGroupOrder[a[0]] : 99;
+        const rb = b[0] in teacherGroupOrder ? teacherGroupOrder[b[0]] : 99;
+        return ra !== rb ? ra - rb : a[1] - b[1];
+      });
+      const reordered = {};
+      entries.forEach(([k]) => {
+        reordered[k] = l1Data[l2][k];
+      });
+      l1Data[l2] = reordered;
+    });
+  }
+
+  if (groups["DIFFER Cognitive Ability"]) {
+    const differL2Order = {
+      "Oddball Related": 0,
+      "Fish Sharks Related": 1,
+      "ICQ Difficult Related": 2,
+      "Preschool Demographics Related": 3,
+    };
+    const differL3Order = {
+      "ICQ Composites": 0,
+      "ICQ Longitudinal Means": 1,
+    };
+    const l1Data = groups["DIFFER Cognitive Ability"];
+
+    const entries = Object.keys(l1Data).map((k, i) => [k, i]);
+    entries.sort((a, b) => {
+      const ra = a[0] in differL2Order ? differL2Order[a[0]] : 99;
+      const rb = b[0] in differL2Order ? differL2Order[b[0]] : 99;
+      return ra !== rb ? ra - rb : a[1] - b[1];
+    });
+    const reordered = {};
+    entries.forEach(([k]) => {
+      reordered[k] = l1Data[k];
+    });
+    groups["DIFFER Cognitive Ability"] = reordered;
+
+    const icq = reordered["ICQ Difficult Related"];
+    if (icq && !Array.isArray(icq)) {
+      const icqEntries = Object.keys(icq).map((k, i) => [k, i]);
+      icqEntries.sort((a, b) => {
+        const ra = a[0] in differL3Order ? differL3Order[a[0]] : 99;
+        const rb = b[0] in differL3Order ? differL3Order[b[0]] : 99;
+        return ra !== rb ? ra - rb : a[1] - b[1];
+      });
+      const icqReordered = {};
+      icqEntries.forEach(([k]) => {
+        icqReordered[k] = icq[k];
+      });
+      reordered["ICQ Difficult Related"] = icqReordered;
+    }
   }
 
   const sleepGroupOrderPriority = (key) => {

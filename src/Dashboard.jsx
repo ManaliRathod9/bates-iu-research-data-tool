@@ -23,7 +23,7 @@ const taskToVarMap = {
   "CHAOS Scale (Confusion, Hubbub, and Order Scale)": "chaos",
   "Depression Scale": "dep",
   "DIFFER Cognitive Ability": "diff",
-  "Eyberg Child Behavior Inventory": "eyb",
+  "Eyberg Child Behavior Inventory": "ecbi",
   "Physical Health Status Inventory": "phsi",
   "Shipley Parent Cognition": "shipley",
   "Social Support Related": "socialsupport",
