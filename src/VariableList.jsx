@@ -47,7 +47,7 @@ const taskToVarMap = {
   "Child Compliance / Toy Clean Up": "childcompliancetoycleanup",
   "Toy Prohibition": "childbehaviortoyprohibition",
   "Child Demand / Toy Prohibition": "childdemandtoyprohibition",
-  "Other Related Toy Variables": "toy",
+  "BehaviorPhoneCallPlays": "toy",
   "EEG Bird Alligator": "eegbirdalligator",
 };
 
@@ -295,7 +295,7 @@ export const getCorrectTasksForVariable = (v) => {
   }
 
   if (vLower.startsWith("toy") || vLower.includes("toy")) {
-    return ["Other Related Toy Variables"];
+    return ["BehaviorPhoneCallPlays"];
   }
 
   if (vLower.startsWith("parentalcontrol")) {
@@ -1247,6 +1247,86 @@ export const groupVariablesBySubcategory = (variables, selectedCategory, selecte
       });
       reordered["ICQ Difficult Related"] = icqReordered;
     }
+  }
+
+  const ageGroupOrder = { "Age 30": 0, "Age 36": 1, "Age 42": 2, "Age 54": 3 };
+  const sortAgeGroupsByFamily = (l1Data, familyOrder, toFamily) => {
+    const familyRank = (v) => {
+      const idx = familyOrder.indexOf(toFamily(v.toLowerCase()));
+      return idx === -1 ? 99 : idx;
+    };
+    Object.keys(l1Data).forEach((l2) => {
+      const entries = Object.keys(l1Data[l2]).map((k, i) => [k, i]);
+      entries.sort((a, b) => {
+        const ra = a[0] in ageGroupOrder ? ageGroupOrder[a[0]] : 99;
+        const rb = b[0] in ageGroupOrder ? ageGroupOrder[b[0]] : 99;
+        return ra !== rb ? ra - rb : a[1] - b[1];
+      });
+      const reordered = {};
+      entries.forEach(([k]) => {
+        reordered[k] = l1Data[l2][k]
+          .map((v, i) => [v, i])
+          .sort((a, b) => {
+            const ra = familyRank(a[0]);
+            const rb = familyRank(b[0]);
+            return ra !== rb ? ra - rb : a[1] - b[1];
+          })
+          .map(([v]) => v);
+      });
+      l1Data[l2] = reordered;
+    });
+  };
+
+  if (groups["Adult Temperament Questionnaire Task"]) {
+    sortAgeGroupsByFamily(
+      groups["Adult Temperament Questionnaire Task"],
+      [
+        "fear",
+        "frustration",
+        "sadness",
+        "discomfort",
+        "negativeaffect",
+        "activationcontrol",
+        "attentionalcontrol",
+        "inhibitorycontrol",
+        "effortfulcontrol",
+        "sociability",
+        "highintensitypleasure",
+        "positiveaffect",
+        "extraversion",
+        "neutralperceptualsensitivity",
+        "affectiveperceptualsensitivity",
+        "associativesensitivity",
+        "orientingsensitivity",
+      ],
+      (v) => v.replace(/^atq/, "").replace(/(primary|parentingpartner)\d+$/, "")
+    );
+  }
+
+  const briefTask = "BRIEF-A (Behavior Rating Inventory of Executive Function – Adult Version) Task";
+  if (groups[briefTask]) {
+    sortAgeGroupsByFamily(
+      groups[briefTask],
+      [
+        "briefinconsistencyvalidity",
+        "briefinfrequencyvalidity",
+        "briefnegativityvalidity",
+        "briefishighlynegative",
+        "briefinhibit",
+        "briefshift",
+        "briefemotionalcontrol",
+        "briefselfmonitor",
+        "briefinitiate",
+        "briefworkingmemory",
+        "briefplanorganize",
+        "brieftaskmonitor",
+        "brieforganizationofmaterials",
+        "briefbehavioralregulationindex",
+        "briefmetacognitionindex",
+        "briefglobalexecutivecomposite",
+      ],
+      (v) => v.replace(/\d+$/, "")
+    );
   }
 
   const sleepGroupOrderPriority = (key) => {

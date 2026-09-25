@@ -39,7 +39,7 @@ export const structure = {
       "Fruit Stroop",
       "Grass Snow",
       "Gift Delay",
-      "Other Related Toy Variables",
+      "BehaviorPhoneCallPlays",
       "Parent Positive Affect",
       "Parental Control",
       "Snack Delay",
