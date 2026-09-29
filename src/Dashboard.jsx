@@ -24,7 +24,7 @@ const taskToVarMap = {
   "Depression Scale": "dep",
   "DIFFER Cognitive Ability": "diff",
   "Eyberg Child Behavior Inventory": "ecbi",
-  "Physical Health Status Inventory": "phsi",
+  "Purdue Home Stimulation Inventory": "phsi",
   "Shipley Parent Cognition": "shipley",
   "Social Support Related": "socialsupport",
   "Teacher Questionnaires": "teach",
@@ -55,6 +55,8 @@ const taskToVarMap = {
   "Child Demand / Toy Prohibition": "childdemandtoyprohibition",
   "BehaviorPhoneCallPlays": "toy",
   "EEG Bird Alligator": "eegbirdalligator",
+  "Oddball Related": "oddball",
+  "Fish Sharks Related": "fishsharks",
 };
 
 const whisperMasterVariables = ["30", "36", "42", "54"].flatMap((age) => [

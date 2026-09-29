@@ -18,7 +18,7 @@ const taskToVarMap = {
   "Depression Scale": "dep",
   "DIFFER Cognitive Ability": "diff",
   "Eyberg Child Behavior Inventory": "ecbi",
-  "Physical Health Status Inventory": "phsi",
+  "Purdue Home Stimulation Inventory": "phsi",
   "Shipley Parent Cognition": "shipley",
   "Social Support Related": "socialsupport",
   "Teacher Questionnaires": "teach",
@@ -49,6 +49,8 @@ const taskToVarMap = {
   "Child Demand / Toy Prohibition": "childdemandtoyprohibition",
   "BehaviorPhoneCallPlays": "toy",
   "EEG Bird Alligator": "eegbirdalligator",
+  "Oddball Related": "oddball",
+  "Fish Sharks Related": "fishsharks",
 };
 
 const classifySleepVariable = (vLower) => {
@@ -209,9 +211,15 @@ export const getCorrectTasksForVariable = (v) => {
     return ["Temperament Questionnaires"];
   }
 
+  if (vLower.startsWith("oddball")) {
+    return ["Oddball Related"];
+  }
+
+  if (vLower.startsWith("fishsharks")) {
+    return ["Fish Sharks Related"];
+  }
+
   if (
-    vLower.startsWith("oddball") ||
-    vLower.startsWith("fishsharks") ||
     vLower.startsWith("icqdifficult") ||
     (vLower.startsWith("preschooldemographics") && !vLower.startsWith("preschooldemographicssibling"))
   ) {
@@ -570,14 +578,8 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
     else if (vLower.endsWith("42")) age = "Age 42";
     else if (vLower.endsWith("54")) age = "Age 54";
 
-    if (vLower.startsWith("oddball")) {
-      return { l1Category: l1, l2Timepoint: "Oddball Related", l3Group: age };
-    }
     if (vLower.startsWith("birdalligator")) {
       return { l1Category: l1, l2Timepoint: "Bird Alligator Related", l3Group: age };
-    }
-    if (vLower.startsWith("fishsharks")) {
-      return { l1Category: l1, l2Timepoint: "Fish Sharks Related", l3Group: age };
     }
     if (vLower.startsWith("icqdifficult")) {
       if (vLower.includes("mean")) {
@@ -633,8 +635,34 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
     ) {
       return { l1Category: l1, l2Timepoint: "Sleep Observation Counts" };
     }
-    if (vLower.startsWith("observerimpression") || vLower.startsWith("postobservation")) {
-      return { l1Category: l1, l2Timepoint: "Observer Ratings" };
+    let l2 = null;
+    if (vLower.startsWith("observerimpression")) {
+      l2 = "Observer Impressions - Regular ratings";
+    } else if (
+      vLower.startsWith("postobservationsocialmaturity") ||
+      vLower.startsWith("postobservationpositivedemand")
+    ) {
+      l2 = "Post Observation Questionnaire - Child composites";
+    } else if (
+      vLower.startsWith("postobservationresponsiveness") ||
+      vLower.startsWith("postobservationeffectivecontrol")
+    ) {
+      l2 = "Post Observation Questionnaire - Parent composites";
+    } else if (
+      vLower.startsWith("postobservationratingscalepositiveemotionality") ||
+      vLower.startsWith("postobservationratingscalenegativeemotionality")
+    ) {
+      l2 = "Post Observation Rating Scale - Emotionality composites";
+    } else if (vLower.startsWith("postobservationratingscaleregulation")) {
+      l2 = "Post Observation Rating Scale - Regulation composite";
+    }
+    if (l2) {
+      let l3 = "Other";
+      if (vLower.endsWith("30")) l3 = "Age 30";
+      else if (vLower.endsWith("36")) l3 = "Age 36";
+      else if (vLower.endsWith("42")) l3 = "Age 42";
+      else if (vLower.endsWith("54")) l3 = "Age 54";
+      return { l1Category: l1, l2Timepoint: l2, l3Group: l3 };
     }
     return { l1Category: "Needs Review / Other Related Variables", l2Timepoint: "Other" };
   }
@@ -663,7 +691,12 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
   if (selectedTask === "Social Support Related") {
     const l1 = "Social Support Related Task Variables";
     if (vLower.startsWith("socialsupport")) {
-      return { l1Category: l1, l2Timepoint: "Composites" };
+      let l3 = "Other";
+      if (vLower.endsWith("30")) l3 = "Age 30";
+      else if (vLower.endsWith("36")) l3 = "Age 36";
+      else if (vLower.endsWith("42")) l3 = "Age 42";
+      else if (vLower.endsWith("54")) l3 = "Age 54";
+      return { l1Category: l1, l2Timepoint: "Composites", l3Group: l3 };
     }
     return { l1Category: "Needs Review / Other Related Variables", l2Timepoint: "Other" };
   }
@@ -725,6 +758,16 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
     else if (vLower.endsWith("mean")) l2 = "Mean";
 
     return { l1Category: "EEG Bird Alligator Variables", l2Timepoint: l2 };
+  }
+
+  if (selectedTask === "Oddball Related" || selectedTask === "Fish Sharks Related") {
+    let l2 = "Other";
+    if (vLower.endsWith("30")) l2 = "Age 30";
+    else if (vLower.endsWith("36")) l2 = "Age 36";
+    else if (vLower.endsWith("42")) l2 = "Age 42";
+    else if (vLower.endsWith("54")) l2 = "Age 54";
+
+    return { l1Category: `${selectedTask} Task`, l2Timepoint: l2 };
   }
 
   if (selectedTask === "Adult Temperament Questionnaire") {
@@ -1210,10 +1253,8 @@ export const groupVariablesBySubcategory = (variables, selectedCategory, selecte
 
   if (groups["DIFFER Cognitive Ability"]) {
     const differL2Order = {
-      "Oddball Related": 0,
-      "Fish Sharks Related": 1,
-      "ICQ Difficult Related": 2,
-      "Preschool Demographics Related": 3,
+      "ICQ Difficult Related": 0,
+      "Preschool Demographics Related": 1,
     };
     const differL3Order = {
       "ICQ Composites": 0,
@@ -1256,6 +1297,7 @@ export const groupVariablesBySubcategory = (variables, selectedCategory, selecte
       return idx === -1 ? 99 : idx;
     };
     Object.keys(l1Data).forEach((l2) => {
+      if (Array.isArray(l1Data[l2])) return;
       const entries = Object.keys(l1Data[l2]).map((k, i) => [k, i]);
       entries.sort((a, b) => {
         const ra = a[0] in ageGroupOrder ? ageGroupOrder[a[0]] : 99;
@@ -1300,6 +1342,60 @@ export const groupVariablesBySubcategory = (variables, selectedCategory, selecte
         "orientingsensitivity",
       ],
       (v) => v.replace(/^atq/, "").replace(/(primary|parentingpartner)\d+$/, "")
+    );
+  }
+
+  if (groups["Social Support Related Task Variables"]) {
+    sortAgeGroupsByFamily(
+      groups["Social Support Related Task Variables"],
+      [
+        "socialsupportnegativesupport",
+        "socialsupportinformationalsupport",
+        "socialsupportcompanionship",
+      ],
+      (v) => v.replace(/\d+$/, "")
+    );
+  }
+
+  if (groups["Observer Ratings"]) {
+    const observerL2Order = {
+      "Sleep Observation Counts": 0,
+      "Observer Impressions - Regular ratings": 1,
+      "Post Observation Questionnaire - Child composites": 2,
+      "Post Observation Questionnaire - Parent composites": 3,
+      "Post Observation Rating Scale - Emotionality composites": 4,
+      "Post Observation Rating Scale - Regulation composite": 5,
+    };
+    const l1Data = groups["Observer Ratings"];
+    const entries = Object.keys(l1Data).map((k, i) => [k, i]);
+    entries.sort((a, b) => {
+      const ra = a[0] in observerL2Order ? observerL2Order[a[0]] : 99;
+      const rb = b[0] in observerL2Order ? observerL2Order[b[0]] : 99;
+      return ra !== rb ? ra - rb : a[1] - b[1];
+    });
+    const reordered = {};
+    entries.forEach(([k]) => {
+      reordered[k] = l1Data[k];
+    });
+    groups["Observer Ratings"] = reordered;
+    sortAgeGroupsByFamily(
+      reordered,
+      [
+        "observerimpression19",
+        "observerimpression20",
+        "observerimpression21",
+        "observerimpression22",
+        "observerimpression23",
+        "observerimpression24",
+        "postobservationsocialmaturity",
+        "postobservationpositivedemand",
+        "postobservationresponsiveness",
+        "postobservationeffectivecontrol",
+        "postobservationratingscalepositiveemotionality",
+        "postobservationratingscalenegativeemotionality",
+        "postobservationratingscaleregulation",
+      ],
+      (v) => v.replace(/(30|36|42|54)$/, "")
     );
   }
 

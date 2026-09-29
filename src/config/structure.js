@@ -71,7 +71,7 @@ export const structure = {
       "Depression Scale",
       "DIFFER Cognitive Ability",
       "Eyberg Child Behavior Inventory",
-      "Physical Health Status Inventory",
+      "Purdue Home Stimulation Inventory",
     ],
     "Secondary Caregiver Questionnaires": [
       "Teacher Questionnaires",
@@ -86,6 +86,6 @@ export const structure = {
 
     "Sleep Measures": ["Sleep Diary – Child"],
 
-    "EEG Variables": ["EEG Bird Alligator"],
+    "EEG Variables": ["EEG Bird Alligator", "Oddball Related", "Fish Sharks Related"],
   },
 };
