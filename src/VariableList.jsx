@@ -605,10 +605,10 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
   if (selectedTask === "Home Scale Items") {
     const l1 = "Home Scale Items";
     if (vLower.startsWith("homescaleitems")) {
-      return { l1Category: l1, l2Timepoint: "HOME Scale Items" };
+      return { l1Category: l1, l2Timepoint: "HOME Scale Items - Composites" };
     }
     if (vLower.startsWith("homebehaviorscale")) {
-      return { l1Category: l1, l2Timepoint: "Home Behavior Scale" };
+      return { l1Category: l1, l2Timepoint: "Home Behavior Scale - Composites" };
     }
     if (vLower.startsWith("blh") || vLower.startsWith("blhc")) {
       return { l1Category: l1, l2Timepoint: "Home Confusion / Disorganization" };

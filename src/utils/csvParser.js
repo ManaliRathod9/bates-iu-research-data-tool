@@ -1,34 +1,16 @@
-import Papa from "papaparse";
-
-const cleanCell = (value) => {
-  if (value === null || value === undefined) return "";
-
-  const strValue = String(value);
-  const trimmed = strValue.trim();
-
-  if (trimmed.length === 0) return "";
-
-  const invalidValues = new Set(["NA", "N/A", "NaN", "null", "."]);
-
-  if (invalidValues.has(trimmed)) {
-    return "";
-  }
-
-  return value;
-};
-
 export const parseCSV = (file, onComplete, onError) => {
-  Papa.parse(file, {
-    header: true,
-    skipEmptyLines: true,
-    transform: (value) => {
-      return cleanCell(value);
-    },
-    complete: (results) => {
-      onComplete(results.data);
-    },
-    error: (error) => {
-      if (onError) onError(error);
-    },
-  });
+  const worker = new Worker(new URL("./csvParser.worker.js", import.meta.url), { type: "module" });
+  worker.onmessage = (e) => {
+    worker.terminate();
+    if (e.data.error) {
+      if (onError) onError(e.data.error);
+      return;
+    }
+    onComplete(e.data);
+  };
+  worker.onerror = (error) => {
+    worker.terminate();
+    if (onError) onError(error);
+  };
+  worker.postMessage(file);
 };

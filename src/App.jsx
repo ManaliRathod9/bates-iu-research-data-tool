@@ -34,7 +34,8 @@ function App() {
   const [activeModal, setActiveModal] = useState(null);
   const [updateTimestamp, setUpdateTimestamp] = useState("");
   const [view, setView] = useState("landing");
-  const [csvData, setCsvData] = useState([]);
+  const [csvData, setCsvData] = useState(null);
+  const [isLoadingCsv, setIsLoadingCsv] = useState(false);
   const [pathCopied, setPathCopied] = useState(false);
   const [copiedField, setCopiedField] = useState(null);
   const [hoveredField, setHoveredField] = useState(null);
@@ -75,13 +76,16 @@ function App() {
   const handleFileUpload = (e) => {
     const file = e.target.files[0];
     if (file) {
+      setIsLoadingCsv(true);
       parseCSV(
         file,
         (data) => {
           setCsvData(data);
           setView("dashboard");
+          setIsLoadingCsv(false);
         },
         (error) => {
+          setIsLoadingCsv(false);
           console.error("CSV Parse Error:", error);
           alert("Failed to parse CSV file.");
         }
@@ -295,13 +299,13 @@ function App() {
                   onMouseOut={(e) =>
                     (e.currentTarget.style.borderColor = "var(--glass-border)")
                   }
-                  onClick={triggerFileUpload}
+                  onClick={isLoadingCsv ? undefined : triggerFileUpload}
                 >
                   <span style={{ fontSize: "2rem", marginBottom: "1rem" }}>
                     📂
                   </span>
                   <span style={{ fontWeight: "500" }}>
-                    Click to select or drag file
+                    {isLoadingCsv ? "Loading data..." : "Click to select or drag file"}
                   </span>
                   <span
                     style={{

@@ -137,7 +137,7 @@ function csvCell(value) {
 }
 
 
-const Dashboard = ({ data = [] }) => {
+const Dashboard = ({ data = null }) => {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [selectedTask, setSelectedTask] = useState(null);
   const [expandedCategories, setExpandedCategories] = useState({});
@@ -164,7 +164,7 @@ const Dashboard = ({ data = [] }) => {
   };
 
   const rawVariables = useMemo(() => {
-    if (data && data.length > 0) return Object.keys(data[0]);
+    if (data && data.rows.length > 0) return data.fields;
     return [];
   }, [data]);
 
@@ -286,7 +286,7 @@ const Dashboard = ({ data = [] }) => {
   };
 
   const handleSaveCSV = () => {
-    if (!data || data.length === 0) {
+    if (!data || data.rows.length === 0) {
       alert("No data available. Please upload a CSV file first.");
       return;
     }
@@ -299,9 +299,11 @@ const Dashboard = ({ data = [] }) => {
     try {
       const headerRow = selectedVariables.join(",");
 
-      const bodyRows = data
+      const fieldIndex = new Map(data.fields.map((f, i) => [f, i]));
+      const colIndexes = selectedVariables.map((col) => fieldIndex.get(col));
+      const bodyRows = data.rows
         .map((row) =>
-          selectedVariables.map((col) => csvCell(row[col])).join(",")
+          colIndexes.map((i) => csvCell(i === undefined ? undefined : row[i])).join(",")
         )
         .join("\r\n");
 
