@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
 import Dashboard from "./Dashboard";
-import { parseCSV } from "./utils/csvParser";
+import { readCSVHeader, createCSVSource } from "./utils/csvParser";
 
 const Modal = ({ isOpen, onClose, title, children }) => {
   if (!isOpen) return null;
@@ -77,19 +77,18 @@ function App() {
     const file = e.target.files[0];
     if (file) {
       setIsLoadingCsv(true);
-      parseCSV(
-        file,
-        (data) => {
-          setCsvData(data);
+      readCSVHeader(file)
+        .then((fields) => {
+          if (fields.length === 0) throw new Error("Missing CSV header row");
+          setCsvData(createCSVSource(file, fields));
           setView("dashboard");
           setIsLoadingCsv(false);
-        },
-        (error) => {
+        })
+        .catch((error) => {
           setIsLoadingCsv(false);
           console.error("CSV Parse Error:", error);
           alert("Failed to parse CSV file.");
-        }
-      );
+        });
     }
   };
 

@@ -164,7 +164,7 @@ const Dashboard = ({ data = null }) => {
   };
 
   const rawVariables = useMemo(() => {
-    if (data && data.rows.length > 0) return data.fields;
+    if (data && data.fields.length > 0) return data.fields;
     return [];
   }, [data]);
 
@@ -285,8 +285,8 @@ const Dashboard = ({ data = null }) => {
     }
   };
 
-  const handleSaveCSV = () => {
-    if (!data || data.rows.length === 0) {
+  const handleSaveCSV = async () => {
+    if (!data) {
       alert("No data available. Please upload a CSV file first.");
       return;
     }
@@ -297,11 +297,17 @@ const Dashboard = ({ data = null }) => {
     }
 
     try {
+      const rows = await data.loadRows();
+      if (rows.length === 0) {
+        alert("No data available. Please upload a CSV file first.");
+        return;
+      }
+
       const headerRow = selectedVariables.join(",");
 
       const fieldIndex = new Map(data.fields.map((f, i) => [f, i]));
       const colIndexes = selectedVariables.map((col) => fieldIndex.get(col));
-      const bodyRows = data.rows
+      const bodyRows = rows
         .map((row) =>
           colIndexes.map((i) => csvCell(i === undefined ? undefined : row[i])).join(",")
         )
