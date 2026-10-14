@@ -838,6 +838,914 @@ export const variableDescriptions = {
   "childBehaviorPhoneCallPlaysShelfToysP42": "Proportion of intervals during the Phone Call task in which the target child plays with shelf toys",
   "childBehaviorPhoneCallPlaysShelfToysP54": "Proportion of intervals during the Phone Call task in which the target child plays with shelf toys",
 
+  "childBehaviorPhoneCallChildPres30": "Child Behavior Phone Call - Other Child Present?",
+  "childBehaviorPhoneCallChildPres36": "Child Behavior Phone Call - Other Child Present?",
+  "childBehaviorPhoneCallChildPres42": "Child Behavior Phone Call - Other Child Present?",
+  "childBehaviorPhoneCallChildPres54": "Child Behavior Phone Call - Other Child Present?",
+
+  "childBehaviorPhoneCallDeviation30": "Proportion of non-table-play intervals during Phone Call in which target child touches shelf or plays with shelf toys",
+  "childBehaviorPhoneCallDeviation36": "Proportion of non-table-play intervals during Phone Call in which target child touches shelf or plays with shelf toys",
+  "childBehaviorPhoneCallDeviation42": "Proportion of non-table-play intervals during Phone Call in which target child touches shelf or plays with shelf toys",
+  "childBehaviorPhoneCallDeviation54": "Proportion of non-table-play intervals during Phone Call in which target child touches shelf or plays with shelf toys",
+
+  "childBehaviorPhoneCallNoncompliance30": "Proportion of all Phone Call intervals in which target child touches shelf or plays with shelf toys",
+  "childBehaviorPhoneCallNoncompliance36": "Proportion of all Phone Call intervals in which target child touches shelf or plays with shelf toys",
+  "childBehaviorPhoneCallNoncompliance42": "Proportion of all Phone Call intervals in which target child touches shelf or plays with shelf toys",
+  "childBehaviorPhoneCallNoncompliance54": "Proportion of all Phone Call intervals in which target child touches shelf or plays with shelf toys",
+
+  "childBehaviorPhoneCallTablePlayP30": "Proportion of Phone Call intervals engaged in table play",
+  "childBehaviorPhoneCallTablePlayP36": "Proportion of Phone Call intervals engaged in table play",
+  "childBehaviorPhoneCallTablePlayP42": "Proportion of Phone Call intervals engaged in table play",
+  "childBehaviorPhoneCallTablePlayP54": "Proportion of Phone Call intervals engaged in table play",
+
+  "childBehaviorPhoneCallOtherP30": "Proportion of Phone Call intervals engaged in other play",
+  "childBehaviorPhoneCallOtherP36": "Proportion of Phone Call intervals engaged in other play",
+  "childBehaviorPhoneCallOtherP42": "Proportion of Phone Call intervals engaged in other play",
+  "childBehaviorPhoneCallOtherP54": "Proportion of Phone Call intervals engaged in other play",
+
+  "childBehaviorPhoneCallSeekParentP30": "Proportion of Phone Call intervals in which target child seeks parent",
+  "childBehaviorPhoneCallSeekParentP36": "Proportion of Phone Call intervals in which target child seeks parent",
+  "childBehaviorPhoneCallSeekParentP42": "Proportion of Phone Call intervals in which target child seeks parent",
+  "childBehaviorPhoneCallSeekParentP54": "Proportion of Phone Call intervals in which target child seeks parent",
+
+  "childBehaviorPhoneCallLookAtShelfP30": "Proportion of Phone Call intervals in which target child looks at shelf",
+  "childBehaviorPhoneCallLookAtShelfP36": "Proportion of Phone Call intervals in which target child looks at shelf",
+  "childBehaviorPhoneCallLookAtShelfP42": "Proportion of Phone Call intervals in which target child looks at shelf",
+  "childBehaviorPhoneCallLookAtShelfP54": "Proportion of Phone Call intervals in which target child looks at shelf",
+
+  "childBehaviorPhoneCallTouchShelfP30": "Proportion of Phone Call intervals in which target child touches shelf",
+  "childBehaviorPhoneCallTouchShelfP36": "Proportion of Phone Call intervals in which target child touches shelf",
+  "childBehaviorPhoneCallTouchShelfP42": "Proportion of Phone Call intervals in which target child touches shelf",
+  "childBehaviorPhoneCallTouchShelfP54": "Proportion of Phone Call intervals in which target child touches shelf",
+
+  "childBehaviorFreePlayChildPres30": "Child Behavior Free Play - Other Child Present?",
+  "childBehaviorFreePlayChildPres36": "Child Behavior Free Play - Other Child Present?",
+  "childBehaviorFreePlayChildPres42": "Child Behavior Free Play - Other Child Present?",
+  "childBehaviorFreePlayChildPres54": "Child Behavior Free Play - Other Child Present?",
+
+  "childBehaviorFreePlayDeviation30": "Proportion of non-table-play intervals in which the target child touches the shelf or plays with shelf toys",
+  "childBehaviorFreePlayDeviation36": "Proportion of non-table-play intervals in which the target child touches the shelf or plays with shelf toys",
+  "childBehaviorFreePlayDeviation42": "Proportion of non-table-play intervals in which the target child touches the shelf or plays with shelf toys",
+  "childBehaviorFreePlayDeviation54": "Proportion of non-table-play intervals in which the target child touches the shelf or plays with shelf toys",
+
+  "childBehaviorFreePlayNoncompliance30": "Proportion of all intervals in which the target child touches the shelf or plays with shelf toys",
+  "childBehaviorFreePlayNoncompliance36": "Proportion of all intervals in which the target child touches the shelf or plays with shelf toys",
+  "childBehaviorFreePlayNoncompliance42": "Proportion of all intervals in which the target child touches the shelf or plays with shelf toys",
+  "childBehaviorFreePlayNoncompliance54": "Proportion of all intervals in which the target child touches the shelf or plays with shelf toys",
+
+  "childBehaviorFreePlayTablePlayP30": "Proportion of intervals engaged in table play",
+  "childBehaviorFreePlayTablePlayP36": "Proportion of intervals engaged in table play",
+  "childBehaviorFreePlayTablePlayP42": "Proportion of intervals engaged in table play",
+  "childBehaviorFreePlayTablePlayP54": "Proportion of intervals engaged in table play",
+
+  "childBehaviorFreePlayOtherP30": "Proportion of intervals engaged in other play",
+  "childBehaviorFreePlayOtherP36": "Proportion of intervals engaged in other play",
+  "childBehaviorFreePlayOtherP42": "Proportion of intervals engaged in other play",
+  "childBehaviorFreePlayOtherP54": "Proportion of intervals engaged in other play",
+
+  "childBehaviorFreePlaySeekParentP30": "Proportion of intervals in which target child seeks parent",
+  "childBehaviorFreePlaySeekParentP36": "Proportion of intervals in which target child seeks parent",
+  "childBehaviorFreePlaySeekParentP42": "Proportion of intervals in which target child seeks parent",
+  "childBehaviorFreePlaySeekParentP54": "Proportion of intervals in which target child seeks parent",
+
+  "childBehaviorFreePlayLookAtShelfP30": "Proportion of intervals in which target child looks at shelf",
+  "childBehaviorFreePlayLookAtShelfP36": "Proportion of intervals in which target child looks at shelf",
+  "childBehaviorFreePlayLookAtShelfP42": "Proportion of intervals in which target child looks at shelf",
+  "childBehaviorFreePlayLookAtShelfP54": "Proportion of intervals in which target child looks at shelf",
+
+  "childBehaviorFreePlayTouchShelfP30": "Proportion of intervals in which target child touches shelf",
+  "childBehaviorFreePlayTouchShelfP36": "Proportion of intervals in which target child touches shelf",
+  "childBehaviorFreePlayTouchShelfP42": "Proportion of intervals in which target child touches shelf",
+  "childBehaviorFreePlayTouchShelfP54": "Proportion of intervals in which target child touches shelf",
+
+  "childBehaviorFreePlayPlaysShelfToysP30": "Proportion of intervals in which target child plays with shelf toys",
+  "childBehaviorFreePlayPlaysShelfToysP36": "Proportion of intervals in which target child plays with shelf toys",
+  "childBehaviorFreePlayPlaysShelfToysP42": "Proportion of intervals in which target child plays with shelf toys",
+  "childBehaviorFreePlayPlaysShelfToysP54": "Proportion of intervals in which target child plays with shelf toys",
+
+  "parentalSensitivityFreePlay30": "Average Sensitivity in Free Play trials (30 months)",
+  "parentalSensitivityPhoneCall30": "Average Sensitivity in Phone Call trials (30 months)",
+  "parentalSensitivityToyCleanUp30": "Average Sensitivity in Toy Clean Up trials (30 months)",
+  "parentalIntrusivenessFreePlay30": "Average Intrusiveness in Free Play trials (30 months)",
+  "parentalIntrusivenessPhoneCall30": "Average Intrusiveness in Phone Call trials (30 months)",
+  "parentalIntrusivenessToyCleanUp30": "Average Intrusiveness in Toy Clean Up trials (30 months)",
+
+  "parentalSensitivityFreePlay36": "Average Sensitivity in Free Play trials (36 months)",
+  "parentalSensitivityPhoneCall36": "Average Sensitivity in Phone Call trials (36 months)",
+  "parentalSensitivityToyCleanUp36": "Average Sensitivity in Toy Clean Up trials (36 months)",
+  "parentalIntrusivenessFreePlay36": "Average Intrusiveness in Free Play trials (36 months)",
+  "parentalIntrusivenessPhoneCall36": "Average Intrusiveness in Phone Call trials (36 months)",
+  "parentalIntrusivenessToyCleanUp36": "Average Intrusiveness in Toy Clean Up trials (36 months)",
+
+  "parentalSensitivityFreePlay42": "Average Sensitivity in Free Play trials (42 months)",
+  "parentalSensitivityPhoneCall42": "Average Sensitivity in Phone Call trials (42 months)",
+  "parentalSensitivityToyCleanUp42": "Average Sensitivity in Toy Clean Up trials (42 months)",
+  "parentalIntrusivenessFreePlay42": "Average Intrusiveness in Free Play trials (42 months)",
+  "parentalIntrusivenessPhoneCall42": "Average Intrusiveness in Phone Call trials (42 months)",
+  "parentalIntrusivenessToyCleanUp42": "Average Intrusiveness in Toy Clean Up trials (42 months)",
+
+  "parentalSensitivityFreePlay54": "Average Sensitivity in Free Play trials (54 months)",
+  "parentalSensitivityPhoneCall54": "Average Sensitivity in Phone Call trials (54 months)",
+  "parentalSensitivityToyCleanUp54": "Average Sensitivity in Toy Clean Up trials (54 months)",
+  "parentalIntrusivenessFreePlay54": "Average Intrusiveness in Free Play trials (54 months)",
+  "parentalIntrusivenessPhoneCall54": "Average Intrusiveness in Phone Call trials (54 months)",
+  "parentalIntrusivenessToyCleanUp54": "Average Intrusiveness in Toy Clean Up trials (54 months)",
+
+  "caqSum30": "Changes and Adjustments Sum",
+  "caqSum36": "Changes and Adjustments Sum",
+  "caqSum42": "Changes and Adjustments Sum",
+  "caqSum54": "Changes and Adjustments Sum",
+
+  "cshq430": "Child falls asleep in parent's or sibling's bed",
+  "cshq436": "Child falls asleep in parent's or sibling's bed",
+  "cshq442": "Child falls asleep in parent's or sibling's bed",
+  "cshq454": "Child falls asleep in parent's or sibling's bed",
+
+  "cshq1230": "Child moves to someone else's bed during the night (parent, sibling, etc.)",
+  "cshq1236": "Child moves to someone else's bed during the night (parent, sibling, etc.)",
+  "cshq1242": "Child moves to someone else's bed during the night (parent, sibling, etc.)",
+  "cshq1254": "Child moves to someone else's bed during the night (parent, sibling, etc.)",
+
+  "cshqBedtimeResistance30": "Bedtime Resistance",
+  "cshqBedtimeResistance36": "Bedtime Resistance",
+  "cshqBedtimeResistance42": "Bedtime Resistance",
+  "cshqBedtimeResistance54": "Bedtime Resistance",
+
+  "cshqSleepOnsetDelay30": "Sleep Onset Delay",
+  "cshqSleepOnsetDelay36": "Sleep Onset Delay",
+  "cshqSleepOnsetDelay42": "Sleep Onset Delay",
+  "cshqSleepOnsetDelay54": "Sleep Onset Delay",
+
+  "cshqSleepDuration30": "Sleep Duration",
+  "cshqSleepDuration36": "Sleep Duration",
+  "cshqSleepDuration42": "Sleep Duration",
+  "cshqSleepDuration54": "Sleep Duration",
+
+  "cshqSleepAnxiety30": "Sleep Anxiety",
+  "cshqSleepAnxiety36": "Sleep Anxiety",
+  "cshqSleepAnxiety42": "Sleep Anxiety",
+  "cshqSleepAnxiety54": "Sleep Anxiety",
+
+  "cshqNightWakings30": "Night Wakings",
+  "cshqNightWakings36": "Night Wakings",
+  "cshqNightWakings42": "Night Wakings",
+  "cshqNightWakings54": "Night Wakings",
+
+  "cshqParasomnias30": "Parasomnias",
+  "cshqParasomnias36": "Parasomnias",
+  "cshqParasomnias42": "Parasomnias",
+  "cshqParasomnias54": "Parasomnias",
+
+  "cshqSleepDisorderedBreathing30": "Sleep-Disordered Breathing",
+  "cshqSleepDisorderedBreathing36": "Sleep-Disordered Breathing",
+  "cshqSleepDisorderedBreathing42": "Sleep-Disordered Breathing",
+  "cshqSleepDisorderedBreathing54": "Sleep-Disordered Breathing",
+
+  "cshqDaytimeSleepiness30": "Daytime Sleepiness",
+  "cshqDaytimeSleepiness36": "Daytime Sleepiness",
+  "cshqDaytimeSleepiness42": "Daytime Sleepiness",
+  "cshqDaytimeSleepiness54": "Daytime Sleepiness",
+
+  "cshqTotalSleepDisturbanceMean30": "Total Sleep Disturbance - Mean",
+  "cshqTotalSleepDisturbanceMean36": "Total Sleep Disturbance - Mean",
+  "cshqTotalSleepDisturbanceMean42": "Total Sleep Disturbance - Mean",
+  "cshqTotalSleepDisturbanceMean54": "Total Sleep Disturbance - Mean",
+
+  "cshqTotalSleepDisturbanceSum30": "Total Sleep Disturbance - Sum",
+  "cshqTotalSleepDisturbanceSum36": "Total Sleep Disturbance - Sum",
+  "cshqTotalSleepDisturbanceSum42": "Total Sleep Disturbance - Sum",
+  "cshqTotalSleepDisturbanceSum54": "Total Sleep Disturbance - Sum",
+
+  "phsiStimulusShelter30": "Stimulus shelter available",
+  "phsiStimulusShelter36": "Stimulus shelter available",
+  "phsiStimulusShelter42": "Stimulus shelter available",
+  "phsiStimulusShelter54": "Stimulus shelter available",
+
+  "phsiScreen30": "Electronic screens on during visit",
+  "phsiScreen36": "Electronic screens on during visit",
+  "phsiScreen42": "Electronic screens on during visit",
+  "phsiScreen54": "Electronic screens on during visit",
+
+  "phsiClutter30": "Level of clutter",
+  "phsiClutter36": "Level of clutter",
+  "phsiClutter42": "Level of clutter",
+  "phsiClutter54": "Level of clutter",
+
+  "phsiClean30": "Cleanliness of home",
+  "phsiClean36": "Cleanliness of home",
+  "phsiClean42": "Cleanliness of home",
+  "phsiClean54": "Cleanliness of home",
+
+  "phsiOrganized30": "Organization/disorganization of home",
+  "phsiOrganized36": "Organization/disorganization of home",
+  "phsiOrganized42": "Organization/disorganization of home",
+  "phsiOrganized54": "Organization/disorganization of home",
+
+  "phsiFeel30": "Overall feel/atmosphere of home",
+  "phsiFeel36": "Overall feel/atmosphere of home",
+  "phsiFeel42": "Overall feel/atmosphere of home",
+  "phsiFeel54": "Overall feel/atmosphere of home",
+
+  "phsiAveNoise30": "Average noise level during the home visit",
+  "phsiAveNoise36": "Average noise level during the home visit",
+  "phsiAveNoise42": "Average noise level during the home visit",
+  "phsiAveNoise54": "Average noise level during the home visit",
+
+  "phsiTotalPeople30": "Total number of people in the home",
+  "phsiTotalPeople36": "Total number of people in the home",
+  "phsiTotalPeople42": "Total number of people in the home",
+  "phsiTotalPeople54": "Total number of people in the home",
+
+  "phsiCrowdedness30": "Household crowdedness",
+  "phsiCrowdedness36": "Household crowdedness",
+  "phsiCrowdedness42": "Household crowdedness",
+  "phsiCrowdedness54": "Household crowdedness",
+
+  "icqDifficultPrimary30": "ICQ Difficult - Primary caregiver",
+  "icqDifficultPrimary36": "ICQ Difficult - Primary caregiver",
+  "icqDifficultPrimary42": "ICQ Difficult - Primary caregiver",
+  "icqDifficultPrimary54": "ICQ Difficult - Primary caregiver",
+
+  "icqUnadaptablePrimary30": "ICQ Unadaptability - Primary caregiver",
+  "icqUnadaptablePrimary36": "ICQ Unadaptability - Primary caregiver",
+  "icqUnadaptablePrimary42": "ICQ Unadaptability - Primary caregiver",
+  "icqUnadaptablePrimary54": "ICQ Unadaptability - Primary caregiver",
+
+  "icqResistantToControlPrimary30": "ICQ Resistant to Control - Primary caregiver",
+  "icqResistantToControlPrimary36": "ICQ Resistant to Control - Primary caregiver",
+  "icqResistantToControlPrimary42": "ICQ Resistant to Control - Primary caregiver",
+  "icqResistantToControlPrimary54": "ICQ Resistant to Control - Primary caregiver",
+
+  "icqUnstoppablePrimary30": "ICQ Unstoppable - Primary caregiver",
+  "icqUnstoppablePrimary36": "ICQ Unstoppable - Primary caregiver",
+  "icqUnstoppablePrimary42": "ICQ Unstoppable - Primary caregiver",
+  "icqUnstoppablePrimary54": "ICQ Unstoppable - Primary caregiver",
+
+  "icqDependentPrimary30": "ICQ Dependent - Primary caregiver",
+  "icqDependentPrimary36": "ICQ Dependent - Primary caregiver",
+  "icqDependentPrimary42": "ICQ Dependent - Primary caregiver",
+  "icqDependentPrimary54": "ICQ Dependent - Primary caregiver",
+
+  "icqIrregularPrimary30": "ICQ Irregular - Primary caregiver",
+  "icqIrregularPrimary36": "ICQ Irregular - Primary caregiver",
+  "icqIrregularPrimary42": "ICQ Irregular - Primary caregiver",
+  "icqIrregularPrimary54": "ICQ Irregular - Primary caregiver",
+
+  "icqSoberPrimary30": "ICQ Sober - Primary caregiver",
+  "icqSoberPrimary36": "ICQ Sober - Primary caregiver",
+  "icqSoberPrimary42": "ICQ Sober - Primary caregiver",
+  "icqSoberPrimary54": "ICQ Sober - Primary caregiver",
+
+  "icqFactorSevenPrimary30": "ICQ Factor Seven - Primary caregiver",
+  "icqFactorSevenPrimary36": "ICQ Factor Seven - Primary caregiver",
+  "icqFactorSevenPrimary42": "ICQ Factor Seven - Primary caregiver",
+  "icqFactorSevenPrimary54": "ICQ Factor Seven - Primary caregiver",
+
+  "icqDifficultParentingPartner30": "ICQ Difficult - Parenting Partner",
+  "icqDifficultParentingPartner36": "ICQ Difficult - Parenting Partner",
+  "icqDifficultParentingPartner42": "ICQ Difficult - Parenting Partner",
+  "icqDifficultParentingPartner54": "ICQ Difficult - Parenting Partner",
+
+  "icqUnadaptableParentingPartner30": "ICQ Unadaptability - Parenting Partner",
+  "icqUnadaptableParentingPartner36": "ICQ Unadaptability - Parenting Partner",
+  "icqUnadaptableParentingPartner42": "ICQ Unadaptability - Parenting Partner",
+  "icqUnadaptableParentingPartner54": "ICQ Unadaptability - Parenting Partner",
+
+  "icqResistantToControlParentingPartner30": "ICQ Resistant to Control - Parenting Partner",
+  "icqResistantToControlParentingPartner36": "ICQ Resistant to Control - Parenting Partner",
+  "icqResistantToControlParentingPartner42": "ICQ Resistant to Control - Parenting Partner",
+  "icqResistantToControlParentingPartner54": "ICQ Resistant to Control - Parenting Partner",
+
+  "icqUnstoppableParentingPartner30": "ICQ Unstoppable - Parenting Partner",
+  "icqUnstoppableParentingPartner36": "ICQ Unstoppable - Parenting Partner",
+  "icqUnstoppableParentingPartner42": "ICQ Unstoppable - Parenting Partner",
+  "icqUnstoppableParentingPartner54": "ICQ Unstoppable - Parenting Partner",
+
+  "icqDependentParentingPartner30": "ICQ Dependent - Parenting Partner",
+  "icqDependentParentingPartner36": "ICQ Dependent - Parenting Partner",
+  "icqDependentParentingPartner42": "ICQ Dependent - Parenting Partner",
+  "icqDependentParentingPartner54": "ICQ Dependent - Parenting Partner",
+
+  "icqIrregularParentingPartner30": "ICQ Irregular - Parenting Partner",
+  "icqIrregularParentingPartner36": "ICQ Irregular - Parenting Partner",
+  "icqIrregularParentingPartner42": "ICQ Irregular - Parenting Partner",
+  "icqIrregularParentingPartner54": "ICQ Irregular - Parenting Partner",
+
+  "icqSoberParentingPartner30": "ICQ Sober - Parenting Partner",
+  "icqSoberParentingPartner36": "ICQ Sober - Parenting Partner",
+  "icqSoberParentingPartner42": "ICQ Sober - Parenting Partner",
+  "icqSoberParentingPartner54": "ICQ Sober - Parenting Partner",
+
+  "icqFactorSevenParentingPartner30": "ICQ Factor Seven - Parenting Partner",
+  "icqFactorSevenParentingPartner36": "ICQ Factor Seven - Parenting Partner",
+  "icqFactorSevenParentingPartner42": "ICQ Factor Seven - Parenting Partner",
+  "icqFactorSevenParentingPartner54": "ICQ Factor Seven - Parenting Partner",
+
+  "icqDifficultSecondary30": "ICQ Difficult - Secondary caregiver",
+  "icqDifficultSecondary36": "ICQ Difficult - Secondary caregiver",
+  "icqDifficultSecondary42": "ICQ Difficult - Secondary caregiver",
+  "icqDifficultSecondary54": "ICQ Difficult - Secondary caregiver",
+
+  "icqUnadaptableSecondary30": "ICQ Unadaptability - Secondary caregiver",
+  "icqUnadaptableSecondary36": "ICQ Unadaptability - Secondary caregiver",
+  "icqUnadaptableSecondary42": "ICQ Unadaptability - Secondary caregiver",
+  "icqUnadaptableSecondary54": "ICQ Unadaptability - Secondary caregiver",
+
+  "icqResistantToControlSecondary30": "ICQ Resistant to Control - Secondary caregiver",
+  "icqResistantToControlSecondary36": "ICQ Resistant to Control - Secondary caregiver",
+  "icqResistantToControlSecondary42": "ICQ Resistant to Control - Secondary caregiver",
+  "icqResistantToControlSecondary54": "ICQ Resistant to Control - Secondary caregiver",
+
+  "icqUnstoppableSecondary30": "ICQ Unstoppable - Secondary caregiver",
+  "icqUnstoppableSecondary36": "ICQ Unstoppable - Secondary caregiver",
+  "icqUnstoppableSecondary42": "ICQ Unstoppable - Secondary caregiver",
+  "icqUnstoppableSecondary54": "ICQ Unstoppable - Secondary caregiver",
+
+  "icqDependentSecondary30": "ICQ Dependent - Secondary caregiver",
+  "icqDependentSecondary36": "ICQ Dependent - Secondary caregiver",
+  "icqDependentSecondary42": "ICQ Dependent - Secondary caregiver",
+  "icqDependentSecondary54": "ICQ Dependent - Secondary caregiver",
+
+  "icqIrregularSecondary30": "ICQ Irregular - Secondary caregiver",
+  "icqIrregularSecondary36": "ICQ Irregular - Secondary caregiver",
+  "icqIrregularSecondary42": "ICQ Irregular - Secondary caregiver",
+  "icqIrregularSecondary54": "ICQ Irregular - Secondary caregiver",
+
+  "icqSoberSecondary30": "ICQ Sober - Secondary caregiver",
+  "icqSoberSecondary36": "ICQ Sober - Secondary caregiver",
+  "icqSoberSecondary42": "ICQ Sober - Secondary caregiver",
+  "icqSoberSecondary54": "ICQ Sober - Secondary caregiver",
+
+  "icqFactorSevenSecondary30": "ICQ Factor Seven - Secondary caregiver",
+  "icqFactorSevenSecondary36": "ICQ Factor Seven - Secondary caregiver",
+  "icqFactorSevenSecondary42": "ICQ Factor Seven - Secondary caregiver",
+  "icqFactorSevenSecondary54": "ICQ Factor Seven - Secondary caregiver",
+
+  "icqDifficultPrimaryMean30": "Mean ICQ Difficult across time - Primary caregiver",
+  "icqDifficultPrimaryMean36": "Mean ICQ Difficult across time - Primary caregiver",
+  "icqDifficultPrimaryMean42": "Mean ICQ Difficult across time - Primary caregiver",
+  "icqDifficultPrimaryMean54": "Mean ICQ Difficult across time - Primary caregiver",
+
+  "icqUnadaptablePrimaryMean30": "Mean ICQ Unadaptability across time - Primary caregiver",
+  "icqUnadaptablePrimaryMean36": "Mean ICQ Unadaptability across time - Primary caregiver",
+  "icqUnadaptablePrimaryMean42": "Mean ICQ Unadaptability across time - Primary caregiver",
+  "icqUnadaptablePrimaryMean54": "Mean ICQ Unadaptability across time - Primary caregiver",
+
+  "icqResistantToControlPrimaryMean30": "Mean ICQ Resistant to Control across time - Primary caregiver",
+  "icqResistantToControlPrimaryMean36": "Mean ICQ Resistant to Control across time - Primary caregiver",
+  "icqResistantToControlPrimaryMean42": "Mean ICQ Resistant to Control across time - Primary caregiver",
+  "icqResistantToControlPrimaryMean54": "Mean ICQ Resistant to Control across time - Primary caregiver",
+
+  "icqUnstoppablePrimaryMean30": "Mean ICQ Unstoppable across time - Primary caregiver",
+  "icqUnstoppablePrimaryMean36": "Mean ICQ Unstoppable across time - Primary caregiver",
+  "icqUnstoppablePrimaryMean42": "Mean ICQ Unstoppable across time - Primary caregiver",
+  "icqUnstoppablePrimaryMean54": "Mean ICQ Unstoppable across time - Primary caregiver",
+
+  "icqDependentPrimaryMean30": "Mean ICQ Dependent across time - Primary caregiver",
+  "icqDependentPrimaryMean36": "Mean ICQ Dependent across time - Primary caregiver",
+  "icqDependentPrimaryMean42": "Mean ICQ Dependent across time - Primary caregiver",
+  "icqDependentPrimaryMean54": "Mean ICQ Dependent across time - Primary caregiver",
+
+  "icqIrregularPrimaryMean30": "Mean ICQ Irregular across time - Primary caregiver",
+  "icqIrregularPrimaryMean36": "Mean ICQ Irregular across time - Primary caregiver",
+  "icqIrregularPrimaryMean42": "Mean ICQ Irregular across time - Primary caregiver",
+  "icqIrregularPrimaryMean54": "Mean ICQ Irregular across time - Primary caregiver",
+
+  "icqSoberPrimaryMean30": "Mean ICQ Sober across time - Primary caregiver",
+  "icqSoberPrimaryMean36": "Mean ICQ Sober across time - Primary caregiver",
+  "icqSoberPrimaryMean42": "Mean ICQ Sober across time - Primary caregiver",
+  "icqSoberPrimaryMean54": "Mean ICQ Sober across time - Primary caregiver",
+
+  "icqFactorSevenPrimaryMean30": "Mean ICQ Factor Seven across time - Primary caregiver",
+  "icqFactorSevenPrimaryMean36": "Mean ICQ Factor Seven across time - Primary caregiver",
+  "icqFactorSevenPrimaryMean42": "Mean ICQ Factor Seven across time - Primary caregiver",
+  "icqFactorSevenPrimaryMean54": "Mean ICQ Factor Seven across time - Primary caregiver",
+
+  "icqDifficultParentingPartnerMean30": "Mean ICQ Difficult across time - Parenting Partner",
+  "icqDifficultParentingPartnerMean36": "Mean ICQ Difficult across time - Parenting Partner",
+  "icqDifficultParentingPartnerMean42": "Mean ICQ Difficult across time - Parenting Partner",
+  "icqDifficultParentingPartnerMean54": "Mean ICQ Difficult across time - Parenting Partner",
+
+  "icqUnadaptableParentingPartnerMean30": "Mean ICQ Unadaptability across time - Parenting Partner",
+  "icqUnadaptableParentingPartnerMean36": "Mean ICQ Unadaptability across time - Parenting Partner",
+  "icqUnadaptableParentingPartnerMean42": "Mean ICQ Unadaptability across time - Parenting Partner",
+  "icqUnadaptableParentingPartnerMean54": "Mean ICQ Unadaptability across time - Parenting Partner",
+
+  "icqResistantToControlParentingPartnerMean30": "Mean ICQ Resistant to Control across time - Parenting Partner",
+  "icqResistantToControlParentingPartnerMean36": "Mean ICQ Resistant to Control across time - Parenting Partner",
+  "icqResistantToControlParentingPartnerMean42": "Mean ICQ Resistant to Control across time - Parenting Partner",
+  "icqResistantToControlParentingPartnerMean54": "Mean ICQ Resistant to Control across time - Parenting Partner",
+
+  "icqUnstoppableParentingPartnerMean30": "Mean ICQ Unstoppable across time - Parenting Partner",
+  "icqUnstoppableParentingPartnerMean36": "Mean ICQ Unstoppable across time - Parenting Partner",
+  "icqUnstoppableParentingPartnerMean42": "Mean ICQ Unstoppable across time - Parenting Partner",
+  "icqUnstoppableParentingPartnerMean54": "Mean ICQ Unstoppable across time - Parenting Partner",
+
+  "icqDependentParentingPartnerMean30": "Mean ICQ Dependent across time - Parenting Partner",
+  "icqDependentParentingPartnerMean36": "Mean ICQ Dependent across time - Parenting Partner",
+  "icqDependentParentingPartnerMean42": "Mean ICQ Dependent across time - Parenting Partner",
+  "icqDependentParentingPartnerMean54": "Mean ICQ Dependent across time - Parenting Partner",
+
+  "icqIrregularParentingPartnerMean30": "Mean ICQ Irregular across time - Parenting Partner",
+  "icqIrregularParentingPartnerMean36": "Mean ICQ Irregular across time - Parenting Partner",
+  "icqIrregularParentingPartnerMean42": "Mean ICQ Irregular across time - Parenting Partner",
+  "icqIrregularParentingPartnerMean54": "Mean ICQ Irregular across time - Parenting Partner",
+
+  "icqSoberParentingPartnerMean30": "Mean ICQ Sober across time - Parenting Partner",
+  "icqSoberParentingPartnerMean36": "Mean ICQ Sober across time - Parenting Partner",
+  "icqSoberParentingPartnerMean42": "Mean ICQ Sober across time - Parenting Partner",
+  "icqSoberParentingPartnerMean54": "Mean ICQ Sober across time - Parenting Partner",
+
+  "icqFactorSevenParentingPartnerMean30": "Mean ICQ Factor Seven across time - Parenting Partner",
+  "icqFactorSevenParentingPartnerMean36": "Mean ICQ Factor Seven across time - Parenting Partner",
+  "icqFactorSevenParentingPartnerMean42": "Mean ICQ Factor Seven across time - Parenting Partner",
+  "icqFactorSevenParentingPartnerMean54": "Mean ICQ Factor Seven across time - Parenting Partner",
+
+  "icqDifficultSecondaryMean30": "Mean ICQ Difficult across time - Secondary caregiver",
+  "icqDifficultSecondaryMean36": "Mean ICQ Difficult across time - Secondary caregiver",
+  "icqDifficultSecondaryMean42": "Mean ICQ Difficult across time - Secondary caregiver",
+  "icqDifficultSecondaryMean54": "Mean ICQ Difficult across time - Secondary caregiver",
+
+  "icqUnadaptableSecondaryMean30": "Mean ICQ Unadaptability across time - Secondary caregiver",
+  "icqUnadaptableSecondaryMean36": "Mean ICQ Unadaptability across time - Secondary caregiver",
+  "icqUnadaptableSecondaryMean42": "Mean ICQ Unadaptability across time - Secondary caregiver",
+  "icqUnadaptableSecondaryMean54": "Mean ICQ Unadaptability across time - Secondary caregiver",
+
+  "icqResistantToControlSecondaryMean30": "Mean ICQ Resistant to Control across time - Secondary caregiver",
+  "icqResistantToControlSecondaryMean36": "Mean ICQ Resistant to Control across time - Secondary caregiver",
+  "icqResistantToControlSecondaryMean42": "Mean ICQ Resistant to Control across time - Secondary caregiver",
+  "icqResistantToControlSecondaryMean54": "Mean ICQ Resistant to Control across time - Secondary caregiver",
+
+  "icqUnstoppableSecondaryMean30": "Mean ICQ Unstoppable across time - Secondary caregiver",
+  "icqUnstoppableSecondaryMean36": "Mean ICQ Unstoppable across time - Secondary caregiver",
+  "icqUnstoppableSecondaryMean42": "Mean ICQ Unstoppable across time - Secondary caregiver",
+  "icqUnstoppableSecondaryMean54": "Mean ICQ Unstoppable across time - Secondary caregiver",
+
+  "icqDependentSecondaryMean30": "Mean ICQ Dependent across time - Secondary caregiver",
+  "icqDependentSecondaryMean36": "Mean ICQ Dependent across time - Secondary caregiver",
+  "icqDependentSecondaryMean42": "Mean ICQ Dependent across time - Secondary caregiver",
+  "icqDependentSecondaryMean54": "Mean ICQ Dependent across time - Secondary caregiver",
+
+  "icqIrregularSecondaryMean30": "Mean ICQ Irregular across time - Secondary caregiver",
+  "icqIrregularSecondaryMean36": "Mean ICQ Irregular across time - Secondary caregiver",
+  "icqIrregularSecondaryMean42": "Mean ICQ Irregular across time - Secondary caregiver",
+  "icqIrregularSecondaryMean54": "Mean ICQ Irregular across time - Secondary caregiver",
+
+  "icqSoberSecondaryMean30": "Mean ICQ Sober across time - Secondary caregiver",
+  "icqSoberSecondaryMean36": "Mean ICQ Sober across time - Secondary caregiver",
+  "icqSoberSecondaryMean42": "Mean ICQ Sober across time - Secondary caregiver",
+  "icqSoberSecondaryMean54": "Mean ICQ Sober across time - Secondary caregiver",
+
+  "icqFactorSevenSecondaryMean30": "Mean ICQ Factor Seven across time - Secondary caregiver",
+  "icqFactorSevenSecondaryMean36": "Mean ICQ Factor Seven across time - Secondary caregiver",
+  "icqFactorSevenSecondaryMean42": "Mean ICQ Factor Seven across time - Secondary caregiver",
+  "icqFactorSevenSecondaryMean54": "Mean ICQ Factor Seven across time - Secondary caregiver",
+
+  "dasGeneralCognitiveAbility30": "General Cognitive Ability (GCA) score",
+  "dasGeneralCognitiveAbility36": "General Cognitive Ability (GCA) score",
+  "dasGeneralCognitiveAbility42": "General Cognitive Ability (GCA) score",
+  "dasGeneralCognitiveAbility54": "General Cognitive Ability (GCA) score",
+
+  "dasGeneralCognitiveAbilityPercentile30": "General Cognitive Ability Percentile",
+  "dasGeneralCognitiveAbilityPercentile36": "General Cognitive Ability Percentile",
+  "dasGeneralCognitiveAbilityPercentile42": "General Cognitive Ability Percentile",
+  "dasGeneralCognitiveAbilityPercentile54": "General Cognitive Ability Percentile",
+
+  "dasAbility30": "Overall Ability - mean of raw ability scores",
+  "dasAbility36": "Overall Ability - mean of raw ability scores",
+  "dasAbility42": "Overall Ability - mean of raw ability scores",
+  "dasAbility54": "Overall Ability - mean of raw ability scores",
+
+  "dasAbilityT30": "Overall Ability - mean of T-scores",
+  "dasAbilityT36": "Overall Ability - mean of T-scores",
+  "dasAbilityT42": "Overall Ability - mean of T-scores",
+  "dasAbilityT54": "Overall Ability - mean of T-scores",
+
+  "dasVerbalAbility30": "Verbal Ability - mean of raw scores",
+  "dasVerbalAbility36": "Verbal Ability - mean of raw scores",
+  "dasVerbalAbility42": "Verbal Ability - mean of raw scores",
+  "dasVerbalAbility54": "Verbal Ability - mean of raw scores",
+
+  "dasVerbalAbilityT30": "Verbal Ability - mean of T-scores",
+  "dasVerbalAbilityT36": "Verbal Ability - mean of T-scores",
+  "dasVerbalAbilityT42": "Verbal Ability - mean of T-scores",
+  "dasVerbalAbilityT54": "Verbal Ability - mean of T-scores",
+
+  "dasNonverbalAbility30": "Nonverbal Ability - mean of raw scores",
+  "dasNonverbalAbility36": "Nonverbal Ability - mean of raw scores",
+  "dasNonverbalAbility42": "Nonverbal Ability - mean of raw scores",
+  "dasNonverbalAbility54": "Nonverbal Ability - mean of raw scores",
+
+  "dasNonverbalAbilityT30": "Nonverbal Ability - mean of T-scores",
+  "dasNonverbalAbilityT36": "Nonverbal Ability - mean of T-scores",
+  "dasNonverbalAbilityT42": "Nonverbal Ability - mean of T-scores",
+  "dasNonverbalAbilityT54": "Nonverbal Ability - mean of T-scores",
+
+  "upSleepMinutesParentCombinedSadeh30": "up average total minutes asleep (average total time asleep while out of bed per night) of parent",
+  "upSleepMinutesParentCombinedSadeh36": "up average total minutes asleep (average total time asleep while out of bed per night) of parent",
+  "upSleepMinutesParentCombinedSadeh42": "up average total minutes asleep (average total time asleep while out of bed per night) of parent",
+  "upSleepMinutesParentCombinedSadeh54": "up average total minutes asleep (average total time asleep while out of bed per night) of parent",
+
+  "upPercentSleepParentCombinedSadeh30": "up percent sleep (percent of time napping each day) of parent",
+  "upPercentSleepParentCombinedSadeh36": "up percent sleep (percent of time napping each day) of parent",
+  "upPercentSleepParentCombinedSadeh42": "up percent sleep (percent of time napping each day) of parent",
+  "upPercentSleepParentCombinedSadeh54": "up percent sleep (percent of time napping each day) of parent",
+
+  "upSleepMinutes.1ParentCombinedSadeh30": "up average total minutes asleep (average total time asleep while out of bed per night) of parent",
+  "upSleepMinutes.1ParentCombinedSadeh36": "up average total minutes asleep (average total time asleep while out of bed per night) of parent",
+  "upSleepMinutes.1ParentCombinedSadeh42": "up average total minutes asleep (average total time asleep while out of bed per night) of parent",
+  "upSleepMinutes.1ParentCombinedSadeh54": "up average total minutes asleep (average total time asleep while out of bed per night) of parent",
+
+  "upPercentSleep.1ParentCombinedSadeh30": "up percent sleep (percent of time napping each day) of parent",
+  "upPercentSleep.1ParentCombinedSadeh36": "up percent sleep (percent of time napping each day) of parent",
+  "upPercentSleep.1ParentCombinedSadeh42": "up percent sleep (percent of time napping each day) of parent",
+  "upPercentSleep.1ParentCombinedSadeh54": "up percent sleep (percent of time napping each day) of parent",
+
+  "downSleepMinutesParentCombinedSadeh30": "in bed average total minutes asleep (average total time asleep while in bed per night) of parent",
+  "downSleepMinutesParentCombinedSadeh36": "in bed average total minutes asleep (average total time asleep while in bed per night) of parent",
+  "downSleepMinutesParentCombinedSadeh42": "in bed average total minutes asleep (average total time asleep while in bed per night) of parent",
+  "downSleepMinutesParentCombinedSadeh54": "in bed average total minutes asleep (average total time asleep while in bed per night) of parent",
+
+  "downPercentSleepParentCombinedSadeh30": "in bed percent sleep (percent of time sleeping while in bed) of parent",
+  "downPercentSleepParentCombinedSadeh36": "in bed percent sleep (percent of time sleeping while in bed) of parent",
+  "downPercentSleepParentCombinedSadeh42": "in bed percent sleep (percent of time sleeping while in bed) of parent",
+  "downPercentSleepParentCombinedSadeh54": "in bed percent sleep (percent of time sleeping while in bed) of parent",
+
+  "downSleepEfficiencyParentCombinedSadeh30": "in bed sleep efficiency (efficiency of sleep while in bed) of parent",
+  "downSleepEfficiencyParentCombinedSadeh36": "in bed sleep efficiency (efficiency of sleep while in bed) of parent",
+  "downSleepEfficiencyParentCombinedSadeh42": "in bed sleep efficiency (efficiency of sleep while in bed) of parent",
+  "downSleepEfficiencyParentCombinedSadeh54": "in bed sleep efficiency (efficiency of sleep while in bed) of parent",
+
+  "downSleepLatencyParentCombinedSadeh30": "in bed latency to fall asleep (time it takes to fall asleep after being put to bed) of parent",
+  "downSleepLatencyParentCombinedSadeh36": "in bed latency to fall asleep (time it takes to fall asleep after being put to bed) of parent",
+  "downSleepLatencyParentCombinedSadeh42": "in bed latency to fall asleep (time it takes to fall asleep after being put to bed) of parent",
+  "downSleepLatencyParentCombinedSadeh54": "in bed latency to fall asleep (time it takes to fall asleep after being put to bed) of parent",
+
+  "downSleepMinutes.1ParentCombinedSadeh30": "in bed average total minutes asleep (average total time asleep while in bed per night) of parent",
+  "downSleepMinutes.1ParentCombinedSadeh36": "in bed average total minutes asleep (average total time asleep while in bed per night) of parent",
+  "downSleepMinutes.1ParentCombinedSadeh42": "in bed average total minutes asleep (average total time asleep while in bed per night) of parent",
+  "downSleepMinutes.1ParentCombinedSadeh54": "in bed average total minutes asleep (average total time asleep while in bed per night) of parent",
+
+  "downPercentSleep.1ParentCombinedSadeh30": "in bed percent sleep (percent of time sleeping while in bed) of parent",
+  "downPercentSleep.1ParentCombinedSadeh36": "in bed percent sleep (percent of time sleeping while in bed) of parent",
+  "downPercentSleep.1ParentCombinedSadeh42": "in bed percent sleep (percent of time sleeping while in bed) of parent",
+  "downPercentSleep.1ParentCombinedSadeh54": "in bed percent sleep (percent of time sleeping while in bed) of parent",
+
+  "downSleepEfficiency.1ParentCombinedSadeh30": "in bed sleep efficiency (efficiency of sleep while in bed) of parent",
+  "downSleepEfficiency.1ParentCombinedSadeh36": "in bed sleep efficiency (efficiency of sleep while in bed) of parent",
+  "downSleepEfficiency.1ParentCombinedSadeh42": "in bed sleep efficiency (efficiency of sleep while in bed) of parent",
+  "downSleepEfficiency.1ParentCombinedSadeh54": "in bed sleep efficiency (efficiency of sleep while in bed) of parent",
+
+  "truesleepWakeMinutesAfterSleepOnsetParentCombinedSadeh30": "true sleep period time average total time awake after falling asleep (mean duration of minutes awake between falling asleep and waking up) of parent",
+  "truesleepWakeMinutesAfterSleepOnsetParentCombinedSadeh36": "true sleep period time average total time awake after falling asleep (mean duration of minutes awake between falling asleep and waking up) of parent",
+  "truesleepWakeMinutesAfterSleepOnsetParentCombinedSadeh42": "true sleep period time average total time awake after falling asleep (mean duration of minutes awake between falling asleep and waking up) of parent",
+  "truesleepWakeMinutesAfterSleepOnsetParentCombinedSadeh54": "true sleep period time average total time awake after falling asleep (mean duration of minutes awake between falling asleep and waking up) of parent",
+
+  "truesleepActivityIndexParentCombinedSadeh30": "true sleep period activity index of parent",
+  "truesleepActivityIndexParentCombinedSadeh36": "true sleep period activity index of parent",
+  "truesleepActivityIndexParentCombinedSadeh42": "true sleep period activity index of parent",
+  "truesleepActivityIndexParentCombinedSadeh54": "true sleep period activity index of parent",
+
+  "truesleepLongWakeEpisodesParentCombinedSadeh30": "true sleep period mean number of wake episodes >= 5 min of parent",
+  "truesleepLongWakeEpisodesParentCombinedSadeh36": "true sleep period mean number of wake episodes >= 5 min of parent",
+  "truesleepLongWakeEpisodesParentCombinedSadeh42": "true sleep period mean number of wake episodes >= 5 min of parent",
+  "truesleepLongWakeEpisodesParentCombinedSadeh54": "true sleep period mean number of wake episodes >= 5 min of parent",
+
+  "truesleepLongestWakeEpisodeParentCombinedSadeh30": "duration of longest wake episode of parent",
+  "truesleepLongestWakeEpisodeParentCombinedSadeh36": "duration of longest wake episode of parent",
+  "truesleepLongestWakeEpisodeParentCombinedSadeh42": "duration of longest wake episode of parent",
+  "truesleepLongestWakeEpisodeParentCombinedSadeh54": "duration of longest wake episode of parent",
+
+  "truesleepStartTimeHoursParentCombinedSadeh30": "true sleep period average time of start (time actually first fell asleep for the night) of parent",
+  "truesleepStartTimeHoursParentCombinedSadeh36": "true sleep period average time of start (time actually first fell asleep for the night) of parent",
+  "truesleepStartTimeHoursParentCombinedSadeh42": "true sleep period average time of start (time actually first fell asleep for the night) of parent",
+  "truesleepStartTimeHoursParentCombinedSadeh54": "true sleep period average time of start (time actually first fell asleep for the night) of parent",
+
+  "truesleepDurationParentCombinedSadeh30": "true sleep period mean duration (average minutes between falling asleep and waking up) of parent",
+  "truesleepDurationParentCombinedSadeh36": "true sleep period mean duration (average minutes between falling asleep and waking up) of parent",
+  "truesleepDurationParentCombinedSadeh42": "true sleep period mean duration (average minutes between falling asleep and waking up) of parent",
+  "truesleepDurationParentCombinedSadeh54": "true sleep period mean duration (average minutes between falling asleep and waking up) of parent",
+
+  "truesleepActivityMeanParentCombinedSadeh30": "true sleep period activity mean (average activity between falling asleep and waking up) of parent",
+  "truesleepActivityMeanParentCombinedSadeh36": "true sleep period activity mean (average activity between falling asleep and waking up) of parent",
+  "truesleepActivityMeanParentCombinedSadeh42": "true sleep period activity mean (average activity between falling asleep and waking up) of parent",
+  "truesleepActivityMeanParentCombinedSadeh54": "true sleep period activity mean (average activity between falling asleep and waking up) of parent",
+
+  "truesleepActivityMedianParentCombinedSadeh30": "true sleep period activity median (median activity between falling asleep and waking up) of parent",
+  "truesleepActivityMedianParentCombinedSadeh36": "true sleep period activity median (median activity between falling asleep and waking up) of parent",
+  "truesleepActivityMedianParentCombinedSadeh42": "true sleep period activity median (median activity between falling asleep and waking up) of parent",
+  "truesleepActivityMedianParentCombinedSadeh54": "true sleep period activity median (median activity between falling asleep and waking up) of parent",
+
+  "truesleepActivitySDParentCombinedSadeh30": "true sleep period activity standard deviation (average variability of activity between falling asleep and waking up) of parent",
+  "truesleepActivitySDParentCombinedSadeh36": "true sleep period activity standard deviation (average variability of activity between falling asleep and waking up) of parent",
+  "truesleepActivitySDParentCombinedSadeh42": "true sleep period activity standard deviation (average variability of activity between falling asleep and waking up) of parent",
+  "truesleepActivitySDParentCombinedSadeh54": "true sleep period activity standard deviation (average variability of activity between falling asleep and waking up) of parent",
+
+  "truesleepWakeMinutesParentCombinedSadeh30": "true sleep period average total minutes awake (average total time awake per night between falling asleep and waking up) of parent",
+  "truesleepWakeMinutesParentCombinedSadeh36": "true sleep period average total minutes awake (average total time awake per night between falling asleep and waking up) of parent",
+  "truesleepWakeMinutesParentCombinedSadeh42": "true sleep period average total minutes awake (average total time awake per night between falling asleep and waking up) of parent",
+  "truesleepWakeMinutesParentCombinedSadeh54": "true sleep period average total minutes awake (average total time awake per night between falling asleep and waking up) of parent",
+
+  "truesleepSleepMinutesParentCombinedSadeh30": "true sleep period average total minutes asleep (average total time asleep per night between falling asleep and waking up) of parent",
+  "truesleepSleepMinutesParentCombinedSadeh36": "true sleep period average total minutes asleep (average total time asleep per night between falling asleep and waking up) of parent",
+  "truesleepSleepMinutesParentCombinedSadeh42": "true sleep period average total minutes asleep (average total time asleep per night between falling asleep and waking up) of parent",
+  "truesleepSleepMinutesParentCombinedSadeh54": "true sleep period average total minutes asleep (average total time asleep per night between falling asleep and waking up) of parent",
+
+  "truesleepPercentSleepParentCombinedSadeh30": "true sleep period percent sleep (percent of time sleeping between falling asleep and waking up) of parent",
+  "truesleepPercentSleepParentCombinedSadeh36": "true sleep period percent sleep (percent of time sleeping between falling asleep and waking up) of parent",
+  "truesleepPercentSleepParentCombinedSadeh42": "true sleep period percent sleep (percent of time sleeping between falling asleep and waking up) of parent",
+  "truesleepPercentSleepParentCombinedSadeh54": "true sleep period percent sleep (percent of time sleeping between falling asleep and waking up) of parent",
+
+  "truesleepSleepEfficiencyParentCombinedSadeh30": "true sleep period sleep efficiency (efficiency of sleep between falling asleep and waking up) of parent",
+  "truesleepSleepEfficiencyParentCombinedSadeh36": "true sleep period sleep efficiency (efficiency of sleep between falling asleep and waking up) of parent",
+  "truesleepSleepEfficiencyParentCombinedSadeh42": "true sleep period sleep efficiency (efficiency of sleep between falling asleep and waking up) of parent",
+  "truesleepSleepEfficiencyParentCombinedSadeh54": "true sleep period sleep efficiency (efficiency of sleep between falling asleep and waking up) of parent",
+
+  "truesleepWakeMinutesAfterSleepOnset.1ParentCombinedSadeh30": "true sleep period time average total time awake after falling asleep (mean duration of minutes awake between falling asleep and waking up) of parent",
+  "truesleepWakeMinutesAfterSleepOnset.1ParentCombinedSadeh36": "true sleep period time average total time awake after falling asleep (mean duration of minutes awake between falling asleep and waking up) of parent",
+  "truesleepWakeMinutesAfterSleepOnset.1ParentCombinedSadeh42": "true sleep period time average total time awake after falling asleep (mean duration of minutes awake between falling asleep and waking up) of parent",
+  "truesleepWakeMinutesAfterSleepOnset.1ParentCombinedSadeh54": "true sleep period time average total time awake after falling asleep (mean duration of minutes awake between falling asleep and waking up) of parent",
+
+  "truesleepActivityIndex.1ParentCombinedSadeh30": "true sleep period activity index of parent",
+  "truesleepActivityIndex.1ParentCombinedSadeh36": "true sleep period activity index of parent",
+  "truesleepActivityIndex.1ParentCombinedSadeh42": "true sleep period activity index of parent",
+  "truesleepActivityIndex.1ParentCombinedSadeh54": "true sleep period activity index of parent",
+
+  "truesleepLongWakeEpisodes.1ParentCombinedSadeh30": "true sleep period mean number of wake episodes >= 5 min of parent",
+  "truesleepLongWakeEpisodes.1ParentCombinedSadeh36": "true sleep period mean number of wake episodes >= 5 min of parent",
+  "truesleepLongWakeEpisodes.1ParentCombinedSadeh42": "true sleep period mean number of wake episodes >= 5 min of parent",
+  "truesleepLongWakeEpisodes.1ParentCombinedSadeh54": "true sleep period mean number of wake episodes >= 5 min of parent",
+
+  "truesleepLongestWakeEpisode.1ParentCombinedSadeh30": "duration of longest wake episode of parent",
+  "truesleepLongestWakeEpisode.1ParentCombinedSadeh36": "duration of longest wake episode of parent",
+  "truesleepLongestWakeEpisode.1ParentCombinedSadeh42": "duration of longest wake episode of parent",
+  "truesleepLongestWakeEpisode.1ParentCombinedSadeh54": "duration of longest wake episode of parent",
+
+  "truesleepStartTimeHours.1ParentCombinedSadeh30": "true sleep period average time of start (time actually first fell asleep for the night) of parent",
+  "truesleepStartTimeHours.1ParentCombinedSadeh36": "true sleep period average time of start (time actually first fell asleep for the night) of parent",
+  "truesleepStartTimeHours.1ParentCombinedSadeh42": "true sleep period average time of start (time actually first fell asleep for the night) of parent",
+  "truesleepStartTimeHours.1ParentCombinedSadeh54": "true sleep period average time of start (time actually first fell asleep for the night) of parent",
+
+  "truesleepDuration.1ParentCombinedSadeh30": "true sleep period mean duration (average minutes between falling asleep and waking up) of parent",
+  "truesleepDuration.1ParentCombinedSadeh36": "true sleep period mean duration (average minutes between falling asleep and waking up) of parent",
+  "truesleepDuration.1ParentCombinedSadeh42": "true sleep period mean duration (average minutes between falling asleep and waking up) of parent",
+  "truesleepDuration.1ParentCombinedSadeh54": "true sleep period mean duration (average minutes between falling asleep and waking up) of parent",
+
+  "truesleepActivityMean.1ParentCombinedSadeh30": "true sleep period activity mean (average activity between falling asleep and waking up) of parent",
+  "truesleepActivityMean.1ParentCombinedSadeh36": "true sleep period activity mean (average activity between falling asleep and waking up) of parent",
+  "truesleepActivityMean.1ParentCombinedSadeh42": "true sleep period activity mean (average activity between falling asleep and waking up) of parent",
+  "truesleepActivityMean.1ParentCombinedSadeh54": "true sleep period activity mean (average activity between falling asleep and waking up) of parent",
+
+  "truesleepActivityMedian.1ParentCombinedSadeh30": "true sleep period activity median (median activity between falling asleep and waking up) of parent",
+  "truesleepActivityMedian.1ParentCombinedSadeh36": "true sleep period activity median (median activity between falling asleep and waking up) of parent",
+  "truesleepActivityMedian.1ParentCombinedSadeh42": "true sleep period activity median (median activity between falling asleep and waking up) of parent",
+  "truesleepActivityMedian.1ParentCombinedSadeh54": "true sleep period activity median (median activity between falling asleep and waking up) of parent",
+
+  "truesleepActivitySD.1ParentCombinedSadeh30": "true sleep period activity standard deviation (average variability of activity between falling asleep and waking up) of parent",
+  "truesleepActivitySD.1ParentCombinedSadeh36": "true sleep period activity standard deviation (average variability of activity between falling asleep and waking up) of parent",
+  "truesleepActivitySD.1ParentCombinedSadeh42": "true sleep period activity standard deviation (average variability of activity between falling asleep and waking up) of parent",
+  "truesleepActivitySD.1ParentCombinedSadeh54": "true sleep period activity standard deviation (average variability of activity between falling asleep and waking up) of parent",
+
+  "napSleepMinutesParentCombinedSadeh30": "down for nap total sleeping minutes per period of parent",
+  "napSleepMinutesParentCombinedSadeh36": "down for nap total sleeping minutes per period of parent",
+  "napSleepMinutesParentCombinedSadeh42": "down for nap total sleeping minutes per period of parent",
+  "napSleepMinutesParentCombinedSadeh54": "down for nap total sleeping minutes per period of parent",
+
+  "napPercentSleepParentCombinedSadeh30": "down for nap percent sleep of parent",
+  "napPercentSleepParentCombinedSadeh36": "down for nap percent sleep of parent",
+  "napPercentSleepParentCombinedSadeh42": "down for nap percent sleep of parent",
+  "napPercentSleepParentCombinedSadeh54": "down for nap percent sleep of parent",
+
+  "napSleepMinutes.1ParentCombinedSadeh30": "down for nap total sleeping minutes per period of parent",
+  "napSleepMinutes.1ParentCombinedSadeh36": "down for nap total sleeping minutes per period of parent",
+  "napSleepMinutes.1ParentCombinedSadeh42": "down for nap total sleeping minutes per period of parent",
+  "napSleepMinutes.1ParentCombinedSadeh54": "down for nap total sleeping minutes per period of parent",
+
+  "napPercentSleep.1ParentCombinedSadeh30": "down for nap percent sleep of parent",
+  "napPercentSleep.1ParentCombinedSadeh36": "down for nap percent sleep of parent",
+  "napPercentSleep.1ParentCombinedSadeh42": "down for nap percent sleep of parent",
+  "napPercentSleep.1ParentCombinedSadeh54": "down for nap percent sleep of parent",
+
+  "downShortTimeAsleepNumObsParentCombinedSadeh30": "Number of down short-time-asleep observations for Parent Combined Sadeh",
+  "downShortTimeAsleepNumObsParentCombinedSadeh36": "Number of down short-time-asleep observations for Parent Combined Sadeh",
+  "downShortTimeAsleepNumObsParentCombinedSadeh42": "Number of down short-time-asleep observations for Parent Combined Sadeh",
+  "downShortTimeAsleepNumObsParentCombinedSadeh54": "Number of down short-time-asleep observations for Parent Combined Sadeh",
+
+  "napShortTimeAsleepNumObsParentCombinedSadeh30": "Number of nap short-time-asleep observations for Parent Combined Sadeh",
+  "napShortTimeAsleepNumObsParentCombinedSadeh36": "Number of nap short-time-asleep observations for Parent Combined Sadeh",
+  "napShortTimeAsleepNumObsParentCombinedSadeh42": "Number of nap short-time-asleep observations for Parent Combined Sadeh",
+  "napShortTimeAsleepNumObsParentCombinedSadeh54": "Number of nap short-time-asleep observations for Parent Combined Sadeh",
+
+  "truesleepNumObsParentCombinedSadeh30": "Number of true sleep observations for Parent Combined Sadeh",
+  "truesleepNumObsParentCombinedSadeh36": "Number of true sleep observations for Parent Combined Sadeh",
+  "truesleepNumObsParentCombinedSadeh42": "Number of true sleep observations for Parent Combined Sadeh",
+  "truesleepNumObsParentCombinedSadeh54": "Number of true sleep observations for Parent Combined Sadeh",
+
+  "truesleepShortTimeInBedNumObsParentCombinedSadeh30": "Number of true sleep short-time-in-bed observations for Parent Combined Sadeh",
+  "truesleepShortTimeInBedNumObsParentCombinedSadeh36": "Number of true sleep short-time-in-bed observations for Parent Combined Sadeh",
+  "truesleepShortTimeInBedNumObsParentCombinedSadeh42": "Number of true sleep short-time-in-bed observations for Parent Combined Sadeh",
+  "truesleepShortTimeInBedNumObsParentCombinedSadeh54": "Number of true sleep short-time-in-bed observations for Parent Combined Sadeh",
+
+  "truesleepShortTimeAsleepNumObsParentCombinedSadeh30": "Number of true sleep short-time-asleep observations for Parent Combined Sadeh",
+  "truesleepShortTimeAsleepNumObsParentCombinedSadeh36": "Number of true sleep short-time-asleep observations for Parent Combined Sadeh",
+  "truesleepShortTimeAsleepNumObsParentCombinedSadeh42": "Number of true sleep short-time-asleep observations for Parent Combined Sadeh",
+  "truesleepShortTimeAsleepNumObsParentCombinedSadeh54": "Number of true sleep short-time-asleep observations for Parent Combined Sadeh",
+
+  "upShortTimeAsleepNumObsParentCombinedSadeh30": "Number of up short-time-asleep observations for Parent Combined Sadeh",
+  "upShortTimeAsleepNumObsParentCombinedSadeh36": "Number of up short-time-asleep observations for Parent Combined Sadeh",
+  "upShortTimeAsleepNumObsParentCombinedSadeh42": "Number of up short-time-asleep observations for Parent Combined Sadeh",
+  "upShortTimeAsleepNumObsParentCombinedSadeh54": "Number of up short-time-asleep observations for Parent Combined Sadeh",
+
+  "sleepConsolidationParentCombinedSadeh30": "Sleep consolidation for Parent Combined Sadeh",
+  "sleepConsolidationParentCombinedSadeh36": "Sleep consolidation for Parent Combined Sadeh",
+  "sleepConsolidationParentCombinedSadeh42": "Sleep consolidation for Parent Combined Sadeh",
+  "sleepConsolidationParentCombinedSadeh54": "Sleep consolidation for Parent Combined Sadeh",
+
+  "upSleepMinutesChildWeek1Sadeh30": "up average total minutes asleep (average total time asleep while out of bed per night) of child",
+  "upSleepMinutesChildWeek1Sadeh36": "up average total minutes asleep (average total time asleep while out of bed per night) of child",
+  "upSleepMinutesChildWeek1Sadeh42": "up average total minutes asleep (average total time asleep while out of bed per night) of child",
+  "upSleepMinutesChildWeek1Sadeh54": "up average total minutes asleep (average total time asleep while out of bed per night) of child",
+
+  "upPercentSleepChildWeek1Sadeh30": "up percent sleep (percent of time napping each day) of child",
+  "upPercentSleepChildWeek1Sadeh36": "up percent sleep (percent of time napping each day) of child",
+  "upPercentSleepChildWeek1Sadeh42": "up percent sleep (percent of time napping each day) of child",
+  "upPercentSleepChildWeek1Sadeh54": "up percent sleep (percent of time napping each day) of child",
+
+  "upSleepMinutes.1ChildWeek1Sadeh30": "up average total minutes asleep (average total time asleep while out of bed per night) of child",
+  "upSleepMinutes.1ChildWeek1Sadeh36": "up average total minutes asleep (average total time asleep while out of bed per night) of child",
+  "upSleepMinutes.1ChildWeek1Sadeh42": "up average total minutes asleep (average total time asleep while out of bed per night) of child",
+  "upSleepMinutes.1ChildWeek1Sadeh54": "up average total minutes asleep (average total time asleep while out of bed per night) of child",
+
+  "upPercentSleep.1ChildWeek1Sadeh30": "up percent sleep (percent of time napping each day) of child",
+  "upPercentSleep.1ChildWeek1Sadeh36": "up percent sleep (percent of time napping each day) of child",
+  "upPercentSleep.1ChildWeek1Sadeh42": "up percent sleep (percent of time napping each day) of child",
+  "upPercentSleep.1ChildWeek1Sadeh54": "up percent sleep (percent of time napping each day) of child",
+
+  "downSleepMinutesChildWeek1Sadeh30": "in bed average total minutes asleep (average total time asleep while in bed per night) of child",
+  "downSleepMinutesChildWeek1Sadeh36": "in bed average total minutes asleep (average total time asleep while in bed per night) of child",
+  "downSleepMinutesChildWeek1Sadeh42": "in bed average total minutes asleep (average total time asleep while in bed per night) of child",
+  "downSleepMinutesChildWeek1Sadeh54": "in bed average total minutes asleep (average total time asleep while in bed per night) of child",
+
+  "downPercentSleepChildWeek1Sadeh30": "in bed percent sleep (percent of time sleeping while in bed) of child",
+  "downPercentSleepChildWeek1Sadeh36": "in bed percent sleep (percent of time sleeping while in bed) of child",
+  "downPercentSleepChildWeek1Sadeh42": "in bed percent sleep (percent of time sleeping while in bed) of child",
+  "downPercentSleepChildWeek1Sadeh54": "in bed percent sleep (percent of time sleeping while in bed) of child",
+
+  "downSleepEfficiencyChildWeek1Sadeh30": "in bed sleep efficiency (efficiency of sleep while in bed) of child",
+  "downSleepEfficiencyChildWeek1Sadeh36": "in bed sleep efficiency (efficiency of sleep while in bed) of child",
+  "downSleepEfficiencyChildWeek1Sadeh42": "in bed sleep efficiency (efficiency of sleep while in bed) of child",
+  "downSleepEfficiencyChildWeek1Sadeh54": "in bed sleep efficiency (efficiency of sleep while in bed) of child",
+
+  "downSleepLatencyChildWeek1Sadeh30": "in bed latency to fall asleep (time it takes to fall asleep after being put to bed) of child",
+  "downSleepLatencyChildWeek1Sadeh36": "in bed latency to fall asleep (time it takes to fall asleep after being put to bed) of child",
+  "downSleepLatencyChildWeek1Sadeh42": "in bed latency to fall asleep (time it takes to fall asleep after being put to bed) of child",
+  "downSleepLatencyChildWeek1Sadeh54": "in bed latency to fall asleep (time it takes to fall asleep after being put to bed) of child",
+
+  "downWakeMinutesAfterSleepOnsetChildWeek1Sadeh30": "true sleep period time average total time awake after falling asleep (mean duration of minutes awake between falling asleep and waking up) of child",
+  "downWakeMinutesAfterSleepOnsetChildWeek1Sadeh36": "true sleep period time average total time awake after falling asleep (mean duration of minutes awake between falling asleep and waking up) of child",
+  "downWakeMinutesAfterSleepOnsetChildWeek1Sadeh42": "true sleep period time average total time awake after falling asleep (mean duration of minutes awake between falling asleep and waking up) of child",
+  "downWakeMinutesAfterSleepOnsetChildWeek1Sadeh54": "true sleep period time average total time awake after falling asleep (mean duration of minutes awake between falling asleep and waking up) of child",
+
+  "downSleepMinutes.1ChildWeek1Sadeh30": "in bed average total minutes asleep (average total time asleep while in bed per night) of child",
+  "downSleepMinutes.1ChildWeek1Sadeh36": "in bed average total minutes asleep (average total time asleep while in bed per night) of child",
+  "downSleepMinutes.1ChildWeek1Sadeh42": "in bed average total minutes asleep (average total time asleep while in bed per night) of child",
+  "downSleepMinutes.1ChildWeek1Sadeh54": "in bed average total minutes asleep (average total time asleep while in bed per night) of child",
+
+  "downPercentSleep.1ChildWeek1Sadeh30": "in bed percent sleep (percent of time sleeping while in bed) of child",
+  "downPercentSleep.1ChildWeek1Sadeh36": "in bed percent sleep (percent of time sleeping while in bed) of child",
+  "downPercentSleep.1ChildWeek1Sadeh42": "in bed percent sleep (percent of time sleeping while in bed) of child",
+  "downPercentSleep.1ChildWeek1Sadeh54": "in bed percent sleep (percent of time sleeping while in bed) of child",
+
+  "downSleepEfficiency.1ChildWeek1Sadeh30": "in bed sleep efficiency (efficiency of sleep while in bed) of child",
+  "downSleepEfficiency.1ChildWeek1Sadeh36": "in bed sleep efficiency (efficiency of sleep while in bed) of child",
+  "downSleepEfficiency.1ChildWeek1Sadeh42": "in bed sleep efficiency (efficiency of sleep while in bed) of child",
+  "downSleepEfficiency.1ChildWeek1Sadeh54": "in bed sleep efficiency (efficiency of sleep while in bed) of child",
+
+  "truesleepWakeMinutesAfterSleepOnsetChildWeek1Sadeh30": "true sleep period time average total time awake after falling asleep (mean duration of minutes awake between falling asleep and waking up) of child",
+  "truesleepWakeMinutesAfterSleepOnsetChildWeek1Sadeh36": "true sleep period time average total time awake after falling asleep (mean duration of minutes awake between falling asleep and waking up) of child",
+  "truesleepWakeMinutesAfterSleepOnsetChildWeek1Sadeh42": "true sleep period time average total time awake after falling asleep (mean duration of minutes awake between falling asleep and waking up) of child",
+  "truesleepWakeMinutesAfterSleepOnsetChildWeek1Sadeh54": "true sleep period time average total time awake after falling asleep (mean duration of minutes awake between falling asleep and waking up) of child",
+
+  "truesleepActivityIndexChildWeek1Sadeh30": "true sleep period activity index of child",
+  "truesleepActivityIndexChildWeek1Sadeh36": "true sleep period activity index of child",
+  "truesleepActivityIndexChildWeek1Sadeh42": "true sleep period activity index of child",
+  "truesleepActivityIndexChildWeek1Sadeh54": "true sleep period activity index of child",
+
+  "truesleepLongWakeEpisodesChildWeek1Sadeh30": "true sleep period mean number of wake episodes >= 5 min of child",
+  "truesleepLongWakeEpisodesChildWeek1Sadeh36": "true sleep period mean number of wake episodes >= 5 min of child",
+  "truesleepLongWakeEpisodesChildWeek1Sadeh42": "true sleep period mean number of wake episodes >= 5 min of child",
+  "truesleepLongWakeEpisodesChildWeek1Sadeh54": "true sleep period mean number of wake episodes >= 5 min of child",
+
+  "truesleepLongestWakeEpisodeChildWeek1Sadeh30": "duration of longest wake episode of child",
+  "truesleepLongestWakeEpisodeChildWeek1Sadeh36": "duration of longest wake episode of child",
+  "truesleepLongestWakeEpisodeChildWeek1Sadeh42": "duration of longest wake episode of child",
+  "truesleepLongestWakeEpisodeChildWeek1Sadeh54": "duration of longest wake episode of child",
+
+  "truesleepStartTimeHoursChildWeek1Sadeh30": "true sleep period average time of start (time actually first fell asleep for the night) of child",
+  "truesleepStartTimeHoursChildWeek1Sadeh36": "true sleep period average time of start (time actually first fell asleep for the night) of child",
+  "truesleepStartTimeHoursChildWeek1Sadeh42": "true sleep period average time of start (time actually first fell asleep for the night) of child",
+  "truesleepStartTimeHoursChildWeek1Sadeh54": "true sleep period average time of start (time actually first fell asleep for the night) of child",
+
+  "truesleepDurationChildWeek1Sadeh30": "true sleep period mean duration (average minutes between falling asleep and waking up) of child",
+  "truesleepDurationChildWeek1Sadeh36": "true sleep period mean duration (average minutes between falling asleep and waking up) of child",
+  "truesleepDurationChildWeek1Sadeh42": "true sleep period mean duration (average minutes between falling asleep and waking up) of child",
+  "truesleepDurationChildWeek1Sadeh54": "true sleep period mean duration (average minutes between falling asleep and waking up) of child",
+
+  "truesleepActivityMeanChildWeek1Sadeh30": "true sleep period activity mean (average activity between falling asleep and waking up) of child",
+  "truesleepActivityMeanChildWeek1Sadeh36": "true sleep period activity mean (average activity between falling asleep and waking up) of child",
+  "truesleepActivityMeanChildWeek1Sadeh42": "true sleep period activity mean (average activity between falling asleep and waking up) of child",
+  "truesleepActivityMeanChildWeek1Sadeh54": "true sleep period activity mean (average activity between falling asleep and waking up) of child",
+
+  "truesleepActivityMedianChildWeek1Sadeh30": "true sleep period activity median (median activity between falling asleep and waking up) of child",
+  "truesleepActivityMedianChildWeek1Sadeh36": "true sleep period activity median (median activity between falling asleep and waking up) of child",
+  "truesleepActivityMedianChildWeek1Sadeh42": "true sleep period activity median (median activity between falling asleep and waking up) of child",
+  "truesleepActivityMedianChildWeek1Sadeh54": "true sleep period activity median (median activity between falling asleep and waking up) of child",
+
+  "truesleepWakeMinutesChildWeek1Sadeh30": "true sleep period average total minutes awake (average total time awake per night between falling asleep and waking up) of child",
+  "truesleepWakeMinutesChildWeek1Sadeh36": "true sleep period average total minutes awake (average total time awake per night between falling asleep and waking up) of child",
+  "truesleepWakeMinutesChildWeek1Sadeh42": "true sleep period average total minutes awake (average total time awake per night between falling asleep and waking up) of child",
+  "truesleepWakeMinutesChildWeek1Sadeh54": "true sleep period average total minutes awake (average total time awake per night between falling asleep and waking up) of child",
+
+  "truesleepSleepMinutesChildWeek1Sadeh30": "true sleep period average total minutes asleep (average total time asleep per night between falling asleep and waking up) of child",
+  "truesleepSleepMinutesChildWeek1Sadeh36": "true sleep period average total minutes asleep (average total time asleep per night between falling asleep and waking up) of child",
+  "truesleepSleepMinutesChildWeek1Sadeh42": "true sleep period average total minutes asleep (average total time asleep per night between falling asleep and waking up) of child",
+  "truesleepSleepMinutesChildWeek1Sadeh54": "true sleep period average total minutes asleep (average total time asleep per night between falling asleep and waking up) of child",
+
+  "truesleepPercentSleepChildWeek1Sadeh30": "true sleep period percent sleep (percent of time sleeping between falling asleep and waking up) of child",
+  "truesleepPercentSleepChildWeek1Sadeh36": "true sleep period percent sleep (percent of time sleeping between falling asleep and waking up) of child",
+  "truesleepPercentSleepChildWeek1Sadeh42": "true sleep period percent sleep (percent of time sleeping between falling asleep and waking up) of child",
+  "truesleepPercentSleepChildWeek1Sadeh54": "true sleep period percent sleep (percent of time sleeping between falling asleep and waking up) of child",
+
+  "truesleepSleepEfficiencyChildWeek1Sadeh30": "true sleep period sleep efficiency (efficiency of sleep between falling asleep and waking up) of child",
+  "truesleepSleepEfficiencyChildWeek1Sadeh36": "true sleep period sleep efficiency (efficiency of sleep between falling asleep and waking up) of child",
+  "truesleepSleepEfficiencyChildWeek1Sadeh42": "true sleep period sleep efficiency (efficiency of sleep between falling asleep and waking up) of child",
+  "truesleepSleepEfficiencyChildWeek1Sadeh54": "true sleep period sleep efficiency (efficiency of sleep between falling asleep and waking up) of child",
+
+  "truesleepWakeMinutesAfterSleepOnset.1ChildWeek1Sadeh30": "true sleep period time average total time awake after falling asleep (mean duration of minutes awake between falling asleep and waking up) of child",
+  "truesleepWakeMinutesAfterSleepOnset.1ChildWeek1Sadeh36": "true sleep period time average total time awake after falling asleep (mean duration of minutes awake between falling asleep and waking up) of child",
+  "truesleepWakeMinutesAfterSleepOnset.1ChildWeek1Sadeh42": "true sleep period time average total time awake after falling asleep (mean duration of minutes awake between falling asleep and waking up) of child",
+  "truesleepWakeMinutesAfterSleepOnset.1ChildWeek1Sadeh54": "true sleep period time average total time awake after falling asleep (mean duration of minutes awake between falling asleep and waking up) of child",
+
+  "truesleepActivityIndex.1ChildWeek1Sadeh30": "true sleep period activity index of child",
+  "truesleepActivityIndex.1ChildWeek1Sadeh36": "true sleep period activity index of child",
+  "truesleepActivityIndex.1ChildWeek1Sadeh42": "true sleep period activity index of child",
+  "truesleepActivityIndex.1ChildWeek1Sadeh54": "true sleep period activity index of child",
+
+  "truesleepLongWakeEpisodes.1ChildWeek1Sadeh30": "true sleep period mean number of wake episodes >= 5 min of child",
+  "truesleepLongWakeEpisodes.1ChildWeek1Sadeh36": "true sleep period mean number of wake episodes >= 5 min of child",
+  "truesleepLongWakeEpisodes.1ChildWeek1Sadeh42": "true sleep period mean number of wake episodes >= 5 min of child",
+  "truesleepLongWakeEpisodes.1ChildWeek1Sadeh54": "true sleep period mean number of wake episodes >= 5 min of child",
+
+  "truesleepLongestWakeEpisode.1ChildWeek1Sadeh30": "duration of longest wake episode of child",
+  "truesleepLongestWakeEpisode.1ChildWeek1Sadeh36": "duration of longest wake episode of child",
+  "truesleepLongestWakeEpisode.1ChildWeek1Sadeh42": "duration of longest wake episode of child",
+  "truesleepLongestWakeEpisode.1ChildWeek1Sadeh54": "duration of longest wake episode of child",
+
+  "truesleepStartTimeHours.1ChildWeek1Sadeh30": "true sleep period average time of start (time actually first fell asleep for the night) of child",
+  "truesleepStartTimeHours.1ChildWeek1Sadeh36": "true sleep period average time of start (time actually first fell asleep for the night) of child",
+  "truesleepStartTimeHours.1ChildWeek1Sadeh42": "true sleep period average time of start (time actually first fell asleep for the night) of child",
+  "truesleepStartTimeHours.1ChildWeek1Sadeh54": "true sleep period average time of start (time actually first fell asleep for the night) of child",
+
+  "truesleepDuration.1ChildWeek1Sadeh30": "true sleep period mean duration (average minutes between falling asleep and waking up) of child",
+  "truesleepDuration.1ChildWeek1Sadeh36": "true sleep period mean duration (average minutes between falling asleep and waking up) of child",
+  "truesleepDuration.1ChildWeek1Sadeh42": "true sleep period mean duration (average minutes between falling asleep and waking up) of child",
+  "truesleepDuration.1ChildWeek1Sadeh54": "true sleep period mean duration (average minutes between falling asleep and waking up) of child",
+
+  "truesleepActivityMean.1ChildWeek1Sadeh30": "true sleep period activity mean (average activity between falling asleep and waking up) of child",
+  "truesleepActivityMean.1ChildWeek1Sadeh36": "true sleep period activity mean (average activity between falling asleep and waking up) of child",
+  "truesleepActivityMean.1ChildWeek1Sadeh42": "true sleep period activity mean (average activity between falling asleep and waking up) of child",
+  "truesleepActivityMean.1ChildWeek1Sadeh54": "true sleep period activity mean (average activity between falling asleep and waking up) of child",
+
+  "truesleepActivityMedian.1ChildWeek1Sadeh30": "true sleep period activity median (median activity between falling asleep and waking up) of child",
+  "truesleepActivityMedian.1ChildWeek1Sadeh36": "true sleep period activity median (median activity between falling asleep and waking up) of child",
+  "truesleepActivityMedian.1ChildWeek1Sadeh42": "true sleep period activity median (median activity between falling asleep and waking up) of child",
+  "truesleepActivityMedian.1ChildWeek1Sadeh54": "true sleep period activity median (median activity between falling asleep and waking up) of child",
+
+  "truesleepActivitySD.1ChildWeek1Sadeh30": "down for nap standard deviation of activity of child",
+  "truesleepActivitySD.1ChildWeek1Sadeh36": "down for nap standard deviation of activity of child",
+  "truesleepActivitySD.1ChildWeek1Sadeh42": "down for nap standard deviation of activity of child",
+  "truesleepActivitySD.1ChildWeek1Sadeh54": "down for nap standard deviation of activity of child",
+
+  "napSleepMinutesChildWeek1Sadeh30": "down for nap total sleeping minutes per period of child",
+  "napSleepMinutesChildWeek1Sadeh36": "down for nap total sleeping minutes per period of child",
+  "napSleepMinutesChildWeek1Sadeh42": "down for nap total sleeping minutes per period of child",
+  "napSleepMinutesChildWeek1Sadeh54": "down for nap total sleeping minutes per period of child",
+
+  "napPercentSleepChildWeek1Sadeh30": "down for nap percent sleep of child",
+  "napPercentSleepChildWeek1Sadeh36": "down for nap percent sleep of child",
+  "napPercentSleepChildWeek1Sadeh42": "down for nap percent sleep of child",
+  "napPercentSleepChildWeek1Sadeh54": "down for nap percent sleep of child",
+
+  "napSleepMinutes.1ChildWeek1Sadeh30": "down for nap total sleeping minutes per period of child",
+  "napSleepMinutes.1ChildWeek1Sadeh36": "down for nap total sleeping minutes per period of child",
+  "napSleepMinutes.1ChildWeek1Sadeh42": "down for nap total sleeping minutes per period of child",
+  "napSleepMinutes.1ChildWeek1Sadeh54": "down for nap total sleeping minutes per period of child",
+
+  "napPercentSleep.1ChildWeek1Sadeh30": "down for nap percent sleep of child",
+  "napPercentSleep.1ChildWeek1Sadeh36": "down for nap percent sleep of child",
+  "napPercentSleep.1ChildWeek1Sadeh42": "down for nap percent sleep of child",
+  "napPercentSleep.1ChildWeek1Sadeh54": "down for nap percent sleep of child",
+
   "childBehaviorToyProhibitionChildPres30": "Child Behavior Toy Prohibition - Other Child Present?",
   "childBehaviorToyProhibitionChildPres36": "Child Behavior Toy Prohibition - Other Child Present?",
   "childBehaviorToyProhibitionChildPres42": "Child Behavior Toy Prohibition - Other Child Present?",
@@ -1098,6 +2006,7 @@ export const variableDescriptions = {
   "preschoolDemographicsSiblinginhomeb42": "Sibling in home B",
   "preschoolDemographicsSiblinginhomeb54": "Sibling in home B",
 
+
   "preschoolDemographicsSiblinginhomec30": "Sibling in home C",
   "preschoolDemographicsSiblinginhomec36": "Sibling in home C",
   "preschoolDemographicsSiblinginhomec42": "Sibling in home C",
@@ -1129,6 +2038,7 @@ export const variableDescriptions = {
   "SecondHomeVisitDate54": "Second home visit date",
 
   "upActivitySDChildWeek1Sadeh30": "Variability in activity during Up periods",
+
   "upStartTimeHoursSDChildWeek1Sadeh30": "Variability in Up-period start time",
   "upMidTimeHoursSDChildWeek1Sadeh30": "Variability in midpoint of Up period",
   "upEndTimeHoursSDChildWeek1Sadeh30": "Variability in Up-period end time",
@@ -1205,6 +2115,7 @@ export const variableDescriptions = {
   "upMidTimeHoursSDChildWeek1Sadeh42": "Variability in midpoint of Up period",
   "upEndTimeHoursSDChildWeek1Sadeh42": "Variability in Up-period end time",
   "upDurationSDChildWeek1Sadeh42": "Variability in duration of Up periods",
+
   "upSleepMinutesSDChildWeek1Sadeh42": "Variability in sleep minutes occurring during Up periods",
   "upActivityMeanSDChildWeek1Sadeh42": "Variability in mean activity during Up periods",
   "upActivityMedianSDChildWeek1Sadeh42": "Variability in median activity during Up periods",
@@ -1568,6 +2479,7 @@ export const variableDescriptions = {
   "sustainedAttentionProportionTimeFocused30": "total time focused/total task duration (30 months)",
   "sustainedAttentionProportionTimeSettled30": "total time settled/total task duration (30 months)",
   "sustainedAttentionNumberInstancesFocused30": "Description not provided in spreadsheet",
+
 
   "sustainedAttentionProportionTime36": "Mean of proportion time eyes on score, settled score, focused score (36 months)",
   "sustainedAttentionLatency36": "Mean of latency to first eyeson, settled, and focused (36 months)",
@@ -2327,6 +3239,7 @@ export const variableDescriptions = {
 
   "cbclTotalSecondary30": "Total Problems - Secondary caregiver",
   "cbclTotalSecondary36": "Total Problems - Secondary caregiver",
+
   "cbclTotalSecondary42": "Total Problems - Secondary caregiver",
   "cbclTotalSecondary54": "Total Problems - Secondary caregiver",
 
@@ -2722,6 +3635,7 @@ export const variableDescriptions = {
   "oddball_P3b_amplitudeDifference30": "Oddball P3b amplitude difference",
   "oddball_P3b_amplitudeDifference36": "Oddball P3b amplitude difference",
   "oddball_P3b_amplitudeDifference42": "Oddball P3b amplitude difference",
+
   "oddball_P3b_amplitudeDifference54": "Oddball P3b amplitude difference",
 
   "oddball_P3b_amplitudeDifferenceCentered30": "Centered Oddball P3b amplitude difference",
@@ -2748,36 +3662,6 @@ export const variableDescriptions = {
   "fishSharks_N2_amplitudeDifferenceCentered36": "Centered Fish/Sharks N2 amplitude difference",
   "fishSharks_N2_amplitudeDifferenceCentered42": "Centered Fish/Sharks N2 amplitude difference",
   "fishSharks_N2_amplitudeDifferenceCentered54": "Centered Fish/Sharks N2 amplitude difference",
-
-  "icqDifficultPrimary30": "ICQ Difficult - Primary caregiver",
-  "icqDifficultPrimary36": "ICQ Difficult - Primary caregiver",
-  "icqDifficultPrimary42": "ICQ Difficult - Primary caregiver",
-  "icqDifficultPrimary54": "ICQ Difficult - Primary caregiver",
-
-  "icqDifficultParentingPartner30": "ICQ Difficult - Parenting partner",
-  "icqDifficultParentingPartner36": "ICQ Difficult - Parenting partner",
-  "icqDifficultParentingPartner42": "ICQ Difficult - Parenting partner",
-  "icqDifficultParentingPartner54": "ICQ Difficult - Parenting partner",
-
-  "icqDifficultSecondary30": "ICQ Difficult - Secondary caregiver",
-  "icqDifficultSecondary36": "ICQ Difficult - Secondary caregiver",
-  "icqDifficultSecondary42": "ICQ Difficult - Secondary caregiver",
-  "icqDifficultSecondary54": "ICQ Difficult - Secondary caregiver",
-
-  "icqDifficultPrimaryMean30": "Mean ICQ Difficult across time - Primary caregiver",
-  "icqDifficultPrimaryMean36": "Mean ICQ Difficult across time - Primary caregiver",
-  "icqDifficultPrimaryMean42": "Mean ICQ Difficult across time - Primary caregiver",
-  "icqDifficultPrimaryMean54": "Mean ICQ Difficult across time - Primary caregiver",
-
-  "icqDifficultParentingPartnerMean30": "Mean ICQ Difficult across time - Parenting partner",
-  "icqDifficultParentingPartnerMean36": "Mean ICQ Difficult across time - Parenting partner",
-  "icqDifficultParentingPartnerMean42": "Mean ICQ Difficult across time - Parenting partner",
-  "icqDifficultParentingPartnerMean54": "Mean ICQ Difficult across time - Parenting partner",
-
-  "icqDifficultSecondaryMean30": "Mean ICQ Difficult across time - Secondary caregiver",
-  "icqDifficultSecondaryMean36": "Mean ICQ Difficult across time - Secondary caregiver",
-  "icqDifficultSecondaryMean42": "Mean ICQ Difficult across time - Secondary caregiver",
-  "icqDifficultSecondaryMean54": "Mean ICQ Difficult across time - Secondary caregiver",
 
   "cesdDepressiveSymptoms30": "Depressive Symptoms",
   "cesdDepressiveSymptoms36": "Depressive Symptoms",
@@ -3159,6 +4043,9 @@ export const variableComputations = {
   "parentPositiveToyCleanUpNoPositiveP36": "# No-positive intervals ÷ # Intervals",
   "parentPositiveToyCleanUpPositiveP36": "# Positive intervals ÷ # Intervals",
   "parentPositiveToyCleanUpHiPositiveP36": "# High-positive intervals ÷ # Intervals",
+
+
+
 
   "parentPositiveFreePlayPositiveAffect42": "(NoPositiveP × 0) + (PositiveP × 1) + (HiPositiveP × 2)",
   "parentPositiveFreePlayNoPositiveP42": "# No-positive intervals ÷ # Intervals",
@@ -4230,36 +5117,6 @@ export const variableComputations = {
   "fishSharks_N2_amplitudeDifferenceCentered42": "Not specified in the README",
   "fishSharks_N2_amplitudeDifferenceCentered54": "Not specified in the README",
 
-  "icqDifficultPrimary30": "Sum of items 01, 05, 06, 12, 13, 21, 32",
-  "icqDifficultPrimary36": "Sum of items 01, 05, 06, 12, 13, 21, 32",
-  "icqDifficultPrimary42": "Sum of items 01, 05, 06, 12, 13, 21, 32",
-  "icqDifficultPrimary54": "Sum of items 01, 05, 06, 12, 13, 21, 32",
-
-  "icqDifficultParentingPartner30": "Sum of items 01, 05, 06, 12, 13, 21, 32",
-  "icqDifficultParentingPartner36": "Sum of items 01, 05, 06, 12, 13, 21, 32",
-  "icqDifficultParentingPartner42": "Sum of items 01, 05, 06, 12, 13, 21, 32",
-  "icqDifficultParentingPartner54": "Sum of items 01, 05, 06, 12, 13, 21, 32",
-
-  "icqDifficultSecondary30": "Sum of items 01, 05, 06, 12, 13, 21, 32",
-  "icqDifficultSecondary36": "Sum of items 01, 05, 06, 12, 13, 21, 32",
-  "icqDifficultSecondary42": "Sum of items 01, 05, 06, 12, 13, 21, 32",
-  "icqDifficultSecondary54": "Sum of items 01, 05, 06, 12, 13, 21, 32",
-
-  "icqDifficultPrimaryMean30": "Mean of Difficult scores at 30, 36, and 42 months",
-  "icqDifficultPrimaryMean36": "Mean of Difficult scores at 30, 36, and 42 months",
-  "icqDifficultPrimaryMean42": "Mean of Difficult scores at 30, 36, and 42 months",
-  "icqDifficultPrimaryMean54": "Mean of Difficult scores at 30, 36, and 42 months",
-
-  "icqDifficultParentingPartnerMean30": "Mean of Difficult scores at 30, 36, and 42 months",
-  "icqDifficultParentingPartnerMean36": "Mean of Difficult scores at 30, 36, and 42 months",
-  "icqDifficultParentingPartnerMean42": "Mean of Difficult scores at 30, 36, and 42 months",
-  "icqDifficultParentingPartnerMean54": "Mean of Difficult scores at 30, 36, and 42 months",
-
-  "icqDifficultSecondaryMean30": "Mean of Difficult scores at 30, 36, and 42 months",
-  "icqDifficultSecondaryMean36": "Mean of Difficult scores at 30, 36, and 42 months",
-  "icqDifficultSecondaryMean42": "Mean of Difficult scores at 30, 36, and 42 months",
-  "icqDifficultSecondaryMean54": "Mean of Difficult scores at 30, 36, and 42 months",
-
   "cesdDepressiveSymptoms30": "Sum of all items",
   "cesdDepressiveSymptoms36": "Sum of all items",
   "cesdDepressiveSymptoms42": "Sum of all items",
@@ -4274,6 +5131,459 @@ export const variableComputations = {
   "childBehaviorPhoneCallPlaysShelfToysP36": "Number of intervals target child plays with shelf toys / total number of coded intervals",
   "childBehaviorPhoneCallPlaysShelfToysP42": "Number of intervals target child plays with shelf toys / total number of coded intervals",
   "childBehaviorPhoneCallPlaysShelfToysP54": "Number of intervals target child plays with shelf toys / total number of coded intervals",
+
+  "childBehaviorPhoneCallDeviation30": "(Touch Shelf intervals + Plays Shelf Toys intervals) / (Total intervals - Table Play intervals)",
+  "childBehaviorPhoneCallDeviation36": "(Touch Shelf intervals + Plays Shelf Toys intervals) / (Total intervals - Table Play intervals)",
+  "childBehaviorPhoneCallDeviation42": "(Touch Shelf intervals + Plays Shelf Toys intervals) / (Total intervals - Table Play intervals)",
+  "childBehaviorPhoneCallDeviation54": "(Touch Shelf intervals + Plays Shelf Toys intervals) / (Total intervals - Table Play intervals)",
+
+  "childBehaviorPhoneCallNoncompliance30": "(Touch Shelf intervals + Plays Shelf Toys intervals) / Total intervals",
+  "childBehaviorPhoneCallNoncompliance36": "(Touch Shelf intervals + Plays Shelf Toys intervals) / Total intervals",
+  "childBehaviorPhoneCallNoncompliance42": "(Touch Shelf intervals + Plays Shelf Toys intervals) / Total intervals",
+  "childBehaviorPhoneCallNoncompliance54": "(Touch Shelf intervals + Plays Shelf Toys intervals) / Total intervals",
+
+  "childBehaviorPhoneCallTablePlayP30": "Table Play intervals / Total intervals",
+  "childBehaviorPhoneCallTablePlayP36": "Table Play intervals / Total intervals",
+  "childBehaviorPhoneCallTablePlayP42": "Table Play intervals / Total intervals",
+  "childBehaviorPhoneCallTablePlayP54": "Table Play intervals / Total intervals",
+
+  "childBehaviorPhoneCallOtherP30": "Other Play intervals / Total intervals",
+  "childBehaviorPhoneCallOtherP36": "Other Play intervals / Total intervals",
+  "childBehaviorPhoneCallOtherP42": "Other Play intervals / Total intervals",
+  "childBehaviorPhoneCallOtherP54": "Other Play intervals / Total intervals",
+
+  "childBehaviorPhoneCallSeekParentP30": "Seek Parent intervals / Total intervals",
+  "childBehaviorPhoneCallSeekParentP36": "Seek Parent intervals / Total intervals",
+  "childBehaviorPhoneCallSeekParentP42": "Seek Parent intervals / Total intervals",
+  "childBehaviorPhoneCallSeekParentP54": "Seek Parent intervals / Total intervals",
+
+  "childBehaviorPhoneCallLookAtShelfP30": "Look-at-Shelf intervals / Total intervals",
+  "childBehaviorPhoneCallLookAtShelfP36": "Look-at-Shelf intervals / Total intervals",
+  "childBehaviorPhoneCallLookAtShelfP42": "Look-at-Shelf intervals / Total intervals",
+  "childBehaviorPhoneCallLookAtShelfP54": "Look-at-Shelf intervals / Total intervals",
+
+  "childBehaviorPhoneCallTouchShelfP30": "Touch Shelf intervals / Total intervals",
+  "childBehaviorPhoneCallTouchShelfP36": "Touch Shelf intervals / Total intervals",
+  "childBehaviorPhoneCallTouchShelfP42": "Touch Shelf intervals / Total intervals",
+  "childBehaviorPhoneCallTouchShelfP54": "Touch Shelf intervals / Total intervals",
+
+  "childBehaviorFreePlayDeviation30": "(Touch Shelf intervals + Plays Shelf Toys intervals) / (Total intervals - Table Play intervals)",
+  "childBehaviorFreePlayDeviation36": "(Touch Shelf intervals + Plays Shelf Toys intervals) / (Total intervals - Table Play intervals)",
+  "childBehaviorFreePlayDeviation42": "(Touch Shelf intervals + Plays Shelf Toys intervals) / (Total intervals - Table Play intervals)",
+  "childBehaviorFreePlayDeviation54": "(Touch Shelf intervals + Plays Shelf Toys intervals) / (Total intervals - Table Play intervals)",
+
+  "childBehaviorFreePlayNoncompliance30": "(Touch Shelf intervals + Plays Shelf Toys intervals) / Total intervals",
+  "childBehaviorFreePlayNoncompliance36": "(Touch Shelf intervals + Plays Shelf Toys intervals) / Total intervals",
+  "childBehaviorFreePlayNoncompliance42": "(Touch Shelf intervals + Plays Shelf Toys intervals) / Total intervals",
+  "childBehaviorFreePlayNoncompliance54": "(Touch Shelf intervals + Plays Shelf Toys intervals) / Total intervals",
+
+  "childBehaviorFreePlayTablePlayP30": "Table Play intervals / Total intervals",
+  "childBehaviorFreePlayTablePlayP36": "Table Play intervals / Total intervals",
+  "childBehaviorFreePlayTablePlayP42": "Table Play intervals / Total intervals",
+  "childBehaviorFreePlayTablePlayP54": "Table Play intervals / Total intervals",
+
+  "childBehaviorFreePlayOtherP30": "Other Play intervals / Total intervals",
+  "childBehaviorFreePlayOtherP36": "Other Play intervals / Total intervals",
+  "childBehaviorFreePlayOtherP42": "Other Play intervals / Total intervals",
+  "childBehaviorFreePlayOtherP54": "Other Play intervals / Total intervals",
+
+  "childBehaviorFreePlaySeekParentP30": "Seek Parent intervals / Total intervals",
+  "childBehaviorFreePlaySeekParentP36": "Seek Parent intervals / Total intervals",
+  "childBehaviorFreePlaySeekParentP42": "Seek Parent intervals / Total intervals",
+  "childBehaviorFreePlaySeekParentP54": "Seek Parent intervals / Total intervals",
+
+  "childBehaviorFreePlayLookAtShelfP30": "Look-at-Shelf intervals / Total intervals",
+  "childBehaviorFreePlayLookAtShelfP36": "Look-at-Shelf intervals / Total intervals",
+  "childBehaviorFreePlayLookAtShelfP42": "Look-at-Shelf intervals / Total intervals",
+  "childBehaviorFreePlayLookAtShelfP54": "Look-at-Shelf intervals / Total intervals",
+
+  "childBehaviorFreePlayTouchShelfP30": "Touch Shelf intervals / Total intervals",
+  "childBehaviorFreePlayTouchShelfP36": "Touch Shelf intervals / Total intervals",
+  "childBehaviorFreePlayTouchShelfP42": "Touch Shelf intervals / Total intervals",
+  "childBehaviorFreePlayTouchShelfP54": "Touch Shelf intervals / Total intervals",
+
+  "childBehaviorFreePlayPlaysShelfToysP30": "Plays-Shelf-Toys intervals / Total intervals",
+  "childBehaviorFreePlayPlaysShelfToysP36": "Plays-Shelf-Toys intervals / Total intervals",
+  "childBehaviorFreePlayPlaysShelfToysP42": "Plays-Shelf-Toys intervals / Total intervals",
+  "childBehaviorFreePlayPlaysShelfToysP54": "Plays-Shelf-Toys intervals / Total intervals",
+
+  "parentalSensitivityFreePlay30": "Mean of Free Play trials (30 months)",
+  "parentalSensitivityPhoneCall30": "Mean of Phone Call trials (30 months)",
+  "parentalSensitivityToyCleanUp30": "Mean of Toy Cleanup trials (30 months)",
+  "parentalIntrusivenessFreePlay30": "Mean of Free Play trials (30 months)",
+  "parentalIntrusivenessPhoneCall30": "Mean of Phone Call trials (30 months)",
+  "parentalIntrusivenessToyCleanUp30": "Mean of Toy Cleanup trials (30 months)",
+
+  "parentalSensitivityFreePlay36": "Mean of Free Play trials (36 months)",
+  "parentalSensitivityPhoneCall36": "Mean of Phone Call trials (36 months)",
+  "parentalSensitivityToyCleanUp36": "Mean of Toy Cleanup trials (36 months)",
+  "parentalIntrusivenessFreePlay36": "Mean of Free Play trials (36 months)",
+  "parentalIntrusivenessPhoneCall36": "Mean of Phone Call trials (36 months)",
+  "parentalIntrusivenessToyCleanUp36": "Mean of Toy Cleanup trials (36 months)",
+
+  "parentalSensitivityFreePlay42": "Mean of Free Play trials (42 months)",
+  "parentalSensitivityPhoneCall42": "Mean of Phone Call trials (42 months)",
+  "parentalSensitivityToyCleanUp42": "Mean of Toy Cleanup trials (42 months)",
+  "parentalIntrusivenessFreePlay42": "Mean of Free Play trials (42 months)",
+  "parentalIntrusivenessPhoneCall42": "Mean of Phone Call trials (42 months)",
+  "parentalIntrusivenessToyCleanUp42": "Mean of Toy Cleanup trials (42 months)",
+
+  "parentalSensitivityFreePlay54": "Mean of Free Play trials (54 months)",
+  "parentalSensitivityPhoneCall54": "Mean of Phone Call trials (54 months)",
+  "parentalSensitivityToyCleanUp54": "Mean of Toy Cleanup trials (54 months)",
+  "parentalIntrusivenessFreePlay54": "Mean of Free Play trials (54 months)",
+  "parentalIntrusivenessPhoneCall54": "Mean of Phone Call trials (54 months)",
+  "parentalIntrusivenessToyCleanUp54": "Mean of Toy Cleanup trials (54 months)",
+
+  "caqSum30": "Sum of all CAQ change/adjustment items; theoretical range 0-32",
+  "caqSum36": "Sum of all CAQ change/adjustment items; theoretical range 0-32",
+  "caqSum42": "Sum of all CAQ change/adjustment items; theoretical range 0-32",
+  "caqSum54": "Sum of all CAQ change/adjustment items; theoretical range 0-32",
+
+  "cshqBedtimeResistance30": "Mean of items 1R, 3R, 4, 7, 8",
+  "cshqBedtimeResistance36": "Mean of items 1R, 3R, 4, 7, 8",
+  "cshqBedtimeResistance42": "Mean of items 1R, 3R, 4, 7, 8",
+  "cshqBedtimeResistance54": "Mean of items 1R, 3R, 4, 7, 8",
+
+  "cshqSleepOnsetDelay30": "Reverse-scored item 2",
+  "cshqSleepOnsetDelay36": "Reverse-scored item 2",
+  "cshqSleepOnsetDelay42": "Reverse-scored item 2",
+  "cshqSleepOnsetDelay54": "Reverse-scored item 2",
+
+  "cshqSleepDuration30": "Reverse-scored item 10",
+  "cshqSleepDuration36": "Reverse-scored item 10",
+  "cshqSleepDuration42": "Reverse-scored item 10",
+  "cshqSleepDuration54": "Reverse-scored item 10",
+
+  "cshqSleepAnxiety30": "Mean of items 7, 9",
+  "cshqSleepAnxiety36": "Mean of items 7, 9",
+  "cshqSleepAnxiety42": "Mean of items 7, 9",
+  "cshqSleepAnxiety54": "Mean of items 7, 9",
+
+  "cshqNightWakings30": "Mean of items 12, 17R, 18",
+  "cshqNightWakings36": "Mean of items 12, 17R, 18",
+  "cshqNightWakings42": "Mean of items 12, 17R, 18",
+  "cshqNightWakings54": "Mean of items 12, 17R, 18",
+
+  "cshqParasomnias30": "Mean of items 11, 13, 15",
+  "cshqParasomnias36": "Mean of items 11, 13, 15",
+  "cshqParasomnias42": "Mean of items 11, 13, 15",
+  "cshqParasomnias54": "Mean of items 11, 13, 15",
+
+  "cshqSleepDisorderedBreathing30": "Item 14",
+  "cshqSleepDisorderedBreathing36": "Item 14",
+  "cshqSleepDisorderedBreathing42": "Item 14",
+  "cshqSleepDisorderedBreathing54": "Item 14",
+
+  "cshqDaytimeSleepiness30": "Mean of items 19R, 21, 22",
+  "cshqDaytimeSleepiness36": "Mean of items 19R, 21, 22",
+  "cshqDaytimeSleepiness42": "Mean of items 19R, 21, 22",
+  "cshqDaytimeSleepiness54": "Mean of items 19R, 21, 22",
+
+  "cshqTotalSleepDisturbanceMean30": "Mean of items 1R, 2R, 3R, 4, 5, 7, 8, 10R, 11, 12, 14, 15, 16, 17R, 18, 20, 21, 22",
+  "cshqTotalSleepDisturbanceMean36": "Mean of items 1R, 2R, 3R, 4, 5, 7, 8, 10R, 11, 12, 14, 15, 16, 17R, 18, 20, 21, 22",
+  "cshqTotalSleepDisturbanceMean42": "Mean of items 1R, 2R, 3R, 4, 5, 7, 8, 10R, 11, 12, 14, 15, 16, 17R, 18, 20, 21, 22",
+  "cshqTotalSleepDisturbanceMean54": "Mean of items 1R, 2R, 3R, 4, 5, 7, 8, 10R, 11, 12, 14, 15, 16, 17R, 18, 20, 21, 22",
+
+  "cshqTotalSleepDisturbanceSum30": "Sum of items 1R, 2R, 3R, 4, 5, 7, 8, 10R, 11, 12, 14, 15, 16, 17R, 18, 20, 21, 22",
+  "cshqTotalSleepDisturbanceSum36": "Sum of items 1R, 2R, 3R, 4, 5, 7, 8, 10R, 11, 12, 14, 15, 16, 17R, 18, 20, 21, 22",
+  "cshqTotalSleepDisturbanceSum42": "Sum of items 1R, 2R, 3R, 4, 5, 7, 8, 10R, 11, 12, 14, 15, 16, 17R, 18, 20, 21, 22",
+  "cshqTotalSleepDisturbanceSum54": "Sum of items 1R, 2R, 3R, 4, 5, 7, 8, 10R, 11, 12, 14, 15, 16, 17R, 18, 20, 21, 22",
+
+  "phsiAveNoise30": "Mean of noise ratings at 15, 30, 45, 60, 75, 90, 105, and 120 minutes",
+  "phsiAveNoise36": "Mean of noise ratings at 15, 30, 45, 60, 75, 90, 105, and 120 minutes",
+  "phsiAveNoise42": "Mean of noise ratings at 15, 30, 45, 60, 75, 90, 105, and 120 minutes",
+  "phsiAveNoise54": "Mean of noise ratings at 15, 30, 45, 60, 75, 90, 105, and 120 minutes",
+
+  "phsiTotalPeople30": "Siblings + Adults + Visitors",
+  "phsiTotalPeople36": "Siblings + Adults + Visitors",
+  "phsiTotalPeople42": "Siblings + Adults + Visitors",
+  "phsiTotalPeople54": "Siblings + Adults + Visitors",
+
+  "phsiCrowdedness30": "Total People / Number of Rooms",
+  "phsiCrowdedness36": "Total People / Number of Rooms",
+  "phsiCrowdedness42": "Total People / Number of Rooms",
+  "phsiCrowdedness54": "Total People / Number of Rooms",
+
+  "icqDifficultPrimary30": "Sum of ICQ items 01, 05, 06, 12, 13, 21, 32",
+  "icqDifficultPrimary36": "Sum of ICQ items 01, 05, 06, 12, 13, 21, 32",
+  "icqDifficultPrimary42": "Sum of ICQ items 01, 05, 06, 12, 13, 21, 32",
+  "icqDifficultPrimary54": "Sum of ICQ items 01, 05, 06, 12, 13, 21, 32",
+
+  "icqUnadaptablePrimary30": "Sum of ICQ items 09, 10, 11, 20, 22",
+  "icqUnadaptablePrimary36": "Sum of ICQ items 09, 10, 11, 20, 22",
+  "icqUnadaptablePrimary42": "Sum of ICQ items 09, 10, 11, 20, 22",
+  "icqUnadaptablePrimary54": "Sum of ICQ items 09, 10, 11, 20, 22",
+
+  "icqResistantToControlPrimary30": "Sum of ICQ items 28, 29, 30",
+  "icqResistantToControlPrimary36": "Sum of ICQ items 28, 29, 30",
+  "icqResistantToControlPrimary42": "Sum of ICQ items 28, 29, 30",
+  "icqResistantToControlPrimary54": "Sum of ICQ items 28, 29, 30",
+
+  "icqUnstoppablePrimary30": "Sum of ICQ items 26, 28, 29",
+  "icqUnstoppablePrimary36": "Sum of ICQ items 26, 28, 29",
+  "icqUnstoppablePrimary42": "Sum of ICQ items 26, 28, 29",
+  "icqUnstoppablePrimary54": "Sum of ICQ items 26, 28, 29",
+
+  "icqDependentPrimary30": "Sum of ICQ items 23, 24",
+  "icqDependentPrimary36": "Sum of ICQ items 23, 24",
+  "icqDependentPrimary42": "Sum of ICQ items 23, 24",
+  "icqDependentPrimary54": "Sum of ICQ items 23, 24",
+
+  "icqIrregularPrimary30": "Sum of ICQ items 02, 03",
+  "icqIrregularPrimary36": "Sum of ICQ items 02, 03",
+  "icqIrregularPrimary42": "Sum of ICQ items 02, 03",
+  "icqIrregularPrimary54": "Sum of ICQ items 02, 03",
+
+  "icqSoberPrimary30": "Sum of ICQ items 16, 17",
+  "icqSoberPrimary36": "Sum of ICQ items 16, 17",
+  "icqSoberPrimary42": "Sum of ICQ items 16, 17",
+  "icqSoberPrimary54": "Sum of ICQ items 16, 17",
+
+  "icqFactorSevenPrimary30": "Sum of ICQ items 04, 18",
+  "icqFactorSevenPrimary36": "Sum of ICQ items 04, 18",
+  "icqFactorSevenPrimary42": "Sum of ICQ items 04, 18",
+  "icqFactorSevenPrimary54": "Sum of ICQ items 04, 18",
+
+  "icqDifficultParentingPartner30": "Sum of ICQ items 01, 05, 06, 12, 13, 21, 32",
+  "icqDifficultParentingPartner36": "Sum of ICQ items 01, 05, 06, 12, 13, 21, 32",
+  "icqDifficultParentingPartner42": "Sum of ICQ items 01, 05, 06, 12, 13, 21, 32",
+  "icqDifficultParentingPartner54": "Sum of ICQ items 01, 05, 06, 12, 13, 21, 32",
+
+  "icqUnadaptableParentingPartner30": "Sum of ICQ items 09, 10, 11, 20, 22",
+  "icqUnadaptableParentingPartner36": "Sum of ICQ items 09, 10, 11, 20, 22",
+  "icqUnadaptableParentingPartner42": "Sum of ICQ items 09, 10, 11, 20, 22",
+  "icqUnadaptableParentingPartner54": "Sum of ICQ items 09, 10, 11, 20, 22",
+
+  "icqResistantToControlParentingPartner30": "Sum of ICQ items 28, 29, 30",
+  "icqResistantToControlParentingPartner36": "Sum of ICQ items 28, 29, 30",
+  "icqResistantToControlParentingPartner42": "Sum of ICQ items 28, 29, 30",
+  "icqResistantToControlParentingPartner54": "Sum of ICQ items 28, 29, 30",
+
+  "icqUnstoppableParentingPartner30": "Sum of ICQ items 26, 28, 29",
+  "icqUnstoppableParentingPartner36": "Sum of ICQ items 26, 28, 29",
+  "icqUnstoppableParentingPartner42": "Sum of ICQ items 26, 28, 29",
+  "icqUnstoppableParentingPartner54": "Sum of ICQ items 26, 28, 29",
+
+  "icqDependentParentingPartner30": "Sum of ICQ items 23, 24",
+  "icqDependentParentingPartner36": "Sum of ICQ items 23, 24",
+  "icqDependentParentingPartner42": "Sum of ICQ items 23, 24",
+  "icqDependentParentingPartner54": "Sum of ICQ items 23, 24",
+
+  "icqIrregularParentingPartner30": "Sum of ICQ items 02, 03",
+  "icqIrregularParentingPartner36": "Sum of ICQ items 02, 03",
+  "icqIrregularParentingPartner42": "Sum of ICQ items 02, 03",
+  "icqIrregularParentingPartner54": "Sum of ICQ items 02, 03",
+
+  "icqSoberParentingPartner30": "Sum of ICQ items 16, 17",
+  "icqSoberParentingPartner36": "Sum of ICQ items 16, 17",
+  "icqSoberParentingPartner42": "Sum of ICQ items 16, 17",
+  "icqSoberParentingPartner54": "Sum of ICQ items 16, 17",
+
+  "icqFactorSevenParentingPartner30": "Sum of ICQ items 04, 18",
+  "icqFactorSevenParentingPartner36": "Sum of ICQ items 04, 18",
+  "icqFactorSevenParentingPartner42": "Sum of ICQ items 04, 18",
+  "icqFactorSevenParentingPartner54": "Sum of ICQ items 04, 18",
+
+  "icqDifficultSecondary30": "Sum of ICQ items 01, 05, 06, 12, 13, 21, 32",
+  "icqDifficultSecondary36": "Sum of ICQ items 01, 05, 06, 12, 13, 21, 32",
+  "icqDifficultSecondary42": "Sum of ICQ items 01, 05, 06, 12, 13, 21, 32",
+  "icqDifficultSecondary54": "Sum of ICQ items 01, 05, 06, 12, 13, 21, 32",
+
+  "icqUnadaptableSecondary30": "Sum of ICQ items 09, 10, 11, 20, 22",
+  "icqUnadaptableSecondary36": "Sum of ICQ items 09, 10, 11, 20, 22",
+  "icqUnadaptableSecondary42": "Sum of ICQ items 09, 10, 11, 20, 22",
+  "icqUnadaptableSecondary54": "Sum of ICQ items 09, 10, 11, 20, 22",
+
+  "icqResistantToControlSecondary30": "Sum of ICQ items 28, 29, 30",
+  "icqResistantToControlSecondary36": "Sum of ICQ items 28, 29, 30",
+  "icqResistantToControlSecondary42": "Sum of ICQ items 28, 29, 30",
+  "icqResistantToControlSecondary54": "Sum of ICQ items 28, 29, 30",
+
+  "icqUnstoppableSecondary30": "Sum of ICQ items 26, 28, 29",
+  "icqUnstoppableSecondary36": "Sum of ICQ items 26, 28, 29",
+  "icqUnstoppableSecondary42": "Sum of ICQ items 26, 28, 29",
+  "icqUnstoppableSecondary54": "Sum of ICQ items 26, 28, 29",
+
+  "icqDependentSecondary30": "Sum of ICQ items 23, 24",
+  "icqDependentSecondary36": "Sum of ICQ items 23, 24",
+  "icqDependentSecondary42": "Sum of ICQ items 23, 24",
+  "icqDependentSecondary54": "Sum of ICQ items 23, 24",
+
+  "icqIrregularSecondary30": "Sum of ICQ items 02, 03",
+  "icqIrregularSecondary36": "Sum of ICQ items 02, 03",
+  "icqIrregularSecondary42": "Sum of ICQ items 02, 03",
+  "icqIrregularSecondary54": "Sum of ICQ items 02, 03",
+
+  "icqSoberSecondary30": "Sum of ICQ items 16, 17",
+  "icqSoberSecondary36": "Sum of ICQ items 16, 17",
+  "icqSoberSecondary42": "Sum of ICQ items 16, 17",
+  "icqSoberSecondary54": "Sum of ICQ items 16, 17",
+
+  "icqFactorSevenSecondary30": "Sum of ICQ items 04, 18",
+  "icqFactorSevenSecondary36": "Sum of ICQ items 04, 18",
+  "icqFactorSevenSecondary42": "Sum of ICQ items 04, 18",
+  "icqFactorSevenSecondary54": "Sum of ICQ items 04, 18",
+
+  "icqDifficultPrimaryMean30": "Mean of icqDifficultPrimary30, 36, 42",
+  "icqDifficultPrimaryMean36": "Mean of icqDifficultPrimary30, 36, 42",
+  "icqDifficultPrimaryMean42": "Mean of icqDifficultPrimary30, 36, 42",
+  "icqDifficultPrimaryMean54": "Mean of icqDifficultPrimary30, 36, 42",
+
+  "icqUnadaptablePrimaryMean30": "Mean of icqUnadaptablePrimary30, 36, 42",
+  "icqUnadaptablePrimaryMean36": "Mean of icqUnadaptablePrimary30, 36, 42",
+  "icqUnadaptablePrimaryMean42": "Mean of icqUnadaptablePrimary30, 36, 42",
+  "icqUnadaptablePrimaryMean54": "Mean of icqUnadaptablePrimary30, 36, 42",
+
+  "icqResistantToControlPrimaryMean30": "Mean of icqResistantToControlPrimary30, 36, 42",
+  "icqResistantToControlPrimaryMean36": "Mean of icqResistantToControlPrimary30, 36, 42",
+  "icqResistantToControlPrimaryMean42": "Mean of icqResistantToControlPrimary30, 36, 42",
+  "icqResistantToControlPrimaryMean54": "Mean of icqResistantToControlPrimary30, 36, 42",
+
+  "icqUnstoppablePrimaryMean30": "Mean of icqUnstoppablePrimary30, 36, 42",
+  "icqUnstoppablePrimaryMean36": "Mean of icqUnstoppablePrimary30, 36, 42",
+  "icqUnstoppablePrimaryMean42": "Mean of icqUnstoppablePrimary30, 36, 42",
+  "icqUnstoppablePrimaryMean54": "Mean of icqUnstoppablePrimary30, 36, 42",
+
+  "icqDependentPrimaryMean30": "Mean of icqDependentPrimary30, 36, 42",
+  "icqDependentPrimaryMean36": "Mean of icqDependentPrimary30, 36, 42",
+  "icqDependentPrimaryMean42": "Mean of icqDependentPrimary30, 36, 42",
+  "icqDependentPrimaryMean54": "Mean of icqDependentPrimary30, 36, 42",
+
+  "icqIrregularPrimaryMean30": "Mean of icqIrregularPrimary30, 36, 42",
+  "icqIrregularPrimaryMean36": "Mean of icqIrregularPrimary30, 36, 42",
+  "icqIrregularPrimaryMean42": "Mean of icqIrregularPrimary30, 36, 42",
+  "icqIrregularPrimaryMean54": "Mean of icqIrregularPrimary30, 36, 42",
+
+  "icqSoberPrimaryMean30": "Mean of icqSoberPrimary30, 36, 42",
+  "icqSoberPrimaryMean36": "Mean of icqSoberPrimary30, 36, 42",
+  "icqSoberPrimaryMean42": "Mean of icqSoberPrimary30, 36, 42",
+  "icqSoberPrimaryMean54": "Mean of icqSoberPrimary30, 36, 42",
+
+  "icqFactorSevenPrimaryMean30": "Mean of icqFactorSevenPrimary30, 36, 42",
+  "icqFactorSevenPrimaryMean36": "Mean of icqFactorSevenPrimary30, 36, 42",
+  "icqFactorSevenPrimaryMean42": "Mean of icqFactorSevenPrimary30, 36, 42",
+  "icqFactorSevenPrimaryMean54": "Mean of icqFactorSevenPrimary30, 36, 42",
+
+  "icqDifficultParentingPartnerMean30": "Mean of icqDifficultParentingPartner30, 36, 42",
+  "icqDifficultParentingPartnerMean36": "Mean of icqDifficultParentingPartner30, 36, 42",
+  "icqDifficultParentingPartnerMean42": "Mean of icqDifficultParentingPartner30, 36, 42",
+  "icqDifficultParentingPartnerMean54": "Mean of icqDifficultParentingPartner30, 36, 42",
+
+  "icqUnadaptableParentingPartnerMean30": "Mean of icqUnadaptableParentingPartner30, 36, 42",
+  "icqUnadaptableParentingPartnerMean36": "Mean of icqUnadaptableParentingPartner30, 36, 42",
+  "icqUnadaptableParentingPartnerMean42": "Mean of icqUnadaptableParentingPartner30, 36, 42",
+  "icqUnadaptableParentingPartnerMean54": "Mean of icqUnadaptableParentingPartner30, 36, 42",
+
+  "icqResistantToControlParentingPartnerMean30": "Mean of icqResistantToControlParentingPartner30, 36, 42",
+  "icqResistantToControlParentingPartnerMean36": "Mean of icqResistantToControlParentingPartner30, 36, 42",
+  "icqResistantToControlParentingPartnerMean42": "Mean of icqResistantToControlParentingPartner30, 36, 42",
+  "icqResistantToControlParentingPartnerMean54": "Mean of icqResistantToControlParentingPartner30, 36, 42",
+
+  "icqUnstoppableParentingPartnerMean30": "Mean of icqUnstoppableParentingPartner30, 36, 42",
+  "icqUnstoppableParentingPartnerMean36": "Mean of icqUnstoppableParentingPartner30, 36, 42",
+  "icqUnstoppableParentingPartnerMean42": "Mean of icqUnstoppableParentingPartner30, 36, 42",
+  "icqUnstoppableParentingPartnerMean54": "Mean of icqUnstoppableParentingPartner30, 36, 42",
+
+  "icqDependentParentingPartnerMean30": "Mean of icqDependentParentingPartner30, 36, 42",
+  "icqDependentParentingPartnerMean36": "Mean of icqDependentParentingPartner30, 36, 42",
+  "icqDependentParentingPartnerMean42": "Mean of icqDependentParentingPartner30, 36, 42",
+  "icqDependentParentingPartnerMean54": "Mean of icqDependentParentingPartner30, 36, 42",
+
+  "icqIrregularParentingPartnerMean30": "Mean of icqIrregularParentingPartner30, 36, 42",
+  "icqIrregularParentingPartnerMean36": "Mean of icqIrregularParentingPartner30, 36, 42",
+  "icqIrregularParentingPartnerMean42": "Mean of icqIrregularParentingPartner30, 36, 42",
+  "icqIrregularParentingPartnerMean54": "Mean of icqIrregularParentingPartner30, 36, 42",
+
+  "icqSoberParentingPartnerMean30": "Mean of icqSoberParentingPartner30, 36, 42",
+  "icqSoberParentingPartnerMean36": "Mean of icqSoberParentingPartner30, 36, 42",
+  "icqSoberParentingPartnerMean42": "Mean of icqSoberParentingPartner30, 36, 42",
+  "icqSoberParentingPartnerMean54": "Mean of icqSoberParentingPartner30, 36, 42",
+
+  "icqFactorSevenParentingPartnerMean30": "Mean of icqFactorSevenParentingPartner30, 36, 42",
+  "icqFactorSevenParentingPartnerMean36": "Mean of icqFactorSevenParentingPartner30, 36, 42",
+  "icqFactorSevenParentingPartnerMean42": "Mean of icqFactorSevenParentingPartner30, 36, 42",
+  "icqFactorSevenParentingPartnerMean54": "Mean of icqFactorSevenParentingPartner30, 36, 42",
+
+  "icqDifficultSecondaryMean30": "Mean of icqDifficultSecondary30, 36, 42",
+  "icqDifficultSecondaryMean36": "Mean of icqDifficultSecondary30, 36, 42",
+  "icqDifficultSecondaryMean42": "Mean of icqDifficultSecondary30, 36, 42",
+  "icqDifficultSecondaryMean54": "Mean of icqDifficultSecondary30, 36, 42",
+
+  "icqUnadaptableSecondaryMean30": "Mean of icqUnadaptableSecondary30, 36, 42",
+  "icqUnadaptableSecondaryMean36": "Mean of icqUnadaptableSecondary30, 36, 42",
+  "icqUnadaptableSecondaryMean42": "Mean of icqUnadaptableSecondary30, 36, 42",
+  "icqUnadaptableSecondaryMean54": "Mean of icqUnadaptableSecondary30, 36, 42",
+
+  "icqResistantToControlSecondaryMean30": "Mean of icqResistantToControlSecondary30, 36, 42",
+  "icqResistantToControlSecondaryMean36": "Mean of icqResistantToControlSecondary30, 36, 42",
+  "icqResistantToControlSecondaryMean42": "Mean of icqResistantToControlSecondary30, 36, 42",
+  "icqResistantToControlSecondaryMean54": "Mean of icqResistantToControlSecondary30, 36, 42",
+
+  "icqUnstoppableSecondaryMean30": "Mean of icqUnstoppableSecondary30, 36, 42",
+  "icqUnstoppableSecondaryMean36": "Mean of icqUnstoppableSecondary30, 36, 42",
+  "icqUnstoppableSecondaryMean42": "Mean of icqUnstoppableSecondary30, 36, 42",
+  "icqUnstoppableSecondaryMean54": "Mean of icqUnstoppableSecondary30, 36, 42",
+
+  "icqDependentSecondaryMean30": "Mean of icqDependentSecondary30, 36, 42",
+  "icqDependentSecondaryMean36": "Mean of icqDependentSecondary30, 36, 42",
+  "icqDependentSecondaryMean42": "Mean of icqDependentSecondary30, 36, 42",
+  "icqDependentSecondaryMean54": "Mean of icqDependentSecondary30, 36, 42",
+
+  "icqIrregularSecondaryMean30": "Mean of icqIrregularSecondary30, 36, 42",
+  "icqIrregularSecondaryMean36": "Mean of icqIrregularSecondary30, 36, 42",
+  "icqIrregularSecondaryMean42": "Mean of icqIrregularSecondary30, 36, 42",
+  "icqIrregularSecondaryMean54": "Mean of icqIrregularSecondary30, 36, 42",
+
+  "icqSoberSecondaryMean30": "Mean of icqSoberSecondary30, 36, 42",
+  "icqSoberSecondaryMean36": "Mean of icqSoberSecondary30, 36, 42",
+  "icqSoberSecondaryMean42": "Mean of icqSoberSecondary30, 36, 42",
+  "icqSoberSecondaryMean54": "Mean of icqSoberSecondary30, 36, 42",
+
+  "icqFactorSevenSecondaryMean30": "Mean of icqFactorSevenSecondary30, 36, 42",
+  "icqFactorSevenSecondaryMean36": "Mean of icqFactorSevenSecondary30, 36, 42",
+  "icqFactorSevenSecondaryMean42": "Mean of icqFactorSevenSecondary30, 36, 42",
+  "icqFactorSevenSecondaryMean54": "Mean of icqFactorSevenSecondary30, 36, 42",
+
+  "dasGeneralCognitiveAbility30": "Directly taken from gcat; standardized score with mean = 100, SD = 15",
+  "dasGeneralCognitiveAbility36": "Directly taken from gcat; standardized score with mean = 100, SD = 15",
+  "dasGeneralCognitiveAbility42": "Directly taken from gcat; standardized score with mean = 100, SD = 15",
+  "dasGeneralCognitiveAbility54": "Directly taken from gcat; standardized score with mean = 100, SD = 15",
+
+  "dasGeneralCognitiveAbilityPercentile30": "Directly taken from gcapct",
+  "dasGeneralCognitiveAbilityPercentile36": "Directly taken from gcapct",
+  "dasGeneralCognitiveAbilityPercentile42": "Directly taken from gcapct",
+  "dasGeneralCognitiveAbilityPercentile54": "Directly taken from gcapct",
+
+  "dasAbility30": "Mean of blocka, verba, pica, namea",
+  "dasAbility36": "Mean of blocka, verba, pica, namea",
+  "dasAbility42": "Mean of blocka, verba, pica, namea",
+  "dasAbility54": "Mean of blocka, verba, pica, namea",
+
+  "dasAbilityT30": "Mean of blockt, verbt, pict, namet",
+  "dasAbilityT36": "Mean of blockt, verbt, pict, namet",
+  "dasAbilityT42": "Mean of blockt, verbt, pict, namet",
+  "dasAbilityT54": "Mean of blockt, verbt, pict, namet",
+
+  "dasVerbalAbility30": "Mean of verba and namea",
+  "dasVerbalAbility36": "Mean of verba and namea",
+  "dasVerbalAbility42": "Mean of verba and namea",
+  "dasVerbalAbility54": "Mean of verba and namea",
+
+  "dasVerbalAbilityT30": "Mean of verbt and namet",
+  "dasVerbalAbilityT36": "Mean of verbt and namet",
+  "dasVerbalAbilityT42": "Mean of verbt and namet",
+  "dasVerbalAbilityT54": "Mean of verbt and namet",
+
+  "dasNonverbalAbility30": "Mean of blocka and pica",
+  "dasNonverbalAbility36": "Mean of blocka and pica",
+  "dasNonverbalAbility42": "Mean of blocka and pica",
+  "dasNonverbalAbility54": "Mean of blocka and pica",
+
+  "dasNonverbalAbilityT30": "Mean of blockt and pict",
+  "dasNonverbalAbilityT36": "Mean of blockt and pict",
+  "dasNonverbalAbilityT42": "Mean of blockt and pict",
+  "dasNonverbalAbilityT54": "Mean of blockt and pict",
 
   "childBehaviorToyProhibitionDeviation30": "(Touch Shelf + Plays Shelf Toys) / (Total Intervals - Table Play Intervals)",
   "childBehaviorToyProhibitionDeviation36": "(Touch Shelf + Plays Shelf Toys) / (Total Intervals - Table Play Intervals)",
@@ -4906,4 +6216,36 @@ export const variableComputations = {
   "napSleepMinutesSDChildWeek2Sadeh54": "Standard deviation of nap sleep minutes",
   "napActivityMeanSDChildWeek2Sadeh54": "Standard deviation of mean activity across Nap observations",
   "napActivityMedianSDChildWeek2Sadeh54": "Standard deviation of median activity across Nap observations",
+};
+
+export const variableCodings = {
+  "phsiStimulusShelter30": "1 = yes, 2 = no",
+  "phsiStimulusShelter36": "1 = yes, 2 = no",
+  "phsiStimulusShelter42": "1 = yes, 2 = no",
+  "phsiStimulusShelter54": "1 = yes, 2 = no",
+
+  "phsiScreen30": "1 = not on, 2 = on",
+  "phsiScreen36": "1 = not on, 2 = on",
+  "phsiScreen42": "1 = not on, 2 = on",
+  "phsiScreen54": "1 = not on, 2 = on",
+
+  "phsiClutter30": "1 = put away, 2 = piled, 3 = scattered",
+  "phsiClutter36": "1 = put away, 2 = piled, 3 = scattered",
+  "phsiClutter42": "1 = put away, 2 = piled, 3 = scattered",
+  "phsiClutter54": "1 = put away, 2 = piled, 3 = scattered",
+
+  "phsiClean30": "1 = clean, 2 = not clean",
+  "phsiClean36": "1 = clean, 2 = not clean",
+  "phsiClean42": "1 = clean, 2 = not clean",
+  "phsiClean54": "1 = clean, 2 = not clean",
+
+  "phsiOrganized30": "1 = organized through 4 = disorganized/chaotic",
+  "phsiOrganized36": "1 = organized through 4 = disorganized/chaotic",
+  "phsiOrganized42": "1 = organized through 4 = disorganized/chaotic",
+  "phsiOrganized54": "1 = organized through 4 = disorganized/chaotic",
+
+  "phsiFeel30": "1 = enjoyable through 4 = strained",
+  "phsiFeel36": "1 = enjoyable through 4 = strained",
+  "phsiFeel42": "1 = enjoyable through 4 = strained",
+  "phsiFeel54": "1 = enjoyable through 4 = strained",
 };

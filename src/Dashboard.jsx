@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useEffect } from "react";
 import { structure } from "./config/structure";
-import { variableDescriptions, variableComputations } from "./config/variableDescriptions";
+import { variableDescriptions, variableComputations, variableCodings } from "./config/variableDescriptions";
 import VariableDescription, {
   shouldShowVariableInTask,
   getFinalVariables,
@@ -15,20 +15,20 @@ const taskToVarMap = {
   "Adult Temperament Questionnaire": "atq",
   "BRIEF-A (Behavior Rating Inventory of Executive Function – Adult Version)":
     "brief",
-  "Changes + Adjustments Questionnaire": "chg",
+  "Changes + Adjustments Questionnaire": "caqsum",
   "Child Behavior Checklist": "cbcl",
   "Child Behavior Questionnaire": "cbq",
   "Child-Rearing Practices Report": "crpr",
-  "Children’s Sleep Habits Questionnaire": "cshq",
+  "Children's Sleep Habits Questionnaire": "cshq",
   "CHAOS Scale (Confusion, Hubbub, and Order Scale)": "chaos",
   "Depression Scale": "dep",
-  "DIFFER Cognitive Ability": "diff",
+  "Differential Ability Scale (DAS)": "das",
   "Eyberg Child Behavior Inventory": "ecbi",
   "Purdue Home Stimulation Inventory": "phsi",
   "Shipley Parent Cognition": "shipley",
   "Social Support Related": "socialsupport",
   "Teacher Questionnaires": "teach",
-  "Temperament Questionnaires": "temp",
+  "Temperament Questionnaires": "icq",
   Compliments: "comp",
   "Door Opening": "door",
   "Fruit Stroop": "fruit",
@@ -46,7 +46,7 @@ const taskToVarMap = {
   "Gift Delay": "gift",
   "Stop-Go": "stop",
   "Toy Frustration": "toyfrustration",
-  "Child Behavior FP": "cbfp",
+  "Child Behavior FP": "childbehaviorfreeplay",
   "Child Positive Affect": "childpositivetoy",
   "Child Negative Affect": "childnegativetoy",
   "Broken Toy Related": "brokentoy",
@@ -57,6 +57,7 @@ const taskToVarMap = {
   "EEG Bird Alligator": "eegbirdalligator",
   "Oddball Related": "oddball",
   "Fish Sharks Related": "fishsharks",
+  "Child Behavior Phone Call": "childbehaviorphonecall",
 };
 
 const whisperMasterVariables = ["30", "36", "42", "54"].flatMap((age) => [
@@ -953,6 +954,12 @@ const Dashboard = ({ data = null }) => {
                 <>
                   {"\n\n"}
                   <strong>Computation:</strong> {variableComputations[varInfoModal]}
+                </>
+              ) : null}
+              {variableCodings[varInfoModal] ? (
+                <>
+                  {"\n\n"}
+                  <strong>Coding:</strong> {variableCodings[varInfoModal]}
                 </>
               ) : null}
             </div>

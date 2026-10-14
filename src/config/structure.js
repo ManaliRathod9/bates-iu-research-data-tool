@@ -14,7 +14,7 @@ export const structure = {
     },
     {
       name: "Observations",
-      children: ["Observer Questionnaires", "Narratives"],
+      children: ["Observer Questionnaires"],
     },
     { name: "EEG Variables" },
     { name: "Actigraphy" },
@@ -53,10 +53,13 @@ export const structure = {
     ],
     "Mother / Child Tasks": [
       "Child Behavior FP",
+      "Child Behavior Phone Call",
+      "Child Compliance / Toy Clean Up",
       "Maternal Leave Taking",
       "Parent Positive Affect",
       "Parental Control",
       "Parent Sensitivity / Intrusiveness",
+      "Toy Prohibition",
     ],
 
     "Mother Questionnaires": [
@@ -69,7 +72,7 @@ export const structure = {
       "Children's Sleep Habits Questionnaire",
       "CHAOS Scale (Confusion, Hubbub, and Order Scale)",
       "Depression Scale",
-      "DIFFER Cognitive Ability",
+      "Differential Ability Scale (DAS)",
       "Eyberg Child Behavior Inventory",
       "Purdue Home Stimulation Inventory",
     ],
@@ -80,7 +83,6 @@ export const structure = {
     "Father Questionnaires": [],
 
     "Observer Questionnaires": ["Home Scale Items", "Observer Ratings"],
-    Narratives: [],
 
     Actigraphy: ["Child", "Parent", "Summary"],
 

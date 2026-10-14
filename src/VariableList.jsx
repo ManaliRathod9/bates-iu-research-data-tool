@@ -9,20 +9,20 @@ const taskToVarMap = {
   "Adult Temperament Questionnaire": "atq",
   "BRIEF-A (Behavior Rating Inventory of Executive Function – Adult Version)":
     "brief",
-  "Changes + Adjustments Questionnaire": "chg",
+  "Changes + Adjustments Questionnaire": "caqsum",
   "Child Behavior Checklist": "cbcl",
   "Child Behavior Questionnaire": "cbq",
   "Child-Rearing Practices Report": "crpr",
-  "Children’s Sleep Habits Questionnaire": "cshq",
+  "Children's Sleep Habits Questionnaire": "cshq",
   "CHAOS Scale (Confusion, Hubbub, and Order Scale)": "chaos",
   "Depression Scale": "dep",
-  "DIFFER Cognitive Ability": "diff",
+  "Differential Ability Scale (DAS)": "das",
   "Eyberg Child Behavior Inventory": "ecbi",
   "Purdue Home Stimulation Inventory": "phsi",
   "Shipley Parent Cognition": "shipley",
   "Social Support Related": "socialsupport",
   "Teacher Questionnaires": "teach",
-  "Temperament Questionnaires": "temp",
+  "Temperament Questionnaires": "icq",
   Compliments: "comp",
   "Door Opening": "door",
   "Fruit Stroop": "fruit",
@@ -40,7 +40,7 @@ const taskToVarMap = {
   "Gift Delay": "gift",
   "Stop-Go": "stop",
   "Toy Frustration": "toyfrustration",
-  "Child Behavior FP": "cbfp",
+  "Child Behavior FP": "childbehaviorfreeplay",
   "Child Positive Affect": "childpositivetoy",
   "Child Negative Affect": "childnegativetoy",
   "Broken Toy Related": "brokentoy",
@@ -51,6 +51,7 @@ const taskToVarMap = {
   "EEG Bird Alligator": "eegbirdalligator",
   "Oddball Related": "oddball",
   "Fish Sharks Related": "fishsharks",
+  "Child Behavior Phone Call": "childbehaviorphonecall",
 };
 
 const classifySleepVariable = (vLower) => {
@@ -86,6 +87,10 @@ const isSleepObservationCountVariable = (vLower) =>
 
 export const getCorrectTasksForVariable = (v) => {
   const vLower = v.toLowerCase();
+
+  if (vLower.startsWith("cshq")) {
+    return ["Children's Sleep Habits Questionnaire"];
+  }
 
   if (
     vLower.startsWith("complimentschildpresent") ||
@@ -207,7 +212,11 @@ export const getCorrectTasksForVariable = (v) => {
     return ["Teacher Questionnaires"];
   }
 
-  if (vLower.startsWith("icq") && !vLower.startsWith("icqdifficult")) {
+  if (vLower.startsWith("icqdifficult")) {
+    return ["Temperament Questionnaires"];
+  }
+
+  if (vLower.startsWith("icq")) {
     return ["Temperament Questionnaires"];
   }
 
@@ -219,11 +228,8 @@ export const getCorrectTasksForVariable = (v) => {
     return ["Fish Sharks Related"];
   }
 
-  if (
-    vLower.startsWith("icqdifficult") ||
-    (vLower.startsWith("preschooldemographics") && !vLower.startsWith("preschooldemographicssibling"))
-  ) {
-    return ["DIFFER Cognitive Ability"];
+  if (/^das(generalcognitiveability|generalcognitiveabilitypercentile|ability|abilityt|verbalability|verbalabilityt|nonverbalability|nonverbalabilityt)(30|36|42|54)$/.test(vLower)) {
+    return ["Differential Ability Scale (DAS)"];
   }
 
   if (
@@ -260,6 +266,10 @@ export const getCorrectTasksForVariable = (v) => {
 
   if (vLower.startsWith("eyberg") || vLower.startsWith("ecbi")) {
     return ["Eyberg Child Behavior Inventory"];
+  }
+
+  if (vLower.startsWith("caqsum")) {
+    return ["Changes + Adjustments Questionnaire"];
   }
 
   if (vLower.startsWith("childbehaviorfreeplay")) {
@@ -300,6 +310,14 @@ export const getCorrectTasksForVariable = (v) => {
 
   if (vLower.startsWith("toyfrustration")) {
     return ["Toy Frustration"];
+  }
+
+  if (vLower.startsWith("childbehaviorphonecallplaysshelftoysp")) {
+    return ["BehaviorPhoneCallPlays", "Child Behavior Phone Call"];
+  }
+
+  if (vLower.startsWith("childbehaviorphonecall")) {
+    return ["Child Behavior Phone Call"];
   }
 
   if (vLower.startsWith("toy") || vLower.includes("toy")) {
@@ -382,6 +400,10 @@ export const shouldShowVariableInTask = (variableName, selectedCategory, selecte
     if (anyCorrectTaskExists) {
       return false;
     }
+  }
+
+  if (selectedTask === "Differential Ability Scale (DAS)") {
+    return false;
   }
 
   if (selectedTask === "Parent Sensitivity / Intrusiveness") {
@@ -569,37 +591,13 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
     return { l1Category: l1, l2Timepoint: "Composites", l3Group: l3 };
   }
 
-  if (selectedTask === "DIFFER Cognitive Ability") {
-    const l1 = "DIFFER Cognitive Ability";
-
-    let age = "Other";
-    if (vLower.endsWith("30")) age = "Age 30";
-    else if (vLower.endsWith("36")) age = "Age 36";
-    else if (vLower.endsWith("42")) age = "Age 42";
-    else if (vLower.endsWith("54")) age = "Age 54";
-
-    if (vLower.startsWith("birdalligator")) {
-      return { l1Category: l1, l2Timepoint: "Bird Alligator Related", l3Group: age };
-    }
-    if (vLower.startsWith("icqdifficult")) {
-      if (vLower.includes("mean")) {
-        return {
-          l1Category: l1,
-          l2Timepoint: "ICQ Difficult Related",
-          l3Group: "ICQ Longitudinal Means",
-        };
-      }
-      return {
-        l1Category: l1,
-        l2Timepoint: "ICQ Difficult Related",
-        l3Group: "ICQ Composites",
-        l4Group: age,
-      };
-    }
-    if (vLower.startsWith("preschooldemographics")) {
-      return { l1Category: l1, l2Timepoint: "Preschool Demographics Related", l3Group: age };
-    }
-    return { l1Category: "Needs Review / Other Related Variables", l2Timepoint: "Other" };
+  if (selectedTask === "Differential Ability Scale (DAS)") {
+    let l3 = "Other";
+    if (vLower.endsWith("30")) l3 = "Age 30";
+    else if (vLower.endsWith("36")) l3 = "Age 36";
+    else if (vLower.endsWith("42")) l3 = "Age 42";
+    else if (vLower.endsWith("54")) l3 = "Age 54";
+    return { l1Category: selectedTask, l2Timepoint: "Composites", l3Group: l3 };
   }
 
   if (selectedTask === "Home Scale Items") {
@@ -758,6 +756,94 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
     else if (vLower.endsWith("mean")) l2 = "Mean";
 
     return { l1Category: "EEG Bird Alligator Variables", l2Timepoint: l2 };
+  }
+
+  if (selectedTask === "Temperament Questionnaires") {
+    if (!vLower.startsWith("icq")) {
+      return { l1Category: "Needs Review / Other Related Variables", l2Timepoint: "Other" };
+    }
+    const isMean = /mean(30|36|42|54)$/.test(vLower);
+    let l3 = "Other";
+    if (vLower.endsWith("30")) l3 = "Age 30";
+    else if (vLower.endsWith("36")) l3 = "Age 36";
+    else if (vLower.endsWith("42")) l3 = "Age 42";
+    else if (vLower.endsWith("54")) l3 = "Age 54";
+    return {
+      l1Category: "Infant Characteristics Questionnaire (ICQ)",
+      l2Timepoint: isMean ? "ICQ Longitudinal Mean Composites" : "ICQ Composites - Age-Specific Scores",
+      l3Group: l3,
+    };
+  }
+
+  if (selectedTask === "Purdue Home Stimulation Inventory") {
+    if (!vLower.startsWith("phsi")) {
+      return { l1Category: "Needs Review / Other Related Variables", l2Timepoint: "Other" };
+    }
+    const isComposite =
+      vLower.startsWith("phsiavenoise") ||
+      vLower.startsWith("phsitotalpeople") ||
+      vLower.startsWith("phsicrowdedness");
+    let l3 = "Other";
+    if (vLower.endsWith("30")) l3 = "Age 30";
+    else if (vLower.endsWith("36")) l3 = "Age 36";
+    else if (vLower.endsWith("42")) l3 = "Age 42";
+    else if (vLower.endsWith("54")) l3 = "Age 54";
+    return {
+      l1Category: `${selectedTask} Task`,
+      l2Timepoint: isComposite ? "Composites / Derived Variables" : "Regular / Direct Measures Retained",
+      l3Group: l3,
+    };
+  }
+
+  if (selectedTask === "Children's Sleep Habits Questionnaire") {
+    if (!vLower.startsWith("cshq")) {
+      return { l1Category: "Needs Review / Other Related Variables", l2Timepoint: "Other" };
+    }
+    const isRegular = /^cshq(4|12)(30|36|42|54)$/.test(vLower);
+    let l3 = "Other";
+    if (vLower.endsWith("30")) l3 = "Age 30";
+    else if (vLower.endsWith("36")) l3 = "Age 36";
+    else if (vLower.endsWith("42")) l3 = "Age 42";
+    else if (vLower.endsWith("54")) l3 = "Age 54";
+    return {
+      l1Category: `${selectedTask} Task`,
+      l2Timepoint: isRegular ? "Regular / Co-Sleeping Items" : "Composites",
+      l3Group: l3,
+    };
+  }
+
+  if (selectedTask === "Changes + Adjustments Questionnaire") {
+    if (!vLower.startsWith("caqsum")) {
+      return { l1Category: "Needs Review / Other Related Variables", l2Timepoint: "Other" };
+    }
+    let l3 = "Other";
+    if (vLower.endsWith("30")) l3 = "Age 30";
+    else if (vLower.endsWith("36")) l3 = "Age 36";
+    else if (vLower.endsWith("42")) l3 = "Age 42";
+    else if (vLower.endsWith("54")) l3 = "Age 54";
+    return { l1Category: `${selectedTask} Task`, l2Timepoint: "Composites", l3Group: l3 };
+  }
+
+  if (selectedTask === "Child Behavior FP") {
+    const l1 = `${selectedTask} Task`;
+    const l2 = vLower.startsWith("childbehaviorfreeplaychildpres") ? "Regular Variables" : "Composites";
+    let l3 = "Other";
+    if (vLower.endsWith("30")) l3 = "Age 30";
+    else if (vLower.endsWith("36")) l3 = "Age 36";
+    else if (vLower.endsWith("42")) l3 = "Age 42";
+    else if (vLower.endsWith("54")) l3 = "Age 54";
+    return { l1Category: l1, l2Timepoint: l2, l3Group: l3 };
+  }
+
+  if (selectedTask === "Child Behavior Phone Call") {
+    const l1 = `${selectedTask} Task`;
+    const l2 = vLower.startsWith("childbehaviorphonecallchildpres") ? "Regular Variables" : "Composites";
+    let l3 = "Other";
+    if (vLower.endsWith("30")) l3 = "Age 30";
+    else if (vLower.endsWith("36")) l3 = "Age 36";
+    else if (vLower.endsWith("42")) l3 = "Age 42";
+    else if (vLower.endsWith("54")) l3 = "Age 54";
+    return { l1Category: l1, l2Timepoint: l2, l3Group: l3 };
   }
 
   if (selectedTask === "Oddball Related" || selectedTask === "Fish Sharks Related") {
@@ -1251,45 +1337,6 @@ export const groupVariablesBySubcategory = (variables, selectedCategory, selecte
     });
   }
 
-  if (groups["DIFFER Cognitive Ability"]) {
-    const differL2Order = {
-      "ICQ Difficult Related": 0,
-      "Preschool Demographics Related": 1,
-    };
-    const differL3Order = {
-      "ICQ Composites": 0,
-      "ICQ Longitudinal Means": 1,
-    };
-    const l1Data = groups["DIFFER Cognitive Ability"];
-
-    const entries = Object.keys(l1Data).map((k, i) => [k, i]);
-    entries.sort((a, b) => {
-      const ra = a[0] in differL2Order ? differL2Order[a[0]] : 99;
-      const rb = b[0] in differL2Order ? differL2Order[b[0]] : 99;
-      return ra !== rb ? ra - rb : a[1] - b[1];
-    });
-    const reordered = {};
-    entries.forEach(([k]) => {
-      reordered[k] = l1Data[k];
-    });
-    groups["DIFFER Cognitive Ability"] = reordered;
-
-    const icq = reordered["ICQ Difficult Related"];
-    if (icq && !Array.isArray(icq)) {
-      const icqEntries = Object.keys(icq).map((k, i) => [k, i]);
-      icqEntries.sort((a, b) => {
-        const ra = a[0] in differL3Order ? differL3Order[a[0]] : 99;
-        const rb = b[0] in differL3Order ? differL3Order[b[0]] : 99;
-        return ra !== rb ? ra - rb : a[1] - b[1];
-      });
-      const icqReordered = {};
-      icqEntries.forEach(([k]) => {
-        icqReordered[k] = icq[k];
-      });
-      reordered["ICQ Difficult Related"] = icqReordered;
-    }
-  }
-
   const ageGroupOrder = { "Age 30": 0, "Age 36": 1, "Age 42": 2, "Age 54": 3 };
   const sortAgeGroupsByFamily = (l1Data, familyOrder, toFamily) => {
     const familyRank = (v) => {
@@ -1394,6 +1441,171 @@ export const groupVariablesBySubcategory = (variables, selectedCategory, selecte
         "postobservationratingscalepositiveemotionality",
         "postobservationratingscalenegativeemotionality",
         "postobservationratingscaleregulation",
+      ],
+      (v) => v.replace(/(30|36|42|54)$/, "")
+    );
+  }
+
+  const icqRoot = "Infant Characteristics Questionnaire (ICQ)";
+  if (groups[icqRoot]) {
+    const icqL2Order = { "ICQ Composites - Age-Specific Scores": 0, "ICQ Longitudinal Mean Composites": 1 };
+    const entries = Object.keys(groups[icqRoot]).map((k, i) => [k, i]);
+    entries.sort((a, b) => {
+      const ra = a[0] in icqL2Order ? icqL2Order[a[0]] : 99;
+      const rb = b[0] in icqL2Order ? icqL2Order[b[0]] : 99;
+      return ra !== rb ? ra - rb : a[1] - b[1];
+    });
+    const reordered = {};
+    entries.forEach(([k]) => {
+      reordered[k] = groups[icqRoot][k];
+    });
+    groups[icqRoot] = reordered;
+    sortAgeGroupsByFamily(
+      reordered,
+      [
+        "icqdifficultprimary",
+        "icqunadaptableprimary",
+        "icqresistanttocontrolprimary",
+        "icqunstoppableprimary",
+        "icqdependentprimary",
+        "icqirregularprimary",
+        "icqsoberprimary",
+        "icqfactorsevenprimary",
+        "icqdifficultparentingpartner",
+        "icqunadaptableparentingpartner",
+        "icqresistanttocontrolparentingpartner",
+        "icqunstoppableparentingpartner",
+        "icqdependentparentingpartner",
+        "icqirregularparentingpartner",
+        "icqsoberparentingpartner",
+        "icqfactorsevenparentingpartner",
+        "icqdifficultsecondary",
+        "icqunadaptablesecondary",
+        "icqresistanttocontrolsecondary",
+        "icqunstoppablesecondary",
+        "icqdependentsecondary",
+        "icqirregularsecondary",
+        "icqsobersecondary",
+        "icqfactorsevensecondary",
+      ],
+      (v) => v.replace(/(mean)?(30|36|42|54)$/, "")
+    );
+  }
+
+  const phsiTask = "Purdue Home Stimulation Inventory Task";
+  if (groups[phsiTask]) {
+    const phsiL2Order = { "Regular / Direct Measures Retained": 0, "Composites / Derived Variables": 1 };
+    const entries = Object.keys(groups[phsiTask]).map((k, i) => [k, i]);
+    entries.sort((a, b) => {
+      const ra = a[0] in phsiL2Order ? phsiL2Order[a[0]] : 99;
+      const rb = b[0] in phsiL2Order ? phsiL2Order[b[0]] : 99;
+      return ra !== rb ? ra - rb : a[1] - b[1];
+    });
+    const reordered = {};
+    entries.forEach(([k]) => {
+      reordered[k] = groups[phsiTask][k];
+    });
+    groups[phsiTask] = reordered;
+    sortAgeGroupsByFamily(
+      reordered,
+      [
+        "phsistimulusshelter",
+        "phsiscreen",
+        "phsiclutter",
+        "phsiclean",
+        "phsiorganized",
+        "phsifeel",
+        "phsiavenoise",
+        "phsitotalpeople",
+        "phsicrowdedness",
+      ],
+      (v) => v.replace(/(30|36|42|54)$/, "")
+    );
+  }
+
+  const cshqTask = "Children's Sleep Habits Questionnaire Task";
+  if (groups[cshqTask]) {
+    const cshqL2Order = { "Regular / Co-Sleeping Items": 0, Composites: 1 };
+    const entries = Object.keys(groups[cshqTask]).map((k, i) => [k, i]);
+    entries.sort((a, b) => {
+      const ra = a[0] in cshqL2Order ? cshqL2Order[a[0]] : 99;
+      const rb = b[0] in cshqL2Order ? cshqL2Order[b[0]] : 99;
+      return ra !== rb ? ra - rb : a[1] - b[1];
+    });
+    const reordered = {};
+    entries.forEach(([k]) => {
+      reordered[k] = groups[cshqTask][k];
+    });
+    groups[cshqTask] = reordered;
+    sortAgeGroupsByFamily(
+      reordered,
+      [
+        "cshq4",
+        "cshq12",
+        "cshqbedtimeresistance",
+        "cshqsleeponsetdelay",
+        "cshqsleepduration",
+        "cshqsleepanxiety",
+        "cshqnightwakings",
+        "cshqparasomnias",
+        "cshqsleepdisorderedbreathing",
+        "cshqdaytimesleepiness",
+        "cshqtotalsleepdisturbancemean",
+        "cshqtotalsleepdisturbancesum",
+      ],
+      (v) => v.replace(/(30|36|42|54)$/, "")
+    );
+  }
+
+  if (groups["Child Behavior FP Task"]) {
+    sortAgeGroupsByFamily(
+      groups["Child Behavior FP Task"],
+      [
+        "childbehaviorfreeplaychildpres",
+        "childbehaviorfreeplaydeviation",
+        "childbehaviorfreeplaynoncompliance",
+        "childbehaviorfreeplaytableplayp",
+        "childbehaviorfreeplayotherp",
+        "childbehaviorfreeplayseekparentp",
+        "childbehaviorfreeplaylookatshelfp",
+        "childbehaviorfreeplaytouchshelfp",
+        "childbehaviorfreeplayplaysshelftoysp",
+      ],
+      (v) => v.replace(/\d+$/, "")
+    );
+  }
+
+  if (groups["Child Behavior Phone Call Task"]) {
+    sortAgeGroupsByFamily(
+      groups["Child Behavior Phone Call Task"],
+      [
+        "childbehaviorphonecallchildpres",
+        "childbehaviorphonecalldeviation",
+        "childbehaviorphonecallnoncompliance",
+        "childbehaviorphonecalltableplayp",
+        "childbehaviorphonecallotherp",
+        "childbehaviorphonecallseekparentp",
+        "childbehaviorphonecalllookatshelfp",
+        "childbehaviorphonecalltouchshelfp",
+        "childbehaviorphonecallplaysshelftoysp",
+      ],
+      (v) => v.replace(/\d+$/, "")
+    );
+  }
+
+  const dasTask = "Differential Ability Scale (DAS)";
+  if (groups[dasTask]) {
+    sortAgeGroupsByFamily(
+      groups[dasTask],
+      [
+        "dasgeneralcognitiveability",
+        "dasgeneralcognitiveabilitypercentile",
+        "dasability",
+        "dasabilityt",
+        "dasverbalability",
+        "dasverbalabilityt",
+        "dasnonverbalability",
+        "dasnonverbalabilityt",
       ],
       (v) => v.replace(/(30|36|42|54)$/, "")
     );
