@@ -1,6 +1,7 @@
 import React, { useState, useMemo, useEffect } from "react";
 import { structure } from "./config/structure";
 import { variableDescriptions, variableComputations, variableCodings } from "./config/variableDescriptions";
+import { motherExecutiveFunctionVariables } from "./config/motherExecutiveFunction";
 import VariableDescription, {
   shouldShowVariableInTask,
   getFinalVariables,
@@ -16,6 +17,9 @@ const taskToVarMap = {
   "BRIEF-A (Behavior Rating Inventory of Executive Function – Adult Version)":
     "brief",
   "Changes + Adjustments Questionnaire": "caqsum",
+  "Parenting Events": "parentingevents",
+  "Parenting Scale": "parentingscale",
+  "Social Competence Scale": "socialcompetencemean",
   "Child Behavior Checklist": "cbcl",
   "Child Behavior Questionnaire": "cbq",
   "Child-Rearing Practices Report": "crpr",
@@ -191,7 +195,9 @@ const Dashboard = ({ data = null }) => {
   const filteredVariables = useMemo(() => {
     let vars = rawVariables;
 
-    if (selectedTask) {
+    if (selectedTask === "Mother Executive Function Tests") {
+      vars = vars.filter((v) => motherExecutiveFunctionVariables.has(v.trim()));
+    } else if (selectedTask) {
       const keyword =
         taskToVarMap[selectedTask] || selectedTask.toLowerCase().split(" ")[0];
       vars = vars.filter((v) =>

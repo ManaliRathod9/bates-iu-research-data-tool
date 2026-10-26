@@ -1,6 +1,10 @@
 import React, { useMemo } from "react";
 import { structure } from "./config/structure";
 import { variableDescriptions } from "./config/variableDescriptions";
+import {
+  motherExecutiveFunctionGroups,
+  motherExecutiveFunctionVariables,
+} from "./config/motherExecutiveFunction";
 
 const taskToVarMap = {
   "Bird Alligator": "birdalligator",
@@ -10,6 +14,9 @@ const taskToVarMap = {
   "BRIEF-A (Behavior Rating Inventory of Executive Function – Adult Version)":
     "brief",
   "Changes + Adjustments Questionnaire": "caqsum",
+  "Parenting Events": "parentingevents",
+  "Parenting Scale": "parentingscale",
+  "Social Competence Scale": "socialcompetencemean",
   "Child Behavior Checklist": "cbcl",
   "Child Behavior Questionnaire": "cbq",
   "Child-Rearing Practices Report": "crpr",
@@ -113,7 +120,12 @@ export const getCorrectTasksForVariable = (v) => {
     ];
   }
 
-  if (vLower.startsWith("toh") || vLower.startsWith("wcst") || vLower.startsWith("exp24")) {
+  if (
+    vLower.startsWith("mtstroop") ||
+    vLower.startsWith("toh") ||
+    vLower.startsWith("wcst") ||
+    vLower.startsWith("exp24")
+  ) {
     return ["Mother Executive Function Tests"];
   }
 
@@ -272,6 +284,18 @@ export const getCorrectTasksForVariable = (v) => {
     return ["Changes + Adjustments Questionnaire"];
   }
 
+  if (vLower.startsWith("parentingevents")) {
+    return ["Parenting Events"];
+  }
+
+  if (vLower.startsWith("parentingscale")) {
+    return ["Parenting Scale"];
+  }
+
+  if (vLower.startsWith("socialcompetencemean")) {
+    return ["Social Competence Scale"];
+  }
+
   if (vLower.startsWith("childbehaviorfreeplay")) {
     return ["Child Behavior FP"];
   }
@@ -389,6 +413,10 @@ export const shouldShowVariableInTask = (variableName, selectedCategory, selecte
   const normalized = variableName.trim();
   if (normalized === "tcid") return false;
 
+  if (selectedTask === "Mother Executive Function Tests") {
+    return motherExecutiveFunctionVariables.has(normalized);
+  }
+
   const correctTasks = getCorrectTasksForVariable(normalized);
 
   if (correctTasks && correctTasks.length > 0) {
@@ -473,20 +501,19 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
   }
 
   if (selectedTask === "Mother Executive Function Tests") {
-    const l1 = "Mother Executive Function Tests";
-    if (vLower.startsWith("brief")) {
-      return { l1Category: l1, l2Timepoint: "BRIEF Related" };
+    const info = motherExecutiveFunctionVariables.get(v);
+    if (!info) {
+      return { l1Category: "Needs Review / Other Related Variables", l2Timepoint: "Other" };
     }
-    if (vLower.startsWith("toh")) {
-      return { l1Category: l1, l2Timepoint: "Tower of Hanoi / TOH Related" };
+    let age = "Other";
+    if (vLower.endsWith("30")) age = "Age 30";
+    else if (vLower.endsWith("36")) age = "Age 36";
+    else if (vLower.endsWith("42")) age = "Age 42";
+    else if (vLower.endsWith("54")) age = "Age 54";
+    if (!info.l3) {
+      return { l1Category: selectedTask, l2Timepoint: info.l2, l3Group: age };
     }
-    if (vLower.startsWith("wcst")) {
-      return { l1Category: l1, l2Timepoint: "WCST Related" };
-    }
-    if (vLower.startsWith("exp24")) {
-      return { l1Category: l1, l2Timepoint: "Executive Function Composite" };
-    }
-    return { l1Category: "Needs Review / Other Related Variables", l2Timepoint: "Other" };
+    return { l1Category: selectedTask, l2Timepoint: info.l2, l3Group: info.l3, l4Group: age };
   }
 
   if (selectedTask === "BRIEF-A (Behavior Rating Inventory of Executive Function – Adult Version)") {
@@ -631,7 +658,20 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
       vLower.startsWith("downnumobs") || vLower.startsWith("upnumobs") || vLower.startsWith("truesleepnumobs") || vLower.startsWith("napnumobs") ||
       vLower.startsWith("downshorttime") || vLower.startsWith("upshorttime") || vLower.startsWith("truesleepshorttime") || vLower.startsWith("napshorttime")
     ) {
-      return { l1Category: l1, l2Timepoint: "Sleep Observation Counts" };
+      let l3 = "Other";
+      if (vLower.endsWith("30")) l3 = "Age 30";
+      else if (vLower.endsWith("36")) l3 = "Age 36";
+      else if (vLower.endsWith("42")) l3 = "Age 42";
+      else if (vLower.endsWith("54")) l3 = "Age 54";
+      const match = vLower.match(/(child|parent)(week1|week2|combined)(sadeh|colekripke)(30|36|42|54)$/);
+      let l4 = "Other";
+      if (match) {
+        const subject = match[1] === "child" ? "Child" : "Parent";
+        const period = { week1: "Week 1", week2: "Week 2", combined: "Combined" }[match[2]];
+        const algorithm = match[3] === "sadeh" ? "Sadeh" : "ColeKripke";
+        l4 = `${subject} ${period} ${algorithm}`;
+      }
+      return { l1Category: l1, l2Timepoint: "Sleep Observation Counts", l3Group: l3, l4Group: l4 };
     }
     let l2 = null;
     if (vLower.startsWith("observerimpression")) {
@@ -810,6 +850,42 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
       l2Timepoint: isRegular ? "Regular / Co-Sleeping Items" : "Composites",
       l3Group: l3,
     };
+  }
+
+  if (selectedTask === "Parenting Events") {
+    if (!vLower.startsWith("parentingevents")) {
+      return { l1Category: "Needs Review / Other Related Variables", l2Timepoint: "Other" };
+    }
+    let l3 = "Other";
+    if (vLower.endsWith("30")) l3 = "Age 30";
+    else if (vLower.endsWith("36")) l3 = "Age 36";
+    else if (vLower.endsWith("42")) l3 = "Age 42";
+    else if (vLower.endsWith("54")) l3 = "Age 54";
+    return { l1Category: selectedTask, l2Timepoint: "Composites", l3Group: l3 };
+  }
+
+  if (selectedTask === "Parenting Scale") {
+    if (!vLower.startsWith("parentingscale")) {
+      return { l1Category: "Needs Review / Other Related Variables", l2Timepoint: "Other" };
+    }
+    let l3 = "Other";
+    if (vLower.endsWith("30")) l3 = "Age 30";
+    else if (vLower.endsWith("36")) l3 = "Age 36";
+    else if (vLower.endsWith("42")) l3 = "Age 42";
+    else if (vLower.endsWith("54")) l3 = "Age 54";
+    return { l1Category: selectedTask, l2Timepoint: "Composites", l3Group: l3 };
+  }
+
+  if (selectedTask === "Social Competence Scale") {
+    if (!vLower.startsWith("socialcompetencemean")) {
+      return { l1Category: "Needs Review / Other Related Variables", l2Timepoint: "Other" };
+    }
+    let l3 = "Other";
+    if (vLower.endsWith("30")) l3 = "Age 30";
+    else if (vLower.endsWith("36")) l3 = "Age 36";
+    else if (vLower.endsWith("42")) l3 = "Age 42";
+    else if (vLower.endsWith("54")) l3 = "Age 54";
+    return { l1Category: selectedTask, l2Timepoint: "Composites", l3Group: l3 };
   }
 
   if (selectedTask === "Changes + Adjustments Questionnaire") {
@@ -1353,6 +1429,10 @@ export const groupVariablesBySubcategory = (variables, selectedCategory, selecte
       });
       const reordered = {};
       entries.forEach(([k]) => {
+        if (!Array.isArray(l1Data[l2][k])) {
+          reordered[k] = l1Data[l2][k];
+          return;
+        }
         reordered[k] = l1Data[l2][k]
           .map((v, i) => [v, i])
           .sort((a, b) => {
@@ -1444,6 +1524,31 @@ export const groupVariablesBySubcategory = (variables, selectedCategory, selecte
       ],
       (v) => v.replace(/(30|36|42|54)$/, "")
     );
+    const sleepCounts = groups["Observer Ratings"]["Sleep Observation Counts"];
+    if (sleepCounts && !Array.isArray(sleepCounts)) {
+      const sleepCountOrder = [
+        "Child Week 1 Sadeh",
+        "Child Combined Sadeh",
+        "Parent Combined Sadeh",
+        "Child Week 2 Sadeh",
+        "Child Week 1 ColeKripke",
+        "Parent Week 1 ColeKripke",
+        "Child Combined ColeKripke",
+        "Parent Combined ColeKripke",
+        "Child Week 2 ColeKripke",
+        "Parent Week 2 ColeKripke",
+      ];
+      Object.keys(sleepCounts).forEach((age) => {
+        const subgroups = {};
+        sleepCountOrder.forEach((k) => {
+          if (sleepCounts[age][k]) subgroups[k] = sleepCounts[age][k];
+        });
+        Object.keys(sleepCounts[age]).forEach((k) => {
+          if (!subgroups[k]) subgroups[k] = sleepCounts[age][k];
+        });
+        sleepCounts[age] = subgroups;
+      });
+    }
   }
 
   const icqRoot = "Infant Characteristics Questionnaire (ICQ)";
@@ -1607,6 +1712,65 @@ export const groupVariablesBySubcategory = (variables, selectedCategory, selecte
         "dasnonverbalability",
         "dasnonverbalabilityt",
       ],
+      (v) => v.replace(/(30|36|42|54)$/, "")
+    );
+  }
+
+  const mefTask = "Mother Executive Function Tests";
+  if (groups[mefTask]) {
+    const mefFamilyOrder = motherExecutiveFunctionGroups.flatMap(({ families }) =>
+      families.map((family) => family.toLowerCase())
+    );
+    const mefFamily = (v) => v.replace(/(30|36|42|54)$/, "");
+    const source = groups[mefTask];
+    const reordered = {};
+    if (source.Composites) {
+      const composites = { Composites: source.Composites };
+      sortAgeGroupsByFamily(composites, mefFamilyOrder, mefFamily);
+      reordered.Composites = composites.Composites;
+    }
+    const regular = source["Regular / Task Scores"];
+    if (regular) {
+      const subgroups = {};
+      ["Tower of Hanoi", "Wisconsin Card Sorting Test (WCST)"].forEach((k) => {
+        if (regular[k]) subgroups[k] = regular[k];
+      });
+      sortAgeGroupsByFamily(subgroups, mefFamilyOrder, mefFamily);
+      reordered["Regular / Task Scores"] = subgroups;
+    }
+    groups[mefTask] = reordered;
+  }
+
+  if (groups["Parenting Events"]) {
+    sortAgeGroupsByFamily(
+      groups["Parenting Events"],
+      [
+        "parentingeventsfrequency",
+        "parentingeventsintensity",
+        "parentingeventschallengingbehavior",
+        "parentingeventsparentingtasks",
+      ],
+      (v) => v.replace(/(30|36|42|54)$/, "")
+    );
+  }
+
+  if (groups["Parenting Scale"]) {
+    sortAgeGroupsByFamily(
+      groups["Parenting Scale"],
+      [
+        "parentingscalelaxness",
+        "parentingscaleoverreactivity",
+        "parentingscaleverbosity",
+        "parentingscaledysfunctional",
+      ],
+      (v) => v.replace(/(30|36|42|54)$/, "")
+    );
+  }
+
+  if (groups["Social Competence Scale"]) {
+    sortAgeGroupsByFamily(
+      groups["Social Competence Scale"],
+      ["socialcompetencemean"],
       (v) => v.replace(/(30|36|42|54)$/, "")
     );
   }

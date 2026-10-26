@@ -1561,6 +1561,151 @@ export const variableDescriptions = {
   "sleepConsolidationParentCombinedSadeh42": "Sleep consolidation for Parent Combined Sadeh",
   "sleepConsolidationParentCombinedSadeh54": "Sleep consolidation for Parent Combined Sadeh",
 
+  "mtStroopColorsPerCorrect30": "Stroop - percent correct for Colors condition",
+  "mtStroopColorsPerCorrect36": "Stroop - percent correct for Colors condition",
+  "mtStroopColorsPerCorrect42": "Stroop - percent correct for Colors condition",
+  "mtStroopColorsPerCorrect54": "Stroop - percent correct for Colors condition",
+
+  "mtStroopCongruentPerCorrect30": "Stroop - percent correct for Congruent condition",
+  "mtStroopCongruentPerCorrect36": "Stroop - percent correct for Congruent condition",
+  "mtStroopCongruentPerCorrect42": "Stroop - percent correct for Congruent condition",
+  "mtStroopCongruentPerCorrect54": "Stroop - percent correct for Congruent condition",
+
+  "mtStroopIncongruentPerCorrect30": "Stroop - percent correct for Incongruent condition",
+  "mtStroopIncongruentPerCorrect36": "Stroop - percent correct for Incongruent condition",
+  "mtStroopIncongruentPerCorrect42": "Stroop - percent correct for Incongruent condition",
+  "mtStroopIncongruentPerCorrect54": "Stroop - percent correct for Incongruent condition",
+
+  "mtStroopMixedPerCorrect30": "Stroop - percent correct for Mixed condition",
+  "mtStroopMixedPerCorrect36": "Stroop - percent correct for Mixed condition",
+  "mtStroopMixedPerCorrect42": "Stroop - percent correct for Mixed condition",
+  "mtStroopMixedPerCorrect54": "Stroop - percent correct for Mixed condition",
+
+  "mtStroopMixedRTCorrect30": "Stroop - mean reaction time for correct Mixed-condition responses",
+  "mtStroopMixedRTCorrect36": "Stroop - mean reaction time for correct Mixed-condition responses",
+  "mtStroopMixedRTCorrect42": "Stroop - mean reaction time for correct Mixed-condition responses",
+  "mtStroopMixedRTCorrect54": "Stroop - mean reaction time for correct Mixed-condition responses",
+
+  "mtStroopMixedRTTotal30": "Stroop - mean reaction time for all Mixed-condition responses",
+  "mtStroopMixedRTTotal36": "Stroop - mean reaction time for all Mixed-condition responses",
+  "mtStroopMixedRTTotal42": "Stroop - mean reaction time for all Mixed-condition responses",
+  "mtStroopMixedRTTotal54": "Stroop - mean reaction time for all Mixed-condition responses",
+
+  "Toh_familiar30": "Mother familiar with Tower of Hanoi game",
+  "Toh_familiar36": "Mother familiar with Tower of Hanoi game",
+  "Toh_familiar42": "Mother familiar with Tower of Hanoi game",
+  "Toh_familiar54": "Mother familiar with Tower of Hanoi game",
+
+  "Toh_understand30": "Mother understands Tower of Hanoi rules",
+  "Toh_understand36": "Mother understands Tower of Hanoi rules",
+  "Toh_understand42": "Mother understands Tower of Hanoi rules",
+  "Toh_understand54": "Mother understands Tower of Hanoi rules",
+
+  "Toh3_complete30": "Mother completed 3-ring Tower of Hanoi",
+  "Toh3_complete36": "Mother completed 3-ring Tower of Hanoi",
+  "Toh3_complete42": "Mother completed 3-ring Tower of Hanoi",
+  "Toh3_complete54": "Mother completed 3-ring Tower of Hanoi",
+
+  "Toh3_moves30": "Number of moves in 3-ring Tower of Hanoi",
+  "Toh3_moves36": "Number of moves in 3-ring Tower of Hanoi",
+  "Toh3_moves42": "Number of moves in 3-ring Tower of Hanoi",
+  "Toh3_moves54": "Number of moves in 3-ring Tower of Hanoi",
+
+  "Toh3_time30": "Time to complete 3-ring Tower of Hanoi",
+  "Toh3_time36": "Time to complete 3-ring Tower of Hanoi",
+  "Toh3_time42": "Time to complete 3-ring Tower of Hanoi",
+  "Toh3_time54": "Time to complete 3-ring Tower of Hanoi",
+
+  "Toh5_complete30": "Mother completed 5-ring Tower of Hanoi",
+  "Toh5_complete36": "Mother completed 5-ring Tower of Hanoi",
+  "Toh5_complete42": "Mother completed 5-ring Tower of Hanoi",
+  "Toh5_complete54": "Mother completed 5-ring Tower of Hanoi",
+
+  "Toh5_moves30": "Number of moves in 5-ring Tower of Hanoi",
+  "Toh5_moves36": "Number of moves in 5-ring Tower of Hanoi",
+  "Toh5_moves42": "Number of moves in 5-ring Tower of Hanoi",
+  "Toh5_moves54": "Number of moves in 5-ring Tower of Hanoi",
+
+  "Toh5_time30": "Time to complete 5-ring Tower of Hanoi",
+  "Toh5_time36": "Time to complete 5-ring Tower of Hanoi",
+  "Toh5_time42": "Time to complete 5-ring Tower of Hanoi",
+  "Toh5_time54": "Time to complete 5-ring Tower of Hanoi",
+
+  "WCST1_totcorrect30": "WCST total correct",
+  "WCST1_totcorrect36": "WCST total correct",
+  "WCST1_totcorrect42": "WCST total correct",
+  "WCST1_totcorrect54": "WCST total correct",
+
+  "WCST2_toterrors30": "WCST total errors",
+  "WCST2_toterrors36": "WCST total errors",
+  "WCST2_toterrors42": "WCST total errors",
+  "WCST2_toterrors54": "WCST total errors",
+
+  "WCST3_perserveresp30": "WCST perseverative responses",
+  "WCST3_perserveresp36": "WCST perseverative responses",
+  "WCST3_perserveresp42": "WCST perseverative responses",
+  "WCST3_perserveresp54": "WCST perseverative responses",
+
+  "WCST4_perserveerror30": "WCST perseverative errors",
+  "WCST4_perserveerror36": "WCST perseverative errors",
+  "WCST4_perserveerror42": "WCST perseverative errors",
+  "WCST4_perserveerror54": "WCST perseverative errors",
+
+  "WCST5_nonperserverr30": "WCST non-perseverative errors",
+  "WCST5_nonperserverr36": "WCST non-perseverative errors",
+  "WCST5_nonperserverr42": "WCST non-perseverative errors",
+  "WCST5_nonperserverr54": "WCST non-perseverative errors",
+
+  "WCST6_conceptlevel30": "WCST conceptual level",
+  "WCST6_conceptlevel36": "WCST conceptual level",
+  "WCST6_conceptlevel42": "WCST conceptual level",
+  "WCST6_conceptlevel54": "WCST conceptual level",
+
+  "parentingEventsFrequency30": "Frequency of all parenting daily hassles",
+  "parentingEventsFrequency36": "Frequency of all parenting daily hassles",
+  "parentingEventsFrequency42": "Frequency of all parenting daily hassles",
+  "parentingEventsFrequency54": "Frequency of all parenting daily hassles",
+
+  "parentingEventsIntensity30": "Intensity of all parenting daily hassles",
+  "parentingEventsIntensity36": "Intensity of all parenting daily hassles",
+  "parentingEventsIntensity42": "Intensity of all parenting daily hassles",
+  "parentingEventsIntensity54": "Intensity of all parenting daily hassles",
+
+  "parentingEventsChallengingBehavior30": "Frequency and intensity of challenging child behaviors",
+  "parentingEventsChallengingBehavior36": "Frequency and intensity of challenging child behaviors",
+  "parentingEventsChallengingBehavior42": "Frequency and intensity of challenging child behaviors",
+  "parentingEventsChallengingBehavior54": "Frequency and intensity of challenging child behaviors",
+
+  "parentingEventsParentingTasks30": "Frequency and intensity of parenting-task hassles",
+  "parentingEventsParentingTasks36": "Frequency and intensity of parenting-task hassles",
+  "parentingEventsParentingTasks42": "Frequency and intensity of parenting-task hassles",
+  "parentingEventsParentingTasks54": "Frequency and intensity of parenting-task hassles",
+
+  "parentingScaleLaxness30": "Laxness in parenting/discipline",
+  "parentingScaleLaxness36": "Laxness in parenting/discipline",
+  "parentingScaleLaxness42": "Laxness in parenting/discipline",
+  "parentingScaleLaxness54": "Laxness in parenting/discipline",
+
+  "parentingScaleOverreactivity30": "Overreactive parenting/discipline",
+  "parentingScaleOverreactivity36": "Overreactive parenting/discipline",
+  "parentingScaleOverreactivity42": "Overreactive parenting/discipline",
+  "parentingScaleOverreactivity54": "Overreactive parenting/discipline",
+
+  "parentingScaleVerbosity30": "Verbose parenting/discipline responses",
+  "parentingScaleVerbosity36": "Verbose parenting/discipline responses",
+  "parentingScaleVerbosity42": "Verbose parenting/discipline responses",
+  "parentingScaleVerbosity54": "Verbose parenting/discipline responses",
+
+  "parentingScaleDysfunctional30": "Overall dysfunctional parenting/discipline",
+  "parentingScaleDysfunctional36": "Overall dysfunctional parenting/discipline",
+  "parentingScaleDysfunctional42": "Overall dysfunctional parenting/discipline",
+  "parentingScaleDysfunctional54": "Overall dysfunctional parenting/discipline",
+
+  "socialCompetenceMean30": "Social Competence - mean score across the 25 teacher-rated social competence items",
+  "socialCompetenceMean36": "Social Competence - mean score across the 25 teacher-rated social competence items",
+  "socialCompetenceMean42": "Social Competence - mean score across the 25 teacher-rated social competence items",
+  "socialCompetenceMean54": "Social Competence - mean score across the 25 teacher-rated social competence items",
+
   "upSleepMinutesChildWeek1Sadeh30": "up average total minutes asleep (average total time asleep while out of bed per night) of child",
   "upSleepMinutesChildWeek1Sadeh36": "up average total minutes asleep (average total time asleep while out of bed per night) of child",
   "upSleepMinutesChildWeek1Sadeh42": "up average total minutes asleep (average total time asleep while out of bed per night) of child",
@@ -1745,6 +1890,351 @@ export const variableDescriptions = {
   "napPercentSleep.1ChildWeek1Sadeh36": "down for nap percent sleep of child",
   "napPercentSleep.1ChildWeek1Sadeh42": "down for nap percent sleep of child",
   "napPercentSleep.1ChildWeek1Sadeh54": "down for nap percent sleep of child",
+
+  "upSleepMinutesChildCombinedSadeh30": "up average total minutes asleep (average total time asleep while out of bed per night) of child",
+  "upSleepMinutesChildCombinedSadeh36": "up average total minutes asleep (average total time asleep while out of bed per night) of child",
+  "upSleepMinutesChildCombinedSadeh42": "up average total minutes asleep (average total time asleep while out of bed per night) of child",
+  "upSleepMinutesChildCombinedSadeh54": "up average total minutes asleep (average total time asleep while out of bed per night) of child",
+
+  "upPercentSleepChildCombinedSadeh30": "up percent sleep (percent of time napping each day) of child",
+  "upPercentSleepChildCombinedSadeh36": "up percent sleep (percent of time napping each day) of child",
+  "upPercentSleepChildCombinedSadeh42": "up percent sleep (percent of time napping each day) of child",
+  "upPercentSleepChildCombinedSadeh54": "up percent sleep (percent of time napping each day) of child",
+
+  "upSleepMinutes.1ChildCombinedSadeh30": "up average total minutes asleep (average total time asleep while out of bed per night) of child",
+  "upSleepMinutes.1ChildCombinedSadeh36": "up average total minutes asleep (average total time asleep while out of bed per night) of child",
+  "upSleepMinutes.1ChildCombinedSadeh42": "up average total minutes asleep (average total time asleep while out of bed per night) of child",
+  "upSleepMinutes.1ChildCombinedSadeh54": "up average total minutes asleep (average total time asleep while out of bed per night) of child",
+
+  "upPercentSleep.1ChildCombinedSadeh30": "up percent sleep (percent of time napping each day) of child",
+  "upPercentSleep.1ChildCombinedSadeh36": "up percent sleep (percent of time napping each day) of child",
+  "upPercentSleep.1ChildCombinedSadeh42": "up percent sleep (percent of time napping each day) of child",
+  "upPercentSleep.1ChildCombinedSadeh54": "up percent sleep (percent of time napping each day) of child",
+
+  "downSleepMinutesChildCombinedSadeh30": "in bed average total minutes asleep (average total time asleep while in bed per night) of child",
+  "downSleepMinutesChildCombinedSadeh36": "in bed average total minutes asleep (average total time asleep while in bed per night) of child",
+  "downSleepMinutesChildCombinedSadeh42": "in bed average total minutes asleep (average total time asleep while in bed per night) of child",
+  "downSleepMinutesChildCombinedSadeh54": "in bed average total minutes asleep (average total time asleep while in bed per night) of child",
+
+  "downPercentSleepChildCombinedSadeh30": "in bed percent sleep (percent of time sleeping while in bed) of child",
+  "downPercentSleepChildCombinedSadeh36": "in bed percent sleep (percent of time sleeping while in bed) of child",
+  "downPercentSleepChildCombinedSadeh42": "in bed percent sleep (percent of time sleeping while in bed) of child",
+  "downPercentSleepChildCombinedSadeh54": "in bed percent sleep (percent of time sleeping while in bed) of child",
+
+  "downSleepEfficiencyChildCombinedSadeh30": "in bed sleep efficiency (efficiency of sleep while in bed) of child",
+  "downSleepEfficiencyChildCombinedSadeh36": "in bed sleep efficiency (efficiency of sleep while in bed) of child",
+  "downSleepEfficiencyChildCombinedSadeh42": "in bed sleep efficiency (efficiency of sleep while in bed) of child",
+  "downSleepEfficiencyChildCombinedSadeh54": "in bed sleep efficiency (efficiency of sleep while in bed) of child",
+
+  "downSleepLatencyChildCombinedSadeh30": "in bed latency to fall asleep (time it takes to fall asleep after being put to bed) of child",
+  "downSleepLatencyChildCombinedSadeh36": "in bed latency to fall asleep (time it takes to fall asleep after being put to bed) of child",
+  "downSleepLatencyChildCombinedSadeh42": "in bed latency to fall asleep (time it takes to fall asleep after being put to bed) of child",
+  "downSleepLatencyChildCombinedSadeh54": "in bed latency to fall asleep (time it takes to fall asleep after being put to bed) of child",
+
+  "downSleepMinutes.1ChildCombinedSadeh30": "in bed average total minutes asleep (average total time asleep while in bed per night) of child",
+  "downSleepMinutes.1ChildCombinedSadeh36": "in bed average total minutes asleep (average total time asleep while in bed per night) of child",
+  "downSleepMinutes.1ChildCombinedSadeh42": "in bed average total minutes asleep (average total time asleep while in bed per night) of child",
+  "downSleepMinutes.1ChildCombinedSadeh54": "in bed average total minutes asleep (average total time asleep while in bed per night) of child",
+
+  "downPercentSleep.1ChildCombinedSadeh30": "in bed percent sleep (percent of time sleeping while in bed) of child",
+  "downPercentSleep.1ChildCombinedSadeh36": "in bed percent sleep (percent of time sleeping while in bed) of child",
+  "downPercentSleep.1ChildCombinedSadeh42": "in bed percent sleep (percent of time sleeping while in bed) of child",
+  "downPercentSleep.1ChildCombinedSadeh54": "in bed percent sleep (percent of time sleeping while in bed) of child",
+
+  "downSleepEfficiency.1ChildCombinedSadeh30": "in bed sleep efficiency (efficiency of sleep while in bed) of child",
+  "downSleepEfficiency.1ChildCombinedSadeh36": "in bed sleep efficiency (efficiency of sleep while in bed) of child",
+  "downSleepEfficiency.1ChildCombinedSadeh42": "in bed sleep efficiency (efficiency of sleep while in bed) of child",
+  "downSleepEfficiency.1ChildCombinedSadeh54": "in bed sleep efficiency (efficiency of sleep while in bed) of child",
+
+  "truesleepWakeMinutesAfterSleepOnsetChildCombinedSadeh30": "true sleep period time average total time awake after falling asleep (mean duration of minutes awake between falling asleep and waking up) of child",
+  "truesleepWakeMinutesAfterSleepOnsetChildCombinedSadeh36": "true sleep period time average total time awake after falling asleep (mean duration of minutes awake between falling asleep and waking up) of child",
+  "truesleepWakeMinutesAfterSleepOnsetChildCombinedSadeh42": "true sleep period time average total time awake after falling asleep (mean duration of minutes awake between falling asleep and waking up) of child",
+  "truesleepWakeMinutesAfterSleepOnsetChildCombinedSadeh54": "true sleep period time average total time awake after falling asleep (mean duration of minutes awake between falling asleep and waking up) of child",
+
+  "truesleepActivityIndexChildCombinedSadeh30": "true sleep period activity index of child",
+  "truesleepActivityIndexChildCombinedSadeh36": "true sleep period activity index of child",
+  "truesleepActivityIndexChildCombinedSadeh42": "true sleep period activity index of child",
+  "truesleepActivityIndexChildCombinedSadeh54": "true sleep period activity index of child",
+
+  "truesleepLongWakeEpisodesChildCombinedSadeh30": "true sleep period mean number of wake episodes >= 5 min of child",
+  "truesleepLongWakeEpisodesChildCombinedSadeh36": "true sleep period mean number of wake episodes >= 5 min of child",
+  "truesleepLongWakeEpisodesChildCombinedSadeh42": "true sleep period mean number of wake episodes >= 5 min of child",
+  "truesleepLongWakeEpisodesChildCombinedSadeh54": "true sleep period mean number of wake episodes >= 5 min of child",
+
+  "truesleepLongestWakeEpisodeChildCombinedSadeh30": "duration of longest wake episode of child",
+  "truesleepLongestWakeEpisodeChildCombinedSadeh36": "duration of longest wake episode of child",
+  "truesleepLongestWakeEpisodeChildCombinedSadeh42": "duration of longest wake episode of child",
+  "truesleepLongestWakeEpisodeChildCombinedSadeh54": "duration of longest wake episode of child",
+
+  "truesleepStartTimeHoursChildCombinedSadeh30": "true sleep period average time of start (time actually first fell asleep for the night) of child",
+  "truesleepStartTimeHoursChildCombinedSadeh36": "true sleep period average time of start (time actually first fell asleep for the night) of child",
+  "truesleepStartTimeHoursChildCombinedSadeh42": "true sleep period average time of start (time actually first fell asleep for the night) of child",
+  "truesleepStartTimeHoursChildCombinedSadeh54": "true sleep period average time of start (time actually first fell asleep for the night) of child",
+
+  "truesleepDurationChildCombinedSadeh30": "true sleep period mean duration (average minutes between falling asleep and waking up) of child",
+  "truesleepDurationChildCombinedSadeh36": "true sleep period mean duration (average minutes between falling asleep and waking up) of child",
+  "truesleepDurationChildCombinedSadeh42": "true sleep period mean duration (average minutes between falling asleep and waking up) of child",
+  "truesleepDurationChildCombinedSadeh54": "true sleep period mean duration (average minutes between falling asleep and waking up) of child",
+
+  "truesleepActivityMeanChildCombinedSadeh30": "true sleep period activity mean (average activity between falling asleep and waking up) of child",
+  "truesleepActivityMeanChildCombinedSadeh36": "true sleep period activity mean (average activity between falling asleep and waking up) of child",
+  "truesleepActivityMeanChildCombinedSadeh42": "true sleep period activity mean (average activity between falling asleep and waking up) of child",
+  "truesleepActivityMeanChildCombinedSadeh54": "true sleep period activity mean (average activity between falling asleep and waking up) of child",
+
+  "truesleepActivityMedianChildCombinedSadeh30": "true sleep period activity median (median activity between falling asleep and waking up) of child",
+  "truesleepActivityMedianChildCombinedSadeh36": "true sleep period activity median (median activity between falling asleep and waking up) of child",
+  "truesleepActivityMedianChildCombinedSadeh42": "true sleep period activity median (median activity between falling asleep and waking up) of child",
+  "truesleepActivityMedianChildCombinedSadeh54": "true sleep period activity median (median activity between falling asleep and waking up) of child",
+
+  "truesleepWakeMinutesChildCombinedSadeh30": "true sleep period average total minutes awake (average total time awake per night between falling asleep and waking up) of child",
+  "truesleepWakeMinutesChildCombinedSadeh36": "true sleep period average total minutes awake (average total time awake per night between falling asleep and waking up) of child",
+  "truesleepWakeMinutesChildCombinedSadeh42": "true sleep period average total minutes awake (average total time awake per night between falling asleep and waking up) of child",
+  "truesleepWakeMinutesChildCombinedSadeh54": "true sleep period average total minutes awake (average total time awake per night between falling asleep and waking up) of child",
+
+  "truesleepSleepMinutesChildCombinedSadeh30": "true sleep period average total minutes asleep (average total time asleep per night between falling asleep and waking up) of child",
+  "truesleepSleepMinutesChildCombinedSadeh36": "true sleep period average total minutes asleep (average total time asleep per night between falling asleep and waking up) of child",
+  "truesleepSleepMinutesChildCombinedSadeh42": "true sleep period average total minutes asleep (average total time asleep per night between falling asleep and waking up) of child",
+  "truesleepSleepMinutesChildCombinedSadeh54": "true sleep period average total minutes asleep (average total time asleep per night between falling asleep and waking up) of child",
+
+  "truesleepPercentSleepChildCombinedSadeh30": "true sleep period percent sleep (percent of time sleeping between falling asleep and waking up) of child",
+  "truesleepPercentSleepChildCombinedSadeh36": "true sleep period percent sleep (percent of time sleeping between falling asleep and waking up) of child",
+  "truesleepPercentSleepChildCombinedSadeh42": "true sleep period percent sleep (percent of time sleeping between falling asleep and waking up) of child",
+  "truesleepPercentSleepChildCombinedSadeh54": "true sleep period percent sleep (percent of time sleeping between falling asleep and waking up) of child",
+
+  "truesleepSleepEfficiencyChildCombinedSadeh30": "true sleep period sleep efficiency (efficiency of sleep between falling asleep and waking up) of child",
+  "truesleepSleepEfficiencyChildCombinedSadeh36": "true sleep period sleep efficiency (efficiency of sleep between falling asleep and waking up) of child",
+  "truesleepSleepEfficiencyChildCombinedSadeh42": "true sleep period sleep efficiency (efficiency of sleep between falling asleep and waking up) of child",
+  "truesleepSleepEfficiencyChildCombinedSadeh54": "true sleep period sleep efficiency (efficiency of sleep between falling asleep and waking up) of child",
+
+  "truesleepWakeMinutesAfterSleepOnset.1ChildCombinedSadeh30": "true sleep period time average total time awake after falling asleep (mean duration of minutes awake between falling asleep and waking up) of child",
+  "truesleepWakeMinutesAfterSleepOnset.1ChildCombinedSadeh36": "true sleep period time average total time awake after falling asleep (mean duration of minutes awake between falling asleep and waking up) of child",
+  "truesleepWakeMinutesAfterSleepOnset.1ChildCombinedSadeh42": "true sleep period time average total time awake after falling asleep (mean duration of minutes awake between falling asleep and waking up) of child",
+  "truesleepWakeMinutesAfterSleepOnset.1ChildCombinedSadeh54": "true sleep period time average total time awake after falling asleep (mean duration of minutes awake between falling asleep and waking up) of child",
+
+  "truesleepActivityIndex.1ChildCombinedSadeh30": "true sleep period activity index of child",
+  "truesleepActivityIndex.1ChildCombinedSadeh36": "true sleep period activity index of child",
+  "truesleepActivityIndex.1ChildCombinedSadeh42": "true sleep period activity index of child",
+  "truesleepActivityIndex.1ChildCombinedSadeh54": "true sleep period activity index of child",
+
+  "truesleepLongWakeEpisodes.1ChildCombinedSadeh30": "true sleep period mean number of wake episodes >= 5 min of child",
+  "truesleepLongWakeEpisodes.1ChildCombinedSadeh36": "true sleep period mean number of wake episodes >= 5 min of child",
+  "truesleepLongWakeEpisodes.1ChildCombinedSadeh42": "true sleep period mean number of wake episodes >= 5 min of child",
+  "truesleepLongWakeEpisodes.1ChildCombinedSadeh54": "true sleep period mean number of wake episodes >= 5 min of child",
+
+  "truesleepLongestWakeEpisode.1ChildCombinedSadeh30": "duration of longest wake episode of child",
+  "truesleepLongestWakeEpisode.1ChildCombinedSadeh36": "duration of longest wake episode of child",
+  "truesleepLongestWakeEpisode.1ChildCombinedSadeh42": "duration of longest wake episode of child",
+  "truesleepLongestWakeEpisode.1ChildCombinedSadeh54": "duration of longest wake episode of child",
+
+  "truesleepStartTimeHours.1ChildCombinedSadeh30": "true sleep period average time of start (time actually first fell asleep for the night) of child",
+  "truesleepStartTimeHours.1ChildCombinedSadeh36": "true sleep period average time of start (time actually first fell asleep for the night) of child",
+  "truesleepStartTimeHours.1ChildCombinedSadeh42": "true sleep period average time of start (time actually first fell asleep for the night) of child",
+  "truesleepStartTimeHours.1ChildCombinedSadeh54": "true sleep period average time of start (time actually first fell asleep for the night) of child",
+
+  "truesleepDuration.1ChildCombinedSadeh30": "true sleep period mean duration (average minutes between falling asleep and waking up) of child",
+  "truesleepDuration.1ChildCombinedSadeh36": "true sleep period mean duration (average minutes between falling asleep and waking up) of child",
+  "truesleepDuration.1ChildCombinedSadeh42": "true sleep period mean duration (average minutes between falling asleep and waking up) of child",
+  "truesleepDuration.1ChildCombinedSadeh54": "true sleep period mean duration (average minutes between falling asleep and waking up) of child",
+
+  "truesleepActivityMean.1ChildCombinedSadeh30": "true sleep period activity mean (average activity between falling asleep and waking up) of child",
+  "truesleepActivityMean.1ChildCombinedSadeh36": "true sleep period activity mean (average activity between falling asleep and waking up) of child",
+  "truesleepActivityMean.1ChildCombinedSadeh42": "true sleep period activity mean (average activity between falling asleep and waking up) of child",
+  "truesleepActivityMean.1ChildCombinedSadeh54": "true sleep period activity mean (average activity between falling asleep and waking up) of child",
+
+  "truesleepActivityMedian.1ChildCombinedSadeh30": "true sleep period activity median (median activity between falling asleep and waking up) of child",
+  "truesleepActivityMedian.1ChildCombinedSadeh36": "true sleep period activity median (median activity between falling asleep and waking up) of child",
+  "truesleepActivityMedian.1ChildCombinedSadeh42": "true sleep period activity median (median activity between falling asleep and waking up) of child",
+  "truesleepActivityMedian.1ChildCombinedSadeh54": "true sleep period activity median (median activity between falling asleep and waking up) of child",
+
+  "napSleepMinutesChildCombinedSadeh30": "down for nap total sleeping minutes per period of child",
+  "napSleepMinutesChildCombinedSadeh36": "down for nap total sleeping minutes per period of child",
+  "napSleepMinutesChildCombinedSadeh42": "down for nap total sleeping minutes per period of child",
+  "napSleepMinutesChildCombinedSadeh54": "down for nap total sleeping minutes per period of child",
+
+  "napPercentSleepChildCombinedSadeh30": "down for nap percent sleep of child",
+  "napPercentSleepChildCombinedSadeh36": "down for nap percent sleep of child",
+  "napPercentSleepChildCombinedSadeh42": "down for nap percent sleep of child",
+  "napPercentSleepChildCombinedSadeh54": "down for nap percent sleep of child",
+
+  "napSleepMinutes.1ChildCombinedSadeh30": "down for nap total sleeping minutes per period of child",
+  "napSleepMinutes.1ChildCombinedSadeh36": "down for nap total sleeping minutes per period of child",
+  "napSleepMinutes.1ChildCombinedSadeh42": "down for nap total sleeping minutes per period of child",
+  "napSleepMinutes.1ChildCombinedSadeh54": "down for nap total sleeping minutes per period of child",
+
+  "napPercentSleep.1ChildCombinedSadeh30": "down for nap percent sleep of child",
+  "napPercentSleep.1ChildCombinedSadeh36": "down for nap percent sleep of child",
+  "napPercentSleep.1ChildCombinedSadeh42": "down for nap percent sleep of child",
+  "napPercentSleep.1ChildCombinedSadeh54": "down for nap percent sleep of child",
+
+  "upSleepMinutesChildWeek2Sadeh30": "up average total minutes asleep (average total time asleep while out of bed per night) of child",
+  "upSleepMinutesChildWeek2Sadeh36": "up average total minutes asleep (average total time asleep while out of bed per night) of child",
+  "upSleepMinutesChildWeek2Sadeh42": "up average total minutes asleep (average total time asleep while out of bed per night) of child",
+  "upSleepMinutesChildWeek2Sadeh54": "up average total minutes asleep (average total time asleep while out of bed per night) of child",
+
+  "upPercentSleepChildWeek2Sadeh30": "up percent sleep (percent of time napping each day) of child",
+  "upPercentSleepChildWeek2Sadeh36": "up percent sleep (percent of time napping each day) of child",
+  "upPercentSleepChildWeek2Sadeh42": "up percent sleep (percent of time napping each day) of child",
+  "upPercentSleepChildWeek2Sadeh54": "up percent sleep (percent of time napping each day) of child",
+
+  "upSleepMinutes.1ChildWeek2Sadeh30": "up average total minutes asleep (average total time asleep while out of bed per night) of child",
+  "upSleepMinutes.1ChildWeek2Sadeh36": "up average total minutes asleep (average total time asleep while out of bed per night) of child",
+  "upSleepMinutes.1ChildWeek2Sadeh42": "up average total minutes asleep (average total time asleep while out of bed per night) of child",
+  "upSleepMinutes.1ChildWeek2Sadeh54": "up average total minutes asleep (average total time asleep while out of bed per night) of child",
+
+  "upPercentSleep.1ChildWeek2Sadeh30": "up percent sleep (percent of time napping each day) of child",
+  "upPercentSleep.1ChildWeek2Sadeh36": "up percent sleep (percent of time napping each day) of child",
+  "upPercentSleep.1ChildWeek2Sadeh42": "up percent sleep (percent of time napping each day) of child",
+  "upPercentSleep.1ChildWeek2Sadeh54": "up percent sleep (percent of time napping each day) of child",
+
+  "downPercentSleepChildWeek2Sadeh30": "in bed percent sleep (percent of time sleeping while in bed) of child",
+  "downPercentSleepChildWeek2Sadeh36": "in bed percent sleep (percent of time sleeping while in bed) of child",
+  "downPercentSleepChildWeek2Sadeh42": "in bed percent sleep (percent of time sleeping while in bed) of child",
+  "downPercentSleepChildWeek2Sadeh54": "in bed percent sleep (percent of time sleeping while in bed) of child",
+
+  "downSleepEfficiencyChildWeek2Sadeh30": "in bed sleep efficiency (efficiency of sleep while in bed) of child",
+  "downSleepEfficiencyChildWeek2Sadeh36": "in bed sleep efficiency (efficiency of sleep while in bed) of child",
+  "downSleepEfficiencyChildWeek2Sadeh42": "in bed sleep efficiency (efficiency of sleep while in bed) of child",
+  "downSleepEfficiencyChildWeek2Sadeh54": "in bed sleep efficiency (efficiency of sleep while in bed) of child",
+
+  "downSleepLatencyChildWeek2Sadeh30": "in bed latency to fall asleep (time it takes to fall asleep after being put to bed) of child",
+  "downSleepLatencyChildWeek2Sadeh36": "in bed latency to fall asleep (time it takes to fall asleep after being put to bed) of child",
+  "downSleepLatencyChildWeek2Sadeh42": "in bed latency to fall asleep (time it takes to fall asleep after being put to bed) of child",
+  "downSleepLatencyChildWeek2Sadeh54": "in bed latency to fall asleep (time it takes to fall asleep after being put to bed) of child",
+
+  "downPercentSleep.1ChildWeek2Sadeh30": "in bed percent sleep (percent of time sleeping while in bed) of child",
+  "downPercentSleep.1ChildWeek2Sadeh36": "in bed percent sleep (percent of time sleeping while in bed) of child",
+  "downPercentSleep.1ChildWeek2Sadeh42": "in bed percent sleep (percent of time sleeping while in bed) of child",
+  "downPercentSleep.1ChildWeek2Sadeh54": "in bed percent sleep (percent of time sleeping while in bed) of child",
+
+  "downSleepEfficiency.1ChildWeek2Sadeh30": "in bed sleep efficiency (efficiency of sleep while in bed) of child",
+  "downSleepEfficiency.1ChildWeek2Sadeh36": "in bed sleep efficiency (efficiency of sleep while in bed) of child",
+  "downSleepEfficiency.1ChildWeek2Sadeh42": "in bed sleep efficiency (efficiency of sleep while in bed) of child",
+  "downSleepEfficiency.1ChildWeek2Sadeh54": "in bed sleep efficiency (efficiency of sleep while in bed) of child",
+
+  "truesleepWakeMinutesAfterSleepOnsetChildWeek2Sadeh30": "true sleep period time average total time awake after falling asleep (mean duration of minutes awake between falling asleep and waking up) of child",
+  "truesleepWakeMinutesAfterSleepOnsetChildWeek2Sadeh36": "true sleep period time average total time awake after falling asleep (mean duration of minutes awake between falling asleep and waking up) of child",
+  "truesleepWakeMinutesAfterSleepOnsetChildWeek2Sadeh42": "true sleep period time average total time awake after falling asleep (mean duration of minutes awake between falling asleep and waking up) of child",
+  "truesleepWakeMinutesAfterSleepOnsetChildWeek2Sadeh54": "true sleep period time average total time awake after falling asleep (mean duration of minutes awake between falling asleep and waking up) of child",
+
+  "truesleepActivityIndexChildWeek2Sadeh30": "true sleep period activity index of child",
+  "truesleepActivityIndexChildWeek2Sadeh36": "true sleep period activity index of child",
+  "truesleepActivityIndexChildWeek2Sadeh42": "true sleep period activity index of child",
+  "truesleepActivityIndexChildWeek2Sadeh54": "true sleep period activity index of child",
+
+  "truesleepLongWakeEpisodesChildWeek2Sadeh30": "true sleep period mean number of wake episodes >= 5 min of child",
+  "truesleepLongWakeEpisodesChildWeek2Sadeh36": "true sleep period mean number of wake episodes >= 5 min of child",
+  "truesleepLongWakeEpisodesChildWeek2Sadeh42": "true sleep period mean number of wake episodes >= 5 min of child",
+  "truesleepLongWakeEpisodesChildWeek2Sadeh54": "true sleep period mean number of wake episodes >= 5 min of child",
+
+  "truesleepLongestWakeEpisodeChildWeek2Sadeh30": "duration of longest wake episode of child",
+  "truesleepLongestWakeEpisodeChildWeek2Sadeh36": "duration of longest wake episode of child",
+  "truesleepLongestWakeEpisodeChildWeek2Sadeh42": "duration of longest wake episode of child",
+  "truesleepLongestWakeEpisodeChildWeek2Sadeh54": "duration of longest wake episode of child",
+
+  "truesleepStartTimeHoursChildWeek2Sadeh30": "true sleep period average time of start (time actually first fell asleep for the night) of child",
+  "truesleepStartTimeHoursChildWeek2Sadeh36": "true sleep period average time of start (time actually first fell asleep for the night) of child",
+  "truesleepStartTimeHoursChildWeek2Sadeh42": "true sleep period average time of start (time actually first fell asleep for the night) of child",
+  "truesleepStartTimeHoursChildWeek2Sadeh54": "true sleep period average time of start (time actually first fell asleep for the night) of child",
+
+  "truesleepDurationChildWeek2Sadeh30": "true sleep period mean duration (average minutes between falling asleep and waking up) of child",
+  "truesleepDurationChildWeek2Sadeh36": "true sleep period mean duration (average minutes between falling asleep and waking up) of child",
+  "truesleepDurationChildWeek2Sadeh42": "true sleep period mean duration (average minutes between falling asleep and waking up) of child",
+  "truesleepDurationChildWeek2Sadeh54": "true sleep period mean duration (average minutes between falling asleep and waking up) of child",
+
+  "truesleepActivityMeanChildWeek2Sadeh30": "true sleep period activity mean (average activity between falling asleep and waking up) of child",
+  "truesleepActivityMeanChildWeek2Sadeh36": "true sleep period activity mean (average activity between falling asleep and waking up) of child",
+  "truesleepActivityMeanChildWeek2Sadeh42": "true sleep period activity mean (average activity between falling asleep and waking up) of child",
+  "truesleepActivityMeanChildWeek2Sadeh54": "true sleep period activity mean (average activity between falling asleep and waking up) of child",
+
+  "truesleepActivityMedianChildWeek2Sadeh30": "true sleep period activity median (median activity between falling asleep and waking up) of child",
+  "truesleepActivityMedianChildWeek2Sadeh36": "true sleep period activity median (median activity between falling asleep and waking up) of child",
+  "truesleepActivityMedianChildWeek2Sadeh42": "true sleep period activity median (median activity between falling asleep and waking up) of child",
+  "truesleepActivityMedianChildWeek2Sadeh54": "true sleep period activity median (median activity between falling asleep and waking up) of child",
+
+  "truesleepWakeMinutesChildWeek2Sadeh30": "true sleep period average total minutes awake (average total time awake per night between falling asleep and waking up) of child",
+  "truesleepWakeMinutesChildWeek2Sadeh36": "true sleep period average total minutes awake (average total time awake per night between falling asleep and waking up) of child",
+  "truesleepWakeMinutesChildWeek2Sadeh42": "true sleep period average total minutes awake (average total time awake per night between falling asleep and waking up) of child",
+  "truesleepWakeMinutesChildWeek2Sadeh54": "true sleep period average total minutes awake (average total time awake per night between falling asleep and waking up) of child",
+
+  "truesleepSleepMinutesChildWeek2Sadeh30": "true sleep period average total minutes asleep (average total time asleep per night between falling asleep and waking up) of child",
+  "truesleepSleepMinutesChildWeek2Sadeh36": "true sleep period average total minutes asleep (average total time asleep per night between falling asleep and waking up) of child",
+  "truesleepSleepMinutesChildWeek2Sadeh42": "true sleep period average total minutes asleep (average total time asleep per night between falling asleep and waking up) of child",
+  "truesleepSleepMinutesChildWeek2Sadeh54": "true sleep period average total minutes asleep (average total time asleep per night between falling asleep and waking up) of child",
+
+  "truesleepPercentSleepChildWeek2Sadeh30": "true sleep period percent sleep (percent of time sleeping between falling asleep and waking up) of child",
+  "truesleepPercentSleepChildWeek2Sadeh36": "true sleep period percent sleep (percent of time sleeping between falling asleep and waking up) of child",
+  "truesleepPercentSleepChildWeek2Sadeh42": "true sleep period percent sleep (percent of time sleeping between falling asleep and waking up) of child",
+  "truesleepPercentSleepChildWeek2Sadeh54": "true sleep period percent sleep (percent of time sleeping between falling asleep and waking up) of child",
+
+  "truesleepSleepEfficiencyChildWeek2Sadeh30": "true sleep period sleep efficiency (efficiency of sleep between falling asleep and waking up) of child",
+  "truesleepSleepEfficiencyChildWeek2Sadeh36": "true sleep period sleep efficiency (efficiency of sleep between falling asleep and waking up) of child",
+  "truesleepSleepEfficiencyChildWeek2Sadeh42": "true sleep period sleep efficiency (efficiency of sleep between falling asleep and waking up) of child",
+  "truesleepSleepEfficiencyChildWeek2Sadeh54": "true sleep period sleep efficiency (efficiency of sleep between falling asleep and waking up) of child",
+
+  "truesleepWakeMinutesAfterSleepOnset.1ChildWeek2Sadeh30": "true sleep period time average total time awake after falling asleep (mean duration of minutes awake between falling asleep and waking up) of child",
+  "truesleepWakeMinutesAfterSleepOnset.1ChildWeek2Sadeh36": "true sleep period time average total time awake after falling asleep (mean duration of minutes awake between falling asleep and waking up) of child",
+  "truesleepWakeMinutesAfterSleepOnset.1ChildWeek2Sadeh42": "true sleep period time average total time awake after falling asleep (mean duration of minutes awake between falling asleep and waking up) of child",
+  "truesleepWakeMinutesAfterSleepOnset.1ChildWeek2Sadeh54": "true sleep period time average total time awake after falling asleep (mean duration of minutes awake between falling asleep and waking up) of child",
+
+  "truesleepActivityIndex.1ChildWeek2Sadeh30": "true sleep period activity index of child",
+  "truesleepActivityIndex.1ChildWeek2Sadeh36": "true sleep period activity index of child",
+  "truesleepActivityIndex.1ChildWeek2Sadeh42": "true sleep period activity index of child",
+  "truesleepActivityIndex.1ChildWeek2Sadeh54": "true sleep period activity index of child",
+
+  "truesleepLongWakeEpisodes.1ChildWeek2Sadeh30": "true sleep period mean number of wake episodes >= 5 min of child",
+  "truesleepLongWakeEpisodes.1ChildWeek2Sadeh36": "true sleep period mean number of wake episodes >= 5 min of child",
+  "truesleepLongWakeEpisodes.1ChildWeek2Sadeh42": "true sleep period mean number of wake episodes >= 5 min of child",
+  "truesleepLongWakeEpisodes.1ChildWeek2Sadeh54": "true sleep period mean number of wake episodes >= 5 min of child",
+
+  "truesleepLongestWakeEpisode.1ChildWeek2Sadeh30": "duration of longest wake episode of child",
+  "truesleepLongestWakeEpisode.1ChildWeek2Sadeh36": "duration of longest wake episode of child",
+  "truesleepLongestWakeEpisode.1ChildWeek2Sadeh42": "duration of longest wake episode of child",
+  "truesleepLongestWakeEpisode.1ChildWeek2Sadeh54": "duration of longest wake episode of child",
+
+  "truesleepStartTimeHours.1ChildWeek2Sadeh30": "true sleep period average time of start (time actually first fell asleep for the night) of child",
+  "truesleepStartTimeHours.1ChildWeek2Sadeh36": "true sleep period average time of start (time actually first fell asleep for the night) of child",
+  "truesleepStartTimeHours.1ChildWeek2Sadeh42": "true sleep period average time of start (time actually first fell asleep for the night) of child",
+  "truesleepStartTimeHours.1ChildWeek2Sadeh54": "true sleep period average time of start (time actually first fell asleep for the night) of child",
+
+  "truesleepDuration.1ChildWeek2Sadeh30": "true sleep period mean duration (average minutes between falling asleep and waking up) of child",
+  "truesleepDuration.1ChildWeek2Sadeh36": "true sleep period mean duration (average minutes between falling asleep and waking up) of child",
+  "truesleepDuration.1ChildWeek2Sadeh42": "true sleep period mean duration (average minutes between falling asleep and waking up) of child",
+  "truesleepDuration.1ChildWeek2Sadeh54": "true sleep period mean duration (average minutes between falling asleep and waking up) of child",
+
+  "truesleepActivityMean.1ChildWeek2Sadeh30": "true sleep period activity mean (average activity between falling asleep and waking up) of child",
+  "truesleepActivityMean.1ChildWeek2Sadeh36": "true sleep period activity mean (average activity between falling asleep and waking up) of child",
+  "truesleepActivityMean.1ChildWeek2Sadeh42": "true sleep period activity mean (average activity between falling asleep and waking up) of child",
+  "truesleepActivityMean.1ChildWeek2Sadeh54": "true sleep period activity mean (average activity between falling asleep and waking up) of child",
+
+  "truesleepActivityMedian.1ChildWeek2Sadeh30": "true sleep period activity median (median activity between falling asleep and waking up) of child",
+  "truesleepActivityMedian.1ChildWeek2Sadeh36": "true sleep period activity median (median activity between falling asleep and waking up) of child",
+  "truesleepActivityMedian.1ChildWeek2Sadeh42": "true sleep period activity median (median activity between falling asleep and waking up) of child",
+  "truesleepActivityMedian.1ChildWeek2Sadeh54": "true sleep period activity median (median activity between falling asleep and waking up) of child",
+
+  "truesleepActivitySD.1ChildWeek2Sadeh30": "true sleep period activity standard deviation (average variability of activity between falling asleep and waking up) of child",
+  "truesleepActivitySD.1ChildWeek2Sadeh36": "true sleep period activity standard deviation (average variability of activity between falling asleep and waking up) of child",
+  "truesleepActivitySD.1ChildWeek2Sadeh42": "true sleep period activity standard deviation (average variability of activity between falling asleep and waking up) of child",
+  "truesleepActivitySD.1ChildWeek2Sadeh54": "true sleep period activity standard deviation (average variability of activity between falling asleep and waking up) of child",
+
+  "napSleepMinutesChildWeek2Sadeh30": "down for nap total sleeping minutes per period of child",
+  "napSleepMinutesChildWeek2Sadeh36": "down for nap total sleeping minutes per period of child",
+  "napSleepMinutesChildWeek2Sadeh42": "down for nap total sleeping minutes per period of child",
+  "napSleepMinutesChildWeek2Sadeh54": "down for nap total sleeping minutes per period of child",
+
+  "napPercentSleepChildWeek2Sadeh30": "down for nap percent sleep of child",
+  "napPercentSleepChildWeek2Sadeh36": "down for nap percent sleep of child",
+  "napPercentSleepChildWeek2Sadeh42": "down for nap percent sleep of child",
+  "napPercentSleepChildWeek2Sadeh54": "down for nap percent sleep of child",
+
+  "napSleepMinutes.1ChildWeek2Sadeh30": "down for nap total sleeping minutes per period of child",
+  "napSleepMinutes.1ChildWeek2Sadeh36": "down for nap total sleeping minutes per period of child",
+  "napSleepMinutes.1ChildWeek2Sadeh42": "down for nap total sleeping minutes per period of child",
+  "napSleepMinutes.1ChildWeek2Sadeh54": "down for nap total sleeping minutes per period of child",
+
+  "napPercentSleep.1ChildWeek2Sadeh30": "down for nap percent sleep of child",
+  "napPercentSleep.1ChildWeek2Sadeh36": "down for nap percent sleep of child",
+  "napPercentSleep.1ChildWeek2Sadeh42": "down for nap percent sleep of child",
+  "napPercentSleep.1ChildWeek2Sadeh54": "down for nap percent sleep of child",
 
   "childBehaviorToyProhibitionChildPres30": "Child Behavior Toy Prohibition - Other Child Present?",
   "childBehaviorToyProhibitionChildPres36": "Child Behavior Toy Prohibition - Other Child Present?",
@@ -3672,6 +4162,861 @@ export const variableDescriptions = {
   "cesdDepressionDiagnosis36": "Depression Diagnosis",
   "cesdDepressionDiagnosis42": "Depression Diagnosis",
   "cesdDepressionDiagnosis54": "Depression Diagnosis",
+
+  "downNumObsChildWeek1Sadeh30": "Number of child in-bed (\"down\") observations/episodes included, Week 1, Sadeh scoring",
+  "downNumObsChildWeek1Sadeh36": "Number of child in-bed (\"down\") observations/episodes included, Week 1, Sadeh scoring",
+  "downNumObsChildWeek1Sadeh42": "Number of child in-bed (\"down\") observations/episodes included, Week 1, Sadeh scoring",
+  "downNumObsChildWeek1Sadeh54": "Number of child in-bed (\"down\") observations/episodes included, Week 1, Sadeh scoring",
+
+  "downShortTimeInBedNumObsChildWeek1Sadeh30": "Number of child in-bed observations meeting the short-time-in-bed condition, Week 1, Sadeh scoring",
+  "downShortTimeInBedNumObsChildWeek1Sadeh36": "Number of child in-bed observations meeting the short-time-in-bed condition, Week 1, Sadeh scoring",
+  "downShortTimeInBedNumObsChildWeek1Sadeh42": "Number of child in-bed observations meeting the short-time-in-bed condition, Week 1, Sadeh scoring",
+  "downShortTimeInBedNumObsChildWeek1Sadeh54": "Number of child in-bed observations meeting the short-time-in-bed condition, Week 1, Sadeh scoring",
+
+  "downShortTimeAsleepNumObsChildWeek1Sadeh30": "Number of child in-bed observations meeting the short-time-asleep condition, Week 1, Sadeh scoring",
+  "downShortTimeAsleepNumObsChildWeek1Sadeh36": "Number of child in-bed observations meeting the short-time-asleep condition, Week 1, Sadeh scoring",
+  "downShortTimeAsleepNumObsChildWeek1Sadeh42": "Number of child in-bed observations meeting the short-time-asleep condition, Week 1, Sadeh scoring",
+  "downShortTimeAsleepNumObsChildWeek1Sadeh54": "Number of child in-bed observations meeting the short-time-asleep condition, Week 1, Sadeh scoring",
+
+  "napNumObsChildWeek1Sadeh30": "Number of child nap observations/episodes included, Week 1, Sadeh scoring",
+  "napNumObsChildWeek1Sadeh36": "Number of child nap observations/episodes included, Week 1, Sadeh scoring",
+  "napNumObsChildWeek1Sadeh42": "Number of child nap observations/episodes included, Week 1, Sadeh scoring",
+  "napNumObsChildWeek1Sadeh54": "Number of child nap observations/episodes included, Week 1, Sadeh scoring",
+
+  "napShortTimeInBedNumObsChildWeek1Sadeh30": "Number of child nap observations meeting the short-time-in-bed condition, Week 1, Sadeh scoring",
+  "napShortTimeInBedNumObsChildWeek1Sadeh36": "Number of child nap observations meeting the short-time-in-bed condition, Week 1, Sadeh scoring",
+  "napShortTimeInBedNumObsChildWeek1Sadeh42": "Number of child nap observations meeting the short-time-in-bed condition, Week 1, Sadeh scoring",
+  "napShortTimeInBedNumObsChildWeek1Sadeh54": "Number of child nap observations meeting the short-time-in-bed condition, Week 1, Sadeh scoring",
+
+  "napShortTimeAsleepNumObsChildWeek1Sadeh30": "Number of child nap observations meeting the short-time-asleep condition, Week 1, Sadeh scoring",
+  "napShortTimeAsleepNumObsChildWeek1Sadeh36": "Number of child nap observations meeting the short-time-asleep condition, Week 1, Sadeh scoring",
+  "napShortTimeAsleepNumObsChildWeek1Sadeh42": "Number of child nap observations meeting the short-time-asleep condition, Week 1, Sadeh scoring",
+  "napShortTimeAsleepNumObsChildWeek1Sadeh54": "Number of child nap observations meeting the short-time-asleep condition, Week 1, Sadeh scoring",
+
+  "truesleepNumObsChildWeek1Sadeh30": "Number of child true-sleep/night observations included, Week 1, Sadeh scoring",
+  "truesleepNumObsChildWeek1Sadeh36": "Number of child true-sleep/night observations included, Week 1, Sadeh scoring",
+  "truesleepNumObsChildWeek1Sadeh42": "Number of child true-sleep/night observations included, Week 1, Sadeh scoring",
+  "truesleepNumObsChildWeek1Sadeh54": "Number of child true-sleep/night observations included, Week 1, Sadeh scoring",
+
+  "truesleepShortTimeInBedNumObsChildWeek1Sadeh30": "Number of child true-sleep observations meeting the short-time-in-bed condition, Week 1, Sadeh scoring",
+  "truesleepShortTimeInBedNumObsChildWeek1Sadeh36": "Number of child true-sleep observations meeting the short-time-in-bed condition, Week 1, Sadeh scoring",
+  "truesleepShortTimeInBedNumObsChildWeek1Sadeh42": "Number of child true-sleep observations meeting the short-time-in-bed condition, Week 1, Sadeh scoring",
+  "truesleepShortTimeInBedNumObsChildWeek1Sadeh54": "Number of child true-sleep observations meeting the short-time-in-bed condition, Week 1, Sadeh scoring",
+
+  "truesleepShortTimeAsleepNumObsChildWeek1Sadeh30": "Number of child true-sleep observations meeting the short-time-asleep condition, Week 1, Sadeh scoring",
+  "truesleepShortTimeAsleepNumObsChildWeek1Sadeh36": "Number of child true-sleep observations meeting the short-time-asleep condition, Week 1, Sadeh scoring",
+  "truesleepShortTimeAsleepNumObsChildWeek1Sadeh42": "Number of child true-sleep observations meeting the short-time-asleep condition, Week 1, Sadeh scoring",
+  "truesleepShortTimeAsleepNumObsChildWeek1Sadeh54": "Number of child true-sleep observations meeting the short-time-asleep condition, Week 1, Sadeh scoring",
+
+  "upNumObsChildWeek1Sadeh30": "Number of child daytime (\"up\") observations/episodes included, Week 1, Sadeh scoring",
+  "upNumObsChildWeek1Sadeh36": "Number of child daytime (\"up\") observations/episodes included, Week 1, Sadeh scoring",
+  "upNumObsChildWeek1Sadeh42": "Number of child daytime (\"up\") observations/episodes included, Week 1, Sadeh scoring",
+  "upNumObsChildWeek1Sadeh54": "Number of child daytime (\"up\") observations/episodes included, Week 1, Sadeh scoring",
+
+  "upShortTimeInBedNumObsChildWeek1Sadeh30": "Number of child daytime/up observations meeting the short-time-in-bed condition, Week 1, Sadeh scoring",
+  "upShortTimeInBedNumObsChildWeek1Sadeh36": "Number of child daytime/up observations meeting the short-time-in-bed condition, Week 1, Sadeh scoring",
+  "upShortTimeInBedNumObsChildWeek1Sadeh42": "Number of child daytime/up observations meeting the short-time-in-bed condition, Week 1, Sadeh scoring",
+  "upShortTimeInBedNumObsChildWeek1Sadeh54": "Number of child daytime/up observations meeting the short-time-in-bed condition, Week 1, Sadeh scoring",
+
+  "upShortTimeAsleepNumObsChildWeek1Sadeh30": "Number of child daytime/up observations meeting the short-time-asleep condition, Week 1, Sadeh scoring",
+  "upShortTimeAsleepNumObsChildWeek1Sadeh36": "Number of child daytime/up observations meeting the short-time-asleep condition, Week 1, Sadeh scoring",
+  "upShortTimeAsleepNumObsChildWeek1Sadeh42": "Number of child daytime/up observations meeting the short-time-asleep condition, Week 1, Sadeh scoring",
+  "upShortTimeAsleepNumObsChildWeek1Sadeh54": "Number of child daytime/up observations meeting the short-time-asleep condition, Week 1, Sadeh scoring",
+
+  "downNumObsChildCombinedSadeh30": "Number of child in-bed (\"down\") observations/episodes included, combined period, Sadeh scoring",
+  "downNumObsChildCombinedSadeh36": "Number of child in-bed (\"down\") observations/episodes included, combined period, Sadeh scoring",
+  "downNumObsChildCombinedSadeh42": "Number of child in-bed (\"down\") observations/episodes included, combined period, Sadeh scoring",
+  "downNumObsChildCombinedSadeh54": "Number of child in-bed (\"down\") observations/episodes included, combined period, Sadeh scoring",
+
+  "downShortTimeInBedNumObsChildCombinedSadeh30": "Number of child in-bed observations meeting the short-time-in-bed condition, combined period, Sadeh scoring",
+  "downShortTimeInBedNumObsChildCombinedSadeh36": "Number of child in-bed observations meeting the short-time-in-bed condition, combined period, Sadeh scoring",
+  "downShortTimeInBedNumObsChildCombinedSadeh42": "Number of child in-bed observations meeting the short-time-in-bed condition, combined period, Sadeh scoring",
+  "downShortTimeInBedNumObsChildCombinedSadeh54": "Number of child in-bed observations meeting the short-time-in-bed condition, combined period, Sadeh scoring",
+
+  "downShortTimeAsleepNumObsChildCombinedSadeh30": "Number of child in-bed observations meeting the short-time-asleep condition, combined period, Sadeh scoring",
+  "downShortTimeAsleepNumObsChildCombinedSadeh36": "Number of child in-bed observations meeting the short-time-asleep condition, combined period, Sadeh scoring",
+  "downShortTimeAsleepNumObsChildCombinedSadeh42": "Number of child in-bed observations meeting the short-time-asleep condition, combined period, Sadeh scoring",
+  "downShortTimeAsleepNumObsChildCombinedSadeh54": "Number of child in-bed observations meeting the short-time-asleep condition, combined period, Sadeh scoring",
+
+  "napNumObsChildCombinedSadeh30": "Number of child nap observations/episodes included, combined period, Sadeh scoring",
+  "napNumObsChildCombinedSadeh36": "Number of child nap observations/episodes included, combined period, Sadeh scoring",
+  "napNumObsChildCombinedSadeh42": "Number of child nap observations/episodes included, combined period, Sadeh scoring",
+  "napNumObsChildCombinedSadeh54": "Number of child nap observations/episodes included, combined period, Sadeh scoring",
+
+  "napShortTimeInBedNumObsChildCombinedSadeh30": "Number of child nap observations meeting the short-time-in-bed condition, combined period, Sadeh scoring",
+  "napShortTimeInBedNumObsChildCombinedSadeh36": "Number of child nap observations meeting the short-time-in-bed condition, combined period, Sadeh scoring",
+  "napShortTimeInBedNumObsChildCombinedSadeh42": "Number of child nap observations meeting the short-time-in-bed condition, combined period, Sadeh scoring",
+  "napShortTimeInBedNumObsChildCombinedSadeh54": "Number of child nap observations meeting the short-time-in-bed condition, combined period, Sadeh scoring",
+
+  "napShortTimeAsleepNumObsChildCombinedSadeh30": "Number of child nap observations meeting the short-time-asleep condition, combined period, Sadeh scoring",
+  "napShortTimeAsleepNumObsChildCombinedSadeh36": "Number of child nap observations meeting the short-time-asleep condition, combined period, Sadeh scoring",
+  "napShortTimeAsleepNumObsChildCombinedSadeh42": "Number of child nap observations meeting the short-time-asleep condition, combined period, Sadeh scoring",
+  "napShortTimeAsleepNumObsChildCombinedSadeh54": "Number of child nap observations meeting the short-time-asleep condition, combined period, Sadeh scoring",
+
+  "truesleepNumObsChildCombinedSadeh30": "Number of child true-sleep/night observations included, combined period, Sadeh scoring",
+  "truesleepNumObsChildCombinedSadeh36": "Number of child true-sleep/night observations included, combined period, Sadeh scoring",
+  "truesleepNumObsChildCombinedSadeh42": "Number of child true-sleep/night observations included, combined period, Sadeh scoring",
+  "truesleepNumObsChildCombinedSadeh54": "Number of child true-sleep/night observations included, combined period, Sadeh scoring",
+
+  "truesleepShortTimeInBedNumObsChildCombinedSadeh30": "Number of child true-sleep observations meeting the short-time-in-bed condition, combined period, Sadeh scoring",
+  "truesleepShortTimeInBedNumObsChildCombinedSadeh36": "Number of child true-sleep observations meeting the short-time-in-bed condition, combined period, Sadeh scoring",
+  "truesleepShortTimeInBedNumObsChildCombinedSadeh42": "Number of child true-sleep observations meeting the short-time-in-bed condition, combined period, Sadeh scoring",
+  "truesleepShortTimeInBedNumObsChildCombinedSadeh54": "Number of child true-sleep observations meeting the short-time-in-bed condition, combined period, Sadeh scoring",
+
+  "truesleepShortTimeAsleepNumObsChildCombinedSadeh30": "Number of child true-sleep observations meeting the short-time-asleep condition, combined period, Sadeh scoring",
+  "truesleepShortTimeAsleepNumObsChildCombinedSadeh36": "Number of child true-sleep observations meeting the short-time-asleep condition, combined period, Sadeh scoring",
+  "truesleepShortTimeAsleepNumObsChildCombinedSadeh42": "Number of child true-sleep observations meeting the short-time-asleep condition, combined period, Sadeh scoring",
+  "truesleepShortTimeAsleepNumObsChildCombinedSadeh54": "Number of child true-sleep observations meeting the short-time-asleep condition, combined period, Sadeh scoring",
+
+  "upNumObsChildCombinedSadeh30": "Number of child daytime (\"up\") observations/episodes included, combined period, Sadeh scoring",
+  "upNumObsChildCombinedSadeh36": "Number of child daytime (\"up\") observations/episodes included, combined period, Sadeh scoring",
+  "upNumObsChildCombinedSadeh42": "Number of child daytime (\"up\") observations/episodes included, combined period, Sadeh scoring",
+  "upNumObsChildCombinedSadeh54": "Number of child daytime (\"up\") observations/episodes included, combined period, Sadeh scoring",
+
+  "upShortTimeInBedNumObsChildCombinedSadeh30": "Number of child daytime/up observations meeting the short-time-in-bed condition, combined period, Sadeh scoring",
+  "upShortTimeInBedNumObsChildCombinedSadeh36": "Number of child daytime/up observations meeting the short-time-in-bed condition, combined period, Sadeh scoring",
+  "upShortTimeInBedNumObsChildCombinedSadeh42": "Number of child daytime/up observations meeting the short-time-in-bed condition, combined period, Sadeh scoring",
+  "upShortTimeInBedNumObsChildCombinedSadeh54": "Number of child daytime/up observations meeting the short-time-in-bed condition, combined period, Sadeh scoring",
+
+  "upShortTimeAsleepNumObsChildCombinedSadeh30": "Number of child daytime/up observations meeting the short-time-asleep condition, combined period, Sadeh scoring",
+  "upShortTimeAsleepNumObsChildCombinedSadeh36": "Number of child daytime/up observations meeting the short-time-asleep condition, combined period, Sadeh scoring",
+  "upShortTimeAsleepNumObsChildCombinedSadeh42": "Number of child daytime/up observations meeting the short-time-asleep condition, combined period, Sadeh scoring",
+  "upShortTimeAsleepNumObsChildCombinedSadeh54": "Number of child daytime/up observations meeting the short-time-asleep condition, combined period, Sadeh scoring",
+
+  "downNumObsParentCombinedSadeh30": "Number of parent in-bed (\"down\") observations/episodes included, combined period, Sadeh scoring",
+  "downNumObsParentCombinedSadeh36": "Number of parent in-bed (\"down\") observations/episodes included, combined period, Sadeh scoring",
+  "downNumObsParentCombinedSadeh42": "Number of parent in-bed (\"down\") observations/episodes included, combined period, Sadeh scoring",
+  "downNumObsParentCombinedSadeh54": "Number of parent in-bed (\"down\") observations/episodes included, combined period, Sadeh scoring",
+
+  "downShortTimeInBedNumObsParentCombinedSadeh30": "Number of parent in-bed observations meeting the short-time-in-bed condition, combined period, Sadeh scoring",
+  "downShortTimeInBedNumObsParentCombinedSadeh36": "Number of parent in-bed observations meeting the short-time-in-bed condition, combined period, Sadeh scoring",
+  "downShortTimeInBedNumObsParentCombinedSadeh42": "Number of parent in-bed observations meeting the short-time-in-bed condition, combined period, Sadeh scoring",
+  "downShortTimeInBedNumObsParentCombinedSadeh54": "Number of parent in-bed observations meeting the short-time-in-bed condition, combined period, Sadeh scoring",
+
+  "napNumObsParentCombinedSadeh30": "Number of parent nap observations/episodes included, combined period, Sadeh scoring",
+  "napNumObsParentCombinedSadeh36": "Number of parent nap observations/episodes included, combined period, Sadeh scoring",
+  "napNumObsParentCombinedSadeh42": "Number of parent nap observations/episodes included, combined period, Sadeh scoring",
+  "napNumObsParentCombinedSadeh54": "Number of parent nap observations/episodes included, combined period, Sadeh scoring",
+
+  "napShortTimeInBedNumObsParentCombinedSadeh30": "Number of parent nap observations meeting the short-time-in-bed condition, combined period, Sadeh scoring",
+  "napShortTimeInBedNumObsParentCombinedSadeh36": "Number of parent nap observations meeting the short-time-in-bed condition, combined period, Sadeh scoring",
+  "napShortTimeInBedNumObsParentCombinedSadeh42": "Number of parent nap observations meeting the short-time-in-bed condition, combined period, Sadeh scoring",
+  "napShortTimeInBedNumObsParentCombinedSadeh54": "Number of parent nap observations meeting the short-time-in-bed condition, combined period, Sadeh scoring",
+
+  "upNumObsParentCombinedSadeh30": "Number of parent daytime (\"up\") observations/episodes included, combined period, Sadeh scoring",
+  "upNumObsParentCombinedSadeh36": "Number of parent daytime (\"up\") observations/episodes included, combined period, Sadeh scoring",
+  "upNumObsParentCombinedSadeh42": "Number of parent daytime (\"up\") observations/episodes included, combined period, Sadeh scoring",
+  "upNumObsParentCombinedSadeh54": "Number of parent daytime (\"up\") observations/episodes included, combined period, Sadeh scoring",
+
+  "upShortTimeInBedNumObsParentCombinedSadeh30": "Number of parent daytime/up observations meeting the short-time-in-bed condition, combined period, Sadeh scoring",
+  "upShortTimeInBedNumObsParentCombinedSadeh36": "Number of parent daytime/up observations meeting the short-time-in-bed condition, combined period, Sadeh scoring",
+  "upShortTimeInBedNumObsParentCombinedSadeh42": "Number of parent daytime/up observations meeting the short-time-in-bed condition, combined period, Sadeh scoring",
+  "upShortTimeInBedNumObsParentCombinedSadeh54": "Number of parent daytime/up observations meeting the short-time-in-bed condition, combined period, Sadeh scoring",
+
+  "downNumObsChildWeek2Sadeh30": "Number of child in-bed (\"down\") observations/episodes included, Week 2, Sadeh scoring",
+  "downNumObsChildWeek2Sadeh36": "Number of child in-bed (\"down\") observations/episodes included, Week 2, Sadeh scoring",
+  "downNumObsChildWeek2Sadeh42": "Number of child in-bed (\"down\") observations/episodes included, Week 2, Sadeh scoring",
+  "downNumObsChildWeek2Sadeh54": "Number of child in-bed (\"down\") observations/episodes included, Week 2, Sadeh scoring",
+
+  "downShortTimeInBedNumObsChildWeek2Sadeh30": "Number of child in-bed observations meeting the short-time-in-bed condition, Week 2, Sadeh scoring",
+  "downShortTimeInBedNumObsChildWeek2Sadeh36": "Number of child in-bed observations meeting the short-time-in-bed condition, Week 2, Sadeh scoring",
+  "downShortTimeInBedNumObsChildWeek2Sadeh42": "Number of child in-bed observations meeting the short-time-in-bed condition, Week 2, Sadeh scoring",
+  "downShortTimeInBedNumObsChildWeek2Sadeh54": "Number of child in-bed observations meeting the short-time-in-bed condition, Week 2, Sadeh scoring",
+
+  "downShortTimeAsleepNumObsChildWeek2Sadeh30": "Number of child in-bed observations meeting the short-time-asleep condition, Week 2, Sadeh scoring",
+  "downShortTimeAsleepNumObsChildWeek2Sadeh36": "Number of child in-bed observations meeting the short-time-asleep condition, Week 2, Sadeh scoring",
+  "downShortTimeAsleepNumObsChildWeek2Sadeh42": "Number of child in-bed observations meeting the short-time-asleep condition, Week 2, Sadeh scoring",
+  "downShortTimeAsleepNumObsChildWeek2Sadeh54": "Number of child in-bed observations meeting the short-time-asleep condition, Week 2, Sadeh scoring",
+
+  "napNumObsChildWeek2Sadeh30": "Number of child nap observations/episodes included, Week 2, Sadeh scoring",
+  "napNumObsChildWeek2Sadeh36": "Number of child nap observations/episodes included, Week 2, Sadeh scoring",
+  "napNumObsChildWeek2Sadeh42": "Number of child nap observations/episodes included, Week 2, Sadeh scoring",
+  "napNumObsChildWeek2Sadeh54": "Number of child nap observations/episodes included, Week 2, Sadeh scoring",
+
+  "napShortTimeInBedNumObsChildWeek2Sadeh30": "Number of child nap observations meeting the short-time-in-bed condition, Week 2, Sadeh scoring",
+  "napShortTimeInBedNumObsChildWeek2Sadeh36": "Number of child nap observations meeting the short-time-in-bed condition, Week 2, Sadeh scoring",
+  "napShortTimeInBedNumObsChildWeek2Sadeh42": "Number of child nap observations meeting the short-time-in-bed condition, Week 2, Sadeh scoring",
+  "napShortTimeInBedNumObsChildWeek2Sadeh54": "Number of child nap observations meeting the short-time-in-bed condition, Week 2, Sadeh scoring",
+
+  "napShortTimeAsleepNumObsChildWeek2Sadeh30": "Number of child nap observations meeting the short-time-asleep condition, Week 2, Sadeh scoring",
+  "napShortTimeAsleepNumObsChildWeek2Sadeh36": "Number of child nap observations meeting the short-time-asleep condition, Week 2, Sadeh scoring",
+  "napShortTimeAsleepNumObsChildWeek2Sadeh42": "Number of child nap observations meeting the short-time-asleep condition, Week 2, Sadeh scoring",
+  "napShortTimeAsleepNumObsChildWeek2Sadeh54": "Number of child nap observations meeting the short-time-asleep condition, Week 2, Sadeh scoring",
+
+  "truesleepNumObsChildWeek2Sadeh30": "Number of child true-sleep/night observations included, Week 2, Sadeh scoring",
+  "truesleepNumObsChildWeek2Sadeh36": "Number of child true-sleep/night observations included, Week 2, Sadeh scoring",
+  "truesleepNumObsChildWeek2Sadeh42": "Number of child true-sleep/night observations included, Week 2, Sadeh scoring",
+  "truesleepNumObsChildWeek2Sadeh54": "Number of child true-sleep/night observations included, Week 2, Sadeh scoring",
+
+  "truesleepShortTimeInBedNumObsChildWeek2Sadeh30": "Number of child true-sleep observations meeting the short-time-in-bed condition, Week 2, Sadeh scoring",
+  "truesleepShortTimeInBedNumObsChildWeek2Sadeh36": "Number of child true-sleep observations meeting the short-time-in-bed condition, Week 2, Sadeh scoring",
+  "truesleepShortTimeInBedNumObsChildWeek2Sadeh42": "Number of child true-sleep observations meeting the short-time-in-bed condition, Week 2, Sadeh scoring",
+  "truesleepShortTimeInBedNumObsChildWeek2Sadeh54": "Number of child true-sleep observations meeting the short-time-in-bed condition, Week 2, Sadeh scoring",
+
+  "truesleepShortTimeAsleepNumObsChildWeek2Sadeh30": "Number of child true-sleep observations meeting the short-time-asleep condition, Week 2, Sadeh scoring",
+  "truesleepShortTimeAsleepNumObsChildWeek2Sadeh36": "Number of child true-sleep observations meeting the short-time-asleep condition, Week 2, Sadeh scoring",
+  "truesleepShortTimeAsleepNumObsChildWeek2Sadeh42": "Number of child true-sleep observations meeting the short-time-asleep condition, Week 2, Sadeh scoring",
+  "truesleepShortTimeAsleepNumObsChildWeek2Sadeh54": "Number of child true-sleep observations meeting the short-time-asleep condition, Week 2, Sadeh scoring",
+
+  "upNumObsChildWeek2Sadeh30": "Number of child daytime (\"up\") observations/episodes included, Week 2, Sadeh scoring",
+  "upNumObsChildWeek2Sadeh36": "Number of child daytime (\"up\") observations/episodes included, Week 2, Sadeh scoring",
+  "upNumObsChildWeek2Sadeh42": "Number of child daytime (\"up\") observations/episodes included, Week 2, Sadeh scoring",
+  "upNumObsChildWeek2Sadeh54": "Number of child daytime (\"up\") observations/episodes included, Week 2, Sadeh scoring",
+
+  "upShortTimeInBedNumObsChildWeek2Sadeh30": "Number of child daytime/up observations meeting the short-time-in-bed condition, Week 2, Sadeh scoring",
+  "upShortTimeInBedNumObsChildWeek2Sadeh36": "Number of child daytime/up observations meeting the short-time-in-bed condition, Week 2, Sadeh scoring",
+  "upShortTimeInBedNumObsChildWeek2Sadeh42": "Number of child daytime/up observations meeting the short-time-in-bed condition, Week 2, Sadeh scoring",
+  "upShortTimeInBedNumObsChildWeek2Sadeh54": "Number of child daytime/up observations meeting the short-time-in-bed condition, Week 2, Sadeh scoring",
+
+  "upShortTimeAsleepNumObsChildWeek2Sadeh30": "Number of child daytime/up observations meeting the short-time-asleep condition, Week 2, Sadeh scoring",
+  "upShortTimeAsleepNumObsChildWeek2Sadeh36": "Number of child daytime/up observations meeting the short-time-asleep condition, Week 2, Sadeh scoring",
+  "upShortTimeAsleepNumObsChildWeek2Sadeh42": "Number of child daytime/up observations meeting the short-time-asleep condition, Week 2, Sadeh scoring",
+  "upShortTimeAsleepNumObsChildWeek2Sadeh54": "Number of child daytime/up observations meeting the short-time-asleep condition, Week 2, Sadeh scoring",
+
+  "downNumObsChildWeek1ColeKripke30": "Number of child in-bed (\"down\") observations/episodes included, Week 1, ColeKripke scoring",
+  "downNumObsChildWeek1ColeKripke36": "Number of child in-bed (\"down\") observations/episodes included, Week 1, ColeKripke scoring",
+  "downNumObsChildWeek1ColeKripke42": "Number of child in-bed (\"down\") observations/episodes included, Week 1, ColeKripke scoring",
+  "downNumObsChildWeek1ColeKripke54": "Number of child in-bed (\"down\") observations/episodes included, Week 1, ColeKripke scoring",
+
+  "downShortTimeInBedNumObsChildWeek1ColeKripke30": "Number of child in-bed observations meeting the short-time-in-bed condition, Week 1, ColeKripke scoring",
+  "downShortTimeInBedNumObsChildWeek1ColeKripke36": "Number of child in-bed observations meeting the short-time-in-bed condition, Week 1, ColeKripke scoring",
+  "downShortTimeInBedNumObsChildWeek1ColeKripke42": "Number of child in-bed observations meeting the short-time-in-bed condition, Week 1, ColeKripke scoring",
+  "downShortTimeInBedNumObsChildWeek1ColeKripke54": "Number of child in-bed observations meeting the short-time-in-bed condition, Week 1, ColeKripke scoring",
+
+  "downShortTimeAsleepNumObsChildWeek1ColeKripke30": "Number of child in-bed observations meeting the short-time-asleep condition, Week 1, ColeKripke scoring",
+  "downShortTimeAsleepNumObsChildWeek1ColeKripke36": "Number of child in-bed observations meeting the short-time-asleep condition, Week 1, ColeKripke scoring",
+  "downShortTimeAsleepNumObsChildWeek1ColeKripke42": "Number of child in-bed observations meeting the short-time-asleep condition, Week 1, ColeKripke scoring",
+  "downShortTimeAsleepNumObsChildWeek1ColeKripke54": "Number of child in-bed observations meeting the short-time-asleep condition, Week 1, ColeKripke scoring",
+
+  "napNumObsChildWeek1ColeKripke30": "Number of child nap observations/episodes included, Week 1, ColeKripke scoring",
+  "napNumObsChildWeek1ColeKripke36": "Number of child nap observations/episodes included, Week 1, ColeKripke scoring",
+  "napNumObsChildWeek1ColeKripke42": "Number of child nap observations/episodes included, Week 1, ColeKripke scoring",
+  "napNumObsChildWeek1ColeKripke54": "Number of child nap observations/episodes included, Week 1, ColeKripke scoring",
+
+  "napShortTimeInBedNumObsChildWeek1ColeKripke30": "Number of child nap observations meeting the short-time-in-bed condition, Week 1, ColeKripke scoring",
+  "napShortTimeInBedNumObsChildWeek1ColeKripke36": "Number of child nap observations meeting the short-time-in-bed condition, Week 1, ColeKripke scoring",
+  "napShortTimeInBedNumObsChildWeek1ColeKripke42": "Number of child nap observations meeting the short-time-in-bed condition, Week 1, ColeKripke scoring",
+  "napShortTimeInBedNumObsChildWeek1ColeKripke54": "Number of child nap observations meeting the short-time-in-bed condition, Week 1, ColeKripke scoring",
+
+  "napShortTimeAsleepNumObsChildWeek1ColeKripke30": "Number of child nap observations meeting the short-time-asleep condition, Week 1, ColeKripke scoring",
+  "napShortTimeAsleepNumObsChildWeek1ColeKripke36": "Number of child nap observations meeting the short-time-asleep condition, Week 1, ColeKripke scoring",
+  "napShortTimeAsleepNumObsChildWeek1ColeKripke42": "Number of child nap observations meeting the short-time-asleep condition, Week 1, ColeKripke scoring",
+  "napShortTimeAsleepNumObsChildWeek1ColeKripke54": "Number of child nap observations meeting the short-time-asleep condition, Week 1, ColeKripke scoring",
+
+  "truesleepNumObsChildWeek1ColeKripke30": "Number of child true-sleep/night observations included, Week 1, ColeKripke scoring",
+  "truesleepNumObsChildWeek1ColeKripke36": "Number of child true-sleep/night observations included, Week 1, ColeKripke scoring",
+  "truesleepNumObsChildWeek1ColeKripke42": "Number of child true-sleep/night observations included, Week 1, ColeKripke scoring",
+  "truesleepNumObsChildWeek1ColeKripke54": "Number of child true-sleep/night observations included, Week 1, ColeKripke scoring",
+
+  "truesleepShortTimeInBedNumObsChildWeek1ColeKripke30": "Number of child true-sleep observations meeting the short-time-in-bed condition, Week 1, ColeKripke scoring",
+  "truesleepShortTimeInBedNumObsChildWeek1ColeKripke36": "Number of child true-sleep observations meeting the short-time-in-bed condition, Week 1, ColeKripke scoring",
+  "truesleepShortTimeInBedNumObsChildWeek1ColeKripke42": "Number of child true-sleep observations meeting the short-time-in-bed condition, Week 1, ColeKripke scoring",
+  "truesleepShortTimeInBedNumObsChildWeek1ColeKripke54": "Number of child true-sleep observations meeting the short-time-in-bed condition, Week 1, ColeKripke scoring",
+
+  "truesleepShortTimeAsleepNumObsChildWeek1ColeKripke30": "Number of child true-sleep observations meeting the short-time-asleep condition, Week 1, ColeKripke scoring",
+  "truesleepShortTimeAsleepNumObsChildWeek1ColeKripke36": "Number of child true-sleep observations meeting the short-time-asleep condition, Week 1, ColeKripke scoring",
+  "truesleepShortTimeAsleepNumObsChildWeek1ColeKripke42": "Number of child true-sleep observations meeting the short-time-asleep condition, Week 1, ColeKripke scoring",
+  "truesleepShortTimeAsleepNumObsChildWeek1ColeKripke54": "Number of child true-sleep observations meeting the short-time-asleep condition, Week 1, ColeKripke scoring",
+
+  "upNumObsChildWeek1ColeKripke30": "Number of child daytime (\"up\") observations/episodes included, Week 1, ColeKripke scoring",
+  "upNumObsChildWeek1ColeKripke36": "Number of child daytime (\"up\") observations/episodes included, Week 1, ColeKripke scoring",
+  "upNumObsChildWeek1ColeKripke42": "Number of child daytime (\"up\") observations/episodes included, Week 1, ColeKripke scoring",
+  "upNumObsChildWeek1ColeKripke54": "Number of child daytime (\"up\") observations/episodes included, Week 1, ColeKripke scoring",
+
+  "upShortTimeInBedNumObsChildWeek1ColeKripke30": "Number of child daytime/up observations meeting the short-time-in-bed condition, Week 1, ColeKripke scoring",
+  "upShortTimeInBedNumObsChildWeek1ColeKripke36": "Number of child daytime/up observations meeting the short-time-in-bed condition, Week 1, ColeKripke scoring",
+  "upShortTimeInBedNumObsChildWeek1ColeKripke42": "Number of child daytime/up observations meeting the short-time-in-bed condition, Week 1, ColeKripke scoring",
+  "upShortTimeInBedNumObsChildWeek1ColeKripke54": "Number of child daytime/up observations meeting the short-time-in-bed condition, Week 1, ColeKripke scoring",
+
+  "upShortTimeAsleepNumObsChildWeek1ColeKripke30": "Number of child daytime/up observations meeting the short-time-asleep condition, Week 1, ColeKripke scoring",
+  "upShortTimeAsleepNumObsChildWeek1ColeKripke36": "Number of child daytime/up observations meeting the short-time-asleep condition, Week 1, ColeKripke scoring",
+  "upShortTimeAsleepNumObsChildWeek1ColeKripke42": "Number of child daytime/up observations meeting the short-time-asleep condition, Week 1, ColeKripke scoring",
+  "upShortTimeAsleepNumObsChildWeek1ColeKripke54": "Number of child daytime/up observations meeting the short-time-asleep condition, Week 1, ColeKripke scoring",
+
+  "downNumObsParentWeek1ColeKripke30": "Number of parent in-bed (\"down\") observations/episodes included, Week 1, ColeKripke scoring",
+  "downNumObsParentWeek1ColeKripke36": "Number of parent in-bed (\"down\") observations/episodes included, Week 1, ColeKripke scoring",
+  "downNumObsParentWeek1ColeKripke42": "Number of parent in-bed (\"down\") observations/episodes included, Week 1, ColeKripke scoring",
+  "downNumObsParentWeek1ColeKripke54": "Number of parent in-bed (\"down\") observations/episodes included, Week 1, ColeKripke scoring",
+
+  "downShortTimeInBedNumObsParentWeek1ColeKripke30": "Number of parent in-bed observations meeting the short-time-in-bed condition, Week 1, ColeKripke scoring",
+  "downShortTimeInBedNumObsParentWeek1ColeKripke36": "Number of parent in-bed observations meeting the short-time-in-bed condition, Week 1, ColeKripke scoring",
+  "downShortTimeInBedNumObsParentWeek1ColeKripke42": "Number of parent in-bed observations meeting the short-time-in-bed condition, Week 1, ColeKripke scoring",
+  "downShortTimeInBedNumObsParentWeek1ColeKripke54": "Number of parent in-bed observations meeting the short-time-in-bed condition, Week 1, ColeKripke scoring",
+
+  "downShortTimeAsleepNumObsParentWeek1ColeKripke30": "Number of parent in-bed observations meeting the short-time-asleep condition, Week 1, ColeKripke scoring",
+  "downShortTimeAsleepNumObsParentWeek1ColeKripke36": "Number of parent in-bed observations meeting the short-time-asleep condition, Week 1, ColeKripke scoring",
+  "downShortTimeAsleepNumObsParentWeek1ColeKripke42": "Number of parent in-bed observations meeting the short-time-asleep condition, Week 1, ColeKripke scoring",
+  "downShortTimeAsleepNumObsParentWeek1ColeKripke54": "Number of parent in-bed observations meeting the short-time-asleep condition, Week 1, ColeKripke scoring",
+
+  "napNumObsParentWeek1ColeKripke30": "Number of parent nap observations/episodes included, Week 1, ColeKripke scoring",
+  "napNumObsParentWeek1ColeKripke36": "Number of parent nap observations/episodes included, Week 1, ColeKripke scoring",
+  "napNumObsParentWeek1ColeKripke42": "Number of parent nap observations/episodes included, Week 1, ColeKripke scoring",
+  "napNumObsParentWeek1ColeKripke54": "Number of parent nap observations/episodes included, Week 1, ColeKripke scoring",
+
+  "napShortTimeInBedNumObsParentWeek1ColeKripke30": "Number of parent nap observations meeting the short-time-in-bed condition, Week 1, ColeKripke scoring",
+  "napShortTimeInBedNumObsParentWeek1ColeKripke36": "Number of parent nap observations meeting the short-time-in-bed condition, Week 1, ColeKripke scoring",
+  "napShortTimeInBedNumObsParentWeek1ColeKripke42": "Number of parent nap observations meeting the short-time-in-bed condition, Week 1, ColeKripke scoring",
+  "napShortTimeInBedNumObsParentWeek1ColeKripke54": "Number of parent nap observations meeting the short-time-in-bed condition, Week 1, ColeKripke scoring",
+
+  "napShortTimeAsleepNumObsParentWeek1ColeKripke30": "Number of parent nap observations meeting the short-time-asleep condition, Week 1, ColeKripke scoring",
+  "napShortTimeAsleepNumObsParentWeek1ColeKripke36": "Number of parent nap observations meeting the short-time-asleep condition, Week 1, ColeKripke scoring",
+  "napShortTimeAsleepNumObsParentWeek1ColeKripke42": "Number of parent nap observations meeting the short-time-asleep condition, Week 1, ColeKripke scoring",
+  "napShortTimeAsleepNumObsParentWeek1ColeKripke54": "Number of parent nap observations meeting the short-time-asleep condition, Week 1, ColeKripke scoring",
+
+  "truesleepNumObsParentWeek1ColeKripke30": "Number of parent true-sleep/night observations included, Week 1, ColeKripke scoring",
+  "truesleepNumObsParentWeek1ColeKripke36": "Number of parent true-sleep/night observations included, Week 1, ColeKripke scoring",
+  "truesleepNumObsParentWeek1ColeKripke42": "Number of parent true-sleep/night observations included, Week 1, ColeKripke scoring",
+  "truesleepNumObsParentWeek1ColeKripke54": "Number of parent true-sleep/night observations included, Week 1, ColeKripke scoring",
+
+  "truesleepShortTimeInBedNumObsParentWeek1ColeKripke30": "Number of parent true-sleep observations meeting the short-time-in-bed condition, Week 1, ColeKripke scoring",
+  "truesleepShortTimeInBedNumObsParentWeek1ColeKripke36": "Number of parent true-sleep observations meeting the short-time-in-bed condition, Week 1, ColeKripke scoring",
+  "truesleepShortTimeInBedNumObsParentWeek1ColeKripke42": "Number of parent true-sleep observations meeting the short-time-in-bed condition, Week 1, ColeKripke scoring",
+  "truesleepShortTimeInBedNumObsParentWeek1ColeKripke54": "Number of parent true-sleep observations meeting the short-time-in-bed condition, Week 1, ColeKripke scoring",
+
+  "truesleepShortTimeAsleepNumObsParentWeek1ColeKripke30": "Number of parent true-sleep observations meeting the short-time-asleep condition, Week 1, ColeKripke scoring",
+  "truesleepShortTimeAsleepNumObsParentWeek1ColeKripke36": "Number of parent true-sleep observations meeting the short-time-asleep condition, Week 1, ColeKripke scoring",
+  "truesleepShortTimeAsleepNumObsParentWeek1ColeKripke42": "Number of parent true-sleep observations meeting the short-time-asleep condition, Week 1, ColeKripke scoring",
+  "truesleepShortTimeAsleepNumObsParentWeek1ColeKripke54": "Number of parent true-sleep observations meeting the short-time-asleep condition, Week 1, ColeKripke scoring",
+
+  "upNumObsParentWeek1ColeKripke30": "Number of parent daytime (\"up\") observations/episodes included, Week 1, ColeKripke scoring",
+  "upNumObsParentWeek1ColeKripke36": "Number of parent daytime (\"up\") observations/episodes included, Week 1, ColeKripke scoring",
+  "upNumObsParentWeek1ColeKripke42": "Number of parent daytime (\"up\") observations/episodes included, Week 1, ColeKripke scoring",
+  "upNumObsParentWeek1ColeKripke54": "Number of parent daytime (\"up\") observations/episodes included, Week 1, ColeKripke scoring",
+
+  "upShortTimeInBedNumObsParentWeek1ColeKripke30": "Number of parent daytime/up observations meeting the short-time-in-bed condition, Week 1, ColeKripke scoring",
+  "upShortTimeInBedNumObsParentWeek1ColeKripke36": "Number of parent daytime/up observations meeting the short-time-in-bed condition, Week 1, ColeKripke scoring",
+  "upShortTimeInBedNumObsParentWeek1ColeKripke42": "Number of parent daytime/up observations meeting the short-time-in-bed condition, Week 1, ColeKripke scoring",
+  "upShortTimeInBedNumObsParentWeek1ColeKripke54": "Number of parent daytime/up observations meeting the short-time-in-bed condition, Week 1, ColeKripke scoring",
+
+  "upShortTimeAsleepNumObsParentWeek1ColeKripke30": "Number of parent daytime/up observations meeting the short-time-asleep condition, Week 1, ColeKripke scoring",
+  "upShortTimeAsleepNumObsParentWeek1ColeKripke36": "Number of parent daytime/up observations meeting the short-time-asleep condition, Week 1, ColeKripke scoring",
+  "upShortTimeAsleepNumObsParentWeek1ColeKripke42": "Number of parent daytime/up observations meeting the short-time-asleep condition, Week 1, ColeKripke scoring",
+  "upShortTimeAsleepNumObsParentWeek1ColeKripke54": "Number of parent daytime/up observations meeting the short-time-asleep condition, Week 1, ColeKripke scoring",
+
+  "downNumObsChildCombinedColeKripke30": "Number of child in-bed (\"down\") observations/episodes included, combined period, ColeKripke scoring",
+  "downNumObsChildCombinedColeKripke36": "Number of child in-bed (\"down\") observations/episodes included, combined period, ColeKripke scoring",
+  "downNumObsChildCombinedColeKripke42": "Number of child in-bed (\"down\") observations/episodes included, combined period, ColeKripke scoring",
+  "downNumObsChildCombinedColeKripke54": "Number of child in-bed (\"down\") observations/episodes included, combined period, ColeKripke scoring",
+
+  "downShortTimeInBedNumObsChildCombinedColeKripke30": "Number of child in-bed observations meeting the short-time-in-bed condition, combined period, ColeKripke scoring",
+  "downShortTimeInBedNumObsChildCombinedColeKripke36": "Number of child in-bed observations meeting the short-time-in-bed condition, combined period, ColeKripke scoring",
+  "downShortTimeInBedNumObsChildCombinedColeKripke42": "Number of child in-bed observations meeting the short-time-in-bed condition, combined period, ColeKripke scoring",
+  "downShortTimeInBedNumObsChildCombinedColeKripke54": "Number of child in-bed observations meeting the short-time-in-bed condition, combined period, ColeKripke scoring",
+
+  "downShortTimeAsleepNumObsChildCombinedColeKripke30": "Number of child in-bed observations meeting the short-time-asleep condition, combined period, ColeKripke scoring",
+  "downShortTimeAsleepNumObsChildCombinedColeKripke36": "Number of child in-bed observations meeting the short-time-asleep condition, combined period, ColeKripke scoring",
+  "downShortTimeAsleepNumObsChildCombinedColeKripke42": "Number of child in-bed observations meeting the short-time-asleep condition, combined period, ColeKripke scoring",
+  "downShortTimeAsleepNumObsChildCombinedColeKripke54": "Number of child in-bed observations meeting the short-time-asleep condition, combined period, ColeKripke scoring",
+
+  "napNumObsChildCombinedColeKripke30": "Number of child nap observations/episodes included, combined period, ColeKripke scoring",
+  "napNumObsChildCombinedColeKripke36": "Number of child nap observations/episodes included, combined period, ColeKripke scoring",
+  "napNumObsChildCombinedColeKripke42": "Number of child nap observations/episodes included, combined period, ColeKripke scoring",
+  "napNumObsChildCombinedColeKripke54": "Number of child nap observations/episodes included, combined period, ColeKripke scoring",
+
+  "napShortTimeInBedNumObsChildCombinedColeKripke30": "Number of child nap observations meeting the short-time-in-bed condition, combined period, ColeKripke scoring",
+  "napShortTimeInBedNumObsChildCombinedColeKripke36": "Number of child nap observations meeting the short-time-in-bed condition, combined period, ColeKripke scoring",
+  "napShortTimeInBedNumObsChildCombinedColeKripke42": "Number of child nap observations meeting the short-time-in-bed condition, combined period, ColeKripke scoring",
+  "napShortTimeInBedNumObsChildCombinedColeKripke54": "Number of child nap observations meeting the short-time-in-bed condition, combined period, ColeKripke scoring",
+
+  "napShortTimeAsleepNumObsChildCombinedColeKripke30": "Number of child nap observations meeting the short-time-asleep condition, combined period, ColeKripke scoring",
+  "napShortTimeAsleepNumObsChildCombinedColeKripke36": "Number of child nap observations meeting the short-time-asleep condition, combined period, ColeKripke scoring",
+  "napShortTimeAsleepNumObsChildCombinedColeKripke42": "Number of child nap observations meeting the short-time-asleep condition, combined period, ColeKripke scoring",
+  "napShortTimeAsleepNumObsChildCombinedColeKripke54": "Number of child nap observations meeting the short-time-asleep condition, combined period, ColeKripke scoring",
+
+  "truesleepNumObsChildCombinedColeKripke30": "Number of child true-sleep/night observations included, combined period, ColeKripke scoring",
+  "truesleepNumObsChildCombinedColeKripke36": "Number of child true-sleep/night observations included, combined period, ColeKripke scoring",
+  "truesleepNumObsChildCombinedColeKripke42": "Number of child true-sleep/night observations included, combined period, ColeKripke scoring",
+  "truesleepNumObsChildCombinedColeKripke54": "Number of child true-sleep/night observations included, combined period, ColeKripke scoring",
+
+  "truesleepShortTimeInBedNumObsChildCombinedColeKripke30": "Number of child true-sleep observations meeting the short-time-in-bed condition, combined period, ColeKripke scoring",
+  "truesleepShortTimeInBedNumObsChildCombinedColeKripke36": "Number of child true-sleep observations meeting the short-time-in-bed condition, combined period, ColeKripke scoring",
+  "truesleepShortTimeInBedNumObsChildCombinedColeKripke42": "Number of child true-sleep observations meeting the short-time-in-bed condition, combined period, ColeKripke scoring",
+  "truesleepShortTimeInBedNumObsChildCombinedColeKripke54": "Number of child true-sleep observations meeting the short-time-in-bed condition, combined period, ColeKripke scoring",
+
+  "truesleepShortTimeAsleepNumObsChildCombinedColeKripke30": "Number of child true-sleep observations meeting the short-time-asleep condition, combined period, ColeKripke scoring",
+  "truesleepShortTimeAsleepNumObsChildCombinedColeKripke36": "Number of child true-sleep observations meeting the short-time-asleep condition, combined period, ColeKripke scoring",
+  "truesleepShortTimeAsleepNumObsChildCombinedColeKripke42": "Number of child true-sleep observations meeting the short-time-asleep condition, combined period, ColeKripke scoring",
+  "truesleepShortTimeAsleepNumObsChildCombinedColeKripke54": "Number of child true-sleep observations meeting the short-time-asleep condition, combined period, ColeKripke scoring",
+
+  "upNumObsChildCombinedColeKripke30": "Number of child daytime (\"up\") observations/episodes included, combined period, ColeKripke scoring",
+  "upNumObsChildCombinedColeKripke36": "Number of child daytime (\"up\") observations/episodes included, combined period, ColeKripke scoring",
+  "upNumObsChildCombinedColeKripke42": "Number of child daytime (\"up\") observations/episodes included, combined period, ColeKripke scoring",
+  "upNumObsChildCombinedColeKripke54": "Number of child daytime (\"up\") observations/episodes included, combined period, ColeKripke scoring",
+
+  "upShortTimeInBedNumObsChildCombinedColeKripke30": "Number of child daytime/up observations meeting the short-time-in-bed condition, combined period, ColeKripke scoring",
+  "upShortTimeInBedNumObsChildCombinedColeKripke36": "Number of child daytime/up observations meeting the short-time-in-bed condition, combined period, ColeKripke scoring",
+  "upShortTimeInBedNumObsChildCombinedColeKripke42": "Number of child daytime/up observations meeting the short-time-in-bed condition, combined period, ColeKripke scoring",
+  "upShortTimeInBedNumObsChildCombinedColeKripke54": "Number of child daytime/up observations meeting the short-time-in-bed condition, combined period, ColeKripke scoring",
+
+  "upShortTimeAsleepNumObsChildCombinedColeKripke30": "Number of child daytime/up observations meeting the short-time-asleep condition, combined period, ColeKripke scoring",
+  "upShortTimeAsleepNumObsChildCombinedColeKripke36": "Number of child daytime/up observations meeting the short-time-asleep condition, combined period, ColeKripke scoring",
+  "upShortTimeAsleepNumObsChildCombinedColeKripke42": "Number of child daytime/up observations meeting the short-time-asleep condition, combined period, ColeKripke scoring",
+  "upShortTimeAsleepNumObsChildCombinedColeKripke54": "Number of child daytime/up observations meeting the short-time-asleep condition, combined period, ColeKripke scoring",
+
+  "downNumObsParentCombinedColeKripke30": "Number of parent in-bed (\"down\") observations/episodes included, combined period, ColeKripke scoring",
+  "downNumObsParentCombinedColeKripke36": "Number of parent in-bed (\"down\") observations/episodes included, combined period, ColeKripke scoring",
+  "downNumObsParentCombinedColeKripke42": "Number of parent in-bed (\"down\") observations/episodes included, combined period, ColeKripke scoring",
+  "downNumObsParentCombinedColeKripke54": "Number of parent in-bed (\"down\") observations/episodes included, combined period, ColeKripke scoring",
+
+  "downShortTimeInBedNumObsParentCombinedColeKripke30": "Number of parent in-bed observations meeting the short-time-in-bed condition, combined period, ColeKripke scoring",
+  "downShortTimeInBedNumObsParentCombinedColeKripke36": "Number of parent in-bed observations meeting the short-time-in-bed condition, combined period, ColeKripke scoring",
+  "downShortTimeInBedNumObsParentCombinedColeKripke42": "Number of parent in-bed observations meeting the short-time-in-bed condition, combined period, ColeKripke scoring",
+  "downShortTimeInBedNumObsParentCombinedColeKripke54": "Number of parent in-bed observations meeting the short-time-in-bed condition, combined period, ColeKripke scoring",
+
+  "downShortTimeAsleepNumObsParentCombinedColeKripke30": "Number of parent in-bed observations meeting the short-time-asleep condition, combined period, ColeKripke scoring",
+  "downShortTimeAsleepNumObsParentCombinedColeKripke36": "Number of parent in-bed observations meeting the short-time-asleep condition, combined period, ColeKripke scoring",
+  "downShortTimeAsleepNumObsParentCombinedColeKripke42": "Number of parent in-bed observations meeting the short-time-asleep condition, combined period, ColeKripke scoring",
+  "downShortTimeAsleepNumObsParentCombinedColeKripke54": "Number of parent in-bed observations meeting the short-time-asleep condition, combined period, ColeKripke scoring",
+
+  "napNumObsParentCombinedColeKripke30": "Number of parent nap observations/episodes included, combined period, ColeKripke scoring",
+  "napNumObsParentCombinedColeKripke36": "Number of parent nap observations/episodes included, combined period, ColeKripke scoring",
+  "napNumObsParentCombinedColeKripke42": "Number of parent nap observations/episodes included, combined period, ColeKripke scoring",
+  "napNumObsParentCombinedColeKripke54": "Number of parent nap observations/episodes included, combined period, ColeKripke scoring",
+
+  "napShortTimeInBedNumObsParentCombinedColeKripke30": "Number of parent nap observations meeting the short-time-in-bed condition, combined period, ColeKripke scoring",
+  "napShortTimeInBedNumObsParentCombinedColeKripke36": "Number of parent nap observations meeting the short-time-in-bed condition, combined period, ColeKripke scoring",
+  "napShortTimeInBedNumObsParentCombinedColeKripke42": "Number of parent nap observations meeting the short-time-in-bed condition, combined period, ColeKripke scoring",
+  "napShortTimeInBedNumObsParentCombinedColeKripke54": "Number of parent nap observations meeting the short-time-in-bed condition, combined period, ColeKripke scoring",
+
+  "napShortTimeAsleepNumObsParentCombinedColeKripke30": "Number of parent nap observations meeting the short-time-asleep condition, combined period, ColeKripke scoring",
+  "napShortTimeAsleepNumObsParentCombinedColeKripke36": "Number of parent nap observations meeting the short-time-asleep condition, combined period, ColeKripke scoring",
+  "napShortTimeAsleepNumObsParentCombinedColeKripke42": "Number of parent nap observations meeting the short-time-asleep condition, combined period, ColeKripke scoring",
+  "napShortTimeAsleepNumObsParentCombinedColeKripke54": "Number of parent nap observations meeting the short-time-asleep condition, combined period, ColeKripke scoring",
+
+  "truesleepNumObsParentCombinedColeKripke30": "Number of parent true-sleep/night observations included, combined period, ColeKripke scoring",
+  "truesleepNumObsParentCombinedColeKripke36": "Number of parent true-sleep/night observations included, combined period, ColeKripke scoring",
+  "truesleepNumObsParentCombinedColeKripke42": "Number of parent true-sleep/night observations included, combined period, ColeKripke scoring",
+  "truesleepNumObsParentCombinedColeKripke54": "Number of parent true-sleep/night observations included, combined period, ColeKripke scoring",
+
+  "truesleepShortTimeInBedNumObsParentCombinedColeKripke30": "Number of parent true-sleep observations meeting the short-time-in-bed condition, combined period, ColeKripke scoring",
+  "truesleepShortTimeInBedNumObsParentCombinedColeKripke36": "Number of parent true-sleep observations meeting the short-time-in-bed condition, combined period, ColeKripke scoring",
+  "truesleepShortTimeInBedNumObsParentCombinedColeKripke42": "Number of parent true-sleep observations meeting the short-time-in-bed condition, combined period, ColeKripke scoring",
+  "truesleepShortTimeInBedNumObsParentCombinedColeKripke54": "Number of parent true-sleep observations meeting the short-time-in-bed condition, combined period, ColeKripke scoring",
+
+  "truesleepShortTimeAsleepNumObsParentCombinedColeKripke30": "Number of parent true-sleep observations meeting the short-time-asleep condition, combined period, ColeKripke scoring",
+  "truesleepShortTimeAsleepNumObsParentCombinedColeKripke36": "Number of parent true-sleep observations meeting the short-time-asleep condition, combined period, ColeKripke scoring",
+  "truesleepShortTimeAsleepNumObsParentCombinedColeKripke42": "Number of parent true-sleep observations meeting the short-time-asleep condition, combined period, ColeKripke scoring",
+  "truesleepShortTimeAsleepNumObsParentCombinedColeKripke54": "Number of parent true-sleep observations meeting the short-time-asleep condition, combined period, ColeKripke scoring",
+
+  "upNumObsParentCombinedColeKripke30": "Number of parent daytime (\"up\") observations/episodes included, combined period, ColeKripke scoring",
+  "upNumObsParentCombinedColeKripke36": "Number of parent daytime (\"up\") observations/episodes included, combined period, ColeKripke scoring",
+  "upNumObsParentCombinedColeKripke42": "Number of parent daytime (\"up\") observations/episodes included, combined period, ColeKripke scoring",
+  "upNumObsParentCombinedColeKripke54": "Number of parent daytime (\"up\") observations/episodes included, combined period, ColeKripke scoring",
+
+  "upShortTimeInBedNumObsParentCombinedColeKripke30": "Number of parent daytime/up observations meeting the short-time-in-bed condition, combined period, ColeKripke scoring",
+  "upShortTimeInBedNumObsParentCombinedColeKripke36": "Number of parent daytime/up observations meeting the short-time-in-bed condition, combined period, ColeKripke scoring",
+  "upShortTimeInBedNumObsParentCombinedColeKripke42": "Number of parent daytime/up observations meeting the short-time-in-bed condition, combined period, ColeKripke scoring",
+  "upShortTimeInBedNumObsParentCombinedColeKripke54": "Number of parent daytime/up observations meeting the short-time-in-bed condition, combined period, ColeKripke scoring",
+
+  "upShortTimeAsleepNumObsParentCombinedColeKripke30": "Number of parent daytime/up observations meeting the short-time-asleep condition, combined period, ColeKripke scoring",
+  "upShortTimeAsleepNumObsParentCombinedColeKripke36": "Number of parent daytime/up observations meeting the short-time-asleep condition, combined period, ColeKripke scoring",
+  "upShortTimeAsleepNumObsParentCombinedColeKripke42": "Number of parent daytime/up observations meeting the short-time-asleep condition, combined period, ColeKripke scoring",
+  "upShortTimeAsleepNumObsParentCombinedColeKripke54": "Number of parent daytime/up observations meeting the short-time-asleep condition, combined period, ColeKripke scoring",
+
+  "downNumObsChildWeek2ColeKripke30": "Number of child in-bed (\"down\") observations/episodes included, Week 2, ColeKripke scoring",
+  "downNumObsChildWeek2ColeKripke36": "Number of child in-bed (\"down\") observations/episodes included, Week 2, ColeKripke scoring",
+  "downNumObsChildWeek2ColeKripke42": "Number of child in-bed (\"down\") observations/episodes included, Week 2, ColeKripke scoring",
+  "downNumObsChildWeek2ColeKripke54": "Number of child in-bed (\"down\") observations/episodes included, Week 2, ColeKripke scoring",
+
+  "downShortTimeInBedNumObsChildWeek2ColeKripke30": "Number of child in-bed observations meeting the short-time-in-bed condition, Week 2, ColeKripke scoring",
+  "downShortTimeInBedNumObsChildWeek2ColeKripke36": "Number of child in-bed observations meeting the short-time-in-bed condition, Week 2, ColeKripke scoring",
+  "downShortTimeInBedNumObsChildWeek2ColeKripke42": "Number of child in-bed observations meeting the short-time-in-bed condition, Week 2, ColeKripke scoring",
+  "downShortTimeInBedNumObsChildWeek2ColeKripke54": "Number of child in-bed observations meeting the short-time-in-bed condition, Week 2, ColeKripke scoring",
+
+  "downShortTimeAsleepNumObsChildWeek2ColeKripke30": "Number of child in-bed observations meeting the short-time-asleep condition, Week 2, ColeKripke scoring",
+  "downShortTimeAsleepNumObsChildWeek2ColeKripke36": "Number of child in-bed observations meeting the short-time-asleep condition, Week 2, ColeKripke scoring",
+  "downShortTimeAsleepNumObsChildWeek2ColeKripke42": "Number of child in-bed observations meeting the short-time-asleep condition, Week 2, ColeKripke scoring",
+  "downShortTimeAsleepNumObsChildWeek2ColeKripke54": "Number of child in-bed observations meeting the short-time-asleep condition, Week 2, ColeKripke scoring",
+
+  "napNumObsChildWeek2ColeKripke30": "Number of child nap observations/episodes included, Week 2, ColeKripke scoring",
+  "napNumObsChildWeek2ColeKripke36": "Number of child nap observations/episodes included, Week 2, ColeKripke scoring",
+  "napNumObsChildWeek2ColeKripke42": "Number of child nap observations/episodes included, Week 2, ColeKripke scoring",
+  "napNumObsChildWeek2ColeKripke54": "Number of child nap observations/episodes included, Week 2, ColeKripke scoring",
+
+  "napShortTimeInBedNumObsChildWeek2ColeKripke30": "Number of child nap observations meeting the short-time-in-bed condition, Week 2, ColeKripke scoring",
+  "napShortTimeInBedNumObsChildWeek2ColeKripke36": "Number of child nap observations meeting the short-time-in-bed condition, Week 2, ColeKripke scoring",
+  "napShortTimeInBedNumObsChildWeek2ColeKripke42": "Number of child nap observations meeting the short-time-in-bed condition, Week 2, ColeKripke scoring",
+  "napShortTimeInBedNumObsChildWeek2ColeKripke54": "Number of child nap observations meeting the short-time-in-bed condition, Week 2, ColeKripke scoring",
+
+  "napShortTimeAsleepNumObsChildWeek2ColeKripke30": "Number of child nap observations meeting the short-time-asleep condition, Week 2, ColeKripke scoring",
+  "napShortTimeAsleepNumObsChildWeek2ColeKripke36": "Number of child nap observations meeting the short-time-asleep condition, Week 2, ColeKripke scoring",
+  "napShortTimeAsleepNumObsChildWeek2ColeKripke42": "Number of child nap observations meeting the short-time-asleep condition, Week 2, ColeKripke scoring",
+  "napShortTimeAsleepNumObsChildWeek2ColeKripke54": "Number of child nap observations meeting the short-time-asleep condition, Week 2, ColeKripke scoring",
+
+  "truesleepNumObsChildWeek2ColeKripke30": "Number of child true-sleep/night observations included, Week 2, ColeKripke scoring",
+  "truesleepNumObsChildWeek2ColeKripke36": "Number of child true-sleep/night observations included, Week 2, ColeKripke scoring",
+  "truesleepNumObsChildWeek2ColeKripke42": "Number of child true-sleep/night observations included, Week 2, ColeKripke scoring",
+  "truesleepNumObsChildWeek2ColeKripke54": "Number of child true-sleep/night observations included, Week 2, ColeKripke scoring",
+
+  "truesleepShortTimeInBedNumObsChildWeek2ColeKripke30": "Number of child true-sleep observations meeting the short-time-in-bed condition, Week 2, ColeKripke scoring",
+  "truesleepShortTimeInBedNumObsChildWeek2ColeKripke36": "Number of child true-sleep observations meeting the short-time-in-bed condition, Week 2, ColeKripke scoring",
+  "truesleepShortTimeInBedNumObsChildWeek2ColeKripke42": "Number of child true-sleep observations meeting the short-time-in-bed condition, Week 2, ColeKripke scoring",
+  "truesleepShortTimeInBedNumObsChildWeek2ColeKripke54": "Number of child true-sleep observations meeting the short-time-in-bed condition, Week 2, ColeKripke scoring",
+
+  "truesleepShortTimeAsleepNumObsChildWeek2ColeKripke30": "Number of child true-sleep observations meeting the short-time-asleep condition, Week 2, ColeKripke scoring",
+  "truesleepShortTimeAsleepNumObsChildWeek2ColeKripke36": "Number of child true-sleep observations meeting the short-time-asleep condition, Week 2, ColeKripke scoring",
+  "truesleepShortTimeAsleepNumObsChildWeek2ColeKripke42": "Number of child true-sleep observations meeting the short-time-asleep condition, Week 2, ColeKripke scoring",
+  "truesleepShortTimeAsleepNumObsChildWeek2ColeKripke54": "Number of child true-sleep observations meeting the short-time-asleep condition, Week 2, ColeKripke scoring",
+
+  "upNumObsChildWeek2ColeKripke30": "Number of child daytime (\"up\") observations/episodes included, Week 2, ColeKripke scoring",
+  "upNumObsChildWeek2ColeKripke36": "Number of child daytime (\"up\") observations/episodes included, Week 2, ColeKripke scoring",
+  "upNumObsChildWeek2ColeKripke42": "Number of child daytime (\"up\") observations/episodes included, Week 2, ColeKripke scoring",
+  "upNumObsChildWeek2ColeKripke54": "Number of child daytime (\"up\") observations/episodes included, Week 2, ColeKripke scoring",
+
+  "upShortTimeInBedNumObsChildWeek2ColeKripke30": "Number of child daytime/up observations meeting the short-time-in-bed condition, Week 2, ColeKripke scoring",
+  "upShortTimeInBedNumObsChildWeek2ColeKripke36": "Number of child daytime/up observations meeting the short-time-in-bed condition, Week 2, ColeKripke scoring",
+  "upShortTimeInBedNumObsChildWeek2ColeKripke42": "Number of child daytime/up observations meeting the short-time-in-bed condition, Week 2, ColeKripke scoring",
+  "upShortTimeInBedNumObsChildWeek2ColeKripke54": "Number of child daytime/up observations meeting the short-time-in-bed condition, Week 2, ColeKripke scoring",
+
+  "upShortTimeAsleepNumObsChildWeek2ColeKripke30": "Number of child daytime/up observations meeting the short-time-asleep condition, Week 2, ColeKripke scoring",
+  "upShortTimeAsleepNumObsChildWeek2ColeKripke36": "Number of child daytime/up observations meeting the short-time-asleep condition, Week 2, ColeKripke scoring",
+  "upShortTimeAsleepNumObsChildWeek2ColeKripke42": "Number of child daytime/up observations meeting the short-time-asleep condition, Week 2, ColeKripke scoring",
+  "upShortTimeAsleepNumObsChildWeek2ColeKripke54": "Number of child daytime/up observations meeting the short-time-asleep condition, Week 2, ColeKripke scoring",
+
+  "downNumObsParentWeek2ColeKripke30": "Number of parent in-bed (\"down\") observations/episodes included, Week 2, ColeKripke scoring",
+  "downNumObsParentWeek2ColeKripke36": "Number of parent in-bed (\"down\") observations/episodes included, Week 2, ColeKripke scoring",
+  "downNumObsParentWeek2ColeKripke42": "Number of parent in-bed (\"down\") observations/episodes included, Week 2, ColeKripke scoring",
+  "downNumObsParentWeek2ColeKripke54": "Number of parent in-bed (\"down\") observations/episodes included, Week 2, ColeKripke scoring",
+
+  "downShortTimeInBedNumObsParentWeek2ColeKripke30": "Number of parent in-bed observations meeting the short-time-in-bed condition, Week 2, ColeKripke scoring",
+  "downShortTimeInBedNumObsParentWeek2ColeKripke36": "Number of parent in-bed observations meeting the short-time-in-bed condition, Week 2, ColeKripke scoring",
+  "downShortTimeInBedNumObsParentWeek2ColeKripke42": "Number of parent in-bed observations meeting the short-time-in-bed condition, Week 2, ColeKripke scoring",
+  "downShortTimeInBedNumObsParentWeek2ColeKripke54": "Number of parent in-bed observations meeting the short-time-in-bed condition, Week 2, ColeKripke scoring",
+
+  "downShortTimeAsleepNumObsParentWeek2ColeKripke30": "Number of parent in-bed observations meeting the short-time-asleep condition, Week 2, ColeKripke scoring",
+  "downShortTimeAsleepNumObsParentWeek2ColeKripke36": "Number of parent in-bed observations meeting the short-time-asleep condition, Week 2, ColeKripke scoring",
+  "downShortTimeAsleepNumObsParentWeek2ColeKripke42": "Number of parent in-bed observations meeting the short-time-asleep condition, Week 2, ColeKripke scoring",
+  "downShortTimeAsleepNumObsParentWeek2ColeKripke54": "Number of parent in-bed observations meeting the short-time-asleep condition, Week 2, ColeKripke scoring",
+
+  "napNumObsParentWeek2ColeKripke30": "Number of parent nap observations/episodes included, Week 2, ColeKripke scoring",
+  "napNumObsParentWeek2ColeKripke36": "Number of parent nap observations/episodes included, Week 2, ColeKripke scoring",
+  "napNumObsParentWeek2ColeKripke42": "Number of parent nap observations/episodes included, Week 2, ColeKripke scoring",
+  "napNumObsParentWeek2ColeKripke54": "Number of parent nap observations/episodes included, Week 2, ColeKripke scoring",
+
+  "napShortTimeInBedNumObsParentWeek2ColeKripke30": "Number of parent nap observations meeting the short-time-in-bed condition, Week 2, ColeKripke scoring",
+  "napShortTimeInBedNumObsParentWeek2ColeKripke36": "Number of parent nap observations meeting the short-time-in-bed condition, Week 2, ColeKripke scoring",
+  "napShortTimeInBedNumObsParentWeek2ColeKripke42": "Number of parent nap observations meeting the short-time-in-bed condition, Week 2, ColeKripke scoring",
+  "napShortTimeInBedNumObsParentWeek2ColeKripke54": "Number of parent nap observations meeting the short-time-in-bed condition, Week 2, ColeKripke scoring",
+
+  "napShortTimeAsleepNumObsParentWeek2ColeKripke30": "Number of parent nap observations meeting the short-time-asleep condition, Week 2, ColeKripke scoring",
+  "napShortTimeAsleepNumObsParentWeek2ColeKripke36": "Number of parent nap observations meeting the short-time-asleep condition, Week 2, ColeKripke scoring",
+  "napShortTimeAsleepNumObsParentWeek2ColeKripke42": "Number of parent nap observations meeting the short-time-asleep condition, Week 2, ColeKripke scoring",
+  "napShortTimeAsleepNumObsParentWeek2ColeKripke54": "Number of parent nap observations meeting the short-time-asleep condition, Week 2, ColeKripke scoring",
+
+  "truesleepNumObsParentWeek2ColeKripke30": "Number of parent true-sleep/night observations included, Week 2, ColeKripke scoring",
+  "truesleepNumObsParentWeek2ColeKripke36": "Number of parent true-sleep/night observations included, Week 2, ColeKripke scoring",
+  "truesleepNumObsParentWeek2ColeKripke42": "Number of parent true-sleep/night observations included, Week 2, ColeKripke scoring",
+  "truesleepNumObsParentWeek2ColeKripke54": "Number of parent true-sleep/night observations included, Week 2, ColeKripke scoring",
+
+  "truesleepShortTimeInBedNumObsParentWeek2ColeKripke30": "Number of parent true-sleep observations meeting the short-time-in-bed condition, Week 2, ColeKripke scoring",
+  "truesleepShortTimeInBedNumObsParentWeek2ColeKripke36": "Number of parent true-sleep observations meeting the short-time-in-bed condition, Week 2, ColeKripke scoring",
+  "truesleepShortTimeInBedNumObsParentWeek2ColeKripke42": "Number of parent true-sleep observations meeting the short-time-in-bed condition, Week 2, ColeKripke scoring",
+  "truesleepShortTimeInBedNumObsParentWeek2ColeKripke54": "Number of parent true-sleep observations meeting the short-time-in-bed condition, Week 2, ColeKripke scoring",
+
+  "truesleepShortTimeAsleepNumObsParentWeek2ColeKripke30": "Number of parent true-sleep observations meeting the short-time-asleep condition, Week 2, ColeKripke scoring",
+  "truesleepShortTimeAsleepNumObsParentWeek2ColeKripke36": "Number of parent true-sleep observations meeting the short-time-asleep condition, Week 2, ColeKripke scoring",
+  "truesleepShortTimeAsleepNumObsParentWeek2ColeKripke42": "Number of parent true-sleep observations meeting the short-time-asleep condition, Week 2, ColeKripke scoring",
+  "truesleepShortTimeAsleepNumObsParentWeek2ColeKripke54": "Number of parent true-sleep observations meeting the short-time-asleep condition, Week 2, ColeKripke scoring",
+
+  "upNumObsParentWeek2ColeKripke30": "Number of parent daytime (\"up\") observations/episodes included, Week 2, ColeKripke scoring",
+  "upNumObsParentWeek2ColeKripke36": "Number of parent daytime (\"up\") observations/episodes included, Week 2, ColeKripke scoring",
+  "upNumObsParentWeek2ColeKripke42": "Number of parent daytime (\"up\") observations/episodes included, Week 2, ColeKripke scoring",
+  "upNumObsParentWeek2ColeKripke54": "Number of parent daytime (\"up\") observations/episodes included, Week 2, ColeKripke scoring",
+
+  "upShortTimeInBedNumObsParentWeek2ColeKripke30": "Number of parent daytime/up observations meeting the short-time-in-bed condition, Week 2, ColeKripke scoring",
+  "upShortTimeInBedNumObsParentWeek2ColeKripke36": "Number of parent daytime/up observations meeting the short-time-in-bed condition, Week 2, ColeKripke scoring",
+  "upShortTimeInBedNumObsParentWeek2ColeKripke42": "Number of parent daytime/up observations meeting the short-time-in-bed condition, Week 2, ColeKripke scoring",
+  "upShortTimeInBedNumObsParentWeek2ColeKripke54": "Number of parent daytime/up observations meeting the short-time-in-bed condition, Week 2, ColeKripke scoring",
+
+  "upShortTimeAsleepNumObsParentWeek2ColeKripke30": "Number of parent daytime/up observations meeting the short-time-asleep condition, Week 2, ColeKripke scoring",
+  "upShortTimeAsleepNumObsParentWeek2ColeKripke36": "Number of parent daytime/up observations meeting the short-time-asleep condition, Week 2, ColeKripke scoring",
+  "upShortTimeAsleepNumObsParentWeek2ColeKripke42": "Number of parent daytime/up observations meeting the short-time-asleep condition, Week 2, ColeKripke scoring",
+  "upShortTimeAsleepNumObsParentWeek2ColeKripke54": "Number of parent daytime/up observations meeting the short-time-asleep condition, Week 2, ColeKripke scoring",
+
+  "sleepDiaryChildBeginningWeek130": "Beginning of Week 1",
+  "sleepDiaryChildBeginningWeek136": "Beginning of Week 1",
+  "sleepDiaryChildBeginningWeek142": "Beginning of Week 1",
+  "sleepDiaryChildBeginningWeek154": "Beginning of Week 1",
+
+  "sleepDiaryChildEndWeek130": "End of Week 1",
+  "sleepDiaryChildEndWeek136": "End of Week 1",
+  "sleepDiaryChildEndWeek142": "End of Week 1",
+  "sleepDiaryChildEndWeek154": "End of Week 1",
+
+  "sleepDiaryChildBeginningWeek230": "Beginning of Week 2",
+  "sleepDiaryChildBeginningWeek236": "Beginning of Week 2",
+  "sleepDiaryChildBeginningWeek242": "Beginning of Week 2",
+  "sleepDiaryChildBeginningWeek254": "Beginning of Week 2",
+
+  "sleepDiaryChildEndWeek230": "End of Week 2",
+  "sleepDiaryChildEndWeek236": "End of Week 2",
+  "sleepDiaryChildEndWeek242": "End of Week 2",
+  "sleepDiaryChildEndWeek254": "End of Week 2",
+
+  "sleepDiaryChildNighttimeSleepDurationMean30": "Mean child nighttime sleep duration",
+  "sleepDiaryChildNighttimeSleepDurationMean36": "Mean child nighttime sleep duration",
+  "sleepDiaryChildNighttimeSleepDurationMean42": "Mean child nighttime sleep duration",
+  "sleepDiaryChildNighttimeSleepDurationMean54": "Mean child nighttime sleep duration",
+
+  "sleepDiaryChildNighttimeSleepDurationSD30": "Variability in nighttime sleep duration",
+  "sleepDiaryChildNighttimeSleepDurationSD36": "Variability in nighttime sleep duration",
+  "sleepDiaryChildNighttimeSleepDurationSD42": "Variability in nighttime sleep duration",
+  "sleepDiaryChildNighttimeSleepDurationSD54": "Variability in nighttime sleep duration",
+
+  "sleepDiaryChildBedtimeRoutineDurationMean30": "Mean bedtime-routine duration",
+  "sleepDiaryChildBedtimeRoutineDurationMean36": "Mean bedtime-routine duration",
+  "sleepDiaryChildBedtimeRoutineDurationMean42": "Mean bedtime-routine duration",
+  "sleepDiaryChildBedtimeRoutineDurationMean54": "Mean bedtime-routine duration",
+
+  "sleepDiaryChildBedtimeRoutineDurationSD30": "Variability in bedtime-routine duration",
+  "sleepDiaryChildBedtimeRoutineDurationSD36": "Variability in bedtime-routine duration",
+  "sleepDiaryChildBedtimeRoutineDurationSD42": "Variability in bedtime-routine duration",
+  "sleepDiaryChildBedtimeRoutineDurationSD54": "Variability in bedtime-routine duration",
+
+  "sleepDiaryChildTotalSleepDurationMean30": "Mean total child sleep duration",
+  "sleepDiaryChildTotalSleepDurationMean36": "Mean total child sleep duration",
+  "sleepDiaryChildTotalSleepDurationMean42": "Mean total child sleep duration",
+  "sleepDiaryChildTotalSleepDurationMean54": "Mean total child sleep duration",
+
+  "sleepDiaryChildTotalSleepDurationSD30": "Variability in total sleep duration",
+  "sleepDiaryChildTotalSleepDurationSD36": "Variability in total sleep duration",
+  "sleepDiaryChildTotalSleepDurationSD42": "Variability in total sleep duration",
+  "sleepDiaryChildTotalSleepDurationSD54": "Variability in total sleep duration",
+
+  "sleepDiaryChildNapDurationMean30": "Mean nap duration",
+  "sleepDiaryChildNapDurationMean36": "Mean nap duration",
+  "sleepDiaryChildNapDurationMean42": "Mean nap duration",
+  "sleepDiaryChildNapDurationMean54": "Mean nap duration",
+
+  "sleepDiaryChildNapDurationSD30": "Variability in nap duration",
+  "sleepDiaryChildNapDurationSD36": "Variability in nap duration",
+  "sleepDiaryChildNapDurationSD42": "Variability in nap duration",
+  "sleepDiaryChildNapDurationSD54": "Variability in nap duration",
+
+  "sleepDiaryChildBedtimeMean30": "Mean bedtime",
+  "sleepDiaryChildBedtimeMean36": "Mean bedtime",
+  "sleepDiaryChildBedtimeMean42": "Mean bedtime",
+  "sleepDiaryChildBedtimeMean54": "Mean bedtime",
+
+  "sleepDiaryChildBedtimeSD30": "Variability in bedtime",
+  "sleepDiaryChildBedtimeSD36": "Variability in bedtime",
+  "sleepDiaryChildBedtimeSD42": "Variability in bedtime",
+  "sleepDiaryChildBedtimeSD54": "Variability in bedtime",
+
+  "sleepDiaryChildRoutineStartTimeMean30": "Mean bedtime-routine start time",
+  "sleepDiaryChildRoutineStartTimeMean36": "Mean bedtime-routine start time",
+  "sleepDiaryChildRoutineStartTimeMean42": "Mean bedtime-routine start time",
+  "sleepDiaryChildRoutineStartTimeMean54": "Mean bedtime-routine start time",
+
+  "sleepDiaryChildRoutineStartTimeSD30": "Variability in bedtime-routine start time",
+  "sleepDiaryChildRoutineStartTimeSD36": "Variability in bedtime-routine start time",
+  "sleepDiaryChildRoutineStartTimeSD42": "Variability in bedtime-routine start time",
+  "sleepDiaryChildRoutineStartTimeSD54": "Variability in bedtime-routine start time",
+
+  "sleepDiaryChildWaketimeMean30": "Mean wake time",
+  "sleepDiaryChildWaketimeMean36": "Mean wake time",
+  "sleepDiaryChildWaketimeMean42": "Mean wake time",
+  "sleepDiaryChildWaketimeMean54": "Mean wake time",
+
+  "sleepDiaryChildWaketimeSD30": "Variability in wake time",
+  "sleepDiaryChildWaketimeSD36": "Variability in wake time",
+  "sleepDiaryChildWaketimeSD42": "Variability in wake time",
+  "sleepDiaryChildWaketimeSD54": "Variability in wake time",
+
+  "sleepDiaryChildNightWakings30": "Mean number of child nighttime wakings",
+  "sleepDiaryChildNightWakings36": "Mean number of child nighttime wakings",
+  "sleepDiaryChildNightWakings42": "Mean number of child nighttime wakings",
+  "sleepDiaryChildNightWakings54": "Mean number of child nighttime wakings",
+
+  "sleepDiaryChildRoutineDeviationMean30": "Mean bedtime-routine deviation",
+  "sleepDiaryChildRoutineDeviationMean36": "Mean bedtime-routine deviation",
+  "sleepDiaryChildRoutineDeviationMean42": "Mean bedtime-routine deviation",
+  "sleepDiaryChildRoutineDeviationMean54": "Mean bedtime-routine deviation",
+
+  "sleepDiaryChildRoutineDeviationSD30": "Variability in bedtime-routine deviation",
+  "sleepDiaryChildRoutineDeviationSD36": "Variability in bedtime-routine deviation",
+  "sleepDiaryChildRoutineDeviationSD42": "Variability in bedtime-routine deviation",
+  "sleepDiaryChildRoutineDeviationSD54": "Variability in bedtime-routine deviation",
+
+  "sleepDiaryChildNighttimeSleepDurationBeforeLabVisit30": "Nighttime sleep duration on night before lab visit",
+  "sleepDiaryChildNighttimeSleepDurationBeforeLabVisit36": "Nighttime sleep duration on night before lab visit",
+  "sleepDiaryChildNighttimeSleepDurationBeforeLabVisit42": "Nighttime sleep duration on night before lab visit",
+  "sleepDiaryChildNighttimeSleepDurationBeforeLabVisit54": "Nighttime sleep duration on night before lab visit",
+
+  "sleepDiaryChildTotalSleepDurationBeforeLabVisit30": "Total sleep duration on day/night before lab visit",
+  "sleepDiaryChildTotalSleepDurationBeforeLabVisit36": "Total sleep duration on day/night before lab visit",
+  "sleepDiaryChildTotalSleepDurationBeforeLabVisit42": "Total sleep duration on day/night before lab visit",
+  "sleepDiaryChildTotalSleepDurationBeforeLabVisit54": "Total sleep duration on day/night before lab visit",
+
+  "sleepDiaryChildNightWakingsBeforeLabVisit30": "Number of night wakings before lab visit",
+  "sleepDiaryChildNightWakingsBeforeLabVisit36": "Number of night wakings before lab visit",
+  "sleepDiaryChildNightWakingsBeforeLabVisit42": "Number of night wakings before lab visit",
+  "sleepDiaryChildNightWakingsBeforeLabVisit54": "Number of night wakings before lab visit",
+
+  "sleepDiaryChildSleepConsolidation30": "Proportion of total sleep occurring at night",
+  "sleepDiaryChildSleepConsolidation36": "Proportion of total sleep occurring at night",
+  "sleepDiaryChildSleepConsolidation42": "Proportion of total sleep occurring at night",
+  "sleepDiaryChildSleepConsolidation54": "Proportion of total sleep occurring at night",
+
+  "psqiTimeToFallAsleep30": "Parent-reported time taken to fall asleep / sleep latency",
+  "psqiTimeToFallAsleep36": "Parent-reported time taken to fall asleep / sleep latency",
+  "psqiTimeToFallAsleep42": "Parent-reported time taken to fall asleep / sleep latency",
+  "psqiTimeToFallAsleep54": "Parent-reported time taken to fall asleep / sleep latency",
+
+  "psqiHoursOfSleepPerNight30": "Parent-reported hours of actual sleep per night",
+  "psqiHoursOfSleepPerNight36": "Parent-reported hours of actual sleep per night",
+  "psqiHoursOfSleepPerNight42": "Parent-reported hours of actual sleep per night",
+  "psqiHoursOfSleepPerNight54": "Parent-reported hours of actual sleep per night",
+
+  "psqiSubjectiveSleepQuality30": "Overall subjective sleep quality during the past month",
+  "psqiSubjectiveSleepQuality36": "Overall subjective sleep quality during the past month",
+  "psqiSubjectiveSleepQuality42": "Overall subjective sleep quality during the past month",
+  "psqiSubjectiveSleepQuality54": "Overall subjective sleep quality during the past month",
+
+  "psqiSleepLatency30": "PSQI Sleep Latency component",
+  "psqiSleepLatency36": "PSQI Sleep Latency component",
+  "psqiSleepLatency42": "PSQI Sleep Latency component",
+  "psqiSleepLatency54": "PSQI Sleep Latency component",
+
+  "psqiSleepDuration30": "PSQI Sleep Duration component based on hours slept per night",
+  "psqiSleepDuration36": "PSQI Sleep Duration component based on hours slept per night",
+  "psqiSleepDuration42": "PSQI Sleep Duration component based on hours slept per night",
+  "psqiSleepDuration54": "PSQI Sleep Duration component based on hours slept per night",
+
+  "psqiHabitualSleepEfficiencyPercent30": "Percentage of time in bed actually spent sleeping",
+  "psqiHabitualSleepEfficiencyPercent36": "Percentage of time in bed actually spent sleeping",
+  "psqiHabitualSleepEfficiencyPercent42": "Percentage of time in bed actually spent sleeping",
+  "psqiHabitualSleepEfficiencyPercent54": "Percentage of time in bed actually spent sleeping",
+
+  "psqiHabitualSleepEfficiency30": "PSQI Habitual Sleep Efficiency component",
+  "psqiHabitualSleepEfficiency36": "PSQI Habitual Sleep Efficiency component",
+  "psqiHabitualSleepEfficiency42": "PSQI Habitual Sleep Efficiency component",
+  "psqiHabitualSleepEfficiency54": "PSQI Habitual Sleep Efficiency component",
+
+  "psqiSleepDisturbance30": "PSQI Sleep Disturbance component reflecting frequency of nighttime disturbances",
+  "psqiSleepDisturbance36": "PSQI Sleep Disturbance component reflecting frequency of nighttime disturbances",
+  "psqiSleepDisturbance42": "PSQI Sleep Disturbance component reflecting frequency of nighttime disturbances",
+  "psqiSleepDisturbance54": "PSQI Sleep Disturbance component reflecting frequency of nighttime disturbances",
+
+  "psqiUseOfSleepingMedication30": "Frequency of using medication to help sleep during the past month",
+  "psqiUseOfSleepingMedication36": "Frequency of using medication to help sleep during the past month",
+  "psqiUseOfSleepingMedication42": "Frequency of using medication to help sleep during the past month",
+  "psqiUseOfSleepingMedication54": "Frequency of using medication to help sleep during the past month",
+
+  "kosairSleepDisorderedBreathing30": "Kosair Sleep Questionnaire - Sleep Disordered Breathing composite",
+  "kosairSleepDisorderedBreathing36": "Kosair Sleep Questionnaire - Sleep Disordered Breathing composite",
+  "kosairSleepDisorderedBreathing42": "Kosair Sleep Questionnaire - Sleep Disordered Breathing composite",
+  "kosairSleepDisorderedBreathing54": "Kosair Sleep Questionnaire - Sleep Disordered Breathing composite",
+
+  "kosairDaytimeSleepiness30": "Kosair Sleep Questionnaire - Daytime Sleepiness composite",
+  "kosairDaytimeSleepiness36": "Kosair Sleep Questionnaire - Daytime Sleepiness composite",
+  "kosairDaytimeSleepiness42": "Kosair Sleep Questionnaire - Daytime Sleepiness composite",
+  "kosairDaytimeSleepiness54": "Kosair Sleep Questionnaire - Daytime Sleepiness composite",
+
+  "sleepDiaryChildNapSleepDurationNoZerosMean30": "Average reported child nap sleep duration, excluding zero values",
+  "sleepDiaryChildNapSleepDurationNoZerosMean36": "Average reported child nap sleep duration, excluding zero values",
+  "sleepDiaryChildNapSleepDurationNoZerosMean42": "Average reported child nap sleep duration, excluding zero values",
+  "sleepDiaryChildNapSleepDurationNoZerosMean54": "Average reported child nap sleep duration, excluding zero values",
+
+  "sleepDiaryChildNapSleepDurationNoZerosSD30": "Variability in reported child nap sleep duration, excluding zero values",
+  "sleepDiaryChildNapSleepDurationNoZerosSD36": "Variability in reported child nap sleep duration, excluding zero values",
+  "sleepDiaryChildNapSleepDurationNoZerosSD42": "Variability in reported child nap sleep duration, excluding zero values",
+  "sleepDiaryChildNapSleepDurationNoZerosSD54": "Variability in reported child nap sleep duration, excluding zero values",
+
+  "sleepDiaryChildCalm30": "Child calmness recorded in the sleep diary",
+  "sleepDiaryChildCalm36": "Child calmness recorded in the sleep diary",
+  "sleepDiaryChildCalm42": "Child calmness recorded in the sleep diary",
+  "sleepDiaryChildCalm54": "Child calmness recorded in the sleep diary",
+
+  "sleepDiaryChildWired30": "Child's level of being wired or highly alert recorded in the sleep diary",
+  "sleepDiaryChildWired36": "Child's level of being wired or highly alert recorded in the sleep diary",
+  "sleepDiaryChildWired42": "Child's level of being wired or highly alert recorded in the sleep diary",
+  "sleepDiaryChildWired54": "Child's level of being wired or highly alert recorded in the sleep diary",
+
+  "sleepDiaryChildRestless30": "Child restlessness recorded in the sleep diary",
+  "sleepDiaryChildRestless36": "Child restlessness recorded in the sleep diary",
+  "sleepDiaryChildRestless42": "Child restlessness recorded in the sleep diary",
+  "sleepDiaryChildRestless54": "Child restlessness recorded in the sleep diary",
+
+  "sleepDiaryChildWorried30": "Child worry recorded in the sleep diary",
+  "sleepDiaryChildWorried36": "Child worry recorded in the sleep diary",
+  "sleepDiaryChildWorried42": "Child worry recorded in the sleep diary",
+  "sleepDiaryChildWorried54": "Child worry recorded in the sleep diary",
+
+  "sleepDiaryParentNighttimeSleepDurationMean30": "Average parent nighttime sleep duration reported in the sleep diary",
+  "sleepDiaryParentNighttimeSleepDurationMean36": "Average parent nighttime sleep duration reported in the sleep diary",
+  "sleepDiaryParentNighttimeSleepDurationMean42": "Average parent nighttime sleep duration reported in the sleep diary",
+  "sleepDiaryParentNighttimeSleepDurationMean54": "Average parent nighttime sleep duration reported in the sleep diary",
+
+  "sleepDiaryParentNighttimeSleepDurationSD30": "Variability in parent nighttime sleep duration reported in the sleep diary",
+  "sleepDiaryParentNighttimeSleepDurationSD36": "Variability in parent nighttime sleep duration reported in the sleep diary",
+  "sleepDiaryParentNighttimeSleepDurationSD42": "Variability in parent nighttime sleep duration reported in the sleep diary",
+  "sleepDiaryParentNighttimeSleepDurationSD54": "Variability in parent nighttime sleep duration reported in the sleep diary",
+
+  "sleepDiaryParentTotalSleepDurationMean30": "Average parent total sleep duration reported in the sleep diary",
+  "sleepDiaryParentTotalSleepDurationMean36": "Average parent total sleep duration reported in the sleep diary",
+  "sleepDiaryParentTotalSleepDurationMean42": "Average parent total sleep duration reported in the sleep diary",
+  "sleepDiaryParentTotalSleepDurationMean54": "Average parent total sleep duration reported in the sleep diary",
+
+  "sleepDiaryParentTotalSleepDurationSD30": "Variability in parent total sleep duration reported in the sleep diary",
+  "sleepDiaryParentTotalSleepDurationSD36": "Variability in parent total sleep duration reported in the sleep diary",
+  "sleepDiaryParentTotalSleepDurationSD42": "Variability in parent total sleep duration reported in the sleep diary",
+  "sleepDiaryParentTotalSleepDurationSD54": "Variability in parent total sleep duration reported in the sleep diary",
+
+  "sleepDiaryParentNapDurationMean30": "Average parent nap duration reported in the sleep diary",
+  "sleepDiaryParentNapDurationMean36": "Average parent nap duration reported in the sleep diary",
+  "sleepDiaryParentNapDurationMean42": "Average parent nap duration reported in the sleep diary",
+  "sleepDiaryParentNapDurationMean54": "Average parent nap duration reported in the sleep diary",
+
+  "sleepDiaryParentNapDurationSD30": "Variability in parent nap duration reported in the sleep diary",
+  "sleepDiaryParentNapDurationSD36": "Variability in parent nap duration reported in the sleep diary",
+  "sleepDiaryParentNapDurationSD42": "Variability in parent nap duration reported in the sleep diary",
+  "sleepDiaryParentNapDurationSD54": "Variability in parent nap duration reported in the sleep diary",
+
+  "sleepDiaryParentBedtimeMean30": "Average parent bedtime recorded in the sleep diary",
+  "sleepDiaryParentBedtimeMean36": "Average parent bedtime recorded in the sleep diary",
+  "sleepDiaryParentBedtimeMean42": "Average parent bedtime recorded in the sleep diary",
+  "sleepDiaryParentBedtimeMean54": "Average parent bedtime recorded in the sleep diary",
+
+  "sleepDiaryParentBedtimeSD30": "Variability in parent bedtime recorded in the sleep diary",
+  "sleepDiaryParentBedtimeSD36": "Variability in parent bedtime recorded in the sleep diary",
+  "sleepDiaryParentBedtimeSD42": "Variability in parent bedtime recorded in the sleep diary",
+  "sleepDiaryParentBedtimeSD54": "Variability in parent bedtime recorded in the sleep diary",
+
+  "sleepDiaryParentWaketimeMean30": "Average parent wake time recorded in the sleep diary",
+  "sleepDiaryParentWaketimeMean36": "Average parent wake time recorded in the sleep diary",
+  "sleepDiaryParentWaketimeMean42": "Average parent wake time recorded in the sleep diary",
+  "sleepDiaryParentWaketimeMean54": "Average parent wake time recorded in the sleep diary",
+
+  "sleepDiaryParentWaketimeSD30": "Variability in parent wake time recorded in the sleep diary",
+  "sleepDiaryParentWaketimeSD36": "Variability in parent wake time recorded in the sleep diary",
+  "sleepDiaryParentWaketimeSD42": "Variability in parent wake time recorded in the sleep diary",
+  "sleepDiaryParentWaketimeSD54": "Variability in parent wake time recorded in the sleep diary",
+
+  "sleepDiaryParentNightWakings30": "Parent nighttime wakings reported in the sleep diary",
+  "sleepDiaryParentNightWakings36": "Parent nighttime wakings reported in the sleep diary",
+  "sleepDiaryParentNightWakings42": "Parent nighttime wakings reported in the sleep diary",
+  "sleepDiaryParentNightWakings54": "Parent nighttime wakings reported in the sleep diary",
+
+  "sleepDiaryParentNighttimeSleepDurationBeforeLabVisit30": "Parent nighttime sleep duration recorded before the lab visit",
+  "sleepDiaryParentNighttimeSleepDurationBeforeLabVisit36": "Parent nighttime sleep duration recorded before the lab visit",
+  "sleepDiaryParentNighttimeSleepDurationBeforeLabVisit42": "Parent nighttime sleep duration recorded before the lab visit",
+  "sleepDiaryParentNighttimeSleepDurationBeforeLabVisit54": "Parent nighttime sleep duration recorded before the lab visit",
+
+  "sleepDiaryParentTotalSleepDurationBeforeLabVisit30": "Parent total sleep duration recorded before the lab visit",
+  "sleepDiaryParentTotalSleepDurationBeforeLabVisit36": "Parent total sleep duration recorded before the lab visit",
+  "sleepDiaryParentTotalSleepDurationBeforeLabVisit42": "Parent total sleep duration recorded before the lab visit",
+  "sleepDiaryParentTotalSleepDurationBeforeLabVisit54": "Parent total sleep duration recorded before the lab visit",
+
+  "sleepDiaryParentNightWakingsBeforeLabVisit30": "Parent nighttime wakings recorded before the lab visit",
+  "sleepDiaryParentNightWakingsBeforeLabVisit36": "Parent nighttime wakings recorded before the lab visit",
+  "sleepDiaryParentNightWakingsBeforeLabVisit42": "Parent nighttime wakings recorded before the lab visit",
+  "sleepDiaryParentNightWakingsBeforeLabVisit54": "Parent nighttime wakings recorded before the lab visit",
+
+  "sleepDiaryParentSleepConsolidation30": "Parent sleep consolidation measure derived from the sleep diary",
+  "sleepDiaryParentSleepConsolidation36": "Parent sleep consolidation measure derived from the sleep diary",
+  "sleepDiaryParentSleepConsolidation42": "Parent sleep consolidation measure derived from the sleep diary",
+  "sleepDiaryParentSleepConsolidation54": "Parent sleep consolidation measure derived from the sleep diary",
 };
 
 
@@ -6216,6 +7561,241 @@ export const variableComputations = {
   "napSleepMinutesSDChildWeek2Sadeh54": "Standard deviation of nap sleep minutes",
   "napActivityMeanSDChildWeek2Sadeh54": "Standard deviation of mean activity across Nap observations",
   "napActivityMedianSDChildWeek2Sadeh54": "Standard deviation of median activity across Nap observations",
+
+  "mtStroopColorsPerCorrect30": "(Colors correct / Colors total) * 100",
+  "mtStroopColorsPerCorrect36": "(Colors correct / Colors total) * 100",
+  "mtStroopColorsPerCorrect42": "(Colors correct / Colors total) * 100",
+  "mtStroopColorsPerCorrect54": "(Colors correct / Colors total) * 100",
+
+  "mtStroopCongruentPerCorrect30": "(Congruent correct / Congruent total) * 100",
+  "mtStroopCongruentPerCorrect36": "(Congruent correct / Congruent total) * 100",
+  "mtStroopCongruentPerCorrect42": "(Congruent correct / Congruent total) * 100",
+  "mtStroopCongruentPerCorrect54": "(Congruent correct / Congruent total) * 100",
+
+  "mtStroopIncongruentPerCorrect30": "(Incongruent correct / Incongruent total) * 100",
+  "mtStroopIncongruentPerCorrect36": "(Incongruent correct / Incongruent total) * 100",
+  "mtStroopIncongruentPerCorrect42": "(Incongruent correct / Incongruent total) * 100",
+  "mtStroopIncongruentPerCorrect54": "(Incongruent correct / Incongruent total) * 100",
+
+  "mtStroopMixedPerCorrect30": "(Mixed correct / Mixed total) * 100",
+  "mtStroopMixedPerCorrect36": "(Mixed correct / Mixed total) * 100",
+  "mtStroopMixedPerCorrect42": "(Mixed correct / Mixed total) * 100",
+  "mtStroopMixedPerCorrect54": "(Mixed correct / Mixed total) * 100",
+
+  "mtStroopMixedRTCorrect30": "Directly carried from S16.mixed_RTcorrect",
+  "mtStroopMixedRTCorrect36": "Directly carried from S16.mixed_RTcorrect",
+  "mtStroopMixedRTCorrect42": "Directly carried from S16.mixed_RTcorrect",
+  "mtStroopMixedRTCorrect54": "Directly carried from S16.mixed_RTcorrect",
+
+  "mtStroopMixedRTTotal30": "Directly carried from S17.mixed_RTtotal",
+  "mtStroopMixedRTTotal36": "Directly carried from S17.mixed_RTtotal",
+  "mtStroopMixedRTTotal42": "Directly carried from S17.mixed_RTtotal",
+  "mtStroopMixedRTTotal54": "Directly carried from S17.mixed_RTtotal",
+
+  "parentingEventsFrequency30": "Sum of frequency items event01-event20",
+  "parentingEventsFrequency36": "Sum of frequency items event01-event20",
+  "parentingEventsFrequency42": "Sum of frequency items event01-event20",
+  "parentingEventsFrequency54": "Sum of frequency items event01-event20",
+
+  "parentingEventsIntensity30": "Sum of hassle items event01h-event20h",
+  "parentingEventsIntensity36": "Sum of hassle items event01h-event20h",
+  "parentingEventsIntensity42": "Sum of hassle items event01h-event20h",
+  "parentingEventsIntensity54": "Sum of hassle items event01h-event20h",
+
+  "parentingEventsChallengingBehavior30": "Sum of event02, 02h, 04, 04h, 08, 08h, 09, 09h, 11, 11h, 12, 12h, 16, 16h",
+  "parentingEventsChallengingBehavior36": "Sum of event02, 02h, 04, 04h, 08, 08h, 09, 09h, 11, 11h, 12, 12h, 16, 16h",
+  "parentingEventsChallengingBehavior42": "Sum of event02, 02h, 04, 04h, 08, 08h, 09, 09h, 11, 11h, 12, 12h, 16, 16h",
+  "parentingEventsChallengingBehavior54": "Sum of event02, 02h, 04, 04h, 08, 08h, 09, 09h, 11, 11h, 12, 12h, 16, 16h",
+
+  "parentingEventsParentingTasks30": "Sum of event01, 01h, 06, 06h, 07, 07h, 10, 10h, 13, 13h, 14, 14h, 17, 17h, 20, 20h",
+  "parentingEventsParentingTasks36": "Sum of event01, 01h, 06, 06h, 07, 07h, 10, 10h, 13, 13h, 14, 14h, 17, 17h, 20, 20h",
+  "parentingEventsParentingTasks42": "Sum of event01, 01h, 06, 06h, 07, 07h, 10, 10h, 13, 13h, 14, 14h, 17, 17h, 20, 20h",
+  "parentingEventsParentingTasks54": "Sum of event01, 01h, 06, 06h, 07, 07h, 10, 10h, 13, 13h, 14, 14h, 17, 17h, 20, 20h",
+
+  "parentingScaleLaxness30": "Mean of par7, par8, par12, par15, par16, par19R, par20R, par21, par24, par26R, par30R",
+  "parentingScaleLaxness36": "Mean of par7, par8, par12, par15, par16, par19R, par20R, par21, par24, par26R, par30R",
+  "parentingScaleLaxness42": "Mean of par7, par8, par12, par15, par16, par19R, par20R, par21, par24, par26R, par30R",
+  "parentingScaleLaxness54": "Mean of par7, par8, par12, par15, par16, par19R, par20R, par21, par24, par26R, par30R",
+
+  "parentingScaleOverreactivity30": "Mean of par3R, par6R, par9R, par10R, par14R, par17R, par18, par22, par25, par28",
+  "parentingScaleOverreactivity36": "Mean of par3R, par6R, par9R, par10R, par14R, par17R, par18, par22, par25, par28",
+  "parentingScaleOverreactivity42": "Mean of par3R, par6R, par9R, par10R, par14R, par17R, par18, par22, par25, par28",
+  "parentingScaleOverreactivity54": "Mean of par3R, par6R, par9R, par10R, par14R, par17R, par18, par22, par25, par28",
+
+  "parentingScaleVerbosity30": "Mean of par2R, par4, par7, par9R, par11, par23R, par29",
+  "parentingScaleVerbosity36": "Mean of par2R, par4, par7, par9R, par11, par23R, par29",
+  "parentingScaleVerbosity42": "Mean of par2R, par4, par7, par9R, par11, par23R, par29",
+  "parentingScaleVerbosity54": "Mean of par2R, par4, par7, par9R, par11, par23R, par29",
+
+  "parentingScaleDysfunctional30": "Mean of the designated Dysfunctional item set",
+  "parentingScaleDysfunctional36": "Mean of the designated Dysfunctional item set",
+  "parentingScaleDysfunctional42": "Mean of the designated Dysfunctional item set",
+  "parentingScaleDysfunctional54": "Mean of the designated Dysfunctional item set",
+
+  "socialCompetenceMean30": "Mean of socialCompetences1 through socialCompetences25, ignoring missing values",
+  "socialCompetenceMean36": "Mean of socialCompetences1 through socialCompetences25, ignoring missing values",
+  "socialCompetenceMean42": "Mean of socialCompetences1 through socialCompetences25, ignoring missing values",
+  "socialCompetenceMean54": "Mean of socialCompetences1 through socialCompetences25, ignoring missing values",
+
+  "sleepDiaryChildNighttimeSleepDurationMean30": "Mean of nightly nighttime sleep duration; nighttime duration = next waketime - bedtime",
+  "sleepDiaryChildNighttimeSleepDurationMean36": "Mean of nightly nighttime sleep duration; nighttime duration = next waketime - bedtime",
+  "sleepDiaryChildNighttimeSleepDurationMean42": "Mean of nightly nighttime sleep duration; nighttime duration = next waketime - bedtime",
+  "sleepDiaryChildNighttimeSleepDurationMean54": "Mean of nightly nighttime sleep duration; nighttime duration = next waketime - bedtime",
+
+  "sleepDiaryChildNighttimeSleepDurationSD30": "SD of nightly nighttime sleep durations",
+  "sleepDiaryChildNighttimeSleepDurationSD36": "SD of nightly nighttime sleep durations",
+  "sleepDiaryChildNighttimeSleepDurationSD42": "SD of nightly nighttime sleep durations",
+  "sleepDiaryChildNighttimeSleepDurationSD54": "SD of nightly nighttime sleep durations",
+
+  "sleepDiaryChildBedtimeRoutineDurationMean30": "Mean of bedtime - routine start time",
+  "sleepDiaryChildBedtimeRoutineDurationMean36": "Mean of bedtime - routine start time",
+  "sleepDiaryChildBedtimeRoutineDurationMean42": "Mean of bedtime - routine start time",
+  "sleepDiaryChildBedtimeRoutineDurationMean54": "Mean of bedtime - routine start time",
+
+  "sleepDiaryChildBedtimeRoutineDurationSD30": "SD of bedtime - routine start time",
+  "sleepDiaryChildBedtimeRoutineDurationSD36": "SD of bedtime - routine start time",
+  "sleepDiaryChildBedtimeRoutineDurationSD42": "SD of bedtime - routine start time",
+  "sleepDiaryChildBedtimeRoutineDurationSD54": "SD of bedtime - routine start time",
+
+  "sleepDiaryChildTotalSleepDurationMean30": "Mean of nighttime sleep + Nap 1 + Nap 2",
+  "sleepDiaryChildTotalSleepDurationMean36": "Mean of nighttime sleep + Nap 1 + Nap 2",
+  "sleepDiaryChildTotalSleepDurationMean42": "Mean of nighttime sleep + Nap 1 + Nap 2",
+  "sleepDiaryChildTotalSleepDurationMean54": "Mean of nighttime sleep + Nap 1 + Nap 2",
+
+  "sleepDiaryChildTotalSleepDurationSD30": "SD of total sleep duration",
+  "sleepDiaryChildTotalSleepDurationSD36": "SD of total sleep duration",
+  "sleepDiaryChildTotalSleepDurationSD42": "SD of total sleep duration",
+  "sleepDiaryChildTotalSleepDurationSD54": "SD of total sleep duration",
+
+  "sleepDiaryChildNapDurationMean30": "Total sleep duration mean - nighttime sleep duration mean",
+  "sleepDiaryChildNapDurationMean36": "Total sleep duration mean - nighttime sleep duration mean",
+  "sleepDiaryChildNapDurationMean42": "Total sleep duration mean - nighttime sleep duration mean",
+  "sleepDiaryChildNapDurationMean54": "Total sleep duration mean - nighttime sleep duration mean",
+
+  "sleepDiaryChildNapDurationSD30": "SD of total nap duration",
+  "sleepDiaryChildNapDurationSD36": "SD of total nap duration",
+  "sleepDiaryChildNapDurationSD42": "SD of total nap duration",
+  "sleepDiaryChildNapDurationSD54": "SD of total nap duration",
+
+  "sleepDiaryChildBedtimeMean30": "Mean of diary bedtimes, converted to hours",
+  "sleepDiaryChildBedtimeMean36": "Mean of diary bedtimes, converted to hours",
+  "sleepDiaryChildBedtimeMean42": "Mean of diary bedtimes, converted to hours",
+  "sleepDiaryChildBedtimeMean54": "Mean of diary bedtimes, converted to hours",
+
+  "sleepDiaryChildBedtimeSD30": "SD of diary bedtimes",
+  "sleepDiaryChildBedtimeSD36": "SD of diary bedtimes",
+  "sleepDiaryChildBedtimeSD42": "SD of diary bedtimes",
+  "sleepDiaryChildBedtimeSD54": "SD of diary bedtimes",
+
+  "sleepDiaryChildRoutineStartTimeMean30": "Mean of routine start times in hours",
+  "sleepDiaryChildRoutineStartTimeMean36": "Mean of routine start times in hours",
+  "sleepDiaryChildRoutineStartTimeMean42": "Mean of routine start times in hours",
+  "sleepDiaryChildRoutineStartTimeMean54": "Mean of routine start times in hours",
+
+  "sleepDiaryChildRoutineStartTimeSD30": "SD of routine start times",
+  "sleepDiaryChildRoutineStartTimeSD36": "SD of routine start times",
+  "sleepDiaryChildRoutineStartTimeSD42": "SD of routine start times",
+  "sleepDiaryChildRoutineStartTimeSD54": "SD of routine start times",
+
+  "sleepDiaryChildWaketimeMean30": "Mean of wake times in hours",
+  "sleepDiaryChildWaketimeMean36": "Mean of wake times in hours",
+  "sleepDiaryChildWaketimeMean42": "Mean of wake times in hours",
+  "sleepDiaryChildWaketimeMean54": "Mean of wake times in hours",
+
+  "sleepDiaryChildWaketimeSD30": "SD of wake times",
+  "sleepDiaryChildWaketimeSD36": "SD of wake times",
+  "sleepDiaryChildWaketimeSD42": "SD of wake times",
+  "sleepDiaryChildWaketimeSD54": "SD of wake times",
+
+  "sleepDiaryChildNightWakings30": "Mean of reported nightly wakings",
+  "sleepDiaryChildNightWakings36": "Mean of reported nightly wakings",
+  "sleepDiaryChildNightWakings42": "Mean of reported nightly wakings",
+  "sleepDiaryChildNightWakings54": "Mean of reported nightly wakings",
+
+  "sleepDiaryChildRoutineDeviationMean30": "Mean of stated routine steps - completed routine steps",
+  "sleepDiaryChildRoutineDeviationMean36": "Mean of stated routine steps - completed routine steps",
+  "sleepDiaryChildRoutineDeviationMean42": "Mean of stated routine steps - completed routine steps",
+  "sleepDiaryChildRoutineDeviationMean54": "Mean of stated routine steps - completed routine steps",
+
+  "sleepDiaryChildRoutineDeviationSD30": "SD of routine deviation",
+  "sleepDiaryChildRoutineDeviationSD36": "SD of routine deviation",
+  "sleepDiaryChildRoutineDeviationSD42": "SD of routine deviation",
+  "sleepDiaryChildRoutineDeviationSD54": "SD of routine deviation",
+
+  "sleepDiaryChildNighttimeSleepDurationBeforeLabVisit30": "Nighttime sleep duration from labM1",
+  "sleepDiaryChildNighttimeSleepDurationBeforeLabVisit36": "Nighttime sleep duration from labM1",
+  "sleepDiaryChildNighttimeSleepDurationBeforeLabVisit42": "Nighttime sleep duration from labM1",
+  "sleepDiaryChildNighttimeSleepDurationBeforeLabVisit54": "Nighttime sleep duration from labM1",
+
+  "sleepDiaryChildTotalSleepDurationBeforeLabVisit30": "Total sleep duration from labM1",
+  "sleepDiaryChildTotalSleepDurationBeforeLabVisit36": "Total sleep duration from labM1",
+  "sleepDiaryChildTotalSleepDurationBeforeLabVisit42": "Total sleep duration from labM1",
+  "sleepDiaryChildTotalSleepDurationBeforeLabVisit54": "Total sleep duration from labM1",
+
+  "sleepDiaryChildNightWakingsBeforeLabVisit30": "labM1.pmwake",
+  "sleepDiaryChildNightWakingsBeforeLabVisit36": "labM1.pmwake",
+  "sleepDiaryChildNightWakingsBeforeLabVisit42": "labM1.pmwake",
+  "sleepDiaryChildNightWakingsBeforeLabVisit54": "labM1.pmwake",
+
+  "sleepDiaryChildSleepConsolidation30": "Nighttime Sleep Duration Mean / Total Sleep Duration Mean",
+  "sleepDiaryChildSleepConsolidation36": "Nighttime Sleep Duration Mean / Total Sleep Duration Mean",
+  "sleepDiaryChildSleepConsolidation42": "Nighttime Sleep Duration Mean / Total Sleep Duration Mean",
+  "sleepDiaryChildSleepConsolidation54": "Nighttime Sleep Duration Mean / Total Sleep Duration Mean",
+
+  "psqiTimeToFallAsleep30": "Direct value from Pittsburgh2",
+  "psqiTimeToFallAsleep36": "Direct value from Pittsburgh2",
+  "psqiTimeToFallAsleep42": "Direct value from Pittsburgh2",
+  "psqiTimeToFallAsleep54": "Direct value from Pittsburgh2",
+
+  "psqiHoursOfSleepPerNight30": "Direct value from Pittsburgh4",
+  "psqiHoursOfSleepPerNight36": "Direct value from Pittsburgh4",
+  "psqiHoursOfSleepPerNight42": "Direct value from Pittsburgh4",
+  "psqiHoursOfSleepPerNight54": "Direct value from Pittsburgh4",
+
+  "psqiSubjectiveSleepQuality30": "3 - Pittsburgh6 (reverse scored); higher = worse sleep quality",
+  "psqiSubjectiveSleepQuality36": "3 - Pittsburgh6 (reverse scored); higher = worse sleep quality",
+  "psqiSubjectiveSleepQuality42": "3 - Pittsburgh6 (reverse scored); higher = worse sleep quality",
+  "psqiSubjectiveSleepQuality54": "3 - Pittsburgh6 (reverse scored); higher = worse sleep quality",
+
+  "psqiSleepLatency30": "First score Pittsburgh2 by minutes-to-sleep category; add to Pittsburgh5a; recode resulting sum to 0-3",
+  "psqiSleepLatency36": "First score Pittsburgh2 by minutes-to-sleep category; add to Pittsburgh5a; recode resulting sum to 0-3",
+  "psqiSleepLatency42": "First score Pittsburgh2 by minutes-to-sleep category; add to Pittsburgh5a; recode resulting sum to 0-3",
+  "psqiSleepLatency54": "First score Pittsburgh2 by minutes-to-sleep category; add to Pittsburgh5a; recode resulting sum to 0-3",
+
+  "psqiSleepDuration30": "Pittsburgh4 categorized into PSQI sleep-duration score",
+  "psqiSleepDuration36": "Pittsburgh4 categorized into PSQI sleep-duration score",
+  "psqiSleepDuration42": "Pittsburgh4 categorized into PSQI sleep-duration score",
+  "psqiSleepDuration54": "Pittsburgh4 categorized into PSQI sleep-duration score",
+
+  "psqiHabitualSleepEfficiencyPercent30": "Hours of sleep / hours in bed * 100",
+  "psqiHabitualSleepEfficiencyPercent36": "Hours of sleep / hours in bed * 100",
+  "psqiHabitualSleepEfficiencyPercent42": "Hours of sleep / hours in bed * 100",
+  "psqiHabitualSleepEfficiencyPercent54": "Hours of sleep / hours in bed * 100",
+
+  "psqiHabitualSleepEfficiency30": "Sleep-efficiency percentage categorized into 0-3 score",
+  "psqiHabitualSleepEfficiency36": "Sleep-efficiency percentage categorized into 0-3 score",
+  "psqiHabitualSleepEfficiency42": "Sleep-efficiency percentage categorized into 0-3 score",
+  "psqiHabitualSleepEfficiency54": "Sleep-efficiency percentage categorized into 0-3 score",
+
+  "psqiSleepDisturbance30": "Sum Pittsburgh 5b-5j, then categorize sum into 0-3",
+  "psqiSleepDisturbance36": "Sum Pittsburgh 5b-5j, then categorize sum into 0-3",
+  "psqiSleepDisturbance42": "Sum Pittsburgh 5b-5j, then categorize sum into 0-3",
+  "psqiSleepDisturbance54": "Sum Pittsburgh 5b-5j, then categorize sum into 0-3",
+
+  "psqiUseOfSleepingMedication30": "Direct value from Pittsburgh7, scored 0-3",
+  "psqiUseOfSleepingMedication36": "Direct value from Pittsburgh7, scored 0-3",
+  "psqiUseOfSleepingMedication42": "Direct value from Pittsburgh7, scored 0-3",
+  "psqiUseOfSleepingMedication54": "Direct value from Pittsburgh7, scored 0-3",
+
+  "kosairSleepDisorderedBreathing30": "Sum of Kosair items 32, 42, 48, 49, 51, 52, 53, 54, 55, 56, 57, 58",
+  "kosairSleepDisorderedBreathing36": "Sum of Kosair items 32, 42, 48, 49, 51, 52, 53, 54, 55, 56, 57, 58",
+  "kosairSleepDisorderedBreathing42": "Sum of Kosair items 32, 42, 48, 49, 51, 52, 53, 54, 55, 56, 57, 58",
+  "kosairSleepDisorderedBreathing54": "Sum of Kosair items 32, 42, 48, 49, 51, 52, 53, 54, 55, 56, 57, 58",
+
+  "kosairDaytimeSleepiness30": "Sum of Kosair items 24a, 30, 59, 60, 61",
+  "kosairDaytimeSleepiness36": "Sum of Kosair items 24a, 30, 59, 60, 61",
+  "kosairDaytimeSleepiness42": "Sum of Kosair items 24a, 30, 59, 60, 61",
+  "kosairDaytimeSleepiness54": "Sum of Kosair items 24a, 30, 59, 60, 61",
 };
 
 export const variableCodings = {
@@ -6249,3 +7829,110 @@ export const variableCodings = {
   "phsiFeel42": "1 = enjoyable through 4 = strained",
   "phsiFeel54": "1 = enjoyable through 4 = strained",
 };
+
+export const provisionalDescriptionVariables = [
+  "sleepDiaryChildNapSleepDurationNoZerosMean30",
+  "sleepDiaryChildNapSleepDurationNoZerosMean36",
+  "sleepDiaryChildNapSleepDurationNoZerosMean42",
+  "sleepDiaryChildNapSleepDurationNoZerosMean54",
+
+  "sleepDiaryChildNapSleepDurationNoZerosSD30",
+  "sleepDiaryChildNapSleepDurationNoZerosSD36",
+  "sleepDiaryChildNapSleepDurationNoZerosSD42",
+  "sleepDiaryChildNapSleepDurationNoZerosSD54",
+
+  "sleepDiaryChildCalm30",
+  "sleepDiaryChildCalm36",
+  "sleepDiaryChildCalm42",
+  "sleepDiaryChildCalm54",
+
+  "sleepDiaryChildWired30",
+  "sleepDiaryChildWired36",
+  "sleepDiaryChildWired42",
+  "sleepDiaryChildWired54",
+
+  "sleepDiaryChildRestless30",
+  "sleepDiaryChildRestless36",
+  "sleepDiaryChildRestless42",
+  "sleepDiaryChildRestless54",
+
+  "sleepDiaryChildWorried30",
+  "sleepDiaryChildWorried36",
+  "sleepDiaryChildWorried42",
+  "sleepDiaryChildWorried54",
+
+  "sleepDiaryParentNighttimeSleepDurationMean30",
+  "sleepDiaryParentNighttimeSleepDurationMean36",
+  "sleepDiaryParentNighttimeSleepDurationMean42",
+  "sleepDiaryParentNighttimeSleepDurationMean54",
+
+  "sleepDiaryParentNighttimeSleepDurationSD30",
+  "sleepDiaryParentNighttimeSleepDurationSD36",
+  "sleepDiaryParentNighttimeSleepDurationSD42",
+  "sleepDiaryParentNighttimeSleepDurationSD54",
+
+  "sleepDiaryParentTotalSleepDurationMean30",
+  "sleepDiaryParentTotalSleepDurationMean36",
+  "sleepDiaryParentTotalSleepDurationMean42",
+  "sleepDiaryParentTotalSleepDurationMean54",
+
+  "sleepDiaryParentTotalSleepDurationSD30",
+  "sleepDiaryParentTotalSleepDurationSD36",
+  "sleepDiaryParentTotalSleepDurationSD42",
+  "sleepDiaryParentTotalSleepDurationSD54",
+
+  "sleepDiaryParentNapDurationMean30",
+  "sleepDiaryParentNapDurationMean36",
+  "sleepDiaryParentNapDurationMean42",
+  "sleepDiaryParentNapDurationMean54",
+
+  "sleepDiaryParentNapDurationSD30",
+  "sleepDiaryParentNapDurationSD36",
+  "sleepDiaryParentNapDurationSD42",
+  "sleepDiaryParentNapDurationSD54",
+
+  "sleepDiaryParentBedtimeMean30",
+  "sleepDiaryParentBedtimeMean36",
+  "sleepDiaryParentBedtimeMean42",
+  "sleepDiaryParentBedtimeMean54",
+
+  "sleepDiaryParentBedtimeSD30",
+  "sleepDiaryParentBedtimeSD36",
+  "sleepDiaryParentBedtimeSD42",
+  "sleepDiaryParentBedtimeSD54",
+
+  "sleepDiaryParentWaketimeMean30",
+  "sleepDiaryParentWaketimeMean36",
+  "sleepDiaryParentWaketimeMean42",
+  "sleepDiaryParentWaketimeMean54",
+
+  "sleepDiaryParentWaketimeSD30",
+  "sleepDiaryParentWaketimeSD36",
+  "sleepDiaryParentWaketimeSD42",
+  "sleepDiaryParentWaketimeSD54",
+
+  "sleepDiaryParentNightWakings30",
+  "sleepDiaryParentNightWakings36",
+  "sleepDiaryParentNightWakings42",
+  "sleepDiaryParentNightWakings54",
+
+  "sleepDiaryParentNighttimeSleepDurationBeforeLabVisit30",
+  "sleepDiaryParentNighttimeSleepDurationBeforeLabVisit36",
+  "sleepDiaryParentNighttimeSleepDurationBeforeLabVisit42",
+  "sleepDiaryParentNighttimeSleepDurationBeforeLabVisit54",
+
+  "sleepDiaryParentTotalSleepDurationBeforeLabVisit30",
+  "sleepDiaryParentTotalSleepDurationBeforeLabVisit36",
+  "sleepDiaryParentTotalSleepDurationBeforeLabVisit42",
+  "sleepDiaryParentTotalSleepDurationBeforeLabVisit54",
+
+  "sleepDiaryParentNightWakingsBeforeLabVisit30",
+  "sleepDiaryParentNightWakingsBeforeLabVisit36",
+  "sleepDiaryParentNightWakingsBeforeLabVisit42",
+  "sleepDiaryParentNightWakingsBeforeLabVisit54",
+
+  "sleepDiaryParentSleepConsolidation30",
+  "sleepDiaryParentSleepConsolidation36",
+  "sleepDiaryParentSleepConsolidation42",
+  "sleepDiaryParentSleepConsolidation54",
+];

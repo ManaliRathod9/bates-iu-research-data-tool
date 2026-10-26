@@ -74,7 +74,9 @@ export const structure = {
       "Depression Scale",
       "Differential Ability Scale (DAS)",
       "Eyberg Child Behavior Inventory",
-      "Purdue Home Stimulation Inventory",
+      "Parenting Events",
+      "Parenting Scale",
+      "Social Competence Scale",
     ],
     "Secondary Caregiver Questionnaires": [
       "Teacher Questionnaires",
@@ -82,7 +84,7 @@ export const structure = {
     ],
     "Father Questionnaires": [],
 
-    "Observer Questionnaires": ["Home Scale Items", "Observer Ratings"],
+    "Observer Questionnaires": ["Home Scale Items", "Observer Ratings", "Purdue Home Stimulation Inventory"],
 
     Actigraphy: ["Child", "Parent", "Summary"],
 
