@@ -19,17 +19,31 @@ const taskToVarMap = {
   "Social Competence Scale": "socialcompetencemean",
   "Child Behavior Checklist": "cbcl",
   "Child Behavior Questionnaire": "cbq",
+  "Child Misbehavior": "childmisbehavior",
+  "Concerns & Constraints": "concernsconstraints",
+  "Daily Schedule": "dsched",
+  "Follow the Path": "followthepath",
+  "Hollingshead Socioeconomic Status": "hollingshead",
+  "Reilly Role Overload Scale": "reillyrole",
+  "Response to Misbehavior": "responsetomisbehavior",
+  "Social Support — PANSE": "socialsupport",
   "Child-Rearing Practices Report": "crpr",
   "Children's Sleep Habits Questionnaire": "cshq",
   "CHAOS Scale (Confusion, Hubbub, and Order Scale)": "chaos",
   "Depression Scale": "dep",
+  "CES-D": "cesd",
   "Differential Ability Scale (DAS)": "das",
+  "Woodcock-Johnson (WJ)": "wj",
   "Eyberg Child Behavior Inventory": "ecbi",
   "Purdue Home Stimulation Inventory": "phsi",
   "Shipley Parent Cognition": "shipley",
   "Social Support Related": "socialsupport",
-  "Teacher Questionnaires": "teach",
-  "Temperament Questionnaires": "icq",
+  "Teacher Demographics": "teacherdemographics",
+  "Class Teacher Sensitivity": "classteachersensitivity",
+  "Teacher Checklist": "teacherchecklist",
+  "Mock Report Card": "mockreportcard",
+  "Infant Characteristics Questionnaire (ICQ)": "icq",
+  "Caregiver-Teacher Report Form (TRF)": "trf",
   Compliments: "comp",
   "Door Opening": "door",
   "Fruit Stroop": "fruit",
@@ -41,7 +55,13 @@ const taskToVarMap = {
   Parent: "sleep",
   Summary: "sleep",
   "Home Scale Items": "home",
-  "Observer Ratings": "obs",
+  "Sleep Observation Counts": "numobs",
+  "Observer Impressions - Regular ratings": "observerimpression",
+  "Post Observation Questionnaire - Child composites": "postobservation",
+  "Post Observation Questionnaire - Parent composites": "postobservation",
+  "Post Observation Rating Scale - Emotionality composites": "postobservationratingscale",
+  "Post Observation Rating Scale - Regulation composite": "postobservationratingscale",
+  "Bates Lab Home Checklist": "blh",
   "Parent Positive Affect": "parentpositive",
   "Sleep Diary – Child": "sdc",
   "Gift Delay": "gift",
@@ -92,6 +112,9 @@ const isSleepObservationCountVariable = (vLower) =>
   vLower.startsWith("downnumobs") || vLower.startsWith("upnumobs") || vLower.startsWith("truesleepnumobs") || vLower.startsWith("napnumobs") ||
   vLower.startsWith("downshorttime") || vLower.startsWith("upshorttime") || vLower.startsWith("truesleepshorttime") || vLower.startsWith("napshorttime");
 
+const isBatesLabHomeChecklistVariable = (vLower) =>
+  /^(blhunsafeanddisorghomesum|blhchouseholddisorgsum|blhcoutdoorsum|blhcdisruptivesleepspacesum|blhctransitionsum|blhcinapptstimsum|blhcfamilypreparation|blhchomeconfusion)(30|36|42)$/.test(vLower);
+
 export const getCorrectTasksForVariable = (v) => {
   const vLower = v.toLowerCase();
 
@@ -138,7 +161,7 @@ export const getCorrectTasksForVariable = (v) => {
   }
 
   if (isSleepObservationCountVariable(vLower)) {
-    return [classifySleepVariable(vLower).task, "Observer Ratings"];
+    return [classifySleepVariable(vLower).task, "Sleep Observation Counts"];
   }
 
   if (vLower.includes("sdchild")) {
@@ -210,14 +233,68 @@ export const getCorrectTasksForVariable = (v) => {
     return ["Child Behavior Questionnaire"];
   }
 
+  if (/^childmisbehaviorsum(30|36|42)$/.test(vLower)) {
+    return ["Child Misbehavior"];
+  }
+
+  if (/^concernsconstraints(proactiveparenting|reactiveparenting|externalattrib|internalattrib)(30|36|42)$/.test(vLower)) {
+    return ["Concerns & Constraints"];
+  }
+
+  if (/^dsched(1|2|4|8|9)(primary|parentingpartner)(30|36|42)$/.test(vLower)) {
+    return ["Daily Schedule"];
+  }
+
+  if (/^followthepath(childpres|parentpres|slowminusfast|ratiofastoverslow)(30|36|42)$/.test(vLower)) {
+    return ["Follow the Path"];
+  }
+
+  if (/^hollingshead(employedparent|employedparentingpartner|ses|seslevel|occupation|education)(30|36|42)$/.test(vLower)) {
+    return ["Hollingshead Socioeconomic Status"];
+  }
+
+  if (/^reillyroleoveralloverload(30|36|42)$/.test(vLower)) {
+    return ["Reilly Role Overload Scale"];
+  }
+
+  if (/^responsetomisbehavior(nonharshdiscipline|nonharshverbaldiscipline|harshverbaldiscipline|harshphysicaldiscipline)(30|36|42)$/.test(vLower)) {
+    return ["Response to Misbehavior"];
+  }
+
+  if (/^cesd(depressivesymptoms|depressiondiagnosis)(30|36|42)$/.test(vLower)) {
+    return ["Depression Scale", "CES-D"];
+  }
+
   if (vLower.startsWith("cesddepressivesymptoms") || vLower.startsWith("cesddepressiondiagnosis")) {
     return ["Depression Scale"];
   }
 
+  if (/^teacherdemographics(centername|age|ethnicity|education|educationother|specializedtraining|yearsofexperience|yearsatschool|numberofchildren|numberofteachers|knownchild)(30|36|42|54)$/.test(vLower)) {
+    return ["Teacher Demographics"];
+  }
+
+  if (vLower.startsWith("classteachersensitivity")) {
+    return ["Class Teacher Sensitivity"];
+  }
+
+  if (vLower.startsWith("teacherchecklist")) {
+    return ["Teacher Checklist"];
+  }
+
+  if (/^mockreportcard(reading|orallanguage|writtenlanguage|math|socialstudies|science|academicperformance|workhabits|socialskills)(30|36|42)$/.test(vLower)) {
+    return ["Mock Report Card"];
+  }
+
+  if (/^wj(letterwordnumbercorrect|letterwordageequivalence|appliedproblemsnumbercorrect|appliedproblemsageequivalence)(30|36|42)$/.test(vLower)) {
+    return ["Woodcock-Johnson (WJ)"];
+  }
+
+  if (/^trf(emotionallyreactive|anxiousdepressed|somatic|withdrawn|attention|aggressive|internalizing|externalizing|total)(30|36|42)$/.test(vLower)) {
+    return ["Caregiver-Teacher Report Form (TRF)"];
+  }
+
   if (
     vLower.startsWith("classteacherinput") ||
-    vLower.startsWith("classteachersensitivity") ||
-    vLower.startsWith("teacherchecklist") ||
     vLower.startsWith("teacherdemographics") ||
     vLower.startsWith("trf")
   ) {
@@ -225,11 +302,11 @@ export const getCorrectTasksForVariable = (v) => {
   }
 
   if (vLower.startsWith("icqdifficult")) {
-    return ["Temperament Questionnaires"];
+    return ["Infant Characteristics Questionnaire (ICQ)"];
   }
 
   if (vLower.startsWith("icq")) {
-    return ["Temperament Questionnaires"];
+    return ["Infant Characteristics Questionnaire (ICQ)"];
   }
 
   if (vLower.startsWith("oddball")) {
@@ -244,6 +321,10 @@ export const getCorrectTasksForVariable = (v) => {
     return ["Differential Ability Scale (DAS)"];
   }
 
+  if (isBatesLabHomeChecklistVariable(vLower)) {
+    return ["Home Scale Items", "Bates Lab Home Checklist"];
+  }
+
   if (
     vLower.startsWith("homescaleitems") ||
     vLower.startsWith("homebehaviorscale") ||
@@ -256,8 +337,33 @@ export const getCorrectTasksForVariable = (v) => {
     return ["Home Scale Items"];
   }
 
-  if (vLower.startsWith("observerimpression") || vLower.startsWith("postobservation")) {
-    return ["Observer Ratings"];
+  if (vLower.startsWith("observerimpression")) {
+    return ["Observer Impressions - Regular ratings"];
+  }
+
+  if (
+    vLower.startsWith("postobservationsocialmaturity") ||
+    vLower.startsWith("postobservationpositivedemand")
+  ) {
+    return ["Post Observation Questionnaire - Child composites"];
+  }
+
+  if (
+    vLower.startsWith("postobservationresponsiveness") ||
+    vLower.startsWith("postobservationeffectivecontrol")
+  ) {
+    return ["Post Observation Questionnaire - Parent composites"];
+  }
+
+  if (
+    vLower.startsWith("postobservationratingscalepositiveemotionality") ||
+    vLower.startsWith("postobservationratingscalenegativeemotionality")
+  ) {
+    return ["Post Observation Rating Scale - Emotionality composites"];
+  }
+
+  if (vLower.startsWith("postobservationratingscaleregulation")) {
+    return ["Post Observation Rating Scale - Regulation composite"];
   }
 
   if (vLower.startsWith("parentpositive")) {
@@ -266,6 +372,10 @@ export const getCorrectTasksForVariable = (v) => {
 
   if (vLower.startsWith("shipley")) {
     return ["Shipley Parent Cognition"];
+  }
+
+  if (/^socialsupport(negativesupport|informationalsupport|companionship)(30|36|42)$/.test(vLower)) {
+    return ["Social Support Related", "Social Support — PANSE"];
   }
 
   if (vLower.startsWith("socialsupport")) {
@@ -419,6 +529,10 @@ export const shouldShowVariableInTask = (variableName, selectedCategory, selecte
 
   const correctTasks = getCorrectTasksForVariable(normalized);
 
+  if (correctTasks.length === 1 && correctTasks[0] === "Teacher Questionnaires") {
+    return false;
+  }
+
   if (correctTasks && correctTasks.length > 0) {
     if (correctTasks.includes(selectedTask)) {
       return true;
@@ -431,6 +545,20 @@ export const shouldShowVariableInTask = (variableName, selectedCategory, selecte
   }
 
   if (selectedTask === "Differential Ability Scale (DAS)") {
+    return false;
+  }
+
+  if (
+    selectedTask === "Child Misbehavior" ||
+    selectedTask === "Concerns & Constraints" ||
+    selectedTask === "Daily Schedule" ||
+    selectedTask === "Follow the Path" ||
+    selectedTask === "Hollingshead Socioeconomic Status" ||
+    selectedTask === "Reilly Role Overload Scale" ||
+    selectedTask === "Response to Misbehavior" ||
+    selectedTask === "Mock Report Card" ||
+    selectedTask === "Woodcock-Johnson (WJ)"
+  ) {
     return false;
   }
 
@@ -594,6 +722,14 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
     return { l1Category: l1, l2Timepoint: "Composites", l3Group: l3 };
   }
 
+  if (selectedTask === "CES-D") {
+    let l2 = "Other";
+    if (vLower.endsWith("30")) l2 = "Age 30";
+    else if (vLower.endsWith("36")) l2 = "Age 36";
+    else if (vLower.endsWith("42")) l2 = "Age 42";
+    return { l1Category: "CES-D", l2Timepoint: l2 };
+  }
+
   if (selectedTask === "Eyberg Child Behavior Inventory") {
     const l1 = "Eyberg Child Behavior Inventory Task";
 
@@ -650,57 +786,58 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
     return { l1Category: "Needs Review / Other Related Variables", l2Timepoint: "Other" };
   }
 
-  if (selectedTask === "Observer Ratings") {
-    const l1 = "Observer Ratings";
+  if (structure.tasksByCategory["Observer Ratings"].includes(selectedTask)) {
     if (
       vLower === "downnumobs" || vLower === "upnumobs" || vLower === "truesleepnumobs" || vLower === "napnumobs" ||
       vLower === "downshorttime" || vLower === "upshorttime" || vLower === "truesleepshorttime" || vLower === "napshorttime" ||
       vLower.startsWith("downnumobs") || vLower.startsWith("upnumobs") || vLower.startsWith("truesleepnumobs") || vLower.startsWith("napnumobs") ||
       vLower.startsWith("downshorttime") || vLower.startsWith("upshorttime") || vLower.startsWith("truesleepshorttime") || vLower.startsWith("napshorttime")
     ) {
-      let l3 = "Other";
-      if (vLower.endsWith("30")) l3 = "Age 30";
-      else if (vLower.endsWith("36")) l3 = "Age 36";
-      else if (vLower.endsWith("42")) l3 = "Age 42";
-      else if (vLower.endsWith("54")) l3 = "Age 54";
+      let l2 = "Other";
+      if (vLower.endsWith("30")) l2 = "Age 30";
+      else if (vLower.endsWith("36")) l2 = "Age 36";
+      else if (vLower.endsWith("42")) l2 = "Age 42";
+      else if (vLower.endsWith("54")) l2 = "Age 54";
       const match = vLower.match(/(child|parent)(week1|week2|combined)(sadeh|colekripke)(30|36|42|54)$/);
-      let l4 = "Other";
+      let l3 = "Other";
       if (match) {
         const subject = match[1] === "child" ? "Child" : "Parent";
         const period = { week1: "Week 1", week2: "Week 2", combined: "Combined" }[match[2]];
         const algorithm = match[3] === "sadeh" ? "Sadeh" : "ColeKripke";
-        l4 = `${subject} ${period} ${algorithm}`;
+        l3 = `${subject} ${period} ${algorithm}`;
       }
-      return { l1Category: l1, l2Timepoint: "Sleep Observation Counts", l3Group: l3, l4Group: l4 };
+      return { l1Category: "Sleep Observation Counts", l2Timepoint: l2, l3Group: l3 };
     }
-    let l2 = null;
+    let l1 = null;
     if (vLower.startsWith("observerimpression")) {
-      l2 = "Observer Impressions - Regular ratings";
+      l1 = "Observer Impressions - Regular ratings";
     } else if (
       vLower.startsWith("postobservationsocialmaturity") ||
       vLower.startsWith("postobservationpositivedemand")
     ) {
-      l2 = "Post Observation Questionnaire - Child composites";
+      l1 = "Post Observation Questionnaire - Child composites";
     } else if (
       vLower.startsWith("postobservationresponsiveness") ||
       vLower.startsWith("postobservationeffectivecontrol")
     ) {
-      l2 = "Post Observation Questionnaire - Parent composites";
+      l1 = "Post Observation Questionnaire - Parent composites";
     } else if (
       vLower.startsWith("postobservationratingscalepositiveemotionality") ||
       vLower.startsWith("postobservationratingscalenegativeemotionality")
     ) {
-      l2 = "Post Observation Rating Scale - Emotionality composites";
+      l1 = "Post Observation Rating Scale - Emotionality composites";
     } else if (vLower.startsWith("postobservationratingscaleregulation")) {
-      l2 = "Post Observation Rating Scale - Regulation composite";
+      l1 = "Post Observation Rating Scale - Regulation composite";
+    } else if (isBatesLabHomeChecklistVariable(vLower)) {
+      l1 = "Bates Lab Home Checklist";
     }
-    if (l2) {
-      let l3 = "Other";
-      if (vLower.endsWith("30")) l3 = "Age 30";
-      else if (vLower.endsWith("36")) l3 = "Age 36";
-      else if (vLower.endsWith("42")) l3 = "Age 42";
-      else if (vLower.endsWith("54")) l3 = "Age 54";
-      return { l1Category: l1, l2Timepoint: l2, l3Group: l3 };
+    if (l1) {
+      let l2 = "Other";
+      if (vLower.endsWith("30")) l2 = "Age 30";
+      else if (vLower.endsWith("36")) l2 = "Age 36";
+      else if (vLower.endsWith("42")) l2 = "Age 42";
+      else if (vLower.endsWith("54")) l2 = "Age 54";
+      return { l1Category: l1, l2Timepoint: l2 };
     }
     return { l1Category: "Needs Review / Other Related Variables", l2Timepoint: "Other" };
   }
@@ -798,7 +935,7 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
     return { l1Category: "EEG Bird Alligator Variables", l2Timepoint: l2 };
   }
 
-  if (selectedTask === "Temperament Questionnaires") {
+  if (selectedTask === "Infant Characteristics Questionnaire (ICQ)") {
     if (!vLower.startsWith("icq")) {
       return { l1Category: "Needs Review / Other Related Variables", l2Timepoint: "Other" };
     }
@@ -874,6 +1011,41 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
     else if (vLower.endsWith("42")) l3 = "Age 42";
     else if (vLower.endsWith("54")) l3 = "Age 54";
     return { l1Category: selectedTask, l2Timepoint: "Composites", l3Group: l3 };
+  }
+
+  if (
+    selectedTask === "Child Misbehavior" ||
+    selectedTask === "Concerns & Constraints" ||
+    selectedTask === "Reilly Role Overload Scale" ||
+    selectedTask === "Social Support — PANSE"
+  ) {
+    let l3 = "Other";
+    if (vLower.endsWith("30")) l3 = "Age 30";
+    else if (vLower.endsWith("36")) l3 = "Age 36";
+    else if (vLower.endsWith("42")) l3 = "Age 42";
+    return { l1Category: selectedTask, l2Timepoint: "Composites", l3Group: l3 };
+  }
+
+  if (selectedTask === "Daily Schedule") {
+    let l3 = "Other";
+    if (vLower.endsWith("30")) l3 = "Age 30";
+    else if (vLower.endsWith("36")) l3 = "Age 36";
+    else if (vLower.endsWith("42")) l3 = "Age 42";
+    return { l1Category: selectedTask, l2Timepoint: "Regular Variables", l3Group: l3 };
+  }
+
+  if (
+    selectedTask === "Follow the Path" ||
+    selectedTask === "Hollingshead Socioeconomic Status" ||
+    selectedTask === "Response to Misbehavior" ||
+    selectedTask === "Caregiver-Teacher Report Form (TRF)" ||
+    selectedTask === "Woodcock-Johnson (WJ)"
+  ) {
+    let l2 = "Other";
+    if (vLower.endsWith("30")) l2 = "Age 30";
+    else if (vLower.endsWith("36")) l2 = "Age 36";
+    else if (vLower.endsWith("42")) l2 = "Age 42";
+    return { l1Category: selectedTask, l2Timepoint: l2 };
   }
 
   if (selectedTask === "Social Competence Scale") {
@@ -953,6 +1125,20 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
 
     const l3 = vLower.includes("parentalsensitivity") ? "Sensitivity" : "Intrusiveness";
     return { l1Category: l1, l2Timepoint: l2, l3Group: l3 };
+  }
+
+  if (
+    selectedTask === "Teacher Demographics" ||
+    selectedTask === "Class Teacher Sensitivity" ||
+    selectedTask === "Teacher Checklist" ||
+    selectedTask === "Mock Report Card"
+  ) {
+    let l2 = "Other";
+    if (vLower.endsWith("30")) l2 = "Age 30";
+    else if (vLower.endsWith("36")) l2 = "Age 36";
+    else if (vLower.endsWith("42")) l2 = "Age 42";
+    else if (vLower.endsWith("54")) l2 = "Age 54";
+    return { l1Category: selectedTask, l2Timepoint: l2 };
   }
 
   if (selectedTask === "Teacher Questionnaires") {
@@ -1484,29 +1670,11 @@ export const groupVariablesBySubcategory = (variables, selectedCategory, selecte
     );
   }
 
-  if (groups["Observer Ratings"]) {
-    const observerL2Order = {
-      "Sleep Observation Counts": 0,
-      "Observer Impressions - Regular ratings": 1,
-      "Post Observation Questionnaire - Child composites": 2,
-      "Post Observation Questionnaire - Parent composites": 3,
-      "Post Observation Rating Scale - Emotionality composites": 4,
-      "Post Observation Rating Scale - Regulation composite": 5,
-    };
-    const l1Data = groups["Observer Ratings"];
-    const entries = Object.keys(l1Data).map((k, i) => [k, i]);
-    entries.sort((a, b) => {
-      const ra = a[0] in observerL2Order ? observerL2Order[a[0]] : 99;
-      const rb = b[0] in observerL2Order ? observerL2Order[b[0]] : 99;
-      return ra !== rb ? ra - rb : a[1] - b[1];
-    });
-    const reordered = {};
-    entries.forEach(([k]) => {
-      reordered[k] = l1Data[k];
-    });
-    groups["Observer Ratings"] = reordered;
+  const observerRatingTask = structure.tasksByCategory["Observer Ratings"].find((task) => groups[task]);
+  if (observerRatingTask) {
+    const taskGroups = { [observerRatingTask]: groups[observerRatingTask] };
     sortAgeGroupsByFamily(
-      reordered,
+      taskGroups,
       [
         "observerimpression19",
         "observerimpression20",
@@ -1521,10 +1689,19 @@ export const groupVariablesBySubcategory = (variables, selectedCategory, selecte
         "postobservationratingscalepositiveemotionality",
         "postobservationratingscalenegativeemotionality",
         "postobservationratingscaleregulation",
+        "blhunsafeanddisorghomesum",
+        "blhchouseholddisorgsum",
+        "blhcoutdoorsum",
+        "blhcdisruptivesleepspacesum",
+        "blhctransitionsum",
+        "blhcinapptstimsum",
+        "blhcfamilypreparation",
+        "blhchomeconfusion",
       ],
       (v) => v.replace(/(30|36|42|54)$/, "")
     );
-    const sleepCounts = groups["Observer Ratings"]["Sleep Observation Counts"];
+    groups[observerRatingTask] = taskGroups[observerRatingTask];
+    const sleepCounts = groups["Sleep Observation Counts"];
     if (sleepCounts && !Array.isArray(sleepCounts)) {
       const sleepCountOrder = [
         "Child Week 1 Sadeh",
@@ -1714,6 +1891,26 @@ export const groupVariablesBySubcategory = (variables, selectedCategory, selecte
       ],
       (v) => v.replace(/(30|36|42|54)$/, "")
     );
+  }
+
+  if (groups["Mock Report Card"]) {
+    const taskGroups = { "Mock Report Card": groups["Mock Report Card"] };
+    sortAgeGroupsByFamily(
+      taskGroups,
+      [
+        "mockreportcardreading",
+        "mockreportcardorallanguage",
+        "mockreportcardwrittenlanguage",
+        "mockreportcardmath",
+        "mockreportcardsocialstudies",
+        "mockreportcardscience",
+        "mockreportcardacademicperformance",
+        "mockreportcardworkhabits",
+        "mockreportcardsocialskills",
+      ],
+      (v) => v.replace(/(30|36|42|54)$/, "")
+    );
+    groups["Mock Report Card"] = taskGroups["Mock Report Card"];
   }
 
   const mefTask = "Mother Executive Function Tests";
@@ -2028,6 +2225,7 @@ const VariableDescription = ({
                                 display: "flex",
                                 alignItems: "center",
                                 justifyContent: "space-between",
+                                gap: "0.75rem",
                                 cursor: "pointer",
                                 background: levelAccents[3].background,
                                 borderLeft: `3px solid ${levelAccents[3].border}`,
@@ -2038,7 +2236,7 @@ const VariableDescription = ({
                                 color: "var(--text-primary)",
                               }}
                             >
-                              <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                              <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", flex: 1, minWidth: 0 }}>
                                 <span
                                   style={{
                                     fontSize: "0.6rem",
@@ -2050,7 +2248,7 @@ const VariableDescription = ({
                                 >
                                   ▶
                                 </span>
-                                <span>{groupIcon(l3Group, 3)} {l3Group}</span>
+                                <span style={{ overflowWrap: "anywhere" }}>{groupIcon(l3Group, 3)} {l3Group}</span>
                               </div>
                               <span
                                 style={{
@@ -2084,6 +2282,7 @@ const VariableDescription = ({
                                               display: "flex",
                                               alignItems: "center",
                                               justifyContent: "space-between",
+                                              gap: "0.75rem",
                                               cursor: "pointer",
                                               background: levelAccents[4].background,
                                               borderLeft: `3px solid ${levelAccents[4].border}`,
@@ -2094,7 +2293,7 @@ const VariableDescription = ({
                                               color: "var(--text-primary)",
                                             }}
                                           >
-                                            <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                                            <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", flex: 1, minWidth: 0 }}>
                                               <span
                                                 style={{
                                                   fontSize: "0.6rem",
@@ -2106,7 +2305,7 @@ const VariableDescription = ({
                                               >
                                                 ▶
                                               </span>
-                                              <span>{groupIcon(l4Group, 3)} {l4Group}</span>
+                                              <span style={{ overflowWrap: "anywhere" }}>{groupIcon(l4Group, 3)} {l4Group}</span>
                                             </div>
                                             <span
                                               style={{
@@ -2154,6 +2353,7 @@ const VariableDescription = ({
                           display: "flex",
                           alignItems: "center",
                           justifyContent: "space-between",
+                          gap: "0.75rem",
                           cursor: "pointer",
                           background: levelAccents[2].background,
                           borderLeft: `3px solid ${levelAccents[2].border}`,
@@ -2164,7 +2364,7 @@ const VariableDescription = ({
                           color: "var(--text-primary)",
                         }}
                       >
-                        <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                        <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", flex: 1, minWidth: 0 }}>
                           <span
                             style={{
                               fontSize: "0.6rem",
@@ -2176,7 +2376,7 @@ const VariableDescription = ({
                           >
                             ▶
                           </span>
-                          <span>
+                          <span style={{ overflowWrap: "anywhere" }}>
                             {groupIcon(l2Timepoint, 2)}{" "}
                             {l2Timepoint === "Mean" ? "Composites" : l2Timepoint}
                           </span>
@@ -2214,6 +2414,7 @@ const VariableDescription = ({
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "space-between",
+                gap: "0.75rem",
                 cursor: "pointer",
                 background: levelAccents[1].background,
                 borderLeft: `3px solid ${levelAccents[1].border}`,
@@ -2224,7 +2425,7 @@ const VariableDescription = ({
                 color: "var(--text-primary)",
               }}
             >
-              <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", flex: 1, minWidth: 0 }}>
                 <span
                   style={{
                     fontSize: "0.65rem",
@@ -2236,7 +2437,7 @@ const VariableDescription = ({
                 >
                   ▶
                 </span>
-                <span>{groupIcon(l1Category, 1)} {l1Category}</span>
+                <span style={{ overflowWrap: "anywhere" }}>{groupIcon(l1Category, 1)} {l1Category}</span>
               </div>
               <span
                 style={{

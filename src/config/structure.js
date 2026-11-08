@@ -10,12 +10,15 @@ export const structure = {
         "Mother Questionnaires",
         "Secondary Caregiver Questionnaires",
         "Father Questionnaires",
+        "Teacher Questionnaires",
+        "Temperament Questionnaires",
       ],
     },
     {
       name: "Observations",
-      children: ["Observer Questionnaires"],
+      children: ["Observer Questionnaires", "Observer Ratings"],
     },
+    { name: "Tests" },
     { name: "EEG Variables" },
     { name: "Actigraphy" },
     { name: "Sleep Measures" },
@@ -23,6 +26,7 @@ export const structure = {
 
   tasksByCategory: {
     "Mother Tasks": [
+      "CES-D",
       "Mother Executive Function Tests",
       "Shipley Parent Cognition",
       "Social Support Related"
@@ -36,6 +40,7 @@ export const structure = {
       "Child Positive Affect",
       "Compliments",
       "Door Opening",
+      "Follow the Path",
       "Fruit Stroop",
       "Grass Snow",
       "Gift Delay",
@@ -68,23 +73,44 @@ export const structure = {
       "Changes + Adjustments Questionnaire",
       "Child Behavior Checklist",
       "Child Behavior Questionnaire",
+      "Child Misbehavior",
       "Child-Rearing Practices Report",
       "Children's Sleep Habits Questionnaire",
       "CHAOS Scale (Confusion, Hubbub, and Order Scale)",
+      "Concerns & Constraints",
+      "Daily Schedule",
       "Depression Scale",
-      "Differential Ability Scale (DAS)",
       "Eyberg Child Behavior Inventory",
+      "Hollingshead Socioeconomic Status",
       "Parenting Events",
       "Parenting Scale",
+      "Reilly Role Overload Scale",
+      "Response to Misbehavior",
       "Social Competence Scale",
+      "Social Support — PANSE",
     ],
     "Secondary Caregiver Questionnaires": [
-      "Teacher Questionnaires",
-      "Temperament Questionnaires",
+      "Caregiver-Teacher Report Form (TRF)",
     ],
     "Father Questionnaires": [],
 
-    "Observer Questionnaires": ["Home Scale Items", "Observer Ratings", "Purdue Home Stimulation Inventory"],
+    "Teacher Questionnaires": ["Teacher Demographics", "Class Teacher Sensitivity", "Teacher Checklist", "Mock Report Card"],
+
+    "Temperament Questionnaires": ["Infant Characteristics Questionnaire (ICQ)"],
+
+    "Observer Questionnaires": ["Home Scale Items", "Purdue Home Stimulation Inventory"],
+
+    "Observer Ratings": [
+      "Sleep Observation Counts",
+      "Observer Impressions - Regular ratings",
+      "Post Observation Questionnaire - Child composites",
+      "Post Observation Questionnaire - Parent composites",
+      "Post Observation Rating Scale - Emotionality composites",
+      "Post Observation Rating Scale - Regulation composite",
+      "Bates Lab Home Checklist",
+    ],
+
+    Tests: ["Differential Ability Scale (DAS)", "Woodcock-Johnson (WJ)"],
 
     Actigraphy: ["Child", "Parent", "Summary"],
 

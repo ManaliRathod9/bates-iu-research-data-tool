@@ -3251,19 +3251,19 @@ export const variableDescriptions = {
   "shipleyAQscore54": "Abstraction Quotient (AQ) Score",
   "shipleyEst.IQ54": "Estimated IQ Score",
 
-  "socialSupportNegativeSupport30": "Social Support - Negative Support",
-  "socialSupportNegativeSupport36": "Social Support - Negative Support",
-  "socialSupportNegativeSupport42": "Social Support - Negative Support",
+  "socialSupportNegativeSupport30": "Negative social exchanges or support",
+  "socialSupportNegativeSupport36": "Negative social exchanges or support",
+  "socialSupportNegativeSupport42": "Negative social exchanges or support",
   "socialSupportNegativeSupport54": "Social Support - Negative Support",
 
-  "socialSupportInformationalSupport30": "Social Support - Informational Support",
-  "socialSupportInformationalSupport36": "Social Support - Informational Support",
-  "socialSupportInformationalSupport42": "Social Support - Informational Support",
+  "socialSupportInformationalSupport30": "Informational and practical support",
+  "socialSupportInformationalSupport36": "Informational and practical support",
+  "socialSupportInformationalSupport42": "Informational and practical support",
   "socialSupportInformationalSupport54": "Social Support - Informational Support",
 
-  "socialSupportCompanionship30": "Social Support - Companionship",
-  "socialSupportCompanionship36": "Social Support - Companionship",
-  "socialSupportCompanionship42": "Social Support - Companionship",
+  "socialSupportCompanionship30": "Companionship and social inclusion",
+  "socialSupportCompanionship36": "Companionship and social inclusion",
+  "socialSupportCompanionship42": "Companionship and social inclusion",
   "socialSupportCompanionship54": "Social Support - Companionship",
 
   "atqFearPrimary30": "Fear Scale - Primary caregiver",
@@ -4013,12 +4013,12 @@ export const variableDescriptions = {
   "cbqEffortfulControlSecondary42": "Effortful Control - Secondary caregiver",
   "cbqEffortfulControlSecondary54": "Effortful Control - Secondary caregiver",
 
-  "crprNurturance30": "Sum of 1-18",
-  "crprWarmth30": "Sum of items 3 and 18",
-  "crprNurturance36": "Sum of 1-18",
-  "crprWarmth36": "Sum of items 3 and 18",
-  "crprNurturance42": "Sum of 1-18",
-  "crprWarmth42": "Sum of items 3 and 18",
+  "crprNurturance30": "Overall nurturant child-rearing practices",
+  "crprWarmth30": "Parenting warmth",
+  "crprNurturance36": "Overall nurturant child-rearing practices",
+  "crprWarmth36": "Parenting warmth",
+  "crprNurturance42": "Overall nurturant child-rearing practices",
+  "crprWarmth42": "Parenting warmth",
   "crprNurturance54": "Sum of 1-18",
   "crprWarmth54": "Sum of items 3 and 18",
 
@@ -4047,60 +4047,60 @@ export const variableDescriptions = {
   "classTeacherSensitivity42": "Teacher Sensitivity",
   "classTeacherSensitivity54": "Teacher Sensitivity",
 
-  "TeacherDemographicsCenterName30": "Teacher Demographics - Daycare or Preschool Name",
-  "TeacherDemographicsCenterName36": "Teacher Demographics - Daycare or Preschool Name",
-  "TeacherDemographicsCenterName42": "Teacher Demographics - Daycare or Preschool Name",
-  "TeacherDemographicsCenterName54": "Teacher Demographics - Daycare or Preschool Name",
+  "TeacherDemographicsCenterName30": "Name of the daycare center or preschool",
+  "TeacherDemographicsCenterName36": "Name of the daycare center or preschool",
+  "TeacherDemographicsCenterName42": "Name of the daycare center or preschool",
+  "TeacherDemographicsCenterName54": "Name of the daycare center or preschool",
 
-  "TeacherDemographicsAge30": "Teacher Demographics - Teacher Age",
-  "TeacherDemographicsAge36": "Teacher Demographics - Teacher Age",
-  "TeacherDemographicsAge42": "Teacher Demographics - Teacher Age",
-  "TeacherDemographicsAge54": "Teacher Demographics - Teacher Age",
+  "TeacherDemographicsAge30": "Teacher age",
+  "TeacherDemographicsAge36": "Teacher age",
+  "TeacherDemographicsAge42": "Teacher age",
+  "TeacherDemographicsAge54": "Teacher age",
 
-  "TeacherDemographicsEthnicity30": "Teacher Demographics - Teacher Race/Ethnicity",
-  "TeacherDemographicsEthnicity36": "Teacher Demographics - Teacher Race/Ethnicity",
-  "TeacherDemographicsEthnicity42": "Teacher Demographics - Teacher Race/Ethnicity",
-  "TeacherDemographicsEthnicity54": "Teacher Demographics - Teacher Race/Ethnicity",
+  "TeacherDemographicsEthnicity30": "Teacher race/ethnicity",
+  "TeacherDemographicsEthnicity36": "Teacher race/ethnicity",
+  "TeacherDemographicsEthnicity42": "Teacher race/ethnicity",
+  "TeacherDemographicsEthnicity54": "Teacher race/ethnicity",
 
-  "TeacherDemographicsEducation30": "Teacher Demographics - Education Level",
-  "TeacherDemographicsEducation36": "Teacher Demographics - Education Level",
-  "TeacherDemographicsEducation42": "Teacher Demographics - Education Level",
-  "TeacherDemographicsEducation54": "Teacher Demographics - Education Level",
+  "TeacherDemographicsEducation30": "Teacher education level",
+  "TeacherDemographicsEducation36": "Teacher education level",
+  "TeacherDemographicsEducation42": "Teacher education level",
+  "TeacherDemographicsEducation54": "Teacher education level",
 
-  "TeacherDemographicsEducationOther30": "Teacher Demographics - College Degree; specify",
-  "TeacherDemographicsEducationOther36": "Teacher Demographics - College Degree; specify",
-  "TeacherDemographicsEducationOther42": "Teacher Demographics - College Degree; specify",
-  "TeacherDemographicsEducationOther54": "Teacher Demographics - College Degree; specify",
+  "TeacherDemographicsEducationOther30": "Specification of college degree or other education",
+  "TeacherDemographicsEducationOther36": "Specification of college degree or other education",
+  "TeacherDemographicsEducationOther42": "Specification of college degree or other education",
+  "TeacherDemographicsEducationOther54": "Specification of college degree or other education",
 
-  "teacherDemographicsSpecializedTraining30": "Teacher Demographics - Specialized training in ECE",
-  "teacherDemographicsSpecializedTraining36": "Teacher Demographics - Specialized training in ECE",
-  "teacherDemographicsSpecializedTraining42": "Teacher Demographics - Specialized training in ECE",
-  "teacherDemographicsSpecializedTraining54": "Teacher Demographics - Specialized training in ECE",
+  "teacherDemographicsSpecializedTraining30": "Specialized training in early childhood education",
+  "teacherDemographicsSpecializedTraining36": "Specialized training in early childhood education",
+  "teacherDemographicsSpecializedTraining42": "Specialized training in early childhood education",
+  "teacherDemographicsSpecializedTraining54": "Specialized training in early childhood education",
 
-  "teacherDemographicsYearsOfExperience30": "Teacher Demographics - Years of teaching in Early Childhood",
-  "teacherDemographicsYearsOfExperience36": "Teacher Demographics - Years of teaching in Early Childhood",
-  "teacherDemographicsYearsOfExperience42": "Teacher Demographics - Years of teaching in Early Childhood",
-  "teacherDemographicsYearsOfExperience54": "Teacher Demographics - Years of teaching in Early Childhood",
+  "teacherDemographicsYearsOfExperience30": "Years of teaching experience in early childhood education",
+  "teacherDemographicsYearsOfExperience36": "Years of teaching experience in early childhood education",
+  "teacherDemographicsYearsOfExperience42": "Years of teaching experience in early childhood education",
+  "teacherDemographicsYearsOfExperience54": "Years of teaching experience in early childhood education",
 
-  "teacherDemographicsYearsAtSchool30": "Teacher Demographics - Years of teaching at current location",
-  "teacherDemographicsYearsAtSchool36": "Teacher Demographics - Years of teaching at current location",
-  "teacherDemographicsYearsAtSchool42": "Teacher Demographics - Years of teaching at current location",
-  "teacherDemographicsYearsAtSchool54": "Teacher Demographics - Years of teaching at current location",
+  "teacherDemographicsYearsAtSchool30": "Years teaching at the current center or school",
+  "teacherDemographicsYearsAtSchool36": "Years teaching at the current center or school",
+  "teacherDemographicsYearsAtSchool42": "Years teaching at the current center or school",
+  "teacherDemographicsYearsAtSchool54": "Years teaching at the current center or school",
 
-  "teacherDemographicsNumberOfChildren30": "Teacher Demographics - Number of children enrolled in classroom",
-  "teacherDemographicsNumberOfChildren36": "Teacher Demographics - Number of children enrolled in classroom",
-  "teacherDemographicsNumberOfChildren42": "Teacher Demographics - Number of children enrolled in classroom",
-  "teacherDemographicsNumberOfChildren54": "Teacher Demographics - Number of children enrolled in classroom",
+  "teacherDemographicsNumberOfChildren30": "Number of children enrolled in the classroom",
+  "teacherDemographicsNumberOfChildren36": "Number of children enrolled in the classroom",
+  "teacherDemographicsNumberOfChildren42": "Number of children enrolled in the classroom",
+  "teacherDemographicsNumberOfChildren54": "Number of children enrolled in the classroom",
 
-  "teacherDemographicsNumberOfTeachers30": "Teacher Demographics - Number of teachers currently in classroom",
-  "teacherDemographicsNumberOfTeachers36": "Teacher Demographics - Number of teachers currently in classroom",
-  "teacherDemographicsNumberOfTeachers42": "Teacher Demographics - Number of teachers currently in classroom",
-  "teacherDemographicsNumberOfTeachers54": "Teacher Demographics - Number of teachers currently in classroom",
+  "teacherDemographicsNumberOfTeachers30": "Number of teachers currently in the classroom",
+  "teacherDemographicsNumberOfTeachers36": "Number of teachers currently in the classroom",
+  "teacherDemographicsNumberOfTeachers42": "Number of teachers currently in the classroom",
+  "teacherDemographicsNumberOfTeachers54": "Number of teachers currently in the classroom",
 
-  "teacherDemographicsKnownChild30": "Teacher Demographics - How long have you known target child?",
-  "teacherDemographicsKnownChild36": "Teacher Demographics - How long have you known target child?",
-  "teacherDemographicsKnownChild42": "Teacher Demographics - How long have you known target child?",
-  "teacherDemographicsKnownChild54": "Teacher Demographics - How long have you known target child?",
+  "teacherDemographicsKnownChild30": "Length of time the teacher has known the target child",
+  "teacherDemographicsKnownChild36": "Length of time the teacher has known the target child",
+  "teacherDemographicsKnownChild42": "Length of time the teacher has known the target child",
+  "teacherDemographicsKnownChild54": "Length of time the teacher has known the target child",
 
   "ecbiIntensity30": "ECBI Intensity Score",
   "ecbiIntensity36": "ECBI Intensity Score",
@@ -4153,14 +4153,14 @@ export const variableDescriptions = {
   "fishSharks_N2_amplitudeDifferenceCentered42": "Centered Fish/Sharks N2 amplitude difference",
   "fishSharks_N2_amplitudeDifferenceCentered54": "Centered Fish/Sharks N2 amplitude difference",
 
-  "cesdDepressiveSymptoms30": "Depressive Symptoms",
-  "cesdDepressiveSymptoms36": "Depressive Symptoms",
-  "cesdDepressiveSymptoms42": "Depressive Symptoms",
+  "cesdDepressiveSymptoms30": "Total caregiver depressive-symptom score",
+  "cesdDepressiveSymptoms36": "Total caregiver depressive-symptom score",
+  "cesdDepressiveSymptoms42": "Total caregiver depressive-symptom score",
   "cesdDepressiveSymptoms54": "Depressive Symptoms",
 
-  "cesdDepressionDiagnosis30": "Depression Diagnosis",
-  "cesdDepressionDiagnosis36": "Depression Diagnosis",
-  "cesdDepressionDiagnosis42": "Depression Diagnosis",
+  "cesdDepressionDiagnosis30": "Indicator of elevated depressive symptoms",
+  "cesdDepressionDiagnosis36": "Indicator of elevated depressive symptoms",
+  "cesdDepressionDiagnosis42": "Indicator of elevated depressive symptoms",
   "cesdDepressionDiagnosis54": "Depression Diagnosis",
 
   "downNumObsChildWeek1Sadeh30": "Number of child in-bed (\"down\") observations/episodes included, Week 1, Sadeh scoring",
@@ -5017,6 +5017,299 @@ export const variableDescriptions = {
   "sleepDiaryParentSleepConsolidation36": "Parent sleep consolidation measure derived from the sleep diary",
   "sleepDiaryParentSleepConsolidation42": "Parent sleep consolidation measure derived from the sleep diary",
   "sleepDiaryParentSleepConsolidation54": "Parent sleep consolidation measure derived from the sleep diary",
+
+  "maternalLeaveTakingChildPres30": "Whether another child was present during the Maternal Leave-Taking task.",
+  "maternalLeaveTakingChildPres36": "Whether another child was present during the Maternal Leave-Taking task.",
+  "maternalLeaveTakingChildPres42": "Whether another child was present during the Maternal Leave-Taking task.",
+  "maternalLeaveTakingChildPres54": "Whether another child was present during the Maternal Leave-Taking task.",
+
+  "maternalLeaveTakingTaskTime30": "Duration of the coded Maternal Leave-Taking task or task segment.",
+  "maternalLeaveTakingTaskTime36": "Duration of the coded Maternal Leave-Taking task or task segment.",
+  "maternalLeaveTakingTaskTime42": "Duration of the coded Maternal Leave-Taking task or task segment.",
+  "maternalLeaveTakingTaskTime54": "Duration of the coded Maternal Leave-Taking task or task segment.",
+
+  "maternalLeaveTakingTCRestriction30": "Whether the mother directed the target child to refrain from playing with the prohibited shelf toys.",
+  "maternalLeaveTakingTCRestriction36": "Whether the mother directed the target child to refrain from playing with the prohibited shelf toys.",
+  "maternalLeaveTakingTCRestriction42": "Whether the mother directed the target child to refrain from playing with the prohibited shelf toys.",
+  "maternalLeaveTakingTCRestriction54": "Whether the mother directed the target child to refrain from playing with the prohibited shelf toys.",
+
+  "maternalLeaveTakingTCResponse30": "Whether the target child displayed a distressed or resistant response to the mother's preparation to leave.",
+  "maternalLeaveTakingTCResponse36": "Whether the target child displayed a distressed or resistant response to the mother's preparation to leave.",
+  "maternalLeaveTakingTCResponse42": "Whether the target child displayed a distressed or resistant response to the mother's preparation to leave.",
+  "maternalLeaveTakingTCResponse54": "Whether the target child displayed a distressed or resistant response to the mother's preparation to leave.",
+
+  "maternalLeaveTakingMaternalAnxiety30": "Degree of maternal anxiety during leave-taking.",
+  "maternalLeaveTakingMaternalAnxiety36": "Degree of maternal anxiety during leave-taking.",
+  "maternalLeaveTakingMaternalAnxiety42": "Degree of maternal anxiety during leave-taking.",
+  "maternalLeaveTakingMaternalAnxiety54": "Degree of maternal anxiety during leave-taking.",
+
+  "maternalLeaveTakingTCInterest30": "Target child's level of interest in the prohibited shelf toys during the phone-call period.",
+  "maternalLeaveTakingTCInterest36": "Target child's level of interest in the prohibited shelf toys during the phone-call period.",
+  "maternalLeaveTakingTCInterest42": "Target child's level of interest in the prohibited shelf toys during the phone-call period.",
+  "maternalLeaveTakingTCInterest54": "Target child's level of interest in the prohibited shelf toys during the phone-call period.",
+
+  "maternalLeaveTakingTCElicit30": "Whether the target child clearly attempted to elicit the mother's attention during the phone call.",
+  "maternalLeaveTakingTCElicit36": "Whether the target child clearly attempted to elicit the mother's attention during the phone call.",
+  "maternalLeaveTakingTCElicit42": "Whether the target child clearly attempted to elicit the mother's attention during the phone call.",
+  "maternalLeaveTakingTCElicit54": "Whether the target child clearly attempted to elicit the mother's attention during the phone call.",
+
+  "maternalLeaveTakingTCNegativeAffect30": "Whether the target child displayed negative affect during the phone call.",
+  "maternalLeaveTakingTCNegativeAffect36": "Whether the target child displayed negative affect during the phone call.",
+  "maternalLeaveTakingTCNegativeAffect42": "Whether the target child displayed negative affect during the phone call.",
+  "maternalLeaveTakingTCNegativeAffect54": "Whether the target child displayed negative affect during the phone call.",
+
+  "maternalLeaveTakingTableToys30": "Table toys were identified as the focus or cause associated with the child's attention/behavior during the phone call.",
+  "maternalLeaveTakingTableToys36": "Table toys were identified as the focus or cause associated with the child's attention/behavior during the phone call.",
+  "maternalLeaveTakingTableToys42": "Table toys were identified as the focus or cause associated with the child's attention/behavior during the phone call.",
+  "maternalLeaveTakingTableToys54": "Table toys were identified as the focus or cause associated with the child's attention/behavior during the phone call.",
+
+  "maternalLeaveTakingMotherPhone30": "The mother's phone call was identified as the focus or cause associated with the child's attention/behavior.",
+  "maternalLeaveTakingMotherPhone36": "The mother's phone call was identified as the focus or cause associated with the child's attention/behavior.",
+  "maternalLeaveTakingMotherPhone42": "The mother's phone call was identified as the focus or cause associated with the child's attention/behavior.",
+  "maternalLeaveTakingMotherPhone54": "The mother's phone call was identified as the focus or cause associated with the child's attention/behavior.",
+
+  "maternalLeaveTakingProhibitedToys30": "The prohibited shelf toys were identified as the focus or cause associated with the child's attention/behavior.",
+  "maternalLeaveTakingProhibitedToys36": "The prohibited shelf toys were identified as the focus or cause associated with the child's attention/behavior.",
+  "maternalLeaveTakingProhibitedToys42": "The prohibited shelf toys were identified as the focus or cause associated with the child's attention/behavior.",
+  "maternalLeaveTakingProhibitedToys54": "The prohibited shelf toys were identified as the focus or cause associated with the child's attention/behavior.",
+
+  "maternalLeaveTakingOtherStimulus30": "Another stimulus was identified as the focus or cause associated with the child's behavior or negative affect.",
+  "maternalLeaveTakingOtherStimulus36": "Another stimulus was identified as the focus or cause associated with the child's behavior or negative affect.",
+  "maternalLeaveTakingOtherStimulus42": "Another stimulus was identified as the focus or cause associated with the child's behavior or negative affect.",
+  "maternalLeaveTakingOtherStimulus54": "Another stimulus was identified as the focus or cause associated with the child's behavior or negative affect.",
+
+  "maternalLeaveTakingParentConcern30": "Whether the mother expressed concern to the experimenter about leaving the child.",
+  "maternalLeaveTakingParentConcern36": "Whether the mother expressed concern to the experimenter about leaving the child.",
+  "maternalLeaveTakingParentConcern42": "Whether the mother expressed concern to the experimenter about leaving the child.",
+  "maternalLeaveTakingParentConcern54": "Whether the mother expressed concern to the experimenter about leaving the child.",
+
+  "maternalLeaveTakingTCInteracting30": "Whether the target child interacted or participated during the coded task.",
+  "maternalLeaveTakingTCInteracting36": "Whether the target child interacted or participated during the coded task.",
+  "maternalLeaveTakingTCInteracting42": "Whether the target child interacted or participated during the coded task.",
+  "maternalLeaveTakingTCInteracting54": "Whether the target child interacted or participated during the coded task.",
+
+  "blhcHouseholdDisorgSum30": "Household disorganization",
+  "blhcHouseholdDisorgSum36": "Household disorganization",
+  "blhcHouseholdDisorgSum42": "Household disorganization",
+
+  "blhcDisruptiveSleepSpaceSum30": "Disruptive or inadequate qualities of the child's sleep space",
+  "blhcDisruptiveSleepSpaceSum36": "Disruptive or inadequate qualities of the child's sleep space",
+  "blhcDisruptiveSleepSpaceSum42": "Disruptive or inadequate qualities of the child's sleep space",
+
+  "blhcTransitionSum30": "Difficulty or disruption during household transitions",
+  "blhcTransitionSum36": "Difficulty or disruption during household transitions",
+  "blhcTransitionSum42": "Difficulty or disruption during household transitions",
+
+  "blhcInapptStimSum30": "Inappropriate or inadequate sources of stimulation in the home",
+  "blhcInapptStimSum36": "Inappropriate or inadequate sources of stimulation in the home",
+  "blhcInapptStimSum42": "Inappropriate or inadequate sources of stimulation in the home",
+
+  "blhcFamilyPreparation30": "Observer rating of the family's preparation for the home-visit session",
+  "blhcFamilyPreparation36": "Observer rating of the family's preparation for the home-visit session",
+  "blhcFamilyPreparation42": "Observer rating of the family's preparation for the home-visit session",
+
+  "childMisbehaviorSum30": "Overall sum of reported child behavior problems",
+  "childMisbehaviorSum36": "Overall sum of reported child behavior problems",
+  "childMisbehaviorSum42": "Overall sum of reported child behavior problems",
+
+  "concernsConstraintsProactiveParenting30": "Proactive or preventive parenting responses across seven child-behavior scenarios",
+  "concernsConstraintsProactiveParenting36": "Proactive or preventive parenting responses across seven child-behavior scenarios",
+  "concernsConstraintsProactiveParenting42": "Proactive or preventive parenting responses across seven child-behavior scenarios",
+
+  "concernsConstraintsReactiveParenting30": "Reactive or after-the-fact parenting responses across seven scenarios",
+  "concernsConstraintsReactiveParenting36": "Reactive or after-the-fact parenting responses across seven scenarios",
+  "concernsConstraintsReactiveParenting42": "Reactive or after-the-fact parenting responses across seven scenarios",
+
+  "concernsConstraintsExternalAttrib30": "External attribution or blaming others for the child's behavior",
+  "concernsConstraintsExternalAttrib36": "External attribution or blaming others for the child's behavior",
+  "concernsConstraintsExternalAttrib42": "External attribution or blaming others for the child's behavior",
+
+  "concernsConstraintsInternalAttrib30": "Internal attribution to the child's state or trait",
+  "concernsConstraintsInternalAttrib36": "Internal attribution to the child's state or trait",
+  "concernsConstraintsInternalAttrib42": "Internal attribution to the child's state or trait",
+
+  "dsched1Primary30": "Number of days per week the respondent works outside the home",
+  "dsched1Primary36": "Number of days per week the respondent works outside the home",
+  "dsched1Primary42": "Number of days per week the respondent works outside the home",
+  "dsched1ParentingPartner30": "Number of days per week the respondent works outside the home",
+  "dsched1ParentingPartner36": "Number of days per week the respondent works outside the home",
+  "dsched1ParentingPartner42": "Number of days per week the respondent works outside the home",
+
+  "dsched2Primary30": "Total number of hours per week the respondent typically works outside the home",
+  "dsched2Primary36": "Total number of hours per week the respondent typically works outside the home",
+  "dsched2Primary42": "Total number of hours per week the respondent typically works outside the home",
+  "dsched2ParentingPartner30": "Total number of hours per week the respondent typically works outside the home",
+  "dsched2ParentingPartner36": "Total number of hours per week the respondent typically works outside the home",
+  "dsched2ParentingPartner42": "Total number of hours per week the respondent typically works outside the home",
+
+  "dsched4Primary30": "Whether the respondent drops the child at daycare on the way to work",
+  "dsched4Primary36": "Whether the respondent drops the child at daycare on the way to work",
+  "dsched4Primary42": "Whether the respondent drops the child at daycare on the way to work",
+  "dsched4ParentingPartner30": "Whether the respondent drops the child at daycare on the way to work",
+  "dsched4ParentingPartner36": "Whether the respondent drops the child at daycare on the way to work",
+  "dsched4ParentingPartner42": "Whether the respondent drops the child at daycare on the way to work",
+
+  "dsched8Primary30": "Frequency of feeling pressure to get out the door",
+  "dsched8Primary36": "Frequency of feeling pressure to get out the door",
+  "dsched8Primary42": "Frequency of feeling pressure to get out the door",
+  "dsched8ParentingPartner30": "Frequency of feeling pressure to get out the door",
+  "dsched8ParentingPartner36": "Frequency of feeling pressure to get out the door",
+  "dsched8ParentingPartner42": "Frequency of feeling pressure to get out the door",
+
+  "dsched9Primary30": "Frequency of feeling pressure while commuting to work",
+  "dsched9Primary36": "Frequency of feeling pressure while commuting to work",
+  "dsched9Primary42": "Frequency of feeling pressure while commuting to work",
+  "dsched9ParentingPartner30": "Frequency of feeling pressure while commuting to work",
+  "dsched9ParentingPartner36": "Frequency of feeling pressure while commuting to work",
+  "dsched9ParentingPartner42": "Frequency of feeling pressure while commuting to work",
+
+  "followThePathChildPres30": "Other child present during the task",
+  "followThePathChildPres36": "Other child present during the task",
+  "followThePathChildPres42": "Other child present during the task",
+
+  "followThePathParentPres30": "Parent present during the task",
+  "followThePathParentPres36": "Parent present during the task",
+  "followThePathParentPres42": "Parent present during the task",
+
+  "followThePathSlowMinusFast30": "Difference between slow- and fast-condition completion times",
+  "followThePathSlowMinusFast36": "Difference between slow- and fast-condition completion times",
+  "followThePathSlowMinusFast42": "Difference between slow- and fast-condition completion times",
+
+  "followThePathRatioFastOverSlow30": "Ratio of fast-condition time to slow-condition time",
+  "followThePathRatioFastOverSlow36": "Ratio of fast-condition time to slow-condition time",
+  "followThePathRatioFastOverSlow42": "Ratio of fast-condition time to slow-condition time",
+
+  "hollingsheadEmployedParent30": "Whether the primary parent is gainfully employed",
+  "hollingsheadEmployedParent36": "Whether the primary parent is gainfully employed",
+  "hollingsheadEmployedParent42": "Whether the primary parent is gainfully employed",
+
+  "hollingsheadEmployedParentingPartner30": "Whether the parenting partner is gainfully employed",
+  "hollingsheadEmployedParentingPartner36": "Whether the parenting partner is gainfully employed",
+  "hollingsheadEmployedParentingPartner42": "Whether the parenting partner is gainfully employed",
+
+  "hollingsheadSES30": "Overall family socioeconomic-status score",
+  "hollingsheadSES36": "Overall family socioeconomic-status score",
+  "hollingsheadSES42": "Overall family socioeconomic-status score",
+
+  "hollingsheadSESlevel30": "Categorized family SES level",
+  "hollingsheadSESlevel36": "Categorized family SES level",
+  "hollingsheadSESlevel42": "Categorized family SES level",
+
+  "hollingsheadOccupation30": "Overall family occupational-status score",
+  "hollingsheadOccupation36": "Overall family occupational-status score",
+  "hollingsheadOccupation42": "Overall family occupational-status score",
+
+  "hollingsheadEducation30": "Overall family education score",
+  "hollingsheadEducation36": "Overall family education score",
+  "hollingsheadEducation42": "Overall family education score",
+
+  "reillyRoleOverallOverload30": "Overall perceived role overload",
+  "reillyRoleOverallOverload36": "Overall perceived role overload",
+  "reillyRoleOverallOverload42": "Overall perceived role overload",
+
+  "responseToMisbehaviorNonharshDiscipline30": "Nonharsh discipline responses",
+  "responseToMisbehaviorNonharshDiscipline36": "Nonharsh discipline responses",
+  "responseToMisbehaviorNonharshDiscipline42": "Nonharsh discipline responses",
+
+  "responseToMisbehaviorNonharshVerbalDiscipline30": "Nonharsh verbal discipline",
+  "responseToMisbehaviorNonharshVerbalDiscipline36": "Nonharsh verbal discipline",
+  "responseToMisbehaviorNonharshVerbalDiscipline42": "Nonharsh verbal discipline",
+
+  "responseToMisbehaviorHarshVerbalDiscipline30": "Harsh verbal discipline",
+  "responseToMisbehaviorHarshVerbalDiscipline36": "Harsh verbal discipline",
+  "responseToMisbehaviorHarshVerbalDiscipline42": "Harsh verbal discipline",
+
+  "responseToMisbehaviorHarshPhysicalDiscipline30": "Harsh physical discipline",
+  "responseToMisbehaviorHarshPhysicalDiscipline36": "Harsh physical discipline",
+  "responseToMisbehaviorHarshPhysicalDiscipline42": "Harsh physical discipline",
+
+  "mockReportCardReading30": "Teacher-rated reading skill",
+  "mockReportCardReading36": "Teacher-rated reading skill",
+  "mockReportCardReading42": "Teacher-rated reading skill",
+
+  "mockReportCardOralLanguage30": "Teacher-rated oral-language skill",
+  "mockReportCardOralLanguage36": "Teacher-rated oral-language skill",
+  "mockReportCardOralLanguage42": "Teacher-rated oral-language skill",
+
+  "mockReportCardWrittenLanguage30": "Teacher-rated written-language skill",
+  "mockReportCardWrittenLanguage36": "Teacher-rated written-language skill",
+  "mockReportCardWrittenLanguage42": "Teacher-rated written-language skill",
+
+  "mockReportCardMath30": "Teacher-rated mathematics skill",
+  "mockReportCardMath36": "Teacher-rated mathematics skill",
+  "mockReportCardMath42": "Teacher-rated mathematics skill",
+
+  "mockReportCardSocialStudies30": "Teacher-rated social-studies skill",
+  "mockReportCardSocialStudies36": "Teacher-rated social-studies skill",
+  "mockReportCardSocialStudies42": "Teacher-rated social-studies skill",
+
+  "mockReportCardScience30": "Teacher-rated science skill",
+  "mockReportCardScience36": "Teacher-rated science skill",
+  "mockReportCardScience42": "Teacher-rated science skill",
+
+  "mockReportCardAcademicPerformance30": "Overall academic performance",
+  "mockReportCardAcademicPerformance36": "Overall academic performance",
+  "mockReportCardAcademicPerformance42": "Overall academic performance",
+
+  "mockReportCardWorkHabits30": "Overall classroom work habits",
+  "mockReportCardWorkHabits36": "Overall classroom work habits",
+  "mockReportCardWorkHabits42": "Overall classroom work habits",
+
+  "mockReportCardSocialSkills30": "Overall social skills",
+  "mockReportCardSocialSkills36": "Overall social skills",
+  "mockReportCardSocialSkills42": "Overall social skills",
+
+  "trfEmotionallyReactive30": "Emotionally Reactive problems",
+  "trfEmotionallyReactive36": "Emotionally Reactive problems",
+  "trfEmotionallyReactive42": "Emotionally Reactive problems",
+
+  "trfAnxiousDepressed30": "Anxious/Depressed problems",
+  "trfAnxiousDepressed36": "Anxious/Depressed problems",
+  "trfAnxiousDepressed42": "Anxious/Depressed problems",
+
+  "trfSomatic30": "Somatic complaints",
+  "trfSomatic36": "Somatic complaints",
+  "trfSomatic42": "Somatic complaints",
+
+  "trfWithdrawn30": "Withdrawn behavior",
+  "trfWithdrawn36": "Withdrawn behavior",
+  "trfWithdrawn42": "Withdrawn behavior",
+
+  "trfAttention30": "Attention problems",
+  "trfAttention36": "Attention problems",
+  "trfAttention42": "Attention problems",
+
+  "trfAggressive30": "Aggressive behavior",
+  "trfAggressive36": "Aggressive behavior",
+  "trfAggressive42": "Aggressive behavior",
+
+  "trfInternalizing30": "Internalizing-problem score",
+  "trfInternalizing36": "Internalizing-problem score",
+  "trfInternalizing42": "Internalizing-problem score",
+
+  "trfExternalizing30": "Externalizing-problem score",
+  "trfExternalizing36": "Externalizing-problem score",
+  "trfExternalizing42": "Externalizing-problem score",
+
+  "trfTotal30": "Overall TRF problem score",
+  "trfTotal36": "Overall TRF problem score",
+  "trfTotal42": "Overall TRF problem score",
+
+  "WJLetterWordNumberCorrect30": "Number of Letter-Word Identification items answered correctly by the target child",
+  "WJLetterWordNumberCorrect36": "Number of Letter-Word Identification items answered correctly by the target child",
+  "WJLetterWordNumberCorrect42": "Number of Letter-Word Identification items answered correctly by the target child",
+
+  "WJLetterWordAgeEquivalence30": "Letter-Word Identification age-equivalent score",
+  "WJLetterWordAgeEquivalence36": "Letter-Word Identification age-equivalent score",
+  "WJLetterWordAgeEquivalence42": "Letter-Word Identification age-equivalent score",
+
+  "WJAppliedProblemsNumberCorrect30": "Number of Applied Problems items answered correctly by the target child",
+  "WJAppliedProblemsNumberCorrect36": "Number of Applied Problems items answered correctly by the target child",
+  "WJAppliedProblemsNumberCorrect42": "Number of Applied Problems items answered correctly by the target child",
+
+  "WJAppliedProblemsAgeEquivalence30": "Applied Problems age-equivalent score",
+  "WJAppliedProblemsAgeEquivalence36": "Applied Problems age-equivalent score",
+  "WJAppliedProblemsAgeEquivalence42": "Applied Problems age-equivalent score",
 };
 
 
@@ -5650,9 +5943,17 @@ export const variableComputations = {
   "whisperGameTotal54": "Sum(whisperGame_WinniePooh54, whisperGame_MickeyMouse54, whisperGame_Ernie54, whisperGame_BigBird54, whisperGame_Piglet54, whisperGame_CookieMonster54, whisperGame_Eeyore54, whisperGame_Bert54, whisperGame_Tigger54, whisperGame_Barney54, whisperGame_Elmo54, whisperGame_MinnieMouse54)",
   "whisperGameAvg54": "Mean(whisperGame_WinniePooh54, whisperGame_MickeyMouse54, whisperGame_Ernie54, whisperGame_BigBird54, whisperGame_Piglet54, whisperGame_CookieMonster54, whisperGame_Eeyore54, whisperGame_Bert54, whisperGame_Tigger54, whisperGame_Barney54, whisperGame_Elmo54, whisperGame_MinnieMouse54)",
 
-  "socialSupportCompanionship30": "Mean(panse10, panse11, panse12)",
-  "socialSupportCompanionship36": "Mean(panse10, panse11, panse12)",
-  "socialSupportCompanionship42": "Mean(panse10, panse11, panse12)",
+  "socialSupportNegativeSupport30": "Mean of panse15, 22, 16, 13, 18, 24, 14, 23, 19, 21, 17; equivalent to items 13-24 except item 20",
+  "socialSupportNegativeSupport36": "Mean of panse15, 22, 16, 13, 18, 24, 14, 23, 19, 21, 17; equivalent to items 13-24 except item 20",
+  "socialSupportNegativeSupport42": "Mean of panse15, 22, 16, 13, 18, 24, 14, 23, 19, 21, 17; equivalent to items 13-24 except item 20",
+
+  "socialSupportInformationalSupport30": "Mean of panse3, panse1, panse2, panse6, panse5, panse4, panse8; items 1-8 except item 7",
+  "socialSupportInformationalSupport36": "Mean of panse3, panse1, panse2, panse6, panse5, panse4, panse8; items 1-8 except item 7",
+  "socialSupportInformationalSupport42": "Mean of panse3, panse1, panse2, panse6, panse5, panse4, panse8; items 1-8 except item 7",
+
+  "socialSupportCompanionship30": "Mean of panse11, panse10, panse12",
+  "socialSupportCompanionship36": "Mean of panse11, panse10, panse12",
+  "socialSupportCompanionship42": "Mean of panse11, panse10, panse12",
   "socialSupportCompanionship54": "Mean(panse10, panse11, panse12)",
 
   "atqFearPrimary30": "Mean of items 1, 12, 22, 51, 61, 68R, 75R",
@@ -6383,12 +6684,12 @@ export const variableComputations = {
   "cbqEffortfulControlSecondary42": "Mean of Low Intensity Pleasure, Inhibitory Control, Perceptual Sensitivity, and Focus composites",
   "cbqEffortfulControlSecondary54": "Mean of Low Intensity Pleasure, Inhibitory Control, Perceptual Sensitivity, and Focus composites",
 
-  "crprNurturance30": "Sum of all variables",
-  "crprWarmth30": "Sum of items 3 and 18",
-  "crprNurturance36": "Sum of all variables",
-  "crprWarmth36": "Sum of items 3 and 18",
-  "crprNurturance42": "Sum of all variables",
-  "crprWarmth42": "Sum of items 3 and 18",
+  "crprNurturance30": "Sum of crpr1-crpr18",
+  "crprWarmth30": "Sum of crpr3 + crpr18",
+  "crprNurturance36": "Sum of crpr1-crpr18",
+  "crprWarmth36": "Sum of crpr3 + crpr18",
+  "crprNurturance42": "Sum of crpr1-crpr18",
+  "crprWarmth42": "Sum of crpr3 + crpr18",
   "crprNurturance54": "Sum of all variables",
   "crprWarmth54": "Sum of items 3 and 18",
 
@@ -6462,14 +6763,14 @@ export const variableComputations = {
   "fishSharks_N2_amplitudeDifferenceCentered42": "Not specified in the README",
   "fishSharks_N2_amplitudeDifferenceCentered54": "Not specified in the README",
 
-  "cesdDepressiveSymptoms30": "Sum of all items",
-  "cesdDepressiveSymptoms36": "Sum of all items",
-  "cesdDepressiveSymptoms42": "Sum of all items",
+  "cesdDepressiveSymptoms30": "Each of the 20 CES-D responses is recoded from 1-4 to 0-3 by subtracting 1; the recoded items are then summed",
+  "cesdDepressiveSymptoms36": "Each of the 20 CES-D responses is recoded from 1-4 to 0-3 by subtracting 1; the recoded items are then summed",
+  "cesdDepressiveSymptoms42": "Each of the 20 CES-D responses is recoded from 1-4 to 0-3 by subtracting 1; the recoded items are then summed",
   "cesdDepressiveSymptoms54": "Sum of all items",
 
-  "cesdDepressionDiagnosis30": "Score greater than 16",
-  "cesdDepressionDiagnosis36": "Score greater than 16",
-  "cesdDepressionDiagnosis42": "Score greater than 16",
+  "cesdDepressionDiagnosis30": "1 when cesdDepressiveSymptoms > 16; 0 when score is ≤16; missing when the total score is missing",
+  "cesdDepressionDiagnosis36": "1 when cesdDepressiveSymptoms > 16; 0 when score is ≤16; missing when the total score is missing",
+  "cesdDepressionDiagnosis42": "1 when cesdDepressiveSymptoms > 16; 0 when score is ≤16; missing when the total score is missing",
   "cesdDepressionDiagnosis54": "Score greater than 16",
 
   "childBehaviorPhoneCallPlaysShelfToysP30": "Number of intervals target child plays with shelf toys / total number of coded intervals",
@@ -7796,6 +8097,301 @@ export const variableComputations = {
   "kosairDaytimeSleepiness36": "Sum of Kosair items 24a, 30, 59, 60, 61",
   "kosairDaytimeSleepiness42": "Sum of Kosair items 24a, 30, 59, 60, 61",
   "kosairDaytimeSleepiness54": "Sum of Kosair items 24a, 30, 59, 60, 61",
+
+  "maternalLeaveTakingTaskTime30": "Recorded end time minus start time. The manual gives separate timing rules for the Phone Call and Leave-Taking segments.",
+  "maternalLeaveTakingTaskTime36": "Recorded end time minus start time. The manual gives separate timing rules for the Phone Call and Leave-Taking segments.",
+  "maternalLeaveTakingTaskTime42": "Recorded end time minus start time. The manual gives separate timing rules for the Phone Call and Leave-Taking segments.",
+  "maternalLeaveTakingTaskTime54": "Recorded end time minus start time. The manual gives separate timing rules for the Phone Call and Leave-Taking segments.",
+
+  "blhUnsafeAndDisorgHomeSum30": "Sum of blhci1R, blhci2, blhci3, blhci4, blhci5, blhci6R, blhci7, blhci8R, blhci9R, blhci10, blhci11R, blhci12R",
+  "blhUnsafeAndDisorgHomeSum36": "Sum of blhci1R, blhci2, blhci3, blhci4, blhci5, blhci6R, blhci7, blhci8R, blhci9R, blhci10, blhci11R, blhci12R",
+  "blhUnsafeAndDisorgHomeSum42": "Sum of blhci1R, blhci2, blhci3, blhci4, blhci5, blhci6R, blhci7, blhci8R, blhci9R, blhci10, blhci11R, blhci12R",
+
+  "blhcHouseholdDisorgSum30": "Sum of blhci8R, blhci10, blhci11R, blhci12R",
+  "blhcHouseholdDisorgSum36": "Sum of blhci8R, blhci10, blhci11R, blhci12R",
+  "blhcHouseholdDisorgSum42": "Sum of blhci8R, blhci10, blhci11R, blhci12R",
+
+  "blhcOutdoorSum30": "Sum of blhco13R, blhco14R, blhco15, blhco16R, blhco17R",
+  "blhcOutdoorSum36": "Sum of blhco13R, blhco14R, blhco15, blhco16R, blhco17R",
+  "blhcOutdoorSum42": "Sum of blhco13R, blhco14R, blhco15, blhco16R, blhco17R",
+
+  "blhcDisruptiveSleepSpaceSum30": "Sum of blhcs20, 21, 22R, 23, 24, 25, 26R, 27R, 28R, 29R, 30R, 31R, 33, 34, 35, 36R, 38, 39R; items 32 and 37 excluded",
+  "blhcDisruptiveSleepSpaceSum36": "Sum of blhcs20, 21, 22R, 23, 24, 25, 26R, 27R, 28R, 29R, 30R, 31R, 33, 34, 35, 36R, 38, 39R; items 32 and 37 excluded",
+  "blhcDisruptiveSleepSpaceSum42": "Sum of blhcs20, 21, 22R, 23, 24, 25, 26R, 27R, 28R, 29R, 30R, 31R, 33, 34, 35, 36R, 38, 39R; items 32 and 37 excluded",
+
+  "blhcTransitionSum30": "Sum of blhct40R, blhct41R, blhct42R, blhct43R, blhct44R",
+  "blhcTransitionSum36": "Sum of blhct40R, blhct41R, blhct42R, blhct43R, blhct44R",
+  "blhcTransitionSum42": "Sum of blhct40R, blhct41R, blhct42R, blhct43R, blhct44R",
+
+  "blhcInapptStimSum30": "Sum of blhcp45, blhcp46, blhcp47R, blhcp48R, blhcp49R, blhcp50R; item 51 excluded",
+  "blhcInapptStimSum36": "Sum of blhcp45, blhcp46, blhcp47R, blhcp48R, blhcp49R, blhcp50R; item 51 excluded",
+  "blhcInapptStimSum42": "Sum of blhcp45, blhcp46, blhcp47R, blhcp48R, blhcp49R, blhcp50R; item 51 excluded",
+
+  "blhcFamilyPreparation30": "Directly retained from blhcr1; no derived computation",
+  "blhcFamilyPreparation36": "Directly retained from blhcr1; no derived computation",
+  "blhcFamilyPreparation42": "Directly retained from blhcr1; no derived computation",
+
+  "blhcHomeConfusion30": "Directly retained from blhcr2; no derived computation",
+  "blhcHomeConfusion36": "Directly retained from blhcr2; no derived computation",
+  "blhcHomeConfusion42": "Directly retained from blhcr2; no derived computation",
+
+  "childMisbehaviorSum30": "The R script sums cm1a-cm1l",
+  "childMisbehaviorSum36": "The R script sums cm1a-cm1l",
+  "childMisbehaviorSum42": "The R script sums cm1a-cm1l",
+
+  "concernsConstraintsProactiveParenting30": "For each scenario 1-7, sum preventive responses prevd + preve; then sum the seven scenario-level scores",
+  "concernsConstraintsProactiveParenting36": "For each scenario 1-7, sum preventive responses prevd + preve; then sum the seven scenario-level scores",
+  "concernsConstraintsProactiveParenting42": "For each scenario 1-7, sum preventive responses prevd + preve; then sum the seven scenario-level scores",
+
+  "concernsConstraintsReactiveParenting30": "For each scenario 1-7, sum preva + prevb + prevc; then sum the seven scenario-level scores",
+  "concernsConstraintsReactiveParenting36": "For each scenario 1-7, sum preva + prevb + prevc; then sum the seven scenario-level scores",
+  "concernsConstraintsReactiveParenting42": "For each scenario 1-7, sum preva + prevb + prevc; then sum the seven scenario-level scores",
+
+  "concernsConstraintsExternalAttrib30": "Sum of s1think2, s2think2, s3think2, s4think2, s5think2, s6think2, s7think2",
+  "concernsConstraintsExternalAttrib36": "Sum of s1think2, s2think2, s3think2, s4think2, s5think2, s6think2, s7think2",
+  "concernsConstraintsExternalAttrib42": "Sum of s1think2, s2think2, s3think2, s4think2, s5think2, s6think2, s7think2",
+
+  "concernsConstraintsInternalAttrib30": "For each scenario, sum think4 + think5; then sum the seven scenario-level internal-attribution scores",
+  "concernsConstraintsInternalAttrib36": "For each scenario, sum think4 + think5; then sum the seven scenario-level internal-attribution scores",
+  "concernsConstraintsInternalAttrib42": "For each scenario, sum think4 + think5; then sum the seven scenario-level internal-attribution scores",
+
+  "dsched1Primary30": "Directly reported; no derived computation",
+  "dsched1Primary36": "Directly reported; no derived computation",
+  "dsched1Primary42": "Directly reported; no derived computation",
+  "dsched1ParentingPartner30": "Directly reported; no derived computation",
+  "dsched1ParentingPartner36": "Directly reported; no derived computation",
+  "dsched1ParentingPartner42": "Directly reported; no derived computation",
+
+  "dsched2Primary30": "Directly reported; no derived computation",
+  "dsched2Primary36": "Directly reported; no derived computation",
+  "dsched2Primary42": "Directly reported; no derived computation",
+  "dsched2ParentingPartner30": "Directly reported; no derived computation",
+  "dsched2ParentingPartner36": "Directly reported; no derived computation",
+  "dsched2ParentingPartner42": "Directly reported; no derived computation",
+
+  "dsched4Primary30": "Direct yes/no response",
+  "dsched4Primary36": "Direct yes/no response",
+  "dsched4Primary42": "Direct yes/no response",
+  "dsched4ParentingPartner30": "Direct yes/no response",
+  "dsched4ParentingPartner36": "Direct yes/no response",
+  "dsched4ParentingPartner42": "Direct yes/no response",
+
+  "dsched8Primary30": "Direct rating from 1 = very seldom to 5 = almost always",
+  "dsched8Primary36": "Direct rating from 1 = very seldom to 5 = almost always",
+  "dsched8Primary42": "Direct rating from 1 = very seldom to 5 = almost always",
+  "dsched8ParentingPartner30": "Direct rating from 1 = very seldom to 5 = almost always",
+  "dsched8ParentingPartner36": "Direct rating from 1 = very seldom to 5 = almost always",
+  "dsched8ParentingPartner42": "Direct rating from 1 = very seldom to 5 = almost always",
+
+  "dsched9Primary30": "Direct rating from 1 = very seldom to 5 = almost always",
+  "dsched9Primary36": "Direct rating from 1 = very seldom to 5 = almost always",
+  "dsched9Primary42": "Direct rating from 1 = very seldom to 5 = almost always",
+  "dsched9ParentingPartner30": "Direct rating from 1 = very seldom to 5 = almost always",
+  "dsched9ParentingPartner36": "Direct rating from 1 = very seldom to 5 = almost always",
+  "dsched9ParentingPartner42": "Direct rating from 1 = very seldom to 5 = almost always",
+
+  "followThePathChildPres30": "Direct presence indicator; no derived computation",
+  "followThePathChildPres36": "Direct presence indicator; no derived computation",
+  "followThePathChildPres42": "Direct presence indicator; no derived computation",
+
+  "followThePathParentPres30": "Direct presence indicator; no derived computation",
+  "followThePathParentPres36": "Direct presence indicator; no derived computation",
+  "followThePathParentPres42": "Direct presence indicator; no derived computation",
+
+  "followThePathSlowMinusFast30": "followThePathTurtle - followThePathDog",
+  "followThePathSlowMinusFast36": "followThePathTurtle - followThePathDog",
+  "followThePathSlowMinusFast42": "followThePathTurtle - followThePathDog",
+
+  "followThePathRatioFastOverSlow30": "followThePathDog / followThePathTurtle",
+  "followThePathRatioFastOverSlow36": "followThePathDog / followThePathTurtle",
+  "followThePathRatioFastOverSlow42": "followThePathDog / followThePathTurtle",
+
+  "hollingsheadEmployedParent30": "Directly copied from isGainfullyEmployedParent",
+  "hollingsheadEmployedParent36": "Directly copied from isGainfullyEmployedParent",
+  "hollingsheadEmployedParent42": "Directly copied from isGainfullyEmployedParent",
+
+  "hollingsheadEmployedParentingPartner30": "Directly copied from isGainfullyEmployedParentingPartner",
+  "hollingsheadEmployedParentingPartner36": "Directly copied from isGainfullyEmployedParentingPartner",
+  "hollingsheadEmployedParentingPartner42": "Directly copied from isGainfullyEmployedParentingPartner",
+
+  "hollingsheadSES30": "Mean of Parent SES and Parenting Partner SES; each person's SES is (selected occupation * 5) + (selected education * 3)",
+  "hollingsheadSES36": "Mean of Parent SES and Parenting Partner SES; each person's SES is (selected occupation * 5) + (selected education * 3)",
+  "hollingsheadSES42": "Mean of Parent SES and Parenting Partner SES; each person's SES is (selected occupation * 5) + (selected education * 3)",
+
+  "hollingsheadSESlevel30": "SES 8-<20 = 1; 20-<30 = 2; 30-<40 = 3; 40-<55 = 4; 55-66 = 5",
+  "hollingsheadSESlevel36": "SES 8-<20 = 1; 20-<30 = 2; 30-<40 = 3; 40-<55 = 4; 55-66 = 5",
+  "hollingsheadSESlevel42": "SES 8-<20 = 1; 20-<30 = 2; 30-<40 = 3; 40-<55 = 4; 55-66 = 5",
+
+  "hollingsheadOccupation30": "Mean of the selected parent and parenting-partner occupation scores",
+  "hollingsheadOccupation36": "Mean of the selected parent and parenting-partner occupation scores",
+  "hollingsheadOccupation42": "Mean of the selected parent and parenting-partner occupation scores",
+
+  "hollingsheadEducation30": "Mean of the selected parent and parenting-partner education scores",
+  "hollingsheadEducation36": "Mean of the selected parent and parenting-partner education scores",
+  "hollingsheadEducation42": "Mean of the selected parent and parenting-partner education scores",
+
+  "reillyRoleOverallOverload30": "Mean of reillyrole1-reillyrole6; higher values indicate greater role overload",
+  "reillyRoleOverallOverload36": "Mean of reillyrole1-reillyrole6; higher values indicate greater role overload",
+  "reillyRoleOverallOverload42": "Mean of reillyrole1-reillyrole6; higher values indicate greater role overload",
+
+  "responseToMisbehaviorNonharshDiscipline30": "Sum of misb1a + misb1b + misb1i + misb1l",
+  "responseToMisbehaviorNonharshDiscipline36": "Sum of misb1a + misb1b + misb1i + misb1l",
+  "responseToMisbehaviorNonharshDiscipline42": "Sum of misb1a + misb1b + misb1i + misb1l",
+
+  "responseToMisbehaviorNonharshVerbalDiscipline30": "Sum of misb1c + misb1d + misb1h",
+  "responseToMisbehaviorNonharshVerbalDiscipline36": "Sum of misb1c + misb1d + misb1h",
+  "responseToMisbehaviorNonharshVerbalDiscipline42": "Sum of misb1c + misb1d + misb1h",
+
+  "responseToMisbehaviorHarshVerbalDiscipline30": "Sum of misb1e + misb1j + misb1k",
+  "responseToMisbehaviorHarshVerbalDiscipline36": "Sum of misb1e + misb1j + misb1k",
+  "responseToMisbehaviorHarshVerbalDiscipline42": "Sum of misb1e + misb1j + misb1k",
+
+  "responseToMisbehaviorHarshPhysicalDiscipline30": "Sum of misb1f + misb1g",
+  "responseToMisbehaviorHarshPhysicalDiscipline36": "Sum of misb1f + misb1g",
+  "responseToMisbehaviorHarshPhysicalDiscipline42": "Sum of misb1f + misb1g",
+
+  "TeacherDemographicsCenterName30": "Directly recorded",
+  "TeacherDemographicsCenterName36": "Directly recorded",
+  "TeacherDemographicsCenterName42": "Directly recorded",
+  "TeacherDemographicsCenterName54": "Directly recorded",
+
+  "TeacherDemographicsAge30": "Directly recorded",
+  "TeacherDemographicsAge36": "Directly recorded",
+  "TeacherDemographicsAge42": "Directly recorded",
+  "TeacherDemographicsAge54": "Directly recorded",
+
+  "TeacherDemographicsEthnicity30": "Direct categorical response",
+  "TeacherDemographicsEthnicity36": "Direct categorical response",
+  "TeacherDemographicsEthnicity42": "Direct categorical response",
+  "TeacherDemographicsEthnicity54": "Direct categorical response",
+
+  "TeacherDemographicsEducation30": "Direct categorical response",
+  "TeacherDemographicsEducation36": "Direct categorical response",
+  "TeacherDemographicsEducation42": "Direct categorical response",
+  "TeacherDemographicsEducation54": "Direct categorical response",
+
+  "TeacherDemographicsEducationOther30": "Direct text response",
+  "TeacherDemographicsEducationOther36": "Direct text response",
+  "TeacherDemographicsEducationOther42": "Direct text response",
+  "TeacherDemographicsEducationOther54": "Direct text response",
+
+  "teacherDemographicsSpecializedTraining30": "Direct response; spelled SpeacilizedTraining in the README",
+  "teacherDemographicsSpecializedTraining36": "Direct response; spelled SpeacilizedTraining in the README",
+  "teacherDemographicsSpecializedTraining42": "Direct response; spelled SpeacilizedTraining in the README",
+  "teacherDemographicsSpecializedTraining54": "Direct response; spelled SpeacilizedTraining in the README",
+
+  "teacherDemographicsYearsOfExperience30": "Directly recorded",
+  "teacherDemographicsYearsOfExperience36": "Directly recorded",
+  "teacherDemographicsYearsOfExperience42": "Directly recorded",
+  "teacherDemographicsYearsOfExperience54": "Directly recorded",
+
+  "teacherDemographicsYearsAtSchool30": "Directly recorded",
+  "teacherDemographicsYearsAtSchool36": "Directly recorded",
+  "teacherDemographicsYearsAtSchool42": "Directly recorded",
+  "teacherDemographicsYearsAtSchool54": "Directly recorded",
+
+  "teacherDemographicsNumberOfChildren30": "Directly recorded",
+  "teacherDemographicsNumberOfChildren36": "Directly recorded",
+  "teacherDemographicsNumberOfChildren42": "Directly recorded",
+  "teacherDemographicsNumberOfChildren54": "Directly recorded",
+
+  "teacherDemographicsNumberOfTeachers30": "Directly recorded",
+  "teacherDemographicsNumberOfTeachers36": "Directly recorded",
+  "teacherDemographicsNumberOfTeachers42": "Directly recorded",
+  "teacherDemographicsNumberOfTeachers54": "Directly recorded",
+
+  "teacherDemographicsKnownChild30": "Directly recorded",
+  "teacherDemographicsKnownChild36": "Directly recorded",
+  "teacherDemographicsKnownChild42": "Directly recorded",
+  "teacherDemographicsKnownChild54": "Directly recorded",
+
+  "mockReportCardReading30": "Directly retained from item 1",
+  "mockReportCardReading36": "Directly retained from item 1",
+  "mockReportCardReading42": "Directly retained from item 1",
+
+  "mockReportCardOralLanguage30": "Directly retained from item 2",
+  "mockReportCardOralLanguage36": "Directly retained from item 2",
+  "mockReportCardOralLanguage42": "Directly retained from item 2",
+
+  "mockReportCardWrittenLanguage30": "Directly retained from item 3",
+  "mockReportCardWrittenLanguage36": "Directly retained from item 3",
+  "mockReportCardWrittenLanguage42": "Directly retained from item 3",
+
+  "mockReportCardMath30": "Directly retained from item 4",
+  "mockReportCardMath36": "Directly retained from item 4",
+  "mockReportCardMath42": "Directly retained from item 4",
+
+  "mockReportCardSocialStudies30": "Directly retained from item 5",
+  "mockReportCardSocialStudies36": "Directly retained from item 5",
+  "mockReportCardSocialStudies42": "Directly retained from item 5",
+
+  "mockReportCardScience30": "Directly retained from item 6",
+  "mockReportCardScience36": "Directly retained from item 6",
+  "mockReportCardScience42": "Directly retained from item 6",
+
+  "mockReportCardAcademicPerformance30": "Mean of items 1-6",
+  "mockReportCardAcademicPerformance36": "Mean of items 1-6",
+  "mockReportCardAcademicPerformance42": "Mean of items 1-6",
+
+  "mockReportCardWorkHabits30": "Mean of items 7-12",
+  "mockReportCardWorkHabits36": "Mean of items 7-12",
+  "mockReportCardWorkHabits42": "Mean of items 7-12",
+
+  "mockReportCardSocialSkills30": "Mean of items 13-19",
+  "mockReportCardSocialSkills36": "Mean of items 13-19",
+  "mockReportCardSocialSkills42": "Mean of items 13-19",
+
+  "trfEmotionallyReactive30": "Sum of TRF items 21, 46, 82, 83, 92, 97, 99",
+  "trfEmotionallyReactive36": "Sum of TRF items 21, 46, 82, 83, 92, 97, 99",
+  "trfEmotionallyReactive42": "Sum of TRF items 21, 46, 82, 83, 92, 97, 99",
+
+  "trfAnxiousDepressed30": "Sum of items 10, 33, 37, 43, 47, 68, 87, 90",
+  "trfAnxiousDepressed36": "Sum of items 10, 33, 37, 43, 47, 68, 87, 90",
+  "trfAnxiousDepressed42": "Sum of items 10, 33, 37, 43, 47, 68, 87, 90",
+
+  "trfSomatic30": "Sum of items 1, 7, 39, 45, 78, 86, 93",
+  "trfSomatic36": "Sum of items 1, 7, 39, 45, 78, 86, 93",
+  "trfSomatic42": "Sum of items 1, 7, 39, 45, 78, 86, 93",
+
+  "trfWithdrawn30": "Sum of items 2, 4, 12, 19, 23, 62, 67, 70, 71, 98",
+  "trfWithdrawn36": "Sum of items 2, 4, 12, 19, 23, 62, 67, 70, 71, 98",
+  "trfWithdrawn42": "Sum of items 2, 4, 12, 19, 23, 62, 67, 70, 71, 98",
+
+  "trfAttention30": "Sum of items 5, 6, 24, 48, 51, 56, 59, 64, 95",
+  "trfAttention36": "Sum of items 5, 6, 24, 48, 51, 56, 59, 64, 95",
+  "trfAttention42": "Sum of items 5, 6, 24, 48, 51, 56, 59, 64, 95",
+
+  "trfAggressive30": "Sum of items 8, 14, 15, 16, 17, 18, 20, 22, 27, 28, 29, 35, 40, 42, 44, 53, 58, 66, 69, 74, 81, 84, 85, 88, 96",
+  "trfAggressive36": "Sum of items 8, 14, 15, 16, 17, 18, 20, 22, 27, 28, 29, 35, 40, 42, 44, 53, 58, 66, 69, 74, 81, 84, 85, 88, 96",
+  "trfAggressive42": "Sum of items 8, 14, 15, 16, 17, 18, 20, 22, 27, 28, 29, 35, 40, 42, 44, 53, 58, 66, 69, 74, 81, 84, 85, 88, 96",
+
+  "trfInternalizing30": "Sum of all Emotionally Reactive, Anxious/Depressed, Somatic, and Withdrawn items",
+  "trfInternalizing36": "Sum of all Emotionally Reactive, Anxious/Depressed, Somatic, and Withdrawn items",
+  "trfInternalizing42": "Sum of all Emotionally Reactive, Anxious/Depressed, Somatic, and Withdrawn items",
+
+  "trfExternalizing30": "Sum of all Attention Problems and Aggressive Behavior items",
+  "trfExternalizing36": "Sum of all Attention Problems and Aggressive Behavior items",
+  "trfExternalizing42": "Sum of all Attention Problems and Aggressive Behavior items",
+
+  "trfTotal30": "In the R script, sum of the Internalizing and Externalizing item sets",
+  "trfTotal36": "In the R script, sum of the Internalizing and Externalizing item sets",
+  "trfTotal42": "In the R script, sum of the Internalizing and Externalizing item sets",
+
+  "WJLetterWordNumberCorrect30": "Direct test score; no derived computation documented",
+  "WJLetterWordNumberCorrect36": "Direct test score; no derived computation documented",
+  "WJLetterWordNumberCorrect42": "Direct test score; no derived computation documented",
+
+  "WJLetterWordAgeEquivalence30": "Direct age-equivalent test output",
+  "WJLetterWordAgeEquivalence36": "Direct age-equivalent test output",
+  "WJLetterWordAgeEquivalence42": "Direct age-equivalent test output",
+
+  "WJAppliedProblemsNumberCorrect30": "Direct test score; no derived computation documented",
+  "WJAppliedProblemsNumberCorrect36": "Direct test score; no derived computation documented",
+  "WJAppliedProblemsNumberCorrect42": "Direct test score; no derived computation documented",
+
+  "WJAppliedProblemsAgeEquivalence30": "Direct age-equivalent test output",
+  "WJAppliedProblemsAgeEquivalence36": "Direct age-equivalent test output",
+  "WJAppliedProblemsAgeEquivalence42": "Direct age-equivalent test output",
 };
 
 export const variableCodings = {
@@ -7828,6 +8424,71 @@ export const variableCodings = {
   "phsiFeel36": "1 = enjoyable through 4 = strained",
   "phsiFeel42": "1 = enjoyable through 4 = strained",
   "phsiFeel54": "1 = enjoyable through 4 = strained",
+
+  "maternalLeaveTakingChildPres30": "Direct presence indicator. The manual instructs coders to indicate whether another child was present; exact numeric values are not shown in the photographed pages, but this is likely a yes/no code.",
+  "maternalLeaveTakingChildPres36": "Direct presence indicator. The manual instructs coders to indicate whether another child was present; exact numeric values are not shown in the photographed pages, but this is likely a yes/no code.",
+  "maternalLeaveTakingChildPres42": "Direct presence indicator. The manual instructs coders to indicate whether another child was present; exact numeric values are not shown in the photographed pages, but this is likely a yes/no code.",
+  "maternalLeaveTakingChildPres54": "Direct presence indicator. The manual instructs coders to indicate whether another child was present; exact numeric values are not shown in the photographed pages, but this is likely a yes/no code.",
+
+  "maternalLeaveTakingTCRestriction30": "0 = No: mother does not mention the prohibited toys or direct the child to the table/table toys.\n1 = Yes: mother directs the child to sit/play at the table, play with the table toys, or not play with the prohibited toys.",
+  "maternalLeaveTakingTCRestriction36": "0 = No: mother does not mention the prohibited toys or direct the child to the table/table toys.\n1 = Yes: mother directs the child to sit/play at the table, play with the table toys, or not play with the prohibited toys.",
+  "maternalLeaveTakingTCRestriction42": "0 = No: mother does not mention the prohibited toys or direct the child to the table/table toys.\n1 = Yes: mother directs the child to sit/play at the table, play with the table toys, or not play with the prohibited toys.",
+  "maternalLeaveTakingTCRestriction54": "0 = No: mother does not mention the prohibited toys or direct the child to the table/table toys.\n1 = Yes: mother directs the child to sit/play at the table, play with the table toys, or not play with the prohibited toys.",
+
+  "maternalLeaveTakingTCResponse30": "0 = No: no negative response; asking where mother is going without negative affect is also coded no.\n1 = Yes: child tells mother not to go, asks to accompany her, displays negative affect, or follows her into the hall.",
+  "maternalLeaveTakingTCResponse36": "0 = No: no negative response; asking where mother is going without negative affect is also coded no.\n1 = Yes: child tells mother not to go, asks to accompany her, displays negative affect, or follows her into the hall.",
+  "maternalLeaveTakingTCResponse42": "0 = No: no negative response; asking where mother is going without negative affect is also coded no.\n1 = Yes: child tells mother not to go, asks to accompany her, displays negative affect, or follows her into the hall.",
+  "maternalLeaveTakingTCResponse54": "0 = No: no negative response; asking where mother is going without negative affect is also coded no.\n1 = Yes: child tells mother not to go, asks to accompany her, displays negative affect, or follows her into the hall.",
+
+  "maternalLeaveTakingMaternalAnxiety30": "0 = Low: matter-of-fact, exits quickly, little comforting.\n1 = Moderate: shows concern and provides brief/casual reassurance without hovering.\n2 = High: prolonged comforting, nervous mannerisms, repeated reassurance, or difficulty leaving.",
+  "maternalLeaveTakingMaternalAnxiety36": "0 = Low: matter-of-fact, exits quickly, little comforting.\n1 = Moderate: shows concern and provides brief/casual reassurance without hovering.\n2 = High: prolonged comforting, nervous mannerisms, repeated reassurance, or difficulty leaving.",
+  "maternalLeaveTakingMaternalAnxiety42": "0 = Low: matter-of-fact, exits quickly, little comforting.\n1 = Moderate: shows concern and provides brief/casual reassurance without hovering.\n2 = High: prolonged comforting, nervous mannerisms, repeated reassurance, or difficulty leaving.",
+  "maternalLeaveTakingMaternalAnxiety54": "0 = Low: matter-of-fact, exits quickly, little comforting.\n1 = Moderate: shows concern and provides brief/casual reassurance without hovering.\n2 = High: prolonged comforting, nervous mannerisms, repeated reassurance, or difficulty leaving.",
+
+  "maternalLeaveTakingTCInterest30": "0 = No interest.\n1 = Low interest.\n2 = Some interest.\n3 = Moderate interest.\n4 = Persistent interest.",
+  "maternalLeaveTakingTCInterest36": "0 = No interest.\n1 = Low interest.\n2 = Some interest.\n3 = Moderate interest.\n4 = Persistent interest.",
+  "maternalLeaveTakingTCInterest42": "0 = No interest.\n1 = Low interest.\n2 = Some interest.\n3 = Moderate interest.\n4 = Persistent interest.",
+  "maternalLeaveTakingTCInterest54": "0 = No interest.\n1 = Low interest.\n2 = Some interest.\n3 = Moderate interest.\n4 = Persistent interest.",
+
+  "maternalLeaveTakingTCElicit30": "0 = No: only one instance or behavior is ambiguous.\n1 = Yes: at least two obvious instances, such as seeking physical contact, calling to mother while making eye contact, or directing an object toward mother while speaking.",
+  "maternalLeaveTakingTCElicit36": "0 = No: only one instance or behavior is ambiguous.\n1 = Yes: at least two obvious instances, such as seeking physical contact, calling to mother while making eye contact, or directing an object toward mother while speaking.",
+  "maternalLeaveTakingTCElicit42": "0 = No: only one instance or behavior is ambiguous.\n1 = Yes: at least two obvious instances, such as seeking physical contact, calling to mother while making eye contact, or directing an object toward mother while speaking.",
+  "maternalLeaveTakingTCElicit54": "0 = No: only one instance or behavior is ambiguous.\n1 = Yes: at least two obvious instances, such as seeking physical contact, calling to mother while making eye contact, or directing an object toward mother while speaking.",
+
+  "maternalLeaveTakingTCNegativeAffect30": "0 = No: child maintains a generally neutral/euthymic affect.\n1 = Yes: irritation, impatience, boredom, apprehension, screaming, crying, whining, or similar behavior.",
+  "maternalLeaveTakingTCNegativeAffect36": "0 = No: child maintains a generally neutral/euthymic affect.\n1 = Yes: irritation, impatience, boredom, apprehension, screaming, crying, whining, or similar behavior.",
+  "maternalLeaveTakingTCNegativeAffect42": "0 = No: child maintains a generally neutral/euthymic affect.\n1 = Yes: irritation, impatience, boredom, apprehension, screaming, crying, whining, or similar behavior.",
+  "maternalLeaveTakingTCNegativeAffect54": "0 = No: child maintains a generally neutral/euthymic affect.\n1 = Yes: irritation, impatience, boredom, apprehension, screaming, crying, whining, or similar behavior.",
+
+  "maternalLeaveTakingTableToys30": "Direct observational category. The manual refers to coding the child's attention to table toys and instructs coders to identify the cause of negative affect; the exact stored scale is not visible in the photographed pages.",
+  "maternalLeaveTakingTableToys36": "Direct observational category. The manual refers to coding the child's attention to table toys and instructs coders to identify the cause of negative affect; the exact stored scale is not visible in the photographed pages.",
+  "maternalLeaveTakingTableToys42": "Direct observational category. The manual refers to coding the child's attention to table toys and instructs coders to identify the cause of negative affect; the exact stored scale is not visible in the photographed pages.",
+  "maternalLeaveTakingTableToys54": "Direct observational category. The manual refers to coding the child's attention to table toys and instructs coders to identify the cause of negative affect; the exact stored scale is not visible in the photographed pages.",
+
+  "maternalLeaveTakingMotherPhone30": "Direct observational category; exact numeric coding is not shown in the photographed pages.",
+  "maternalLeaveTakingMotherPhone36": "Direct observational category; exact numeric coding is not shown in the photographed pages.",
+  "maternalLeaveTakingMotherPhone42": "Direct observational category; exact numeric coding is not shown in the photographed pages.",
+  "maternalLeaveTakingMotherPhone54": "Direct observational category; exact numeric coding is not shown in the photographed pages.",
+
+  "maternalLeaveTakingProhibitedToys30": "Direct observational category; exact numeric coding is not shown in the photographed pages.",
+  "maternalLeaveTakingProhibitedToys36": "Direct observational category; exact numeric coding is not shown in the photographed pages.",
+  "maternalLeaveTakingProhibitedToys42": "Direct observational category; exact numeric coding is not shown in the photographed pages.",
+  "maternalLeaveTakingProhibitedToys54": "Direct observational category; exact numeric coding is not shown in the photographed pages.",
+
+  "maternalLeaveTakingOtherStimulus30": "Direct observational category. The manual instructs the coder to specify the cause when it is not one of the listed options - for example, wanting a toy from home or wanting to play with a sibling.",
+  "maternalLeaveTakingOtherStimulus36": "Direct observational category. The manual instructs the coder to specify the cause when it is not one of the listed options - for example, wanting a toy from home or wanting to play with a sibling.",
+  "maternalLeaveTakingOtherStimulus42": "Direct observational category. The manual instructs the coder to specify the cause when it is not one of the listed options - for example, wanting a toy from home or wanting to play with a sibling.",
+  "maternalLeaveTakingOtherStimulus54": "Direct observational category. The manual instructs the coder to specify the cause when it is not one of the listed options - for example, wanting a toy from home or wanting to play with a sibling.",
+
+  "maternalLeaveTakingParentConcern30": "0 = No: no verbal or nonverbal concern.\n1 = Yes: verbal concern such as \"That's a bad idea\" or \"He/she won't like that,\" or nonverbal concern through facial expression, tone, becoming rigid, or appearing jittery.",
+  "maternalLeaveTakingParentConcern36": "0 = No: no verbal or nonverbal concern.\n1 = Yes: verbal concern such as \"That's a bad idea\" or \"He/she won't like that,\" or nonverbal concern through facial expression, tone, becoming rigid, or appearing jittery.",
+  "maternalLeaveTakingParentConcern42": "0 = No: no verbal or nonverbal concern.\n1 = Yes: verbal concern such as \"That's a bad idea\" or \"He/she won't like that,\" or nonverbal concern through facial expression, tone, becoming rigid, or appearing jittery.",
+  "maternalLeaveTakingParentConcern54": "0 = No: no verbal or nonverbal concern.\n1 = Yes: verbal concern such as \"That's a bad idea\" or \"He/she won't like that,\" or nonverbal concern through facial expression, tone, becoming rigid, or appearing jittery.",
+
+  "maternalLeaveTakingTCInteracting30": "Direct observational participation indicator. The manual instructs coders to indicate whether the child participated, but the exact numeric values and operational threshold are not visible in the photographs.",
+  "maternalLeaveTakingTCInteracting36": "Direct observational participation indicator. The manual instructs coders to indicate whether the child participated, but the exact numeric values and operational threshold are not visible in the photographs.",
+  "maternalLeaveTakingTCInteracting42": "Direct observational participation indicator. The manual instructs coders to indicate whether the child participated, but the exact numeric values and operational threshold are not visible in the photographs.",
+  "maternalLeaveTakingTCInteracting54": "Direct observational participation indicator. The manual instructs coders to indicate whether the child participated, but the exact numeric values and operational threshold are not visible in the photographs.",
 };
 
 export const provisionalDescriptionVariables = [
