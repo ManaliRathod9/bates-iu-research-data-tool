@@ -45,6 +45,7 @@ export const structure = {
       "Grass Snow",
       "Gift Delay",
       "BehaviorPhoneCallPlays",
+      "Less Is More",
       "Parent Positive Affect",
       "Parental Control",
       "Snack Delay",
@@ -87,14 +88,14 @@ export const structure = {
       "Reilly Role Overload Scale",
       "Response to Misbehavior",
       "Social Competence Scale",
-      "Social Support — PANSE",
+      "Social Support - PANSE",
     ],
     "Secondary Caregiver Questionnaires": [
       "Caregiver-Teacher Report Form (TRF)",
     ],
     "Father Questionnaires": [],
 
-    "Teacher Questionnaires": ["Teacher Demographics", "Class Teacher Sensitivity", "Teacher Checklist", "Mock Report Card"],
+    "Teacher Questionnaires": ["Teacher Demographics", "Class Teacher Sensitivity", "Teacher Checklist", "Mock Report Card", "Student Teacher Relationship Scale"],
 
     "Temperament Questionnaires": ["Infant Characteristics Questionnaire (ICQ)"],
 

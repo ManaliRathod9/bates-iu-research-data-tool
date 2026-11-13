@@ -3,7 +3,6 @@ import { structure } from "./config/structure";
 import { variableDescriptions, variableComputations, variableCodings } from "./config/variableDescriptions";
 import { motherExecutiveFunctionVariables } from "./config/motherExecutiveFunction";
 import VariableDescription, {
-  shouldShowVariableInTask,
   getFinalVariables,
   groupVariablesBySubcategory,
   countDisplayedVariables,
@@ -26,10 +25,11 @@ const taskToVarMap = {
   "Concerns & Constraints": "concernsconstraints",
   "Daily Schedule": "dsched",
   "Follow the Path": "followthepath",
+  "Less Is More": "lessismore",
   "Hollingshead Socioeconomic Status": "hollingshead",
   "Reilly Role Overload Scale": "reillyrole",
   "Response to Misbehavior": "responsetomisbehavior",
-  "Social Support — PANSE": "socialsupport",
+  "Social Support - PANSE": "socialsupport",
   "Child-Rearing Practices Report": "crpr",
   "Children's Sleep Habits Questionnaire": "cshq",
   "CHAOS Scale (Confusion, Hubbub, and Order Scale)": "chaos",
@@ -45,6 +45,7 @@ const taskToVarMap = {
   "Class Teacher Sensitivity": "classteachersensitivity",
   "Teacher Checklist": "teacherchecklist",
   "Mock Report Card": "mockreportcard",
+  "Student Teacher Relationship Scale": "cbs",
   "Infant Characteristics Questionnaire (ICQ)": "icq",
   "Caregiver-Teacher Report Form (TRF)": "trf",
   Compliments: "comp",
@@ -78,7 +79,7 @@ const taskToVarMap = {
   "Toy Prohibition": "childbehaviortoyprohibition",
   "Child Demand / Toy Prohibition": "childdemandtoyprohibition",
   "BehaviorPhoneCallPlays": "toy",
-  "EEG Bird Alligator": "eegbirdalligator",
+  "EEG Bird Alligator": "birdalligator",
   "Oddball Related": "oddball",
   "Fish Sharks Related": "fishsharks",
   "Child Behavior Phone Call": "childbehaviorphonecall",
