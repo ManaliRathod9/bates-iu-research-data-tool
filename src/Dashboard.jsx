@@ -1,3 +1,4 @@
+import { getVariableLabel } from "./variableLabels";
 import React, { useState, useMemo, useEffect } from "react";
 import { structure } from "./config/structure";
 import { variableDescriptions, variableComputations, variableCodings } from "./config/variableDescriptions";
@@ -501,10 +502,9 @@ const Dashboard = ({ data = null }) => {
       }}
     >
       <div
+        className="explorer-panels"
         style={{
           display: "grid",
-          gridTemplateColumns:
-            "minmax(200px, 1fr) minmax(200px, 1.4fr) minmax(200px, 1.4fr) minmax(200px, 1fr)",
           gap: "1.5rem",
           flex: 1,
           minHeight: 0,
@@ -774,6 +774,7 @@ const Dashboard = ({ data = null }) => {
                 return (
                   <li
                     key={i}
+                    className="variable-row"
                     onClick={() =>
                       v !== "tcid" && toggleRowSelection(v, setCheckedSelected)
                     }
@@ -791,9 +792,10 @@ const Dashboard = ({ data = null }) => {
                     }}
                   >
                     <span
-                      style={{ fontSize: "0.9rem", wordBreak: "break-all" }}
+                      className="variable-row-label"
+                      style={{ fontSize: "0.9rem", wordBreak: "normal", overflowWrap: "anywhere" }}
                     >
-                      {v}{" "}
+                      {getVariableLabel(v)}{" "}
                       {v === "tcid" && (
                         <span
                           style={{
@@ -1050,8 +1052,8 @@ const Dashboard = ({ data = null }) => {
                 flexShrink: 0,
               }}
             >
-              <h3 style={{ margin: 0, fontSize: "1.1rem", fontWeight: "600", wordBreak: "break-all" }}>
-                {varInfoModal}
+              <h3 style={{ margin: 0, fontSize: "1.1rem", fontWeight: "600", minWidth: 0, overflowWrap: "anywhere" }}>
+                {getVariableLabel(varInfoModal)}
               </h3>
               <button
                 onClick={() => setVarInfoModal(null)}

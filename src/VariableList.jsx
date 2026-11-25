@@ -1,4 +1,5 @@
 import React from "react";
+import { getVariableLabel } from "./variableLabels";
 import { structure } from "./config/structure";
 import {
   motherExecutiveFunctionGroups,
@@ -2068,6 +2069,7 @@ const VariableDescription = ({
     return (
       <div
         key={v}
+        className="variable-row"
         onClick={() => !isAdded && toggleRowSelection(v, setCheckedVariables)}
         style={{
           padding: "0.6rem 0.5rem",
@@ -2083,7 +2085,7 @@ const VariableDescription = ({
           transition: "background-color 0.2s",
         }}
       >
-        <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+        <div className="variable-row-label" style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
           <button
             onClick={(e) => {
               e.stopPropagation();
@@ -2124,11 +2126,13 @@ const VariableDescription = ({
           <span
             style={{
               fontSize: "0.85rem",
-              wordBreak: "break-all",
+              wordBreak: "normal",
+              overflowWrap: "anywhere",
+              minWidth: 0,
               color: "var(--text-secondary)",
             }}
           >
-            {v}
+            {getVariableLabel(v)}
           </span>
         </div>
 
