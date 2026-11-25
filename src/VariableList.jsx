@@ -40,7 +40,7 @@ const taskToVarMap = {
   "Shipley Parent Cognition": "shipley",
   "Social Support Related": "socialsupport",
   "Teacher Demographics": "teacherdemographics",
-  "Class Teacher Sensitivity": "classteachersensitivity",
+  "CLASS TEACHER SENSITIVITY": "classteachersensitivity",
   "Teacher Checklist": "teacherchecklist",
   "Mock Report Card": "mockreportcard",
   "Student Teacher Relationship Scale": "cbs",
@@ -280,7 +280,7 @@ export const getCorrectTasksForVariable = (v) => {
   }
 
   if (vLower.startsWith("classteachersensitivity")) {
-    return ["Class Teacher Sensitivity"];
+    return ["CLASS TEACHER SENSITIVITY"];
   }
 
   if (vLower.startsWith("teacherchecklist")) {
@@ -1154,7 +1154,7 @@ export const getVariableGroup = (variableName, selectedCategory, selectedTask) =
 
   if (
     selectedTask === "Teacher Demographics" ||
-    selectedTask === "Class Teacher Sensitivity" ||
+    selectedTask === "CLASS TEACHER SENSITIVITY" ||
     selectedTask === "Teacher Checklist" ||
     selectedTask === "Mock Report Card"
   ) {

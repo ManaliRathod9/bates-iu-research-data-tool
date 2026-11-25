@@ -95,7 +95,7 @@ export const structure = {
     ],
     "Father Questionnaires": [],
 
-    "Teacher Questionnaires": ["Teacher Demographics", "Class Teacher Sensitivity", "Teacher Checklist", "Mock Report Card", "Student Teacher Relationship Scale"],
+    "Teacher Questionnaires": ["Teacher Demographics", "CLASS TEACHER SENSITIVITY", "Teacher Checklist", "Mock Report Card", "Student Teacher Relationship Scale"],
 
     "Temperament Questionnaires": ["Infant Characteristics Questionnaire (ICQ)"],
 

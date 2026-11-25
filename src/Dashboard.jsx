@@ -43,7 +43,7 @@ const taskToVarMap = {
   "Shipley Parent Cognition": "shipley",
   "Social Support Related": "socialsupport",
   "Teacher Demographics": "teacherdemographics",
-  "Class Teacher Sensitivity": "classteachersensitivity",
+  "CLASS TEACHER SENSITIVITY": "classteachersensitivity",
   "Teacher Checklist": "teacherchecklist",
   "Mock Report Card": "mockreportcard",
   "Student Teacher Relationship Scale": "cbs",
@@ -213,7 +213,7 @@ const taskDescriptions = {
 
   "Teacher Demographics": `Teacher Demographics collects background information about educators who provide information about children participating in the study. The recorded information may include age, education, specialized training, professional experience, and time spent at the current school or center. It can also include classroom details such as the number of children and teachers present. Researchers use these details to understand the educational context in which teacher reports and classroom observations are collected. Background information can help describe differences in classroom environments and teacher experience. These variables should be treated as descriptive information rather than as a measure of teaching quality.`,
 
-  "Class Teacher Sensitivity": `Class Teacher Sensitivity concerns the responsiveness and emotional support shown by a teacher during interactions with children. Teacher sensitivity generally involves noticing children's needs, responding appropriately, and supporting a positive classroom environment. Structured classroom observations can provide information about how teachers respond to children's emotions and behavior. Researchers study these interactions because the quality of classroom relationships may be associated with children's social and emotional development. The variable in this task may represent an observational rating rather than a questionnaire response. Its precise measure and category placement should be confirmed against the CLASS observation documentation.`,
+  "CLASS TEACHER SENSITIVITY": `Class Teacher Sensitivity concerns the responsiveness and emotional support shown by a teacher during interactions with children. Teacher sensitivity generally involves noticing children's needs, responding appropriately, and supporting a positive classroom environment. Structured classroom observations can provide information about how teachers respond to children's emotions and behavior. Researchers study these interactions because the quality of classroom relationships may be associated with children's social and emotional development. The variable in this task may represent an observational rating rather than a questionnaire response. Its precise measure and category placement should be confirmed against the CLASS observation documentation.`,
 
   "Teacher Checklist": `Teacher Checklist contains teacher-rated information about children's behavior and social experiences in educational settings. In this study, the available measures include peer liking, reactive aggression, and proactive aggression. These ratings can help describe how a child interacts with classmates and responds during social situations. Reactive aggression generally relates to responses to perceived provocation, while proactive aggression concerns aggression used to achieve a goal. Researchers use teacher reports to complement information collected from caregivers and structured observations. The exact questionnaire items and composite scoring should follow the study's teacher-checklist documentation.`,
 
